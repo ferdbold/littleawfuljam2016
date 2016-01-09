@@ -5,6 +5,8 @@ public class LevelManager : MonoBehaviour {
 
     public static LevelManager instance;
 
+    private float _killMode_timer = 10f;
+
     void Start() {
         if (instance == null) {
             instance = this;
@@ -25,18 +27,10 @@ public class LevelManager : MonoBehaviour {
 
     //-------------------------------------------------------------------------------------------------------------------------
 
-    public enum GameState { moveMode, killMode }
+    public enum GameState { moveMode, killMode, endLevelCutscene, end }
     public GameState currentState { get; private set; }
 
-    public void Activate_KillMode() {
-        SwitchState(GameState.killMode);
-    }
-
-    public void Activate_PlayMode() {
-        SwitchState(GameState.moveMode);
-    }
-
-    private void SwitchState(GameState state) {
+    public void SwitchState(GameState state) {
         OnEnd_State(currentState);
         currentState = state;
         OnStart_State(currentState);
@@ -51,6 +45,14 @@ public class LevelManager : MonoBehaviour {
             case GameState.killMode:
                 Camera.main.GetComponent<KillMode_CameraSwitch>().StartCameraAnim(KillMode_StartKilling, enemyTarget.transform.position, enemyTarget.transform.forward);
                 break;
+
+            case GameState.endLevelCutscene:
+
+                break;
+
+            case GameState.end:
+                GameManager.instance.GoToNextPlayLevel();
+                break;
         }
     }
 
@@ -63,13 +65,29 @@ public class LevelManager : MonoBehaviour {
             case GameState.killMode:
 
                 break;
+
+            case GameState.endLevelCutscene:
+
+                break;
         }
     }
 
     //------------------------------------------------------------------------------------------------------------------
+
     public GameObject enemyTarget { get; private set; }
 
     private void KillMode_StartKilling() {
         Debug.Log("Starting Kill Mode");
     }
+
+    IEnumerator KillMode_Timer() {
+        yield return new WaitForSeconds(_killMode_timer);
+        KillMode_StopKilling();
+    }
+
+    private void KillMode_StopKilling() {
+        SwitchState(GameState.endLevelCutscene);
+    }
+
+    //------------------------------------------------------------------------------------------------------------------
 }
