@@ -121,9 +121,9 @@ namespace PrefabEvolution
 			EditorGUILayout.HelpBox("Plugin will write detailed log", MessageType.Info);
 			DebugMode = EditorGUILayout.Toggle("Debug mode", DebugMode);
 
-			EditorGUILayout.HelpBox("Migrate from dll to sources. This function will replace all references to EvolvePrefab script imported from dll. Please reimport all models after migration. ", MessageType.Info);
-			if (GUILayout.Button("Migrate"))
-				Migration.MigrationUtility.Migrate();
+			EditorGUILayout.HelpBox("Check all prefabs", MessageType.Info);
+			if (GUILayout.Button("Check prefab dependencies"))
+				PECache.ForceCheckAllAssets();
 
 			EditorGUILayout.EndScrollView();
 		}

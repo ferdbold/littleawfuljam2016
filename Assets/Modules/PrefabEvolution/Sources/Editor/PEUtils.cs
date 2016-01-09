@@ -1,3 +1,4 @@
+using UnityEditor.VersionControl;
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
@@ -229,6 +230,9 @@ namespace PrefabEvolution
 		static private LinkedList<GameObject> buildMenuRecursionList = new LinkedList<GameObject>();
 		static internal void BuildMenu(GenericMenu menu, PEPrefabScript prefabInstance, bool rootPrefab, string path = "", bool showParent = true, bool showInstances = true)
 		{
+			if (prefabInstance == null)
+				return;
+
 			if (buildMenuRecursionList.Contains(prefabInstance.Prefab))
 			{
 				buildMenuRecursionList.AddLast(prefabInstance.Prefab);
@@ -356,7 +360,7 @@ namespace PrefabEvolution
 		{
 			var parent = PrefabUtility.GetPrefabParent(instance);
 			var prefab = parent == null ? instance : parent as GameObject;
-			if (prefab.GetComponent("EvolvePrefab") != null)
+			if (prefab.GetComponent<EvolvePrefab>() != null)
 				return;
 
 			var pi = (PEPrefabScript)prefab.AddComponent<EvolvePrefab>();
@@ -480,6 +484,68 @@ namespace PrefabEvolution
 
 		#region Assets
 
+		static public void ApplyPrefab(GameObject gameObject)
+		{
+			gameObject = PrefabUtility.FindPrefabRoot(gameObject);
+
+			var pi = gameObject.GetComponent<PEPrefabScript>();
+
+			if (pi == null)
+			{
+				DefaultApply(gameObject);
+				DoAutoSave();
+			}
+			else
+				DoApply(pi);
+		}
+
+		static public void ApplyPrefab(GameObject[] targets)
+		{
+			var list = new List<GameObject>();
+
+			foreach (var target in targets)
+			{
+				var root = PrefabUtility.FindPrefabRoot(target);
+				list.RemoveAll(r => r == root);
+				list.Add(root);
+			}
+
+			foreach (GameObject target in list)
+				ApplyPrefab(target);
+		}
+
+		static void DefaultApply(GameObject obj)
+		{
+			foreach (var pi in obj.GetComponentsInChildren<PEPrefabScript>(true))
+				pi.BuildModifications();
+
+			var gameObject = obj;
+			var prefabType = PrefabUtility.GetPrefabType(gameObject);
+
+			if (prefabType == PrefabType.PrefabInstance || prefabType == PrefabType.DisconnectedPrefabInstance)
+			{
+				var gameObject2 = PrefabUtility.FindValidUploadPrefabInstanceRoot(gameObject);
+
+				if (gameObject2 == null)
+					return;
+
+				var prefabParent = PrefabUtility.GetPrefabParent(gameObject2);
+				var assetPath = AssetDatabase.GetAssetPath(prefabParent);
+
+				var method = typeof(Provider).GetMethod("PromptAndCheckoutIfNeeded", BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Static | BindingFlags.Instance);
+				var canReplace = (bool)method.Invoke(null, new object[] {
+					new [] {
+						assetPath
+					}, "The version control requires you to checkout the prefab before applying changes."
+				});
+
+				if (canReplace)
+				{
+					PrefabUtility.ReplacePrefab(gameObject2, prefabParent, ReplacePrefabOptions.ConnectToPrefab);
+				}
+			}
+		}
+
 		static internal T GetAssetByGUID<T>(string GUID) where T : Object
 		{
 			return GetAssetByPath<T>(AssetDatabase.GUIDToAssetPath(GUID));
@@ -562,7 +628,6 @@ namespace PrefabEvolution
 			property.propertyPath.Contains("m_ObjectHideFlags") ||
 			property.propertyPath.Contains("m_Children") ||
 			property.propertyPath.Contains("m_Father") ||
-			property.propertyPath.Contains("m_Script") ||
 			property.propertyPath.Contains("m_GameObject") ||
 			property.propertyPath.Contains("m_Component");
 		}

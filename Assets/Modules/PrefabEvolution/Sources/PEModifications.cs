@@ -38,11 +38,11 @@ namespace PrefabEvolution
 			public GameObject parent;
 		}
 
-		public List<PropertyData> Modificated = new List<PropertyData>();
-		public List<HierarchyData> NonPrefabObjects = new List<HierarchyData>();
-		public List<ComponentsData> NonPrefabComponents = new List<ComponentsData>();
-		public List<int> RemovedObjects = new List<int>();
-		public List<HierarchyData> TransformParentChanges = new List<HierarchyData>();
+		public List<PropertyData> Modificated = Utils.Create<List<PropertyData>>();
+		public List<HierarchyData> NonPrefabObjects = Utils.Create<List<HierarchyData>>();
+		public List<ComponentsData> NonPrefabComponents = Utils.Create<List<ComponentsData>>();
+		public List<int> RemovedObjects = Utils.Create<List<int>>();
+		public List<HierarchyData> TransformParentChanges = Utils.Create<List<HierarchyData>>();
 	}
 
 }

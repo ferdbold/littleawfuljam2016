@@ -1,43 +1,27 @@
+using System;
 using UnityEngine;
-using System.Collections.Generic;
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 
 namespace PrefabEvolution
 {
-	public enum PrefabHideMode
-	{
-		Open,
-		Closed,
-	}
-
 	[SelectionBase]
 	[AddComponentMenu("")]
 	public class PEPrefabScript : MonoBehaviour, ISerializationCallbackReceiver
-	{
-		#region ISerializationCallbackReceiver implementation
-
-		public void OnBeforeSerialize()
-		{
-		}
-
-		public void OnAfterDeserialize()
-		{
-			this.Properties.PrefabScript = this;
-			this.Properties.InheritedProperties = null;
-		}
-
-		#endregion
-
+	{		
 		[HideInInspector]
-		public PEExposedProperties Properties = new PEExposedProperties();
-
+		public PEExposedProperties Properties = Utils.Create<PEExposedProperties>();
 		[HideInInspector]
-		public PELinkage Links = new PELinkage();
+		public PELinkage Links = Utils.Create<PELinkage>();
 		[HideInInspector]
 		public PEModifications Modifications;
 
 		public string ParentPrefabGUID;
 
 		public string PrefabGUID;
+
+		private PrefabInternalData _prefabInternalData;
 
 		public GameObject ParentPrefab
 		{
@@ -68,32 +52,23 @@ namespace PrefabEvolution
 
 		void OnValidate()
 		{
+#if UNITY_EDITOR
+#if PE_STRIP
+			if (Utils.IsBuildingPlayer)
+			{
+				_prefabInternalData = new PrefabInternalData(this);
+				ClearInternalData();
+			}
+#endif
+			if (!Utils.IsBuildingPlayer && PrefabGUID == "STRIPPED")
+				Debug.LogError("Prefab internal data stripping error");
+#endif
+			this.hideFlags |= (HideFlags)32;
 			if (EditorBridge.OnValidate != null)
 				EditorBridge.OnValidate(this);
 		}
 
-		public void SetHideInternalObjects(bool value)
-		{
-			foreach(var obj in this.GetComponentsInChildren<Component>(true))
-			{
-				if (obj is PEPrefabScript || obj == this.transform)
-					continue;
-				if (obj is Transform)
-				{
-					SetObjectHide(obj.gameObject, value);
-					continue;
-				}
-
-				SetObjectHide(obj, value);
-			}
-		}
-
-		static public void SetObjectHide(Object obj, bool value)
-		{
-			obj.HideFlagsSet(HideFlags.HideInHierarchy | HideFlags.HideInInspector, value);
-		}
-
-		public event System.Action OnBuildModifications;
+		public event Action OnBuildModifications;
 
 		public void InvokeOnBuildModifications()
 		{
@@ -101,11 +76,94 @@ namespace PrefabEvolution
 				OnBuildModifications();
 		}
 
+		#region ISerializationCallbackReceiver implementation
+		public void OnBeforeSerialize()
+		{
+#if UNITY_EDITOR
+			if (!Utils.IsBuildingPlayer && _prefabInternalData != null)
+			{
+				_prefabInternalData.Fill(this);
+				_prefabInternalData = null;
+			}
+#endif
+		}
+
+		public void OnAfterDeserialize()
+		{
+#if UNITY_EDITOR
+			this.Properties.PrefabScript = this;
+			this.Properties.InheritedProperties = null;
+#endif
+		}
+
+		private void ClearInternalData()
+		{
+			Properties = null;
+			Links = null;
+			Modifications = null;
+			ParentPrefabGUID = null;
+			PrefabGUID = "STRIPPED";
+		}
+
+		#endregion
+
 		static public class EditorBridge
 		{
-			public static System.Action<PEPrefabScript> OnValidate;
-			public static System.Func<GameObject, string> GetAssetGuid;
-			public static System.Func<string, GameObject> GetAssetByGuid;
+			public static Action<PEPrefabScript> OnValidate;
+			public static Func<GameObject, string> GetAssetGuid;
+			public static Func<string, GameObject> GetAssetByGuid;
+		}
+
+		private class PrefabInternalData
+		{
+			private readonly PEExposedProperties Properties;
+			private readonly PELinkage Links;
+			private readonly PEModifications Modifications;
+			private readonly string ParentPrefabGUID;
+			private readonly string PrefabGUID;
+
+			public PrefabInternalData(PEPrefabScript script)
+			{
+				this.Properties = script.Properties;
+				this.Links = script.Links;
+				this.Modifications = script.Modifications;
+
+				this.ParentPrefabGUID = script.ParentPrefabGUID;
+				this.PrefabGUID = script.PrefabGUID;
+			}
+
+			public void Fill(PEPrefabScript script)
+			{
+				script.Properties = this.Properties;
+				script.Links = this.Links;
+				script.Modifications = this.Modifications;
+				script.ParentPrefabGUID = this.ParentPrefabGUID;
+				script.PrefabGUID = this.PrefabGUID;
+			}
+		}
+	}
+
+	static public class Utils
+	{
+		static public T Create<T>() where T : class, new()
+		{
+#if UNITY_EDITOR
+			return new T();
+#else
+			return null;
+#endif
+		}
+
+		static public bool IsBuildingPlayer
+		{
+			get
+			{
+#if UNITY_EDITOR
+				return BuildPipeline.isBuildingPlayer;
+#else
+				return false;
+#endif
+			}
 		}
 	}
 }

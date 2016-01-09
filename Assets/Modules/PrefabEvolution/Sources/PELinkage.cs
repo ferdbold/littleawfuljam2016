@@ -19,7 +19,7 @@ namespace PrefabEvolution
 			}
 		}
 
-		public List<Link> Links = new List<Link>();
+		public List<Link> Links = Utils.Create<List<Link>>();
 
 		public Link this[int liif]
 		{
