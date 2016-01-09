@@ -5,9 +5,11 @@ using DG.Tweening;
 /// <summary>
 /// Scene object the sloth can interact with
 /// </summary>
-public class Interactable : MonoBehaviour {
+public abstract class Interactable : MonoBehaviour {
 
 	private float _promptAlpha = 0f;
+	private bool _focused = false;
+	private bool _focusable = true;
 
 	private CanvasGroup _promptCanvasGroup;
 	private Image _promptIcon;
@@ -41,6 +43,10 @@ public class Interactable : MonoBehaviour {
 			SendMessage("Blur");
 		}
 
+		if (Input.GetButtonDown("Interact") && _focused) {
+			Activate();
+		}
+
 		RefreshPrompt();
 	}
 
@@ -48,9 +54,10 @@ public class Interactable : MonoBehaviour {
 	/// Register all child elements
 	/// </summary>
 	private void FindElements() {
-		_promptCanvasGroup = transform.Find("Canvas/Prompt").GetComponent<CanvasGroup>();
-		_promptIcon = transform.Find("Canvas/Prompt/Icon").GetComponent<Image>();
-		_promptText = transform.Find("Canvas/Prompt/Text").GetComponent<Text>();
+		Debug.Log(transform.Find("InteractablePrompt"));
+		_promptCanvasGroup = transform.Find("InteractablePrompt/Prompt").GetComponent<CanvasGroup>();
+		_promptIcon = transform.Find("InteractablePrompt/Prompt/Icon").GetComponent<Image>();
+		_promptText = transform.Find("InteractablePrompt/Prompt/Text").GetComponent<Text>();
 	}
 
 	/// <summary>
@@ -68,16 +75,41 @@ public class Interactable : MonoBehaviour {
 	/// <param name="on">The new prompt visibility</param>
 	public void TogglePrompt(bool on) {
 		float endValue = on ? 1f : 0f;
+		this._focused = on;
 		DOTween.To(() => _promptAlpha, x => _promptAlpha = x, endValue, _animDuration).SetEase(Ease.OutCubic);
 	}
 
 	/// <summary>
 	/// Show the prompt
 	/// </summary>
-	public void Focus() { TogglePrompt(true); }
+	public void Focus() {
+		if (_focusable) {
+			TogglePrompt(true);
+		}
+	}
 
 	/// <summary>
 	/// Hide the prompt
 	/// </summary>
 	public void Blur() { TogglePrompt(false); }
+
+	/// <summary>
+	/// Activate this object
+	/// </summary>
+	public abstract void Activate();
+
+	/// <summary>
+	/// Whether this object can be focused by the character
+	/// </summary>
+	public bool focusable {
+		get { return _focusable; }
+		set {
+			_focusable = value;
+
+			// Unfocus when disabling focusability
+			if (!value) {
+				_focused = false;
+			}
+		}
+	}
 }
