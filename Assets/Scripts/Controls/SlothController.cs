@@ -6,36 +6,64 @@ public class SlothController : MonoBehaviour {
 
     //Variables
     [Header("Forces")]
-    public float forwardForce = 5f;
-    public float sideForce = 3f;
-    public float rotationForce = 2.5f;
+    [SerializeField] private float FORWARDFORCE = 5f; //Force used to move sloth forward when pushed
+    [SerializeField] private float SIDEFORCE = 3f; //Force used to move sloth sideways when pushed
+    [SerializeField] private float ROTATIONFORCE = 2.5f; //Force used to rotate sloth when pushed in degrees per second
+    [SerializeField] private AnimationCurve rotationAnimationCurve; //Curve which rotation follows
+    [SerializeField] private float rotationAnimationTime = 1f;
+    [SerializeField] private float TURNRATE = 25f; //Turn Rate when rotating in degrees per second (not pushed)
     public LayerMask wallLayerMask;
 
     [Header("Controls")]
-    public float moveCooldown = 2f;
-    public float animTimeBeforeMove = 0.5f;
+    [SerializeField] private float MOVECOOLDOWN = 2f;
+    private float ANIMTIMEBEFOREMOVE = 0.5f;
 
     //Components
     [Header("Components")]
     public SphereCollider rightHandCollider;
     public SphereCollider leftHandCollider;
     private Rigidbody _rigidBody;
+    private Animator _animator;
+
+    [Header("Animations")]
+    public AnimationClip ExtendArmClip;
 
 
-    //Variables
+    //States Variables
     private bool _canMoveLeft = true;
     private bool _canMoveRight = true;
     private bool _hasHitWallLeft = false; //have we hit a wall with left hand
     private bool _hasHitWallRight = false; //have we hit a wall with right hand
+    private bool _isRotatingLeft = false;
+    private bool _isRotatingRight = false;
+    private float currentHoldTime = 0;
    
 
 	void Awake () {
+        //Get components
         _rigidBody = GetComponent<Rigidbody>();
+        _animator = gameObject.GetComponentInChildren<Animator>();
+        //Set default values
+        gameObject.tag = "SlothNinja";
+        ANIMTIMEBEFOREMOVE = ExtendArmClip.length;
     }
 	
 	// Update is called once per frame
 	void Update () {
-        CheckControls(); //Check player inputs
+        //Rotate Left
+        if (_isRotatingLeft && _canMoveLeft) {
+            _animator.SetBool("TurnLeft", true); //Set Animation value
+            transform.Rotate(0, -TURNRATE * Time.deltaTime, 0);
+        } else {
+            _animator.SetBool("TurnLeft", false); //Set Animation value
+        }
+        //Rotate Right
+        if (_isRotatingRight && _canMoveRight) {
+            _animator.SetBool("TurnRight", true); //Set Animation value
+            transform.Rotate(0, TURNRATE * Time.deltaTime, 0);
+        } else {
+            _animator.SetBool("TurnRight", false); //Set Animation value
+        }
     }
 
     /// <summary>
@@ -45,14 +73,53 @@ public class SlothController : MonoBehaviour {
         //Left
         if (Input.GetKeyDown(KeyCode.A) && _canMoveLeft) {
             StartCoroutine(StartCooldownMoveLeft());
-            StartCoroutine(MoveSloth(false));
+            StartCoroutine(MoveSloth(false,0f));
+        } else if(Input.GetKeyUp(KeyCode.A)) {
         }
         //Right
         if (Input.GetKeyDown(KeyCode.D) && _canMoveRight) {
             StartCoroutine(StartCooldownMoveRight());
-            StartCoroutine(MoveSloth(true));
+            StartCoroutine(MoveSloth(true,0f));
+        } else if (Input.GetKeyUp(KeyCode.D)) {
         }
     }
+
+    /// <summary>
+    /// Move Left Input was pressed
+    /// </summary>
+    public void MoveLeft(float holdTime) {
+        if (_canMoveLeft) {
+            StartCoroutine(StartCooldownMoveLeft());
+            StartCoroutine(MoveSloth(false, holdTime));
+        }
+    }
+
+    /// <summary>
+    /// Move Right Input was pressed
+    /// </summary>
+    public void MoveRight(float holdTime) {
+        if (_canMoveRight) {
+            StartCoroutine(StartCooldownMoveRight());
+            StartCoroutine(MoveSloth(true, holdTime));
+        }
+    }
+
+    /// <summary>
+    /// Input for Turn Left was modified
+    /// </summary>
+    /// <param name="isTurning"></param>
+    public void ToggleTurnLeft(bool isTurning) {
+        _isRotatingLeft = isTurning;
+    }
+
+    /// <summary>
+    /// Input for Turn Left was modified
+    /// </summary>
+    /// <param name="isTurning"></param>
+    public void ToggleTurnRight(bool isTurning) {
+        _isRotatingRight = isTurning;
+    }
+
 
     /// <summary> Called when LeftHand Collider hits a wall </summary>
     public void OnCollisionLeftHand() {
@@ -70,24 +137,50 @@ public class SlothController : MonoBehaviour {
         _rigidBody.AddRelativeForce(force, ForceMode.Impulse);
     }
     
-    private void RotateSloth(Vector3 rotation) {
-        _rigidBody.AddTorque(rotation,ForceMode.Impulse);
+    /// <summary>
+    /// Rotate the transform based on given rotation, time and curve
+    /// </summary>
+    /// <param name="rotation">Rotation to do in degrees</param>
+    /// <param name="animTime">Time of the animation</param>
+    /// <param name="animCurve">Curve at which to execute rotation</param>
+    /// <returns></returns>
+    IEnumerator RotateSloth(Vector3 rotation, float animTime, AnimationCurve animCurve) {
+        //_rigidBody.AddTorque(rotation,ForceMode.Impulse);
+        float prevI = 0;
+        for (float i = 0; i < 1f; i += Time.deltaTime / animTime) {
+            float curI = animCurve.Evaluate(i);
+            //Get i difference
+            float Idiff = curI - prevI;
+            //rotate sloth accordingly
+            transform.Rotate(Idiff*rotation);
+            //Debug.Log("idiff : " + Idiff + "   final rotate : " + Idiff * rotation);
+            yield return null;
+            prevI = curI;
+        }
     }
+
+
 
     /// <summary>
     /// Initiate a sloth movement
     /// </summary>
     /// <param name="isRight"> Are we moving right or left </param>
     /// <returns></returns>
-    IEnumerator MoveSloth(bool isRight) {
-        yield return new WaitForSeconds(animTimeBeforeMove);
-       
+    IEnumerator MoveSloth(bool isRight, float holdTime) {
+        //Play Arm extend animation
+        if (isRight) _animator.SetBool("MoveRight", true);
+        else _animator.SetBool("MoveLeft", true);
+        yield return new WaitForSeconds(ANIMTIMEBEFOREMOVE);
+        if (isRight) _animator.SetBool("MoveRight", false);
+        else _animator.SetBool("MoveLeft", false);
+
+        //Apply force
         if (isRight) { 
-            if(!_hasHitWallRight) PushSloth(new Vector3(sideForce, 0, forwardForce)); //Push only if wall wasnt hit
-            RotateSloth(new Vector3(0, rotationForce, 0));
+            if(!_hasHitWallRight) PushSloth(new Vector3(SIDEFORCE, 0, FORWARDFORCE)); //Push only if wall wasnt hit
+            StartCoroutine(RotateSloth(new Vector3(0, ROTATIONFORCE, 0),rotationAnimationTime,rotationAnimationCurve));
         } else {
-            if (!_hasHitWallLeft) PushSloth(new Vector3(-sideForce, 0, forwardForce));
-            RotateSloth(new Vector3(0, -rotationForce, 0));
+            if (!_hasHitWallLeft) PushSloth(new Vector3(-SIDEFORCE, 0, FORWARDFORCE));
+            StartCoroutine(RotateSloth(new Vector3(0, -ROTATIONFORCE, 0), rotationAnimationTime, rotationAnimationCurve));
         }
     }
 
@@ -100,7 +193,7 @@ public class SlothController : MonoBehaviour {
 
         //Check multiple time during animations if we're colliding with a wall 
         for (int i = 0; i < amtCollidingChecks; i++) {
-            yield return new WaitForSeconds(moveCooldown / amtCollidingChecks);
+            yield return new WaitForSeconds(MOVECOOLDOWN / amtCollidingChecks);
             Collider[] hitWalls = Physics.OverlapSphere(leftHandCollider.transform.position, leftHandCollider.radius, wallLayerMask);
             if (hitWalls.Length > 0) OnCollisionLeftHand();
         }
@@ -118,7 +211,7 @@ public class SlothController : MonoBehaviour {
 
         //Check multiple time during animations if we're colliding with a wall 
         for(int i = 0; i < amtCollidingChecks; i++) {
-            yield return new WaitForSeconds(moveCooldown/ amtCollidingChecks);
+            yield return new WaitForSeconds(MOVECOOLDOWN/ amtCollidingChecks);
             Collider[] hitWalls = Physics.OverlapSphere(rightHandCollider.transform.position, rightHandCollider.radius, wallLayerMask);
             if (hitWalls.Length > 0) OnCollisionRightHand();
         }
@@ -126,4 +219,7 @@ public class SlothController : MonoBehaviour {
         _canMoveRight = true;
         _hasHitWallRight = false;
     }
+
+
+
 }

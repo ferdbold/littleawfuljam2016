@@ -18,10 +18,10 @@ namespace PrefabEvolution
 		[System.NonSerialized] internal List<BaseExposedData> InheritedProperties;
 		[System.NonSerialized] public PEPrefabScript PrefabScript;
 
-		public List<ExposedProperty> Properties = new List<ExposedProperty>();
-		public List<ExposedPropertyGroup> Groups = new List<ExposedPropertyGroup>();
+		public List<ExposedProperty> Properties = Utils.Create<List<ExposedProperty>>();
+		public List<ExposedPropertyGroup> Groups = Utils.Create<List<ExposedPropertyGroup>>();
 
-		[SerializeField] private List<int> Hidden = new List<int>();
+		[SerializeField] private List<int> Hidden = Utils.Create<List<int>>();
 
 		#region ISerializationCallbackReceiver implementation
 
@@ -32,11 +32,13 @@ namespace PrefabEvolution
 
 		public void OnAfterDeserialize()
 		{
+#if UNITY_EDITOR
 			InheritedProperties = null;
 			foreach (var item in Properties.OfType<BaseExposedData>().Concat(Groups.OfType<BaseExposedData>()))
 			{
 				item.Container = this;
 			}
+#endif
 		}
 
 		#endregion
@@ -53,7 +55,6 @@ namespace PrefabEvolution
 					var parentScript = PrefabScript.ParentPrefab.GetComponent<PEPrefabScript>();
 					if (parentScript == null)
 					{
-						Debug.Log("Inherited property Error: Prefab script not found on", this.PrefabScript);
 						return InheritedProperties;
 					}
 

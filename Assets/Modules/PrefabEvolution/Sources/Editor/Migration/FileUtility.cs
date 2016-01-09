@@ -6,11 +6,12 @@ namespace PrefabEvolution.Migration
 	{
 		static public byte[] ReadAllBytes(string path)
 		{
-			var file = System.IO.File.OpenRead(path);
-			var result = new byte[file.Length]; 
-			file.Read(result, 0, result.Length);
-			file.Close();
-			return result;
+			using (var file = System.IO.File.OpenRead(path))
+			{
+				var result = new byte[file.Length];
+				file.Read(result, 0, result.Length);
+				return result;
+			}
 		}
 
 		static public string ReadAllText(string path, System.Text.Encoding encoding = null)
@@ -31,9 +32,10 @@ namespace PrefabEvolution.Migration
 
 		static public void WriteAllBytes(string path, byte[] data)
 		{
-			var file = System.IO.File.Create(path);
-			file.Write(data, 0, data.Length);
-			file.Close();
+			using (var file = System.IO.File.Create(path))
+			{
+				file.Write(data, 0, data.Length);
+			}
 		}
 	}
 }

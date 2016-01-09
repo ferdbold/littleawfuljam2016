@@ -138,6 +138,26 @@ namespace PrefabEvolution
 		{
 			return target == null ? null : baseEditor.RenderStaticPreview(assetPath, subAssets, width, height);
 		}
+
+		public override void DrawPreview(Rect previewArea)
+		{
+			baseEditor.DrawPreview(previewArea);
+		}
+
+		public override void ReloadPreviewInstances()
+		{
+			baseEditor.ReloadPreviewInstances();
+		}
+
+		public override bool RequiresConstantRepaint()
+		{
+			return baseEditor.RequiresConstantRepaint();
+		}
+
+		public override bool UseDefaultMargins()
+		{
+			return baseEditor.UseDefaultMargins();
+		}
 	}
 }
 

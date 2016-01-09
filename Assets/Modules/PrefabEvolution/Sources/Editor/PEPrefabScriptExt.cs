@@ -293,6 +293,7 @@ namespace PrefabEvolution
 		{
 			targetInstance.Modifications = _this.Modifications;
 			var modificatedList = new List<SerializedObject>();
+
 			foreach (var modification in _this.Modifications.Modificated)
 			{
 				if (modification.Mode == PEModifications.PropertyData.PropertyMode.Ignore)
@@ -330,7 +331,10 @@ namespace PrefabEvolution
 							value = targetLink.InstanceTarget;
 					}
 					targetProperty.SetPropertyValue(value);
+
 					targetObject.ApplyModifiedProperties();
+					//In some cases unity can destroy prev object, just fix runtime references...
+					linkedObject.InstanceTarget = targetObject.targetObject; 
 				}
 			}
 
