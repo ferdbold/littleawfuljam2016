@@ -2497,66 +2497,10 @@ MonoBehaviour:
       ObjeckLink: -1334059621
       PropertyPath: m_RootOrder
       Mode: 0
-    - Object: {fileID: 407508}
-      ObjeckLink: -1820489670
-      PropertyPath: m_LocalRotation
-      Mode: 0
-    - Object: {fileID: 407508}
-      ObjeckLink: -1820489670
-      PropertyPath: m_LocalPosition
-      Mode: 0
-    - Object: {fileID: 407508}
-      ObjeckLink: -1820489670
-      PropertyPath: m_LocalScale
-      Mode: 0
-    - Object: {fileID: 407508}
-      ObjeckLink: -1820489670
-      PropertyPath: m_RootOrder
-      Mode: 0
-    - Object: {fileID: 161300}
-      ObjeckLink: 104730434
-      PropertyPath: m_Name
-      Mode: 0
-    - Object: {fileID: 161300}
-      ObjeckLink: 104730434
-      PropertyPath: m_IsActive
-      Mode: 0
-    - Object: {fileID: 475470}
-      ObjeckLink: -1000488318
-      PropertyPath: m_LocalRotation
-      Mode: 0
-    - Object: {fileID: 475470}
-      ObjeckLink: -1000488318
-      PropertyPath: m_LocalPosition
-      Mode: 0
-    - Object: {fileID: 475470}
-      ObjeckLink: -1000488318
-      PropertyPath: m_LocalScale
-      Mode: 0
-    - Object: {fileID: 475470}
-      ObjeckLink: -1000488318
-      PropertyPath: m_RootOrder
-      Mode: 0
-    - Object: {fileID: 145968}
-      ObjeckLink: 238068515
-      PropertyPath: m_Name
-      Mode: 0
-    - Object: {fileID: 145968}
-      ObjeckLink: 238068515
-      PropertyPath: m_IsActive
-      Mode: 0
-    - Object: {fileID: 446102}
-      ObjeckLink: -833747042
-      PropertyPath: m_RootOrder
-      Mode: 0
     NonPrefabObjects: []
     NonPrefabComponents: []
-    RemovedObjects: 61f76d321d2097bfc503605c55a9cbbe72435fdf216e3367fbb8aafa8ef86af034410f2cf6ba585968dc9be24e10d99d0cb1c8fd88c4da88313cd65671c476229e400abb15cc849f62971d6ff98e3c82a063f6ef1e1b1c0f718cf7a97e6e258e
-    TransformParentChanges:
-    - child: {fileID: 407508}
-      parent: {fileID: 462614}
-    - child: {fileID: 475470}
-      parent: {fileID: 462614}
+    RemovedObjects: 
+    TransformParentChanges: []
   ParentPrefabGUID: 
   PrefabGUID: 132b3e006892f4141a49ba84fa81b13b
 --- !u!135 &13564210

@@ -126,7 +126,7 @@ ModelImporter:
     400116: Sloth_toes_rt_ctrl_grp
     400118: Sloth_toes_rt_jnt
     4300000: SK_Sloth
-    7400000: Take 001
+    7400000: TurnRight
     9500000: //RootNode
     11400000: //RootNode
     13700000: SK_Sloth
@@ -150,7 +150,155 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: TurnRight
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: SK_Sloth
+        weight: 1
+      - path: Sloth_root_jnt
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_hips_ctrl_grp
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_hips_jnt
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_lf_ctrl_grp
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_lf_jnt
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_lf_jnt/Sloth_knee_lf_ctrl_grp
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_lf_jnt/Sloth_knee_lf_jnt
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_lf_jnt/Sloth_knee_lf_jnt/Sloth_feet_lf_ctrl_grp
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_lf_jnt/Sloth_knee_lf_jnt/Sloth_feet_lf_jnt
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_lf_jnt/Sloth_knee_lf_jnt/Sloth_feet_lf_jnt/Sloth_toes_lf_ctrl_grp
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_lf_jnt/Sloth_knee_lf_jnt/Sloth_feet_lf_jnt/Sloth_toes_lf_jnt
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_lf_jnt/Sloth_knee_lf_jnt/Sloth_feet_lf_jnt/Sloth_toes_lf_jnt/Sloth_toes_end_lf_jnt
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_rt_ctrl_grp
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_rt_jnt
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_rt_jnt/Sloth_knee_rt_ctrl_grp
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_rt_jnt/Sloth_knee_rt_jnt
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_rt_jnt/Sloth_knee_rt_jnt/Sloth_feet_rt_ctrl_grp
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_rt_jnt/Sloth_knee_rt_jnt/Sloth_feet_rt_jnt
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_rt_jnt/Sloth_knee_rt_jnt/Sloth_feet_rt_jnt/Sloth_toes_rt_ctrl_grp
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_rt_jnt/Sloth_knee_rt_jnt/Sloth_feet_rt_jnt/Sloth_toes_rt_jnt
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_rt_jnt/Sloth_knee_rt_jnt/Sloth_feet_rt_jnt/Sloth_toes_rt_jnt/Sloth_toes_end_rt_jnt
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_splineA_ctrl_grp
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_splineA_jnt
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_ctrl_grp
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_lf_ctrl_grp
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_lf_jnt
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_lf_jnt/Sloth_shoulder_lf_jnt
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_lf_jnt/Sloth_shoulder_lf_jnt/Sloth_elbow_lf_jnt
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_lf_jnt/Sloth_shoulder_lf_jnt/Sloth_elbow_lf_jnt/Sloth_hand_lf_jnt
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_lf_jnt/Sloth_shoulder_lf_jnt/Sloth_elbow_lf_jnt/Sloth_hand_lf_jnt/Sloth_fingerDown_lf_ctrl_grp
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_lf_jnt/Sloth_shoulder_lf_jnt/Sloth_elbow_lf_jnt/Sloth_hand_lf_jnt/Sloth_fingerDown_lf_jnt
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_lf_jnt/Sloth_shoulder_lf_jnt/Sloth_elbow_lf_jnt/Sloth_hand_lf_jnt/Sloth_fingerDown_lf_jnt/Sloth_fingerDown_end_lf_jnt
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_lf_jnt/Sloth_shoulder_lf_jnt/Sloth_elbow_lf_jnt/Sloth_hand_lf_jnt/Sloth_fingerMid_lf_ctrl_grp
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_lf_jnt/Sloth_shoulder_lf_jnt/Sloth_elbow_lf_jnt/Sloth_hand_lf_jnt/Sloth_fingerMid_lf_jnt
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_lf_jnt/Sloth_shoulder_lf_jnt/Sloth_elbow_lf_jnt/Sloth_hand_lf_jnt/Sloth_fingerMid_lf_jnt/Sloth_fingerMid_end_lf_jnt
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_lf_jnt/Sloth_shoulder_lf_jnt/Sloth_elbow_lf_jnt/Sloth_hand_lf_jnt/Sloth_fingerUp_lf_ctrl_grp
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_lf_jnt/Sloth_shoulder_lf_jnt/Sloth_elbow_lf_jnt/Sloth_hand_lf_jnt/Sloth_fingerUp_lf_jnt
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_lf_jnt/Sloth_shoulder_lf_jnt/Sloth_elbow_lf_jnt/Sloth_hand_lf_jnt/Sloth_fingerUp_lf_jnt/Sloth_fingerUp_end_lf_jnt
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_rt_ctrl_grp
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_rt_jnt
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_rt_jnt/Sloth_shoulder_rt_jnt
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_rt_jnt/Sloth_shoulder_rt_jnt/Sloth_elbow_rt_jnt
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_rt_jnt/Sloth_shoulder_rt_jnt/Sloth_elbow_rt_jnt/Sloth_hand_rt_jnt
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_rt_jnt/Sloth_shoulder_rt_jnt/Sloth_elbow_rt_jnt/Sloth_hand_rt_jnt/Sloth_fingerDown_rt_ctrl_grp
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_rt_jnt/Sloth_shoulder_rt_jnt/Sloth_elbow_rt_jnt/Sloth_hand_rt_jnt/Sloth_fingerDown_rt_jnt
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_rt_jnt/Sloth_shoulder_rt_jnt/Sloth_elbow_rt_jnt/Sloth_hand_rt_jnt/Sloth_fingerDown_rt_jnt/Sloth_fingerDown_end_rt_jnt
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_rt_jnt/Sloth_shoulder_rt_jnt/Sloth_elbow_rt_jnt/Sloth_hand_rt_jnt/Sloth_fingerMid_rt_ctrl_grp
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_rt_jnt/Sloth_shoulder_rt_jnt/Sloth_elbow_rt_jnt/Sloth_hand_rt_jnt/Sloth_fingerMid_rt_jnt
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_rt_jnt/Sloth_shoulder_rt_jnt/Sloth_elbow_rt_jnt/Sloth_hand_rt_jnt/Sloth_fingerMid_rt_jnt/Sloth_fingerMid_end_rt_jnt
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_rt_jnt/Sloth_shoulder_rt_jnt/Sloth_elbow_rt_jnt/Sloth_hand_rt_jnt/Sloth_fingerUp_rt_ctrl_grp
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_rt_jnt/Sloth_shoulder_rt_jnt/Sloth_elbow_rt_jnt/Sloth_hand_rt_jnt/Sloth_fingerUp_rt_jnt
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_rt_jnt/Sloth_shoulder_rt_jnt/Sloth_elbow_rt_jnt/Sloth_hand_rt_jnt/Sloth_fingerUp_rt_jnt/Sloth_fingerUp_end_rt_jnt
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_neck_ctrl_grp
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_neck_jnt
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_neck_jnt/Sloth_head_ctrl_grp
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_neck_jnt/Sloth_head_jnt
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_neck_jnt/Sloth_head_jnt/Sloth_head_end_jnt
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
     isReadable: 1
   meshes:
     lODScreenPercentages: []

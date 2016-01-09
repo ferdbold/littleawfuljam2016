@@ -16,13 +16,17 @@ public class SlothController : MonoBehaviour {
 
     [Header("Controls")]
     [SerializeField] private float MOVECOOLDOWN = 2f;
-    [SerializeField] private float ANIMTIMEBEFOREMOVE = 0.5f;
+    private float ANIMTIMEBEFOREMOVE = 0.5f;
 
     //Components
     [Header("Components")]
     public SphereCollider rightHandCollider;
     public SphereCollider leftHandCollider;
     private Rigidbody _rigidBody;
+    private Animator _animator;
+
+    [Header("Animations")]
+    public AnimationClip ExtendArmClip;
 
 
     //States Variables
@@ -36,19 +40,29 @@ public class SlothController : MonoBehaviour {
    
 
 	void Awake () {
+        //Get components
         _rigidBody = GetComponent<Rigidbody>();
+        _animator = gameObject.GetComponentInChildren<Animator>();
+        //Set default values
         gameObject.tag = "SlothNinja";
+        ANIMTIMEBEFOREMOVE = ExtendArmClip.length;
     }
 	
 	// Update is called once per frame
 	void Update () {
+        //Rotate Left
         if (_isRotatingLeft && _canMoveLeft) {
-            Debug.Log("RotatingLeft!");
+            _animator.SetBool("TurnLeft", true); //Set Animation value
             transform.Rotate(0, -TURNRATE * Time.deltaTime, 0);
+        } else {
+            _animator.SetBool("TurnLeft", false); //Set Animation value
         }
+        //Rotate Right
         if (_isRotatingRight && _canMoveRight) {
-            Debug.Log("RotatingRight!");
+            _animator.SetBool("TurnRight", true); //Set Animation value
             transform.Rotate(0, TURNRATE * Time.deltaTime, 0);
+        } else {
+            _animator.SetBool("TurnRight", false); //Set Animation value
         }
     }
 
@@ -153,8 +167,14 @@ public class SlothController : MonoBehaviour {
     /// <param name="isRight"> Are we moving right or left </param>
     /// <returns></returns>
     IEnumerator MoveSloth(bool isRight, float holdTime) {
-        yield return new WaitForSeconds(ANIMTIMEBEFOREMOVE - holdTime);
-       
+        //Play Arm extend animation
+        if (isRight) _animator.SetBool("MoveRight", true);
+        else _animator.SetBool("MoveLeft", true);
+        yield return new WaitForSeconds(ANIMTIMEBEFOREMOVE);
+        if (isRight) _animator.SetBool("MoveRight", false);
+        else _animator.SetBool("MoveLeft", false);
+
+        //Apply force
         if (isRight) { 
             if(!_hasHitWallRight) PushSloth(new Vector3(SIDEFORCE, 0, FORWARDFORCE)); //Push only if wall wasnt hit
             StartCoroutine(RotateSloth(new Vector3(0, ROTATIONFORCE, 0),rotationAnimationTime,rotationAnimationCurve));
@@ -199,4 +219,7 @@ public class SlothController : MonoBehaviour {
         _canMoveRight = true;
         _hasHitWallRight = false;
     }
+
+
+
 }
