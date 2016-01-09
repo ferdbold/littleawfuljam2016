@@ -6,14 +6,21 @@ public class SlothController : MonoBehaviour {
 
     //Variables
     [Header("Forces")]
-    public float forwardForce = 5f;
-    public float sideForce = 3f;
-    public float rotationForce = 2.5f;
+    [SerializeField]
+    public float FORWARDFORCE = 5f; //Force used to move sloth forward when pushed
+    [SerializeField]
+    public float SIDEFORCE = 3f; //Force used to move sloth sideways when pushed
+    [SerializeField]
+    public float ROTATIONFORCE = 2.5f; //Force used to rotate sloth when pushed
+    [SerializeField]
+    public float TURNRATE = 25f; //Turn Rate when rotating in degrees per second (not pushed)
     public LayerMask wallLayerMask;
 
     [Header("Controls")]
-    public float moveCooldown = 2f;
-    public float animTimeBeforeMove = 0.5f;
+    [SerializeField]
+    public float MOVECOOLDOWN = 2f;
+    [SerializeField]
+    public float ANIMTIMEBEFOREMOVE = 0.5f;
 
     //Components
     [Header("Components")]
@@ -22,20 +29,31 @@ public class SlothController : MonoBehaviour {
     private Rigidbody _rigidBody;
 
 
-    //Variables
+    //States Variables
     private bool _canMoveLeft = true;
     private bool _canMoveRight = true;
     private bool _hasHitWallLeft = false; //have we hit a wall with left hand
     private bool _hasHitWallRight = false; //have we hit a wall with right hand
+    private bool _isRotatingLeft = false;
+    private bool _isRotatingRight = false;
+    private float currentHoldTime = 0;
    
 
 	void Awake () {
         _rigidBody = GetComponent<Rigidbody>();
+        gameObject.tag = "SlothNinja";
     }
 	
 	// Update is called once per frame
 	void Update () {
-        CheckControls(); //Check player inputs
+        if (_isRotatingLeft) {
+            Debug.Log("RotatingLeft!");
+            transform.Rotate(0, -TURNRATE * Time.deltaTime, 0);
+        }
+        if (_isRotatingRight) {
+            Debug.Log("RotatingRight!");
+            transform.Rotate(0, TURNRATE * Time.deltaTime, 0);
+        }
     }
 
     /// <summary>
@@ -45,14 +63,53 @@ public class SlothController : MonoBehaviour {
         //Left
         if (Input.GetKeyDown(KeyCode.A) && _canMoveLeft) {
             StartCoroutine(StartCooldownMoveLeft());
-            StartCoroutine(MoveSloth(false));
+            StartCoroutine(MoveSloth(false,0f));
+        } else if(Input.GetKeyUp(KeyCode.A)) {
         }
         //Right
         if (Input.GetKeyDown(KeyCode.D) && _canMoveRight) {
             StartCoroutine(StartCooldownMoveRight());
-            StartCoroutine(MoveSloth(true));
+            StartCoroutine(MoveSloth(true,0f));
+        } else if (Input.GetKeyUp(KeyCode.D)) {
         }
     }
+
+    /// <summary>
+    /// Move Left Input was pressed
+    /// </summary>
+    public void MoveLeft(float holdTime) {
+        if (_canMoveLeft) {
+            StartCoroutine(StartCooldownMoveLeft());
+            StartCoroutine(MoveSloth(false, holdTime));
+        }
+    }
+
+    /// <summary>
+    /// Move Right Input was pressed
+    /// </summary>
+    public void MoveRight(float holdTime) {
+        if (_canMoveRight) {
+            StartCoroutine(StartCooldownMoveRight());
+            StartCoroutine(MoveSloth(true, holdTime));
+        }
+    }
+
+    /// <summary>
+    /// Input for Turn Left was modified
+    /// </summary>
+    /// <param name="isTurning"></param>
+    public void ToggleTurnLeft(bool isTurning) {
+        _isRotatingLeft = isTurning;
+    }
+
+    /// <summary>
+    /// Input for Turn Left was modified
+    /// </summary>
+    /// <param name="isTurning"></param>
+    public void ToggleTurnRight(bool isTurning) {
+        _isRotatingRight = isTurning;
+    }
+
 
     /// <summary> Called when LeftHand Collider hits a wall </summary>
     public void OnCollisionLeftHand() {
@@ -74,20 +131,22 @@ public class SlothController : MonoBehaviour {
         _rigidBody.AddTorque(rotation,ForceMode.Impulse);
     }
 
+
+
     /// <summary>
     /// Initiate a sloth movement
     /// </summary>
     /// <param name="isRight"> Are we moving right or left </param>
     /// <returns></returns>
-    IEnumerator MoveSloth(bool isRight) {
-        yield return new WaitForSeconds(animTimeBeforeMove);
+    IEnumerator MoveSloth(bool isRight, float holdTime) {
+        yield return new WaitForSeconds(ANIMTIMEBEFOREMOVE - holdTime);
        
         if (isRight) { 
-            if(!_hasHitWallRight) PushSloth(new Vector3(sideForce, 0, forwardForce)); //Push only if wall wasnt hit
-            RotateSloth(new Vector3(0, rotationForce, 0));
+            if(!_hasHitWallRight) PushSloth(new Vector3(SIDEFORCE, 0, FORWARDFORCE)); //Push only if wall wasnt hit
+            RotateSloth(new Vector3(0, ROTATIONFORCE, 0));
         } else {
-            if (!_hasHitWallLeft) PushSloth(new Vector3(-sideForce, 0, forwardForce));
-            RotateSloth(new Vector3(0, -rotationForce, 0));
+            if (!_hasHitWallLeft) PushSloth(new Vector3(-SIDEFORCE, 0, FORWARDFORCE));
+            RotateSloth(new Vector3(0, -ROTATIONFORCE, 0));
         }
     }
 
@@ -100,7 +159,7 @@ public class SlothController : MonoBehaviour {
 
         //Check multiple time during animations if we're colliding with a wall 
         for (int i = 0; i < amtCollidingChecks; i++) {
-            yield return new WaitForSeconds(moveCooldown / amtCollidingChecks);
+            yield return new WaitForSeconds(MOVECOOLDOWN / amtCollidingChecks);
             Collider[] hitWalls = Physics.OverlapSphere(leftHandCollider.transform.position, leftHandCollider.radius, wallLayerMask);
             if (hitWalls.Length > 0) OnCollisionLeftHand();
         }
@@ -118,7 +177,7 @@ public class SlothController : MonoBehaviour {
 
         //Check multiple time during animations if we're colliding with a wall 
         for(int i = 0; i < amtCollidingChecks; i++) {
-            yield return new WaitForSeconds(moveCooldown/ amtCollidingChecks);
+            yield return new WaitForSeconds(MOVECOOLDOWN/ amtCollidingChecks);
             Collider[] hitWalls = Physics.OverlapSphere(rightHandCollider.transform.position, rightHandCollider.radius, wallLayerMask);
             if (hitWalls.Length > 0) OnCollisionRightHand();
         }
