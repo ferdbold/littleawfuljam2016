@@ -123,6 +123,8 @@ MonoBehaviour:
       InstanceTarget: {fileID: 431666}
     - LIIF: -233967762
       InstanceTarget: {fileID: 179624}
+    - LIIF: 309175118
+      InstanceTarget: {fileID: 6516058}
   Modifications:
     Modificated: []
     NonPrefabObjects: []
@@ -130,7 +132,7 @@ MonoBehaviour:
     RemovedObjects: 
     TransformParentChanges: []
   ParentPrefabGUID: 
-  PrefabGUID: f9c39f36767cb9a47a1dcd7e965d750f
+  PrefabGUID: 9cbdd2dede21261409685eaa6dd8711d
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
