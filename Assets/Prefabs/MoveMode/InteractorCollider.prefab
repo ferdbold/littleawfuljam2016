@@ -9,6 +9,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 440614}
   - 65: {fileID: 6563500}
+  - 114: {fileID: 11487984}
+  - 114: {fileID: 11455036}
   m_Layer: 0
   m_Name: InteractorCollider
   m_TagString: Untagged
@@ -38,8 +40,68 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5, y: 3, z: 9}
-  m_Center: {x: 0, y: 0, z: 3}
+  m_Size: {x: 1.5, y: 2, z: 3}
+  m_Center: {x: 0, y: 0, z: 0.99}
+--- !u!114 &11455036
+MonoBehaviour:
+  m_ObjectHideFlags: 33
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 182790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46a02d0f612a241b293c0da4f82b712c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Properties:
+    Properties: []
+    Groups: []
+    Hidden: 
+  Links:
+    Links:
+    - LIIF: -1514558600
+      InstanceTarget: {fileID: 11455036}
+    - LIIF: 40129737
+      InstanceTarget: {fileID: 182790}
+    - LIIF: 344859512
+      InstanceTarget: {fileID: 440614}
+    - LIIF: 1883339711
+      InstanceTarget: {fileID: 6563500}
+    - LIIF: 1197632488
+      InstanceTarget: {fileID: 11487984}
+  Modifications:
+    Modificated:
+    - Object: {fileID: 440614}
+      ObjeckLink: 344859512
+      PropertyPath: m_RootOrder
+      Mode: 0
+    - Object: {fileID: 6563500}
+      ObjeckLink: 1883339711
+      PropertyPath: m_Size
+      Mode: 0
+    - Object: {fileID: 6563500}
+      ObjeckLink: 1883339711
+      PropertyPath: m_Center
+      Mode: 0
+    NonPrefabObjects: []
+    NonPrefabComponents:
+    - child: {fileID: 11487984}
+      parent: {fileID: 182790}
+    RemovedObjects: 
+    TransformParentChanges: []
+  ParentPrefabGUID: 
+  PrefabGUID: 07c07b4389ba140348841eee947b3968
+--- !u!114 &11487984
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 182790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce64162d73ce44340b355066e88c6fea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

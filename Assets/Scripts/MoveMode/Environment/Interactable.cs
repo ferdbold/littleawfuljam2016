@@ -16,8 +16,8 @@ public abstract class Interactable : MonoBehaviour {
 	private Text _promptText;
 
 	[Header("Prompt")]
-	[SerializeField] private Sprite _icon;
-	[SerializeField] private string _prompt;
+	[SerializeField] protected Sprite _icon;
+	[SerializeField] protected string _prompt;
 	[SerializeField] private float _animDuration = 0.5f;
 
 	public void Awake() {
@@ -74,7 +74,7 @@ public abstract class Interactable : MonoBehaviour {
 	/// <param name="on">The new prompt visibility</param>
 	public void TogglePrompt(bool on) {
 		float endValue = on ? 1f : 0f;
-		this._focused = on;
+		_focused = on;
 		DOTween.To(() => _promptAlpha, x => _promptAlpha = x, endValue, _animDuration).SetEase(Ease.OutCubic);
 	}
 
@@ -90,7 +90,7 @@ public abstract class Interactable : MonoBehaviour {
 	/// <summary>
 	/// Hide the prompt
 	/// </summary>
-	public void Blur() { TogglePrompt(false); }
+	public void Blur() { Debug.Log("blur"); TogglePrompt(false); }
 
 	/// <summary>
 	/// Activate this object
