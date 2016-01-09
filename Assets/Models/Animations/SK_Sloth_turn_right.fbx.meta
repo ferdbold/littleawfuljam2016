@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 143484c837dd7e44ca60bbcc6011c8b7
-timeCreated: 1452368039
+guid: a66c62c45e170e64fb64cf1fd6fbe821
+timeCreated: 1452370958
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -126,7 +126,7 @@ ModelImporter:
     400116: Sloth_toes_rt_ctrl_grp
     400118: Sloth_toes_rt_jnt
     4300000: SK_Sloth
-    7400000: TurnRight
+    7400000: TurnRIght
     9500000: //RootNode
     11400000: //RootNode
     13700000: SK_Sloth
@@ -152,7 +152,7 @@ ModelImporter:
     extraExposedTransformPaths: []
     clipAnimations:
     - serializedVersion: 16
-      name: TurnRight
+      name: TurnRIght
       takeName: Take 001
       firstFrame: 1
       lastFrame: 30
@@ -162,7 +162,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 1
+      loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -298,7 +298,7 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 1
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
