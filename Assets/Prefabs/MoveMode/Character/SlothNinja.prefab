@@ -761,6 +761,24 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &187998
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 477170}
+  - 65: {fileID: 6561390}
+  - 114: {fileID: 11431152}
+  - 114: {fileID: 11443706}
+  m_Layer: 0
+  m_Name: InteractorCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &188040
 GameObject:
   m_ObjectHideFlags: 1
@@ -1536,6 +1554,7 @@ Transform:
   - {fileID: 446102}
   - {fileID: 475470}
   - {fileID: 407508}
+  - {fileID: 477170}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &464698
@@ -1672,6 +1691,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 441970}
   m_RootOrder: 2
+--- !u!4 &477170
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 187998}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 462614}
+  m_RootOrder: 3
 --- !u!4 &483176
 Transform:
   m_ObjectHideFlags: 1
@@ -1869,6 +1900,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.5, z: 1}
   m_Center: {x: 0, y: 0.15, z: 0}
+--- !u!65 &6561390
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 187998}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.5, y: 2, z: 3}
+  m_Center: {x: 0, y: 0, z: 0.99}
 --- !u!95 &9590974
 Animator:
   serializedVersion: 3
@@ -1925,6 +1968,56 @@ MonoBehaviour:
   rightHandCollider: {fileID: 13564210}
   leftHandCollider: {fileID: 13573362}
   ExtendArmClip: {fileID: 7400000, guid: bd27f87c1131beb4bafba11bb682fb16, type: 3}
+--- !u!114 &11431152
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 187998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce64162d73ce44340b355066e88c6fea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &11443706
+MonoBehaviour:
+  m_ObjectHideFlags: 33
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 187998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46a02d0f612a241b293c0da4f82b712c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Properties:
+    Properties: []
+    Groups: []
+    Hidden: 
+  Links:
+    Links:
+    - LIIF: -1514558600
+      InstanceTarget: {fileID: 11443706}
+    - LIIF: 40129737
+      InstanceTarget: {fileID: 187998}
+    - LIIF: 344859512
+      InstanceTarget: {fileID: 477170}
+    - LIIF: 1883339711
+      InstanceTarget: {fileID: 6561390}
+    - LIIF: 1197632488
+      InstanceTarget: {fileID: 11431152}
+  Modifications:
+    Modificated:
+    - Object: {fileID: 477170}
+      ObjeckLink: 344859512
+      PropertyPath: m_RootOrder
+      Mode: 0
+    NonPrefabObjects: []
+    NonPrefabComponents: []
+    RemovedObjects: 
+    TransformParentChanges: []
+  ParentPrefabGUID: 
+  PrefabGUID: 07c07b4389ba140348841eee947b3968
 --- !u!114 &11450750
 MonoBehaviour:
   m_ObjectHideFlags: 33
@@ -2495,27 +2588,21 @@ MonoBehaviour:
       InstanceTarget: {fileID: 446102}
     - LIIF: -1572470940
       InstanceTarget: {fileID: 189444}
+    - LIIF: -953989178
+      InstanceTarget: {fileID: 6561390}
+    - LIIF: 1067368657
+      InstanceTarget: {fileID: 477170}
+    - LIIF: -890178926
+      InstanceTarget: {fileID: 187998}
+    - LIIF: 1890205886
+      InstanceTarget: {fileID: 11443706}
+    - LIIF: 531580424
+      InstanceTarget: {fileID: 11431152}
   Modifications:
     Modificated:
     - Object: {fileID: 462614}
       ObjeckLink: -1334059621
-      PropertyPath: m_LocalPosition
-      Mode: 0
-    - Object: {fileID: 462614}
-      ObjeckLink: -1334059621
-      PropertyPath: m_LocalScale
-      Mode: 0
-    - Object: {fileID: 462614}
-      ObjeckLink: -1334059621
       PropertyPath: m_RootOrder
-      Mode: 0
-    - Object: {fileID: 11404652}
-      ObjeckLink: 226809364
-      PropertyPath: ExtendArmClip
-      Mode: 0
-    - Object: {fileID: 9590974}
-      ObjeckLink: -1364861101
-      PropertyPath: m_Controller
       Mode: 0
     NonPrefabObjects: []
     NonPrefabComponents: []
