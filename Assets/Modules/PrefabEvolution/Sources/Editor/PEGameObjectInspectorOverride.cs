@@ -2,8 +2,6 @@ using UnityEngine;
 using UnityEditor;
 using System.Linq;
 using System.Collections.Generic;
-using UnityEditor.VersionControl;
-using System.Reflection;
 
 namespace PrefabEvolution
 {
@@ -143,75 +141,13 @@ namespace PrefabEvolution
 		void Apply()
 		{
 			var objs = targets.OfType<GameObject>();
-			Apply(objs.ToArray());
-		}
-
-		static void Apply(GameObject gameObject)
-		{
-			gameObject = PrefabUtility.FindPrefabRoot(gameObject);
-
-			var pi = gameObject.GetComponent<PEPrefabScript>();
-
-			if (pi == null)
-			{
-				DefaultApply(gameObject);
-				PEUtils.DoAutoSave();
-			}
-			else
-				PEUtils.DoApply(pi);
-		}
-
-		static void Apply(GameObject[] targets)
-		{
-			var list = new List<GameObject>();
-
-			foreach (var target in targets)
-			{
-				var root = PrefabUtility.FindPrefabRoot(target);
-				list.RemoveAll(r => r == root);
-				list.Add(root);
-			}
-
-			foreach (GameObject target in list)
-				Apply(target);
+			PEUtils.ApplyPrefab(objs.ToArray());
 		}
 
 		[MenuItem("GameObject/Apply Changes To Prefab")]
 		static void MenuMock()
 		{
-			Apply(Selection.gameObjects);
-		}
-
-		static void DefaultApply(GameObject obj)
-		{		
-			foreach (var pi in obj.GetComponentsInChildren<PEPrefabScript>(true))
-				pi.BuildModifications();
-
-			var gameObject = obj;
-			var prefabType = PrefabUtility.GetPrefabType(gameObject);
-
-			if (prefabType == PrefabType.PrefabInstance || prefabType == PrefabType.DisconnectedPrefabInstance)
-			{
-				GameObject gameObject2 = PrefabUtility.FindValidUploadPrefabInstanceRoot(gameObject);
-
-				if (gameObject2 == null)
-					return;
-
-				Object prefabParent = PrefabUtility.GetPrefabParent(gameObject2);
-				string assetPath = AssetDatabase.GetAssetPath(prefabParent);
-
-				var method = typeof(Provider).GetMethod("PromptAndCheckoutIfNeeded", BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Static | BindingFlags.Instance);
-				bool canReplace = (bool)method.Invoke(null, new object[] {
-					new [] {
-						assetPath
-					}, "The version control requires you to checkout the prefab before applying changes."
-				});
-
-				if (canReplace)
-				{
-					PrefabUtility.ReplacePrefab(gameObject2, prefabParent, ReplacePrefabOptions.ConnectToPrefab);
-				}
-			}
+			PEUtils.ApplyPrefab(Selection.gameObjects);
 		}
 	}
 }

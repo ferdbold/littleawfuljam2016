@@ -102,8 +102,8 @@ namespace PrefabEvolution
 					var prefabProperty = prefabSerializedObject.FindProperty(property.propertyPath);
 
 					var isArray = property.propertyPath.Contains(".Array.data[");
-
-					if (prefabProperty == null && !isArray)
+					var isInherited = link.InstanceTarget.GetType().IsSubclassOf(prefabObject.GetType());
+					if (prefabProperty == null && !isArray && !isInherited)
 					{
 						if (PEPrefs.DebugLevel > 0)
 							Debug.Log("Property not found(Some times its happens) " + property.propertyPath);
