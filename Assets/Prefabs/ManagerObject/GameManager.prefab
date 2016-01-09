@@ -143,6 +143,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5470a28eb3ea9cf4d9308179ff97e7ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  songs:
+  - {fileID: 8300000, guid: 1a109d44b3178490e9ad10024f2cbb6f, type: 3}
 --- !u!114 &11468270
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -154,7 +156,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9dfc0ec7fca73849a96e44e7cdeb107, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentLevel: 0
+  currentLevel: 1
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

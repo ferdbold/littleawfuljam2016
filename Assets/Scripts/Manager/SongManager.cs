@@ -4,8 +4,8 @@ using System.Collections;
 public class SongManager : MonoBehaviour {
 
     [SerializeField]
-    AudioClip[] songs;
-    AudioSource source;
+    private AudioClip[] songs;
+    private AudioSource source;
 
     public enum Song { Menu, Loading, MoveMode, KillMode}
 
@@ -15,7 +15,7 @@ public class SongManager : MonoBehaviour {
 
     AudioClip GetRelatedAudioClip(Song song) {
         switch (song) {
-            case Song.Menu: return songs[0];
+            case Song.MoveMode: return songs[0];
             default: return null;
         }
     }

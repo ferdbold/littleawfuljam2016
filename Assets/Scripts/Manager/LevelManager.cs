@@ -39,7 +39,7 @@ public class LevelManager : MonoBehaviour {
     private void OnStart_State(GameState state) {
         switch (state) {
             case GameState.moveMode:
-
+                GameManager.instance.songManager.PlaySong(SongManager.Song.MoveMode);
                 break;
 
             case GameState.killMode:
