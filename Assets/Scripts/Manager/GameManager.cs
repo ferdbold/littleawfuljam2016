@@ -4,6 +4,8 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
 
+    #region Singleton
+
     public static GameManager instance;
 
     void Awake() {
@@ -12,6 +14,7 @@ public class GameManager : MonoBehaviour {
             DontDestroyOnLoad(gameObject);
             currentPlayLevel = 0;
             OnStart_Level(currentLevel);
+            if (songManager == null) songManager = GetComponentInChildren<SongManager>();
         }
         else {
             Destroy(gameObject);
@@ -24,7 +27,15 @@ public class GameManager : MonoBehaviour {
         }
     }
 
-    #region Switch Level 
+    #endregion
+
+    #region Reference
+
+    public SongManager songManager { get; private set; }
+
+    #endregion
+
+    #region Switch Level
 
     public enum GameLevel { menu, playLevel }
     public GameLevel currentLevel;
