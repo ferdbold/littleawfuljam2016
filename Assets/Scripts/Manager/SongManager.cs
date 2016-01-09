@@ -3,6 +3,7 @@ using System.Collections;
 
 public class SongManager : MonoBehaviour {
 
+    [SerializeField]
     AudioClip[] songs;
     AudioSource source;
 

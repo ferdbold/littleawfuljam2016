@@ -5,14 +5,16 @@ using System.Collections;
 public class Lever : Interactable {
 
     [SerializeField]
-    private UnityEvent relatedEvent;
+    private UnityEvent onEvent;
+
+    [SerializeField]
+    private UnityEvent offEvent;
 
     private bool activated = false;
 
     public override void Activate() {
-        if (!activated) {
-            relatedEvent.Invoke();
-            //TODO Start Anim
-        }
+        activated = !activated;
+        (activated ? onEvent : offEvent).Invoke();
+        //TODO Start Anim
     }
 }
