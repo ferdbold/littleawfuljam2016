@@ -123,12 +123,12 @@ public class SlothController : MonoBehaviour {
 
     /// <summary> Called when LeftHand Collider hits a wall </summary>
     public void OnCollisionLeftHand() {
-        Debug.Log("Has hit wall left");
+        //Debug.Log("Has hit wall left");
         _hasHitWallLeft = true;
     }
     /// <summary> Called when RightHand Collider hits a wall </summary>
     public void OnCollisionRightHand() {
-        Debug.Log("Has hit wall right");
+        //Debug.Log("Has hit wall right");
         _hasHitWallRight = true;
     }
 
