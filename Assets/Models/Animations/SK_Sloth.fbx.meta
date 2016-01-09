@@ -65,6 +65,7 @@ ModelImporter:
     100114: Sloth_toes_lf_jnt
     100116: Sloth_toes_rt_ctrl_grp
     100118: Sloth_toes_rt_jnt
+    100120: Sloth_geo
     400000: SK_Sloth
     400002: //RootNode
     400004: Sloth_clav_lf_ctrl_grp
@@ -125,10 +126,13 @@ ModelImporter:
     400114: Sloth_toes_lf_jnt
     400116: Sloth_toes_rt_ctrl_grp
     400118: Sloth_toes_rt_jnt
+    400120: Sloth_geo
     4300000: SK_Sloth
+    4300002: Sloth_geo
     9500000: //RootNode
     11400000: //RootNode
     13700000: SK_Sloth
+    13700002: Sloth_geo
   materials:
     importMaterials: 1
     materialName: 0
