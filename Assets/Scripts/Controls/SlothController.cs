@@ -6,21 +6,15 @@ public class SlothController : MonoBehaviour {
 
     //Variables
     [Header("Forces")]
-    [SerializeField]
-    public float FORWARDFORCE = 5f; //Force used to move sloth forward when pushed
-    [SerializeField]
-    public float SIDEFORCE = 3f; //Force used to move sloth sideways when pushed
-    [SerializeField]
-    public float ROTATIONFORCE = 2.5f; //Force used to rotate sloth when pushed
-    [SerializeField]
-    public float TURNRATE = 25f; //Turn Rate when rotating in degrees per second (not pushed)
+    [SerializeField] public float FORWARDFORCE = 5f; //Force used to move sloth forward when pushed
+    [SerializeField] public float SIDEFORCE = 3f; //Force used to move sloth sideways when pushed
+    [SerializeField] public float ROTATIONFORCE = 2.5f; //Force used to rotate sloth when pushed
+    [SerializeField] public float TURNRATE = 25f; //Turn Rate when rotating in degrees per second (not pushed)
     public LayerMask wallLayerMask;
 
     [Header("Controls")]
-    [SerializeField]
-    public float MOVECOOLDOWN = 2f;
-    [SerializeField]
-    public float ANIMTIMEBEFOREMOVE = 0.5f;
+    [SerializeField] public float MOVECOOLDOWN = 2f;
+    [SerializeField] public float ANIMTIMEBEFOREMOVE = 0.5f;
 
     //Components
     [Header("Components")]
