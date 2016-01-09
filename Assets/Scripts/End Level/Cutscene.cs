@@ -25,6 +25,7 @@ public class Cutscene : MonoBehaviour {
     }
 
     IEnumerator AnimTimer() {
+        //TODO path
         for (float time = 0; time < animTime; time += Time.deltaTime) {
             foreach (CutsceneEvent ev in events) {
                 if (ev.timeFrame <= time) {
