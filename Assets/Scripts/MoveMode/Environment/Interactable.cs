@@ -54,7 +54,6 @@ public abstract class Interactable : MonoBehaviour {
 	/// Register all child elements
 	/// </summary>
 	private void FindElements() {
-		Debug.Log(transform.Find("InteractablePrompt"));
 		_promptCanvasGroup = transform.Find("InteractablePrompt/Prompt").GetComponent<CanvasGroup>();
 		_promptIcon = transform.Find("InteractablePrompt/Prompt/Icon").GetComponent<Image>();
 		_promptText = transform.Find("InteractablePrompt/Prompt/Text").GetComponent<Text>();

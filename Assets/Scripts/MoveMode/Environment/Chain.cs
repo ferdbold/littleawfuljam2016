@@ -6,6 +6,7 @@
 public class Chain : Interactable {
 
 	public override void Activate() {
+		// TODO: Implement chain activation
 		Debug.Log("Gripped!");
 	}
 }
