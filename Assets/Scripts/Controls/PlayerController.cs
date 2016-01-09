@@ -11,6 +11,9 @@ public class PlayerController : MonoBehaviour {
 
     private float holdTimeLeft = 0;
     private float holdTimeRight = 0;
+    private bool leftIsDown = false;
+    private bool rightIsDown = false;
+
 
     // Use this for initialization
     void Start () {
@@ -20,24 +23,29 @@ public class PlayerController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         //Input Left Key
-        if (Input.GetKeyDown(KeyCode.A)) { //Pressed
+        if (!leftIsDown && (Input.GetAxis("Left") >= 1)) { //Pressed
+            
+            leftIsDown = true;
             DisactivatePreviousInputs();
             if (holdTimeLeft > 0) slothController.MoveLeft(holdTimeLeft);
             StartCoroutine("CheckLeftPressed");
 
-        } else if(Input.GetKeyUp(KeyCode.A)) { //Released
+        } else if(leftIsDown && (Input.GetAxis("Left") < 1)) { //Released
+            leftIsDown = false;
             StopCoroutine("CheckLeftPressed");
             slothController.ToggleTurnLeft(false);
             if (holdTimeLeft > 0) slothController.MoveLeft(holdTimeLeft);
         }
 
         //Input Right Key
-        if (Input.GetKeyDown(KeyCode.D)) { //Pressed
+        if (!rightIsDown && (Input.GetAxis("Right") >= 1)) { //Pressed
+            rightIsDown = true;
             DisactivatePreviousInputs();
             if (holdTimeRight > 0) slothController.MoveRight(holdTimeRight);
             StartCoroutine("CheckRightPressed");
 
-        } else if(Input.GetKeyUp(KeyCode.D)) { //Released
+        } else if(rightIsDown && (Input.GetAxis("Right") < 1)) { //Released
+            rightIsDown = false;
             StopCoroutine("CheckRightPressed");
             slothController.ToggleTurnRight(false);
             if (holdTimeRight > 0) slothController.MoveRight(holdTimeRight);
