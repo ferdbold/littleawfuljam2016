@@ -45,7 +45,7 @@ public class GameManager : MonoBehaviour {
                 break;
 
             case GameLevel.playLevel:
-                gameObject.AddComponent<InGameMode>();
+                gameObject.AddComponent<LevelManager>();
                 if (!GoToNextPlayLevel()) {
                     currentPlayLevel = 0;
                     GoToNextPlayLevel();
@@ -61,7 +61,7 @@ public class GameManager : MonoBehaviour {
                 break;
 
             case GameLevel.playLevel:
-                foreach (InGameMode mode in transform) {
+                foreach (LevelManager mode in transform) {
                     Destroy(mode);
                 }
                 break;

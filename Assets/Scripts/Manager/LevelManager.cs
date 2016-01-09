@@ -1,14 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class InGameMode : MonoBehaviour {
+public class LevelManager : MonoBehaviour {
 
-    public static InGameMode instance;
+    public static LevelManager instance;
 
     void Start() {
         if (instance == null) {
             instance = this;
-            currentState = GameState.playMode;
+            currentState = GameState.moveMode;
             enemyTarget = GameObject.FindGameObjectWithTag("enemy-target");
             OnStart_State(currentState);
         }
@@ -25,7 +25,7 @@ public class InGameMode : MonoBehaviour {
 
     //-------------------------------------------------------------------------------------------------------------------------
 
-    public enum GameState { playMode, killMode }
+    public enum GameState { moveMode, killMode }
     public GameState currentState { get; private set; }
 
     public void Activate_KillMode() {
@@ -33,7 +33,7 @@ public class InGameMode : MonoBehaviour {
     }
 
     public void Activate_PlayMode() {
-        SwitchState(GameState.playMode);
+        SwitchState(GameState.moveMode);
     }
 
     private void SwitchState(GameState state) {
@@ -44,7 +44,7 @@ public class InGameMode : MonoBehaviour {
 
     private void OnStart_State(GameState state) {
         switch (state) {
-            case GameState.playMode:
+            case GameState.moveMode:
 
                 break;
 
@@ -56,7 +56,7 @@ public class InGameMode : MonoBehaviour {
 
     private void OnEnd_State(GameState state) {
         switch (state) {
-            case GameState.playMode:
+            case GameState.moveMode:
 
                 break;
 
