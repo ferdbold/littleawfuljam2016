@@ -11,6 +11,7 @@ public class TopDownCamera : MonoBehaviour {
 
     void Start() {
         _targetPosition = transform.position;
+        offsetPosition = transform.position - player.transform.position;
     }
 
 	void Update () {

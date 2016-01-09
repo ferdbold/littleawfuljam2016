@@ -8,7 +8,7 @@ public class SlothController : MonoBehaviour {
     [Header("Forces")]
     [SerializeField] private float FORWARDFORCE = 5f; //Force used to move sloth forward when pushed
     [SerializeField] private float SIDEFORCE = 3f; //Force used to move sloth sideways when pushed
-    [SerializeField] private float ROTATIONFORCE = 2.5f; //Force used to rotate sloth when pushed
+    [SerializeField] private float ROTATIONFORCE = 2.5f; //Force used to rotate sloth when pushed in degrees per second
     [SerializeField] private AnimationCurve rotationAnimationCurve; //Curve which rotation follows
     [SerializeField] private float rotationAnimationTime = 1f;
     [SerializeField] private float TURNRATE = 25f; //Turn Rate when rotating in degrees per second (not pushed)
