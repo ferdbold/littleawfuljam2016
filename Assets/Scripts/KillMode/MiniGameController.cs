@@ -3,9 +3,14 @@ using System.Collections;
 
 public class MiniGameController : MonoBehaviour {
 
+
     //Les bras du paresseux
     public GameObject rightArm;
     public GameObject leftArm;
+
+    //Peut-il planter ses griffes
+    public bool canPlantRightArm;
+    public bool canPlantLeftArm;
 
     //Vitesse de deplacement du bras
     public float armSpeed;
@@ -18,10 +23,13 @@ public class MiniGameController : MonoBehaviour {
 
 
     //Valeurs max et min y et x
-    public float maxArmX;
+    public float maxRightArmX;
+    public float minRightArmX;
+    public float maxLeftArmX;
+    public float minLeftArmX;
     public float maxArmY;
-    public float minArmX;
     public float minArmY;
+
 
     //Valeur min en z
     private float _minArmZ;
@@ -36,6 +44,15 @@ public class MiniGameController : MonoBehaviour {
     public float timeToExitWound;
 
 
+    //Variables pour les pulsions de sang lors de la sortie des griffes
+    private bool _doPulseBloodRightArm;
+    private bool _doPulseBloodLeftArm;
+
+    //Peut-on bouger verticalement avec les griffes plantés
+    private bool _canMoveVerticalRightArm=true;
+    private bool _canMoveVerticalLeftArm = true;
+
+
 	// Use this for initialization
 	void Start () {
         _minArmZ = rightArm.transform.localPosition.z;
@@ -45,6 +62,7 @@ public class MiniGameController : MonoBehaviour {
 	void Update () {
         SticksInputs();
         ClawsInputs();
+        PulseBlood();
 	}
 
     /// <summary>
@@ -52,23 +70,58 @@ public class MiniGameController : MonoBehaviour {
     /// </summary>
     private void SticksInputs()
     {
-        //Taux de rotation pour le bras droit à l'horizontal et à la vertical
+        //Taux de translation pour le bras droit à l'horizontal et à la vertical
         var xRightArm = Input.GetAxis("LeftAnalogHorizontal") * armSpeed;
-        var yRightArm = -Input.GetAxis("LeftAnalogVertical") * armSpeed;
 
+        //Si le bras droit est planté ou pressque
+        if (rightArm.transform.localPosition.z <= _minArmZ + 0.1)
+        {
+            _canMoveVerticalRightArm = true;
+        }
+        //Sinon
+        else
+        {
+            _canMoveVerticalRightArm = false;
+        }
 
-        //Taux de rotation pour le bras gauche à l'horizontal et à la vertical
+        var yRightArm = 0.0f;
+       
+        //Si le bras droit est planté
+        if (_canMoveVerticalRightArm)
+        {
+            yRightArm = -Input.GetAxis("LeftAnalogVertical") * armSpeed;
+        }
+
+        
+        //Taux de translation pour le bras gauche à l'horizontal et à la vertical
         var xLeftArm = Input.GetAxis("RightAnalogHorizontal") * armSpeed;
-        var yLeftArm = -Input.GetAxis("RightAnalogVertical") * armSpeed;
+        var yLeftArm = 0.0f;
 
+
+        //Si le bras gauche est planté ou pressque
+        if (leftArm.transform.localPosition.z <= _minArmZ + 0.1)
+        {
+            _canMoveVerticalLeftArm = true;
+        }
+        //Sinon
+        else
+        {
+            _canMoveVerticalLeftArm = false;
+        }
+
+        //Si le bras gauche est planté
+        if (_canMoveVerticalLeftArm)
+        {
+            yLeftArm = -Input.GetAxis("RightAnalogVertical") * armSpeed;
+        }
 
         //On effectue la translation pour le right arm + on clamp sur un range
-        rightArm.transform.localPosition = new Vector3(Mathf.Clamp(rightArm.transform.localPosition.x + xRightArm, minArmX, 0),
+        rightArm.transform.localPosition = new Vector3(Mathf.Clamp(rightArm.transform.localPosition.x + xRightArm, minRightArmX, maxRightArmX),
             Mathf.Clamp(rightArm.transform.localPosition.y + yRightArm, minArmY, maxArmY),
             rightArm.transform.localPosition.z);
 
         //On effectue la translation pour le right arm + on clamp sur un range 
-        leftArm.transform.localPosition = new Vector3(Mathf.Clamp(leftArm.transform.localPosition.x + xLeftArm, 0, maxArmX),
+        leftArm.transform.localPosition = new Vector3(Mathf.Clamp(leftArm.transform.localPosition.x + xLeftArm, minLeftArmX, maxLeftArmX),
             Mathf.Clamp(leftArm.transform.localPosition.y + yLeftArm, minArmY, maxArmY),
             leftArm.transform.localPosition.z);
     }
@@ -78,13 +131,34 @@ public class MiniGameController : MonoBehaviour {
     /// </summary>
     private void ClawsInputs(){
         //On prend l'input des gachettes de tirs
-        var pierceRightArm = Input.GetAxis("LeftTrigger") * armPierceSpeed;
-        var pierceLeftArm = Input.GetAxis("RightTrigger") * armPierceSpeed;
+        var pierceRightArm=0.0f;
+        var pierceLeftArm=0.0f;
+
+        if (canPlantRightArm)
+        {
+            pierceRightArm = Input.GetAxis("LeftTrigger") * armPierceSpeed;
+            if (pierceRightArm > 0.0f)
+            {
+                _canMoveVerticalRightArm = false;
+            }
+        }
+
+
+        if (canPlantLeftArm)
+        {
+            pierceLeftArm = Input.GetAxis("RightTrigger") * armPierceSpeed;
+            if (pierceRightArm > 0.0f)
+            {
+                _canMoveVerticalLeftArm = false;
+            }
+        }
+
 
 
         //On retire la griffe droite
         if (pierceRightArm < 0.01 && rightArm.transform.localPosition.z != _minArmZ)
         {
+            _doPulseBloodRightArm = true;
             _currentTimeRightArm = Time.time - _startTimeRightArm;
             rightArm.transform.localPosition = Vector3.Lerp(_lastPosRightArm,
                 new Vector3(_lastPosRightArm.x, _lastPosRightArm.y, _minArmZ),
@@ -104,6 +178,7 @@ public class MiniGameController : MonoBehaviour {
         //On retire la griffe gauche
         if (pierceLeftArm < 0.01 && leftArm.transform.localPosition.z != _minArmZ)
         {
+            _doPulseBloodLeftArm = true;
             _currentTimeLeftArm = Time.time - _startTimeLeftArm;
             leftArm.transform.localPosition = Vector3.Lerp(_lastPostLeftArm,
                 new Vector3(_lastPostLeftArm.x, _lastPostLeftArm.y, _minArmZ),
@@ -119,4 +194,15 @@ public class MiniGameController : MonoBehaviour {
             _lastPostLeftArm = leftArm.transform.localPosition;
         }
     }
+
+    private void PulseBlood()
+    {
+        if (_doPulseBloodLeftArm) { 
+
+        }
+        if (_doPulseBloodRightArm){
+
+        }
+    }
+
 }

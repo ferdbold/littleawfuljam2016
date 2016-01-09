@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - enemy-target
+  - attack-zone
   layers:
   - Default
   - TransparentFX
