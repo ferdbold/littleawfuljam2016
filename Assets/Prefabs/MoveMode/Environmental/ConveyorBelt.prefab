@@ -28,7 +28,7 @@ GameObject:
   - 65: {fileID: 6549076}
   - 114: {fileID: 11472444}
   m_Layer: 0
-  m_Name: Conveyor Belt
+  m_Name: ConveyorBelt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -259,6 +259,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.5
+  isOn: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
