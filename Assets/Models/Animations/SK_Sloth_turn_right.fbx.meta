@@ -126,7 +126,7 @@ ModelImporter:
     400116: Sloth_toes_rt_ctrl_grp
     400118: Sloth_toes_rt_jnt
     4300000: SK_Sloth
-    7400000: TurnRIght
+    7400000: TurnRight
     9500000: //RootNode
     11400000: //RootNode
     13700000: SK_Sloth
@@ -152,7 +152,7 @@ ModelImporter:
     extraExposedTransformPaths: []
     clipAnimations:
     - serializedVersion: 16
-      name: TurnRIght
+      name: TurnRight
       takeName: Take 001
       firstFrame: 1
       lastFrame: 30
@@ -162,7 +162,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -298,7 +298,7 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
+      additiveReferencePoseFrame: 1
     isReadable: 1
   meshes:
     lODScreenPercentages: []
