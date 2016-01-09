@@ -9,6 +9,8 @@ public class InGameMode : MonoBehaviour {
         if (instance == null) {
             instance = this;
             currentState = GameState.playMode;
+            enemyTarget = GameObject.FindGameObjectWithTag("enemy-target");
+            OnStart_State(currentState);
         }
         else {
             Destroy(this);
@@ -47,7 +49,7 @@ public class InGameMode : MonoBehaviour {
                 break;
 
             case GameState.killMode:
-
+                Camera.main.GetComponent<KillMode_CameraSwitch>().StartCameraAnim(KillMode_StartKilling, enemyTarget.transform.position, enemyTarget.transform.forward);
                 break;
         }
     }
@@ -62,5 +64,12 @@ public class InGameMode : MonoBehaviour {
 
                 break;
         }
+    }
+
+    //------------------------------------------------------------------------------------------------------------------
+    public GameObject enemyTarget { get; private set; }
+
+    private void KillMode_StartKilling() {
+        Debug.Log("Starting Kill Mode");
     }
 }

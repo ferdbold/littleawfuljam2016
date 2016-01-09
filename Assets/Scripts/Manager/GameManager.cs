@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour {
             instance = this;
             DontDestroyOnLoad(gameObject);
             currentPlayLevel = 0;
+            OnStart_Level(currentLevel);
         }
         else {
             Destroy(gameObject);
@@ -44,6 +45,7 @@ public class GameManager : MonoBehaviour {
                 break;
 
             case GameLevel.playLevel:
+                gameObject.AddComponent<InGameMode>();
                 if (!GoToNextPlayLevel()) {
                     currentPlayLevel = 0;
                     GoToNextPlayLevel();
@@ -59,7 +61,9 @@ public class GameManager : MonoBehaviour {
                 break;
 
             case GameLevel.playLevel:
-
+                foreach (InGameMode mode in transform) {
+                    Destroy(mode);
+                }
                 break;
         }
     }
