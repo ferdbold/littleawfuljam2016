@@ -1530,8 +1530,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 185948}
   m_LocalRotation: {x: 0, y: 0.04440403, z: 0, w: 0.99901366}
-  m_LocalPosition: {x: -0.01, y: 0.45, z: -0.32}
-  m_LocalScale: {x: 0.35, y: 0.35, z: 0.35}
+  m_LocalPosition: {x: -0.01, y: 0.039, z: -0.32}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 446102}
   - {fileID: 475470}
@@ -1878,7 +1878,7 @@ Animator:
   m_GameObject: {fileID: 189444}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: e1b7717dfefb6ea4e83786e2ca3cf845, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 693a87324089b5340ab1a490c1b87948, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1922,9 +1922,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   MOVECOOLDOWN: 2
-  ANIMTIMEBEFOREMOVE: 0.5
   rightHandCollider: {fileID: 13564210}
   leftHandCollider: {fileID: 13573362}
+  ExtendArmClip: {fileID: 7400000, guid: bd27f87c1131beb4bafba11bb682fb16, type: 3}
 --- !u!114 &11450750
 MonoBehaviour:
   m_ObjectHideFlags: 33
@@ -2189,7 +2189,11 @@ MonoBehaviour:
     - LIIF: -45527021
       InstanceTarget: {fileID: 170814}
   Modifications:
-    Modificated: []
+    Modificated:
+    - Object: {fileID: 9590974}
+      ObjeckLink: -1583942645
+      PropertyPath: m_Controller
+      Mode: 0
     NonPrefabObjects: []
     NonPrefabComponents: []
     RemovedObjects: 
@@ -2495,7 +2499,23 @@ MonoBehaviour:
     Modificated:
     - Object: {fileID: 462614}
       ObjeckLink: -1334059621
+      PropertyPath: m_LocalPosition
+      Mode: 0
+    - Object: {fileID: 462614}
+      ObjeckLink: -1334059621
+      PropertyPath: m_LocalScale
+      Mode: 0
+    - Object: {fileID: 462614}
+      ObjeckLink: -1334059621
       PropertyPath: m_RootOrder
+      Mode: 0
+    - Object: {fileID: 11404652}
+      ObjeckLink: 226809364
+      PropertyPath: ExtendArmClip
+      Mode: 0
+    - Object: {fileID: 9590974}
+      ObjeckLink: -1364861101
+      PropertyPath: m_Controller
       Mode: 0
     NonPrefabObjects: []
     NonPrefabComponents: []
