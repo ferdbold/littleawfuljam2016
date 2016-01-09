@@ -49,7 +49,7 @@ public class LevelManager : MonoBehaviour {
                 break;
 
             case GameState.killMode:
-                Camera.main.GetComponent<KillMode_CameraSwitch>().StartCameraAnim(KillMode_StartKilling, enemyTarget.transform.position, enemyTarget.transform.forward);
+                Camera.main.GetComponent<KillModeCameraSwitch>().StartCameraAnim(KillMode_StartKilling, enemyTarget.transform.position, enemyTarget.transform.forward);
                 break;
         }
     }
