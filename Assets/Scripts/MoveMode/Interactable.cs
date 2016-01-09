@@ -7,59 +7,59 @@ using DG.Tweening;
  */
 public class Interactable : MonoBehaviour {
 
-	private float promptAlpha = 0f;
+	private float _promptAlpha = 0f;
 
-	private CanvasGroup promptCanvasGroup;
-	private Image promptIcon;
-	private Text promptText;
+	private CanvasGroup _promptCanvasGroup;
+	private Image _promptIcon;
+	private Text _promptText;
 
 	[Header("Prompt")]
-	[SerializeField] private Sprite icon;
-	[SerializeField] private string prompt;
-	[SerializeField] private float animDuration = 0.5f;
+	[SerializeField] private Sprite _icon;
+	[SerializeField] private string _prompt;
+	[SerializeField] private float _animDuration = 0.5f;
 
 	public void Awake() {
-		this.FindElements();
+		FindElements();
 	}
 
 	public void Start() {
-		this.RefreshPrompt();
+		RefreshPrompt();
 	}
 
 	#if UNITY_EDITOR
 	public void OnValidate() {
-		this.FindElements();
-		this.RefreshPrompt();
+		FindElements();
+		RefreshPrompt();
 	}
 	#endif
 
-	public void Update () {
+	public void Update() {
 		if (Input.GetKey(KeyCode.F)) {
-			this.Focus(true);
+			Focus(true);
 		}
 		if (Input.GetKey(KeyCode.G)) {
-			this.Focus(false);
+			Focus(false);
 		}
 
-		this.RefreshPrompt();
+		RefreshPrompt();
 	}
 
 	/**
 	 * Register all child elements
 	 */
 	private void FindElements() {
-		this.promptCanvasGroup = transform.Find("Canvas/Prompt").GetComponent<CanvasGroup>();
-		this.promptIcon = transform.Find("Canvas/Prompt/Icon").GetComponent<Image>();
-		this.promptText = transform.Find("Canvas/Prompt/Text").GetComponent<Text>();
+		_promptCanvasGroup = transform.Find("Canvas/Prompt").GetComponent<CanvasGroup>();
+		_promptIcon = transform.Find("Canvas/Prompt/Icon").GetComponent<Image>();
+		_promptText = transform.Find("Canvas/Prompt/Text").GetComponent<Text>();
 	}
 
 	/**
 	 * Sync all prompt elements
 	 */
 	private void RefreshPrompt() {
-		this.promptCanvasGroup.alpha = this.promptAlpha;
-		this.promptIcon.sprite = this.icon;
-		this.promptText.text = this.prompt.ToUpper();
+		_promptCanvasGroup.alpha = _promptAlpha;
+		_promptIcon.sprite = _icon;
+		_promptText.text = _prompt.ToUpper();
 	}
 		
 	/**
@@ -68,6 +68,6 @@ public class Interactable : MonoBehaviour {
 	 */
 	public void Focus(bool on) {
 		float endValue = on ? 1f : 0f;
-		DOTween.To(() => this.promptAlpha, x => this.promptAlpha = x, endValue, this.animDuration);
+		DOTween.To(() => _promptAlpha, x => _promptAlpha = x, endValue, _animDuration);
 	}
 }

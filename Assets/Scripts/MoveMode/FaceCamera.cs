@@ -5,20 +5,20 @@
  */
 public class FaceCamera : MonoBehaviour {
 
-	private Transform gameCamera;
+	private Transform _gameCamera;
 
 	public void Awake() {
-		this.FindElements();
+		FindElements();
 	}
 
 	/**
 	 * Register all child elements
 	 */
 	private void FindElements() {
-		this.gameCamera = GameObject.FindWithTag("MainCamera").transform;
+		_gameCamera = GameObject.FindWithTag("MainCamera").transform;
 	}
 
 	public void Update () {
-		transform.LookAt(this.gameCamera.position);
+		transform.LookAt(_gameCamera.position);
 	}
 }
