@@ -1,0 +1,196 @@
+fileFormatVersion: 2
+guid: 143484c837dd7e44ca60bbcc6011c8b7
+timeCreated: 1452368039
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: SK_Sloth
+    100002: //RootNode
+    100004: Sloth_clav_lf_ctrl_grp
+    100006: Sloth_clav_lf_jnt
+    100008: Sloth_clav_rt_ctrl_grp
+    100010: Sloth_clav_rt_jnt
+    100012: Sloth_elbow_lf_jnt
+    100014: Sloth_elbow_rt_jnt
+    100016: Sloth_feet_lf_ctrl_grp
+    100018: Sloth_feet_lf_jnt
+    100020: Sloth_feet_rt_ctrl_grp
+    100022: Sloth_feet_rt_jnt
+    100024: Sloth_fingerDown_end_lf_jnt
+    100026: Sloth_fingerDown_end_rt_jnt
+    100028: Sloth_fingerDown_lf_ctrl_grp
+    100030: Sloth_fingerDown_lf_jnt
+    100032: Sloth_fingerDown_rt_ctrl_grp
+    100034: Sloth_fingerDown_rt_jnt
+    100036: Sloth_fingerMid_end_lf_jnt
+    100038: Sloth_fingerMid_end_rt_jnt
+    100040: Sloth_fingerMid_lf_ctrl_grp
+    100042: Sloth_fingerMid_lf_jnt
+    100044: Sloth_fingerMid_rt_ctrl_grp
+    100046: Sloth_fingerMid_rt_jnt
+    100048: Sloth_fingerUp_end_lf_jnt
+    100050: Sloth_fingerUp_end_rt_jnt
+    100052: Sloth_fingerUp_lf_ctrl_grp
+    100054: Sloth_fingerUp_lf_jnt
+    100056: Sloth_fingerUp_rt_ctrl_grp
+    100058: Sloth_fingerUp_rt_jnt
+    100060: Sloth_hand_lf_jnt
+    100062: Sloth_hand_rt_jnt
+    100064: Sloth_head_ctrl_grp
+    100066: Sloth_head_end_jnt
+    100068: Sloth_head_jnt
+    100070: Sloth_hips_ctrl_grp
+    100072: Sloth_hips_jnt
+    100074: Sloth_knee_lf_ctrl_grp
+    100076: Sloth_knee_lf_jnt
+    100078: Sloth_knee_rt_ctrl_grp
+    100080: Sloth_knee_rt_jnt
+    100082: Sloth_leg_lf_ctrl_grp
+    100084: Sloth_leg_lf_jnt
+    100086: Sloth_leg_rt_ctrl_grp
+    100088: Sloth_leg_rt_jnt
+    100090: Sloth_neck_ctrl_grp
+    100092: Sloth_neck_jnt
+    100094: Sloth_root_jnt
+    100096: Sloth_shoulder_lf_jnt
+    100098: Sloth_shoulder_rt_jnt
+    100100: Sloth_splineA_ctrl_grp
+    100102: Sloth_splineA_jnt
+    100104: Sloth_splineB_ctrl_grp
+    100106: Sloth_splineB_jnt
+    100108: Sloth_toes_end_lf_jnt
+    100110: Sloth_toes_end_rt_jnt
+    100112: Sloth_toes_lf_ctrl_grp
+    100114: Sloth_toes_lf_jnt
+    100116: Sloth_toes_rt_ctrl_grp
+    100118: Sloth_toes_rt_jnt
+    400000: SK_Sloth
+    400002: //RootNode
+    400004: Sloth_clav_lf_ctrl_grp
+    400006: Sloth_clav_lf_jnt
+    400008: Sloth_clav_rt_ctrl_grp
+    400010: Sloth_clav_rt_jnt
+    400012: Sloth_elbow_lf_jnt
+    400014: Sloth_elbow_rt_jnt
+    400016: Sloth_feet_lf_ctrl_grp
+    400018: Sloth_feet_lf_jnt
+    400020: Sloth_feet_rt_ctrl_grp
+    400022: Sloth_feet_rt_jnt
+    400024: Sloth_fingerDown_end_lf_jnt
+    400026: Sloth_fingerDown_end_rt_jnt
+    400028: Sloth_fingerDown_lf_ctrl_grp
+    400030: Sloth_fingerDown_lf_jnt
+    400032: Sloth_fingerDown_rt_ctrl_grp
+    400034: Sloth_fingerDown_rt_jnt
+    400036: Sloth_fingerMid_end_lf_jnt
+    400038: Sloth_fingerMid_end_rt_jnt
+    400040: Sloth_fingerMid_lf_ctrl_grp
+    400042: Sloth_fingerMid_lf_jnt
+    400044: Sloth_fingerMid_rt_ctrl_grp
+    400046: Sloth_fingerMid_rt_jnt
+    400048: Sloth_fingerUp_end_lf_jnt
+    400050: Sloth_fingerUp_end_rt_jnt
+    400052: Sloth_fingerUp_lf_ctrl_grp
+    400054: Sloth_fingerUp_lf_jnt
+    400056: Sloth_fingerUp_rt_ctrl_grp
+    400058: Sloth_fingerUp_rt_jnt
+    400060: Sloth_hand_lf_jnt
+    400062: Sloth_hand_rt_jnt
+    400064: Sloth_head_ctrl_grp
+    400066: Sloth_head_end_jnt
+    400068: Sloth_head_jnt
+    400070: Sloth_hips_ctrl_grp
+    400072: Sloth_hips_jnt
+    400074: Sloth_knee_lf_ctrl_grp
+    400076: Sloth_knee_lf_jnt
+    400078: Sloth_knee_rt_ctrl_grp
+    400080: Sloth_knee_rt_jnt
+    400082: Sloth_leg_lf_ctrl_grp
+    400084: Sloth_leg_lf_jnt
+    400086: Sloth_leg_rt_ctrl_grp
+    400088: Sloth_leg_rt_jnt
+    400090: Sloth_neck_ctrl_grp
+    400092: Sloth_neck_jnt
+    400094: Sloth_root_jnt
+    400096: Sloth_shoulder_lf_jnt
+    400098: Sloth_shoulder_rt_jnt
+    400100: Sloth_splineA_ctrl_grp
+    400102: Sloth_splineA_jnt
+    400104: Sloth_splineB_ctrl_grp
+    400106: Sloth_splineB_jnt
+    400108: Sloth_toes_end_lf_jnt
+    400110: Sloth_toes_end_rt_jnt
+    400112: Sloth_toes_lf_ctrl_grp
+    400114: Sloth_toes_lf_jnt
+    400116: Sloth_toes_rt_ctrl_grp
+    400118: Sloth_toes_rt_jnt
+    4300000: SK_Sloth
+    7400000: Take 001
+    9500000: //RootNode
+    11400000: //RootNode
+    13700000: SK_Sloth
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

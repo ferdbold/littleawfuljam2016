@@ -6,15 +6,17 @@ public class SlothController : MonoBehaviour {
 
     //Variables
     [Header("Forces")]
-    [SerializeField] public float FORWARDFORCE = 5f; //Force used to move sloth forward when pushed
-    [SerializeField] public float SIDEFORCE = 3f; //Force used to move sloth sideways when pushed
-    [SerializeField] public float ROTATIONFORCE = 2.5f; //Force used to rotate sloth when pushed
-    [SerializeField] public float TURNRATE = 25f; //Turn Rate when rotating in degrees per second (not pushed)
+    [SerializeField] private float FORWARDFORCE = 5f; //Force used to move sloth forward when pushed
+    [SerializeField] private float SIDEFORCE = 3f; //Force used to move sloth sideways when pushed
+    [SerializeField] private float ROTATIONFORCE = 2.5f; //Force used to rotate sloth when pushed in degrees per second
+    [SerializeField] private AnimationCurve rotationAnimationCurve; //Curve which rotation follows
+    [SerializeField] private float rotationAnimationTime = 1f;
+    [SerializeField] private float TURNRATE = 25f; //Turn Rate when rotating in degrees per second (not pushed)
     public LayerMask wallLayerMask;
 
     [Header("Controls")]
-    [SerializeField] public float MOVECOOLDOWN = 2f;
-    [SerializeField] public float ANIMTIMEBEFOREMOVE = 0.5f;
+    [SerializeField] private float MOVECOOLDOWN = 2f;
+    [SerializeField] private float ANIMTIMEBEFOREMOVE = 0.5f;
 
     //Components
     [Header("Components")]
@@ -40,11 +42,11 @@ public class SlothController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (_isRotatingLeft) {
+        if (_isRotatingLeft && _canMoveLeft) {
             Debug.Log("RotatingLeft!");
             transform.Rotate(0, -TURNRATE * Time.deltaTime, 0);
         }
-        if (_isRotatingRight) {
+        if (_isRotatingRight && _canMoveRight) {
             Debug.Log("RotatingRight!");
             transform.Rotate(0, TURNRATE * Time.deltaTime, 0);
         }
@@ -121,8 +123,26 @@ public class SlothController : MonoBehaviour {
         _rigidBody.AddRelativeForce(force, ForceMode.Impulse);
     }
     
-    private void RotateSloth(Vector3 rotation) {
-        _rigidBody.AddTorque(rotation,ForceMode.Impulse);
+    /// <summary>
+    /// Rotate the transform based on given rotation, time and curve
+    /// </summary>
+    /// <param name="rotation">Rotation to do in degrees</param>
+    /// <param name="animTime">Time of the animation</param>
+    /// <param name="animCurve">Curve at which to execute rotation</param>
+    /// <returns></returns>
+    IEnumerator RotateSloth(Vector3 rotation, float animTime, AnimationCurve animCurve) {
+        //_rigidBody.AddTorque(rotation,ForceMode.Impulse);
+        float prevI = 0;
+        for (float i = 0; i < 1f; i += Time.deltaTime / animTime) {
+            float curI = animCurve.Evaluate(i);
+            //Get i difference
+            float Idiff = curI - prevI;
+            //rotate sloth accordingly
+            transform.Rotate(Idiff*rotation);
+            //Debug.Log("idiff : " + Idiff + "   final rotate : " + Idiff * rotation);
+            yield return null;
+            prevI = curI;
+        }
     }
 
 
@@ -137,10 +157,10 @@ public class SlothController : MonoBehaviour {
        
         if (isRight) { 
             if(!_hasHitWallRight) PushSloth(new Vector3(SIDEFORCE, 0, FORWARDFORCE)); //Push only if wall wasnt hit
-            RotateSloth(new Vector3(0, ROTATIONFORCE, 0));
+            StartCoroutine(RotateSloth(new Vector3(0, ROTATIONFORCE, 0),rotationAnimationTime,rotationAnimationCurve));
         } else {
             if (!_hasHitWallLeft) PushSloth(new Vector3(-SIDEFORCE, 0, FORWARDFORCE));
-            RotateSloth(new Vector3(0, -ROTATIONFORCE, 0));
+            StartCoroutine(RotateSloth(new Vector3(0, -ROTATIONFORCE, 0), rotationAnimationTime, rotationAnimationCurve));
         }
     }
 
