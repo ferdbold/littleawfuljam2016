@@ -2,9 +2,9 @@
 using UnityEngine.UI;
 using DG.Tweening;
 
-/**
- * Scene object the sloth can interact with
- */
+/// <summary>
+/// Scene object the sloth can interact with
+/// </summary>
 public class Interactable : MonoBehaviour {
 
 	private float _promptAlpha = 0f;
@@ -35,39 +35,49 @@ public class Interactable : MonoBehaviour {
 
 	public void Update() {
 		if (Input.GetKey(KeyCode.F)) {
-			Focus(true);
+			SendMessage("Focus");
 		}
 		if (Input.GetKey(KeyCode.G)) {
-			Focus(false);
+			SendMessage("Blur");
 		}
 
 		RefreshPrompt();
 	}
 
-	/**
-	 * Register all child elements
-	 */
+	/// <summary>
+	/// Register all child elements
+	/// </summary>
 	private void FindElements() {
 		_promptCanvasGroup = transform.Find("Canvas/Prompt").GetComponent<CanvasGroup>();
 		_promptIcon = transform.Find("Canvas/Prompt/Icon").GetComponent<Image>();
 		_promptText = transform.Find("Canvas/Prompt/Text").GetComponent<Text>();
 	}
 
-	/**
-	 * Sync all prompt elements
-	 */
+	/// <summary>
+	/// Sync all prompt elements
+	/// </summary>
 	private void RefreshPrompt() {
 		_promptCanvasGroup.alpha = _promptAlpha;
 		_promptIcon.sprite = _icon;
 		_promptText.text = _prompt.ToUpper();
 	}
-		
-	/**
-	 * Display prompt on hover
-	 * @param on Whether to turn on focus or not
-	 */
-	public void Focus(bool on) {
+
+	/// <summary>
+	/// Change prompt visibility
+	/// </summary>
+	/// <param name="on">The new prompt visibility</param>
+	public void TogglePrompt(bool on) {
 		float endValue = on ? 1f : 0f;
-		DOTween.To(() => _promptAlpha, x => _promptAlpha = x, endValue, _animDuration);
+		DOTween.To(() => _promptAlpha, x => _promptAlpha = x, endValue, _animDuration).SetEase(Ease.OutCubic);
 	}
+
+	/// <summary>
+	/// Show the prompt
+	/// </summary>
+	public void Focus() { TogglePrompt(true); }
+
+	/// <summary>
+	/// Hide the prompt
+	/// </summary>
+	public void Blur() { TogglePrompt(false); }
 }

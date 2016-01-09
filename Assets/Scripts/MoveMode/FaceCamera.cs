@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 
-/**
- * Turns the object so that it always faces the main game camera
- */
+/// <summary>
+/// Turns the object so that it always faces the main game camera
+/// </summary>
 public class FaceCamera : MonoBehaviour {
 
 	private Transform _gameCamera;
@@ -11,9 +11,9 @@ public class FaceCamera : MonoBehaviour {
 		FindElements();
 	}
 
-	/**
-	 * Register all child elements
-	 */
+	/// <summary>
+	/// Register all child elements
+	/// </summary>
 	private void FindElements() {
 		_gameCamera = GameObject.FindWithTag("MainCamera").transform;
 	}
