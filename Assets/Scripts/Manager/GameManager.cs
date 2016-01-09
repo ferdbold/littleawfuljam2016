@@ -31,6 +31,7 @@ public class GameManager : MonoBehaviour {
     public int currentPlayLevel { get; private set; }
 
     const string MENU_LEVEL = "Menu";
+    const string LOADING_SCREEN = "LoadingScreen";
 
     public void SwitchLevel(GameLevel level) {
         OnEnd_Level(currentLevel);
@@ -77,19 +78,19 @@ public class GameManager : MonoBehaviour {
         currentPlayLevel++;
         string nextLevelName = LevelName(currentPlayLevel);
         if (nextLevelName != "") {
-            SceneManager.LoadScene(nextLevelName);
+            SceneManager.LoadScene(LOADING_SCREEN);
+            SceneManager.LoadSceneAsync(nextLevelName);
             return true;
         }
         else {
-            SceneManager.LoadScene(MENU_LEVEL);
+            SceneManager.LoadSceneAsync(MENU_LEVEL);
             return false;
         }
     }
 
     private string LevelName(int levelID) {
         switch (levelID) {
-            case 1: return "Level1";
-            case 2: return "Level2";
+            case 1: return "Level_1";
             default: return "";
         }
     }
