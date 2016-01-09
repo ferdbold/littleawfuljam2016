@@ -230,9 +230,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 185948}
-  m_LocalRotation: {x: 0, y: 0.04440403, z: 0, w: 0.99901366}
-  m_LocalPosition: {x: -0.01, y: 0.45, z: -0.32}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0, y: -0.70506626, z: 0, w: 0.70914143}
+  m_LocalPosition: {x: -2.22, y: -1.39, z: 2.58}
+  m_LocalScale: {x: 0.35, y: 0.35, z: 0.35}
   m_Children:
   - {fileID: 445204}
   - {fileID: 476088}
@@ -569,10 +569,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68e7ffb260ecba04380f37a17d5942bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FORWARDFORCE: 5
+  FORWARDFORCE: 2.5
   SIDEFORCE: 3
-  ROTATIONFORCE: 2.5
-  TURNRATE: 25
+  ROTATIONFORCE: 4
+  TURNRATE: 43
   wallLayerMask:
     serializedVersion: 2
     m_Bits: 256
@@ -582,7 +582,7 @@ MonoBehaviour:
   leftHandCollider: {fileID: 13573362}
 --- !u!114 &11487518
 MonoBehaviour:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 33
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 185948}
@@ -669,9 +669,69 @@ MonoBehaviour:
       InstanceTarget: {fileID: 13607488}
     - LIIF: -1113576751
       InstanceTarget: {fileID: 5439638}
+    - LIIF: 2037521871
+      InstanceTarget: {fileID: 13573362}
+    - LIIF: 393946034
+      InstanceTarget: {fileID: 13564210}
+    - LIIF: -1318007568
+      InstanceTarget: {fileID: 3374162}
+    - LIIF: 1502155983
+      InstanceTarget: {fileID: 2366734}
+    - LIIF: -1820489670
+      InstanceTarget: {fileID: 407508}
+    - LIIF: 104730434
+      InstanceTarget: {fileID: 161300}
+    - LIIF: 551184506
+      InstanceTarget: {fileID: 3339296}
+    - LIIF: -1274285046
+      InstanceTarget: {fileID: 2327450}
+    - LIIF: -1000488318
+      InstanceTarget: {fileID: 475470}
+    - LIIF: 238068515
+      InstanceTarget: {fileID: 145968}
   Modifications:
-    Modificated: []
-    NonPrefabObjects: []
+    Modificated:
+    - Object: {fileID: 462614}
+      ObjeckLink: -1334059621
+      PropertyPath: m_LocalRotation
+      Mode: 0
+    - Object: {fileID: 462614}
+      ObjeckLink: -1334059621
+      PropertyPath: m_LocalPosition
+      Mode: 0
+    - Object: {fileID: 462614}
+      ObjeckLink: -1334059621
+      PropertyPath: m_LocalScale
+      Mode: 0
+    - Object: {fileID: 462614}
+      ObjeckLink: -1334059621
+      PropertyPath: m_RootOrder
+      Mode: 0
+    - Object: {fileID: 11404652}
+      ObjeckLink: 226809364
+      PropertyPath: FORWARDFORCE
+      Mode: 0
+    - Object: {fileID: 11404652}
+      ObjeckLink: 226809364
+      PropertyPath: ROTATIONFORCE
+      Mode: 0
+    - Object: {fileID: 11404652}
+      ObjeckLink: 226809364
+      PropertyPath: TURNRATE
+      Mode: 0
+    - Object: {fileID: 11404652}
+      ObjeckLink: 226809364
+      PropertyPath: rightHandCollider
+      Mode: 0
+    - Object: {fileID: 11404652}
+      ObjeckLink: 226809364
+      PropertyPath: leftHandCollider
+      Mode: 0
+    NonPrefabObjects:
+    - child: {fileID: 407508}
+      parent: {fileID: 428062}
+    - child: {fileID: 475470}
+      parent: {fileID: 476088}
     NonPrefabComponents: []
     RemovedObjects: 
     TransformParentChanges: []
