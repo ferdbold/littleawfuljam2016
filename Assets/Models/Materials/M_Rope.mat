@@ -37,23 +37,11 @@ Material:
       data:
         first:
           name: _Gloss
-        second: 0.912384
+        second: 0.898
       data:
         first:
           name: _Diff_Texture
         second: 1
-      data:
-        first:
-          name: _Speed_X
-        second: 0
-      data:
-        first:
-          name: _Speed_Y
-        second: 0.3
-      data:
-        first:
-          name: _node_8508
-        second: 0
       data:
         first:
           name: _Direction_X
@@ -66,6 +54,18 @@ Material:
         first:
           name: _Speed
         second: 2
+      data:
+        first:
+          name: _Speed_X
+        second: 0
+      data:
+        first:
+          name: _Speed_Y
+        second: 0.3
+      data:
+        first:
+          name: _node_8508
+        second: 0
     m_Colors:
       data:
         first:

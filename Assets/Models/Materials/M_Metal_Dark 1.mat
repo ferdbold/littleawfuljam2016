@@ -51,18 +51,10 @@ Material:
       data:
         first:
           name: _Gloss
-        second: 0.154
+        second: 0.462
       data:
         first:
           name: _Diff_Texture
-        second: 0
-      data:
-        first:
-          name: _Tile_X
-        second: 0.5
-      data:
-        first:
-          name: _Tile_Y
         second: 0
       data:
         first:
@@ -87,9 +79,17 @@ Material:
       data:
         first:
           name: _Normal_Power
+        second: 0.7
+      data:
+        first:
+          name: _Tile_X
         second: 0.5
+      data:
+        first:
+          name: _Tile_Y
+        second: 0
     m_Colors:
       data:
         first:
           name: _Diff_color
-        second: {r: 0.61764705, g: 0.61764705, b: 0.61764705, a: 1}
+        second: {r: 0.6034483, g: 0.6034483, b: 0.6034483, a: 1}
