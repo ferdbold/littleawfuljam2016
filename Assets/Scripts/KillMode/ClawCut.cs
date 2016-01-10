@@ -2,10 +2,11 @@
 using System.Collections;
 using System.Collections.Generic;
 
-enum ClawStatus : int { UpperUpLeft, UpperUpRight, LowerUpLeft, LowerUpRight, UpperBottomLeft, UpperBottomRight, LowerBottomLeft, LowerBottomRight, None };
+    
 
 public class ClawCut : MonoBehaviour {
 
+    public  enum ClawStatus : int { UpperUpLeft, UpperUpRight, LowerUpLeft, LowerUpRight, UpperBottomLeft, UpperBottomRight, LowerBottomLeft, LowerBottomRight, None };
 
     private ClawStatus _currentPosition;
 
@@ -161,5 +162,5 @@ public class ClawCut : MonoBehaviour {
 
     }
 
-    public int GetClawPosition() { return (int) _currentPosition; }
+    public ClawStatus GetClawPosition() { return  _currentPosition; }
 }
