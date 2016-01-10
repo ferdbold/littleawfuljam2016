@@ -513,28 +513,8 @@ MonoBehaviour:
     - LIIF: 1455636456
       InstanceTarget: {fileID: 122024}
   Modifications:
-    Modificated:
-    - Object: {fileID: 484876}
-      ObjeckLink: -765337030
-      PropertyPath: m_LocalPosition
-      Mode: 0
-    - Object: {fileID: 484876}
-      ObjeckLink: -765337030
-      PropertyPath: m_RootOrder
-      Mode: 0
-    - Object: {fileID: 2311592}
-      ObjeckLink: 314960063
-      PropertyPath: m_Materials.Array.data[0]
-      Mode: 0
-    NonPrefabObjects:
-    - child: {fileID: 470606}
-      parent: {fileID: 451958}
-    - child: {fileID: 410512}
-      parent: {fileID: 451958}
-    - child: {fileID: 479410}
-      parent: {fileID: 451958}
-    - child: {fileID: 451958}
-      parent: {fileID: 431830}
+    Modificated: []
+    NonPrefabObjects: []
     NonPrefabComponents: []
     RemovedObjects: 
     TransformParentChanges: []

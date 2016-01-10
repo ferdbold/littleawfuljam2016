@@ -88,4 +88,4 @@ Material:
       data:
         first:
           name: _Diff_color
-        second: {r: 0.85294116, g: 0.85294116, b: 0.85294116, a: 1}
+        second: {r: 0.9413793, g: 0.9413793, b: 0.9413793, a: 1}
