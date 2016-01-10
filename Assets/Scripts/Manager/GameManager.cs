@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour {
             currentPlayLevel = 0;
             //OnStart_Level(currentLevel);
             if (songManager == null) songManager = GetComponentInChildren<SongManager>();
+            if (currentLevel == GameLevel.playLevel) gameObject.AddComponent<LevelManager>();
         }
         else {
             Destroy(gameObject);

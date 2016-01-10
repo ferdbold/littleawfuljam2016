@@ -17,11 +17,16 @@ public class KillModeCameraSwitch : MonoBehaviour {
 		yield return new WaitForSeconds(1.5f);
 		transform.DOMove(position, time);
 
-		while (transform.position != position) {
+		for (float i=0; i<5f; i+= Time.deltaTime) {
 			transform.DOLookAt(targetPos, Time.deltaTime);
 			yield return new WaitForEndOfFrame();
 		}
 
 		callback();
+
+        while (true) {
+            transform.DOLookAt(targetPos, Time.deltaTime);
+            yield return new WaitForEndOfFrame();
+        }
 	}
 }
