@@ -707,7 +707,7 @@ GameObject:
   - 95: {fileID: 9516304}
   - 114: {fileID: 11446438}
   m_Layer: 0
-  m_Name: SK_Sloth
+  m_Name: RagdollSloth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1933,7 +1933,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd33bc25df5ea400fa00070af874674b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _ragdolled: 0
+  _ragdollRoot: {fileID: 0}
 --- !u!135 &13572962
 SphereCollider:
   m_ObjectHideFlags: 1
