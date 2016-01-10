@@ -6,8 +6,8 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: M_Metal
-  m_Shader: {fileID: 4800000, guid: 2121d10387c969e4dbd66ca772e5693a, type: 3}
+  m_Name: M_Glass
+  m_Shader: {fileID: 4800000, guid: 6562ed1722964fc4fa4eba1d756e19b7, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
   m_CustomRenderQueue: -1
@@ -17,33 +17,22 @@ Material:
     m_TexEnvs:
       data:
         first:
-          name: _BumpMap
+          name: _Refraction
         second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _node_1904
-        second:
-          m_Texture: {fileID: 0}
+          m_Texture: {fileID: 2800000, guid: bbab0a6f7bae9cf42bf057d8ee2755f6, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
     m_Floats:
       data:
         first:
-          name: _Metallic
-        second: 1
+          name: _Cutoff
+        second: 0.5
       data:
         first:
-          name: _Gloss
-        second: 1
-      data:
-        first:
-          name: _Diff_Texture
+          name: _RefractionIntensity
         second: 0
     m_Colors:
       data:
         first:
-          name: _Diff_color
-        second: {r: 0.4044118, g: 0.4044118, b: 0.4044118, a: 1}
+          name: _Color
+        second: {r: 0.23626733, g: 0.6794013, b: 0.6985294, a: 1}

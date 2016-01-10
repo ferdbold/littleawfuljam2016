@@ -26,7 +26,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 112542}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -3.937849, y: -6.15562, z: -10.320855}
+  m_LocalPosition: {x: -1.51, y: -11.74207, z: 1.0109339}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -41,8 +41,8 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: 348f68968f0d3b349985a60a924a83ee, type: 2}
-  - {fileID: 2100000, guid: 64b73abe2f52988479906d7d1dd7f325, type: 2}
+  - {fileID: 2100000, guid: 115657970a11e15469856dfe8d0e71ea, type: 2}
+  - {fileID: 2100000, guid: 9e4b80c09e7207540bf9b317c8e243f0, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -107,7 +107,19 @@ MonoBehaviour:
     - LIIF: 1937729987
       InstanceTarget: {fileID: 6595342}
   Modifications:
-    Modificated: []
+    Modificated:
+    - Object: {fileID: 2322772}
+      ObjeckLink: -1863392894
+      PropertyPath: m_Materials.Array.data[0]
+      Mode: 0
+    - Object: {fileID: 431328}
+      ObjeckLink: -765337030
+      PropertyPath: m_LocalPosition
+      Mode: 0
+    - Object: {fileID: 431328}
+      ObjeckLink: -765337030
+      PropertyPath: m_RootOrder
+      Mode: 0
     NonPrefabObjects: []
     NonPrefabComponents: []
     RemovedObjects: 
