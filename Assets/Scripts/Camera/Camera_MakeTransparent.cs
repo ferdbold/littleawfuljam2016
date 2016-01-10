@@ -33,7 +33,7 @@ public class Camera_MakeTransparent : MonoBehaviour {
             oldMaterial = myRenderer.material;
             myRenderer.material = newMaterial;
             isTransparent = true;
-            StartCoroutine(LerpAlphaIn(1));
+            StartCoroutine(LerpAlphaIn());
         } else if (!isFadingIn) {
             StopCoroutine("LerpAlphaOut");
             myRenderer.material.color = new Color(myRenderer.material.color.r,
@@ -62,7 +62,6 @@ public class Camera_MakeTransparent : MonoBehaviour {
     }
 
     IEnumerator LerpAlphaOut() {
-        Debug.Log("Start Out alpha  " + isTransparent);
         for (float i = startAlpha; i < 1; i += Time.deltaTime / 0.8f) {
             myRenderer.material.color = new Color(  myRenderer.material.color.r,
                                                     myRenderer.material.color.g,
@@ -73,10 +72,9 @@ public class Camera_MakeTransparent : MonoBehaviour {
         MakeNotTransparent();
     }
 
-    IEnumerator LerpAlphaIn(float startAlpha) {
-        Debug.Log("Start In alpha  " + isTransparent);
+    IEnumerator LerpAlphaIn() {
         isFadingIn = true;
-        for (float i = startAlpha; i >= startAlpha; i -= Time.deltaTime / 0.8f) {
+        for (float i = 1f; i >= startAlpha; i -= Time.deltaTime / 0.8f) {
             myRenderer.material.color = new Color(myRenderer.material.color.r,
                                                     myRenderer.material.color.g,
                                                     myRenderer.material.color.b,
