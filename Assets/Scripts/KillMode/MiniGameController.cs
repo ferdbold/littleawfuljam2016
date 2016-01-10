@@ -59,7 +59,9 @@ public class MiniGameController : MonoBehaviour {
 
 
 
-
+    //Est-ce qu'il est entrain de percé le scientifique
+    private bool _isPiercingWithLeftArm = false;
+    private bool _isPiercingWithRightArm = false;
 
     //Variables pour les pulsions de sang lors de la sortie des griffes
     private bool _doPulseBloodRightArm;
@@ -225,14 +227,16 @@ public class MiniGameController : MonoBehaviour {
             rightArm.transform.localPosition = Vector3.Lerp(_lastPosRightArm,
                 new Vector3(_lastPosRightArm.x, _lastPosRightArm.y, _minArmZ),
                 _currentTimeRightArm/timeToExitWound);
-            if (rightArm.transform.localPosition.z <= _minArmZ)
+            if (rightArm.transform.localPosition.z <= _minArmZ && _isPiercingWithRightArm)
             {
                 _slothHits++;//On incrémente de 1 le nombre d'hits du paresseux
+                _isPiercingWithRightArm = false;
             }
         }
         //On perce avec la griffe droite 
         else if(pierceRightArm>0)
         {
+            _isPiercingWithRightArm = true;
             //Si on n'est pas rendu presque au bout, on lerp
             if (!(rightArm.transform.localPosition.z == maxArmZ))
             {
@@ -269,8 +273,9 @@ public class MiniGameController : MonoBehaviour {
                 new Vector3(_lastPostLeftArm.x, _lastPostLeftArm.y, _minArmZ),
                 _currentTimeLeftArm / timeToExitWound);
             _doPulseBloodLeftArm = false;
-            if (leftArm.transform.localPosition.z <= _minArmZ)
+            if (leftArm.transform.localPosition.z <= _minArmZ && _isPiercingWithLeftArm)
             {
+                _isPiercingWithLeftArm = false;
                 Debug.Log(leftArm.GetComponent<ClawCut>().GetClawPosition() + "    " + _slothHits);
                 _slothHits++;//On incrémente de 1 le nombre d'hits du paresseux
                 if (leftArm.GetComponent<ClawCut>().GetClawPosition() == ClawCut.ClawStatus.LowerUpRight && _slothHits>=targetHealth)
@@ -282,6 +287,7 @@ public class MiniGameController : MonoBehaviour {
         //On perce avec la griffe gauche
         else if (pierceLeftArm > 0)
         {
+            _isPiercingWithLeftArm = true; //il perce le scientifique avec son bras gauche
 
             if (!(leftArm.transform.localPosition.z == maxArmZ))
             {

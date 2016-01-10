@@ -132,10 +132,6 @@ MonoBehaviour:
       InstanceTarget: {fileID: 12472252}
   Modifications:
     Modificated:
-    - Object: {fileID: 425788}
-      ObjeckLink: 2082423978
-      PropertyPath: m_LocalPosition
-      Mode: 0
     - Object: {fileID: 11417586}
       ObjeckLink: -1305818005
       PropertyPath: player
