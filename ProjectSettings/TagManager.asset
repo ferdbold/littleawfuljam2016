@@ -7,6 +7,7 @@ TagManager:
   - enemy-target
   - attack-zone
   - SlothNinja
+  - CanBeTransparent
   layers:
   - Default
   - TransparentFX
