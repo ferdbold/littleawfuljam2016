@@ -8,8 +8,8 @@ using DG.Tweening;
 public abstract class Interactable : MonoBehaviour {
 
 	private float _promptAlpha = 0f;
-	private bool _focused = false;
-	private bool _focusable = true;
+	protected bool _focused = false;
+	[SerializeField] private bool _focusable = true;
 
 	private CanvasGroup _promptCanvasGroup;
 	private Image _promptIcon;
@@ -36,13 +36,6 @@ public abstract class Interactable : MonoBehaviour {
 	#endif
 
 	public void Update() {
-		if (Input.GetKey(KeyCode.F)) {
-			SendMessage("Focus");
-		}
-		if (Input.GetKey(KeyCode.G)) {
-			SendMessage("Blur");
-		}
-
 		if (Input.GetButtonDown("Interact") && _focused) {
 			Activate();
 		}
@@ -90,7 +83,7 @@ public abstract class Interactable : MonoBehaviour {
 	/// <summary>
 	/// Hide the prompt
 	/// </summary>
-	public void Blur() { Debug.Log("blur"); TogglePrompt(false); }
+	public void Blur() { TogglePrompt(false); }
 
 	/// <summary>
 	/// Activate this object
