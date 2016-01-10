@@ -835,18 +835,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 9590974, guid: 132b3e006892f4141a49ba84fa81b13b, type: 2}
-      propertyPath: m_Avatar
-      value: 
-      objectReference: {fileID: 9000000, guid: cb012e600b2e61948872fd589ff795a2, type: 3}
-    - target: {fileID: 11404652, guid: 132b3e006892f4141a49ba84fa81b13b, type: 2}
-      propertyPath: ExtendArmClip
-      value: 
-      objectReference: {fileID: 7400000, guid: 94481aefac0ed36418e81d872f64bb84, type: 2}
-    - target: {fileID: 13770218, guid: 132b3e006892f4141a49ba84fa81b13b, type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300002, guid: cb012e600b2e61948872fd589ff795a2, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 132b3e006892f4141a49ba84fa81b13b, type: 2}
   m_IsPrefabParent: 0
