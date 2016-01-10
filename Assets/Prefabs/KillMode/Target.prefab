@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 485664}
   - 65: {fileID: 6534826}
   m_Layer: 0
-  m_Name: UperUpLeftAttackZone
+  m_Name: UpperUpLeftAttackZone
   m_TagString: attack-zone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -571,7 +571,7 @@ MonoBehaviour:
   canPlantLeftArm: 0
   armSpeed: 0.01
   armPierceSpeed: 0.05
-  maxArmZ: -0.3
+  maxArmZ: -0.5
   maxRightArmX: -0.1
   minRightArmX: -0.5
   maxLeftArmX: 0.5
@@ -579,6 +579,7 @@ MonoBehaviour:
   maxArmY: 1
   minArmY: -1
   timeToExitWound: 1
+  timeToEnter: 0.5
 --- !u!114 &11424294
 MonoBehaviour:
   m_ObjectHideFlags: 1
