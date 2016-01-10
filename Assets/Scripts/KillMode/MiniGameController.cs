@@ -306,6 +306,18 @@ public class MiniGameController : MonoBehaviour {
         }
     }
 
+    public bool IsKillable()
+    {
+        if (_slothHits >= targetHealth)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    
     private void PulseBlood()
     {
         if (_doPulseBloodLeftArm) {
