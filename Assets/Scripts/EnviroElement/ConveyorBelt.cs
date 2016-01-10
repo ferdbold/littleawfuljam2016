@@ -9,19 +9,15 @@ public class ConveyorBelt : MonoBehaviour {
     [SerializeField]
     private bool isOn;
 
-    //if the conveyor belt is locking other
-    private bool locking = false;
-
     public void TurnOn() { isOn = true; }
     public void TurnOff() { isOn = false; }
 
     void OnTriggerStay(Collider other) {
-        if (!locking && isOn) {
+        if (isOn) {
             Converable body = other.GetComponent<Converable>();
-            if (body != null) {
-                body.locked = true;
+            if (body != null && !body.locked) {
                 body.transform.position += transform.forward * speed * Time.deltaTime;
-                locking = true;
+                body.locked = true;
             }
         }
     }
@@ -29,9 +25,8 @@ public class ConveyorBelt : MonoBehaviour {
     void OnTriggerExit(Collider other) {
         if (isOn) {
             Converable body = other.GetComponent<Converable>();
-            if (locking && body != null) {
+            if (body != null) {
                 body.locked = false;
-                locking = false;
             }
         }
     }

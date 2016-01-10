@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour {
             instance = this;
             DontDestroyOnLoad(gameObject);
             currentPlayLevel = 0;
-            OnStart_Level(currentLevel);
+            //OnStart_Level(currentLevel);
             if (songManager == null) songManager = GetComponentInChildren<SongManager>();
         }
         else {
