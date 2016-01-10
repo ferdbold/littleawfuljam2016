@@ -45,7 +45,7 @@ GameObject:
   - 4: {fileID: 473488}
   - 114: {fileID: 11438006}
   m_Layer: 0
-  m_Name: SM_Wall50cm
+  m_Name: Wall_50cm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -13,7 +13,7 @@ GameObject:
   - 114: {fileID: 11422486}
   - 65: {fileID: 6545446}
   m_Layer: 0
-  m_Name: SM_Plane1m_Demi
+  m_Name: Plane_1mDemi
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

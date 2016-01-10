@@ -47,6 +47,11 @@ public class SlothController : MonoBehaviour {
         gameObject.tag = "SlothNinja";
         ANIMTIMEBEFOREMOVE = ExtendArmClip.length;
     }
+
+
+    void Start() {
+        //Dont put anything here since can be called for ragdoll purposes
+    }
 	
 	// Update is called once per frame
 	void Update () {

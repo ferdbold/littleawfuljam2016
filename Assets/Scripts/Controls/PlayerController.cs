@@ -27,31 +27,42 @@ public class PlayerController : MonoBehaviour {
             
             leftIsDown = true;
             DisactivatePreviousInputs();
-            if (holdTimeLeft > 0) slothController.MoveLeft(holdTimeLeft);
+            if (holdTimeLeft > 0) {
+                slothController.MoveLeft(holdTimeLeft);
+            }
             StartCoroutine("CheckLeftPressed");
 
         } else if(leftIsDown && (Input.GetAxis("Left") < 1)) { //Released
             leftIsDown = false;
             StopCoroutine("CheckLeftPressed");
             slothController.ToggleTurnLeft(false);
-            if (holdTimeLeft > 0) slothController.MoveLeft(holdTimeLeft);
+            if (holdTimeLeft > 0) {
+                holdTimeLeft = -1;
+                slothController.MoveLeft(holdTimeLeft);
+            }
         }
 
         //Input Right Key
         if (!rightIsDown && (Input.GetAxis("Right") >= 1)) { //Pressed
             rightIsDown = true;
             DisactivatePreviousInputs();
-            if (holdTimeRight > 0) slothController.MoveRight(holdTimeRight);
+            if (holdTimeRight > 0) {
+                slothController.MoveRight(holdTimeRight);
+            }
             StartCoroutine("CheckRightPressed");
 
         } else if(rightIsDown && (Input.GetAxis("Right") < 1)) { //Released
             rightIsDown = false;
             StopCoroutine("CheckRightPressed");
             slothController.ToggleTurnRight(false);
-            if (holdTimeRight > 0) slothController.MoveRight(holdTimeRight);
+            if (holdTimeRight > 0) {
+                holdTimeRight = -1;
+                slothController.MoveRight(holdTimeRight);
+            }
         }
 
     }
+
 
     /// <summary> Deactivates coroutine and rotation when new input pressed </summary>
     private void DisactivatePreviousInputs() {
@@ -64,20 +75,20 @@ public class PlayerController : MonoBehaviour {
     IEnumerator CheckLeftPressed() {
         holdTimeLeft = 0;
         while (holdTimeLeft < HOLDTIMEFORROTATION) {
-            holdTimeLeft += Time.deltaTime;
+            holdTimeLeft += Time.deltaTime;         
             yield return null;
         }
         slothController.ToggleTurnLeft(true);
-        holdTimeLeft = 0;
+        holdTimeLeft = -1;
     }
 
     IEnumerator CheckRightPressed() {
         holdTimeRight = 0;
         while (holdTimeRight < HOLDTIMEFORROTATION) {
-            holdTimeRight += Time.deltaTime;
+            holdTimeRight += Time.deltaTime;          
             yield return null;
         }
         slothController.ToggleTurnRight(true);
-        holdTimeRight = 0;
+        holdTimeRight = -1;
     }
 }
