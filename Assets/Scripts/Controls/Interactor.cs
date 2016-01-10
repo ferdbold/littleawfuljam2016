@@ -10,7 +10,6 @@ public class Interactor : MonoBehaviour {
 	}
 
 	public void OnTriggerExit(Collider other) {
-		Debug.Log("trigger exit");
 		other.gameObject.SendMessage("Blur", SendMessageOptions.DontRequireReceiver);
 	}
 }
