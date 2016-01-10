@@ -271,9 +271,21 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 113016, guid: a1b34f21235065e49be61e8afcd62f14, type: 2}
+      propertyPath: m_Name
+      value: UpperUpLeftAttackZone
+      objectReference: {fileID: 0}
+    - target: {fileID: 11419188, guid: a1b34f21235065e49be61e8afcd62f14, type: 2}
+      propertyPath: timeToEnterWound
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11419188, guid: a1b34f21235065e49be61e8afcd62f14, type: 2}
+      propertyPath: timeToEnter
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 11419188, guid: a1b34f21235065e49be61e8afcd62f14, type: 2}
       propertyPath: maxArmZ
-      value: -0.3
+      value: -0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a1b34f21235065e49be61e8afcd62f14, type: 2}

@@ -1,0 +1,3441 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!74 &7400000
+AnimationClip:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Take 001
+  serializedVersion: 6
+  m_Legacy: 0
+  m_Compressed: 0
+  m_UseHighQualityCurve: 1
+  m_RotationCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -0.43782756, y: 0.55525404, z: -0.5491201, w: 0.44549647}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: -0.43782756, y: 0.55525404, z: -0.5491201, w: 0.44549647}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -0.00886927, y: 0.10558265, z: 0.08323709, w: 0.990881}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: -0.00886927, y: 0.10558265, z: 0.08323709, w: 0.990881}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -0.070312865, y: -0.20988251, z: 0.108945325, w: 0.96909046}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: -0.070312865, y: -0.20988251, z: 0.108945325, w: 0.96909046}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0.045125462, y: 0.5644983, z: 0.14378686, w: 0.81156063}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 0.045125462, y: 0.5644983, z: 0.14378686, w: 0.81156063}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_neck_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0.09920892, y: -0.37442806, z: 0.07894637, w: 0.91854703}
+        inSlope: {x: 0.016438186, y: 0.0021371841, z: 0.003598988, w: -0.0012202263}
+        outSlope: {x: 0.016438186, y: 0.0021371841, z: 0.003598988, w: -0.0012202263}
+        tangentMode: 0
+      - time: 0.7916667
+        value: {x: 0.20397688, y: -0.35965374, z: 0.08930488, w: 0.90612763}
+        inSlope: {x: 0.080096856, y: 0.01333988, z: -0.027945051, w: -0.009954216}
+        outSlope: {x: 0.080096856, y: 0.01333988, z: -0.027945051, w: -0.009954216}
+        tangentMode: 0
+      - time: 1.5000001
+        value: {x: 0.22548297, y: -0.35579094, z: 0.07000282, w: 0.904251}
+        inSlope: {x: -0.012185825, y: -0.0015614051, z: 0.0064099533, w: 0.0019176023}
+        outSlope: {x: -0.012185825, y: -0.0015614051, z: 0.0064099533, w: 0.0019176023}
+        tangentMode: 0
+      - time: 2
+        value: {x: 0.18038866, y: -0.36409044, z: 0.0973321, w: 0.9085288}
+        inSlope: {x: -0.0020703038, y: 0.00039803906, z: -0.0026268612, w: 0.00085186795}
+        outSlope: {x: -0.0020703038, y: 0.00039803906, z: -0.0026268612, w: 0.00085186795}
+        tangentMode: 0
+      - time: 2.6666667
+        value: {x: 0.17715561, y: -0.36196035, z: 0.08887663, w: 0.91087955}
+        inSlope: {x: -0.022485739, y: 0.0027887805, z: -0.02345104, w: 0.0077462355}
+        outSlope: {x: -0.022485739, y: 0.0027887805, z: -0.02345104, w: 0.0077462355}
+        tangentMode: 0
+      - time: 3.2083333
+        value: {x: 0.07231011, y: -0.36728927, z: 0.04200628, w: 0.92633975}
+        inSlope: {x: -0.15246224, y: -0.0061572874, z: -0.062177934, w: 0.0124483295}
+        outSlope: {x: -0.15246224, y: -0.0061572874, z: -0.062177934, w: 0.0124483295}
+        tangentMode: 0
+      - time: 4.1250005
+        value: {x: 0.04639642, y: -0.3731892, z: 0.09105822, w: 0.9221093}
+        inSlope: {x: 0.0060150423, y: -0.006125436, z: 0.0037649747, w: -0.003152838}
+        outSlope: {x: 0.0060150423, y: -0.006125436, z: 0.0037649747, w: -0.003152838}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 0.09920892, y: -0.37442806, z: 0.07894637, w: 0.91854703}
+        inSlope: {x: 0.00912187, y: -0.00018739772, z: -0.0020645936, w: -0.00088262896}
+        outSlope: {x: 0.00912187, y: -0.00018739772, z: -0.0020645936, w: -0.00088262896}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_neck_jnt/Sloth_head_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_neck_jnt/Sloth_head_jnt/Sloth_head_end_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0.10047719, y: -0.37408972, z: 0.08205862, w: 0.9182742}
+        inSlope: {x: 0.016430676, y: 0.002192974, z: 0.0035946965, w: -0.0012316704}
+        outSlope: {x: 0.016430676, y: 0.002192974, z: 0.0035946965, w: -0.0012316704}
+        tangentMode: 0
+      - time: 0.7916667
+        value: {x: 0.2051945, y: -0.35896048, z: 0.092375, w: 0.90581983}
+        inSlope: {x: 0.0800509, y: 0.013610962, z: -0.027978847, w: -0.009860517}
+        outSlope: {x: 0.0800509, y: 0.013610962, z: -0.027978847, w: -0.009860517}
+        tangentMode: 0
+      - time: 1.5000001
+        value: {x: 0.22668736, y: -0.35502478, z: 0.073066674, w: 0.90400857}
+        inSlope: {x: -0.012180282, y: -0.0016021747, z: 0.006416212, w: 0.0018961446}
+        outSlope: {x: -0.012180282, y: -0.0016021747, z: 0.006416212, w: 0.0018961446}
+        tangentMode: 0
+      - time: 2
+        value: {x: 0.18162145, y: -0.36347708, z: 0.100410305, w: 0.90819377}
+        inSlope: {x: -0.0020717343, y: 0.0003908865, z: -0.0026240002, w: 0.000860451}
+        outSlope: {x: -0.0020717343, y: 0.0003908865, z: -0.0026240002, w: 0.000860451}
+        tangentMode: 0
+      - time: 2.6666667
+        value: {x: 0.17838117, y: -0.361358, z: 0.091962844, w: 0.9105731}
+        inSlope: {x: -0.0224945, y: 0.0027126055, z: -0.023424575, w: 0.007826344}
+        outSlope: {x: -0.0224945, y: 0.0027126055, z: -0.023424575, w: 0.007826344}
+        tangentMode: 0
+      - time: 3.2083333
+        value: {x: 0.07355433, y: -0.36704212, z: 0.04514515, w: 0.9261921}
+        inSlope: {x: -0.15243989, y: -0.00667406, z: -0.062135153, w: 0.012658615}
+        outSlope: {x: -0.15243989, y: -0.00667406, z: -0.062135153, w: 0.012658615}
+        tangentMode: 0
+      - time: 4.1250005
+        value: {x: 0.04766079, y: -0.37302986, z: 0.09418248, w: 0.9217955}
+        inSlope: {x: 0.0060356953, y: -0.006105409, z: 0.0037543357, w: -0.0031657126}
+        outSlope: {x: 0.0060356953, y: -0.006105409, z: 0.0037543357, w: -0.0031657126}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 0.10047719, y: -0.37408972, z: 0.08205862, w: 0.9182742}
+        inSlope: {x: 0.009122585, y: -0.0001566416, z: -0.0020674546, w: -0.00087547634}
+        outSlope: {x: 0.009122585, y: -0.0001566416, z: -0.0020674546, w: -0.00087547634}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_neck_jnt/Sloth_head_ctrl_grp/Sloth_head_ctrl
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0.5603818, y: -0.24076861, z: 0.39746892, w: 0.6855809}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - time: 1.7500001
+        value: {x: 0.5603818, y: -0.24076861, z: 0.39746892, w: 0.6855809}
+        inSlope: {x: 0.002836707, y: -0.004893963, z: -0.0040007867, w: -0.0017201917}
+        outSlope: {x: 0.002836707, y: -0.004893963, z: -0.0040007867, w: -0.0017201917}
+        tangentMode: 0
+      - time: 2.5833333
+        value: {x: 0.588277, y: -0.2908769, z: 0.35487962, w: 0.6658688}
+        inSlope: {x: -0.0011007781, y: 0.0020660153, z: 0.0018253318, w: 0.0009019371}
+        outSlope: {x: -0.0011007781, y: 0.0020660153, z: 0.0018253318, w: 0.0009019371}
+        tangentMode: 0
+      - time: 4.6250005
+        value: {x: 0.5619059, y: -0.24340275, z: 0.39531142, w: 0.68465006}
+        inSlope: {x: -0.008650284, y: 0.014981177, z: 0.012296292, w: 0.0053272126}
+        outSlope: {x: -0.008650284, y: 0.014981177, z: 0.012296292, w: 0.0053272126}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 0.5603818, y: -0.24076861, z: 0.39746892, w: 0.6855809}
+        inSlope: {x: -0.0006237054, y: 0.001076464, z: 0.00087976793, w: 0.000379087}
+        outSlope: {x: -0.0006237054, y: 0.001076464, z: 0.00087976793, w: 0.000379087}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_lf_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0.43586692, y: 0.009487999, z: 0.08232099, w: 0.8961882}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - time: 1.0000001
+        value: {x: 0.43586344, y: 0.010606103, z: 0.08330917, w: 0.89608604}
+        inSlope: {x: -0.00009119511, y: 0.024256721, z: 0.021448549, w: -0.0022459025}
+        outSlope: {x: -0.00009119511, y: 0.024256721, z: 0.021448549, w: -0.0022459025}
+        tangentMode: 0
+      - time: 1.6666667
+        value: {x: 0.43578827, y: 0.020235036, z: 0.09184686, w: 0.895122}
+        inSlope: {x: 0.0000010728846, y: -0.00008332737, z: -0.00007402904, w: 0.000008583077}
+        outSlope: {x: 0.0000010728846, y: -0.00008332737, z: -0.00007402904, w: 0.000008583077}
+        tangentMode: 0
+      - time: 2.1666667
+        value: {x: 0.43964174, y: 0.068941355, z: 0.07335156, w: 0.8925143}
+        inSlope: {x: 0.012649309, y: 0.16980192, z: -0.065384984, w: -0.013964668}
+        outSlope: {x: 0.012649309, y: 0.16980192, z: -0.065384984, w: -0.013964668}
+        tangentMode: 0
+      - time: 2.6666667
+        value: {x: 0.44249433, y: 0.109376244, z: 0.057160564, w: 0.88823885}
+        inSlope: {x: -0.0007388602, y: -0.012258695, z: 0.0030855732, w: 0.0016779923}
+        outSlope: {x: -0.0007388602, y: -0.012258695, z: 0.0030855732, w: 0.0016779923}
+        tangentMode: 0
+      - time: 4.166667
+        value: {x: 0.43760768, y: 0.028621683, z: 0.070516385, w: 0.89593965}
+        inSlope: {x: -0.0038774163, y: -0.07265374, z: -0.0017529196, w: 0.0043602157}
+        outSlope: {x: -0.0038774163, y: -0.07265374, z: -0.0017529196, w: 0.0043602157}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 0.43586692, y: 0.009487999, z: 0.08232099, w: 0.8961882}
+        inSlope: {x: -0.00015807211, y: 0.0003216875, z: 0.0026922328, w: -0.00017452307}
+        outSlope: {x: -0.00015807211, y: 0.0003216875, z: 0.0026922328, w: -0.00017452307}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_lf_jnt/Sloth_shoulder_lf_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0.22327226, y: 0.21402504, z: -0.77037907, w: 0.55754715}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - time: 1.8333334
+        value: {x: 0.2211755, y: 0.21440502, z: -0.76800865, w: 0.56149316}
+        inSlope: {x: -0.004871066, y: 0.0008622401, z: 0.005538936, w: 0.009164564}
+        outSlope: {x: -0.004871066, y: 0.0008622401, z: 0.005538936, w: 0.009164564}
+        tangentMode: 0
+      - time: 2.8333333
+        value: {x: 0.21407011, y: 0.21556479, z: -0.75977534, w: 0.57484543}
+        inSlope: {x: 0.0025777838, y: -0.00038480788, z: -0.0030441307, w: -0.0048379935}
+        outSlope: {x: 0.0025777838, y: -0.00038480788, z: -0.0030441307, w: -0.0048379935}
+        tangentMode: 0
+      - time: 4.8750005
+        value: {x: 0.22330931, y: 0.21401815, z: -0.77042073, w: 0.5574774}
+        inSlope: {x: -0.00079929596, y: 0.00014841513, z: 0.0008983585, w: 0.0015048936}
+        outSlope: {x: -0.00079929596, y: 0.00014841513, z: 0.0008983585, w: 0.0015048936}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 0.22327226, y: 0.21402504, z: -0.77037907, w: 0.55754715}
+        inSlope: {x: -0.00024032684, y: 0.000044346027, z: 0.0002703677, w: 0.00045204334}
+        outSlope: {x: -0.00024032684, y: 0.000044346027, z: 0.0002703677, w: 0.00045204334}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_lf_jnt/Sloth_shoulder_lf_jnt/Sloth_elbow_lf_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -0.494732, y: 0.4436738, z: -0.17742954, w: 0.7258874}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - time: 1.0000001
+        value: {x: -0.49370733, y: 0.44423145, z: -0.1763495, w: 0.72650695}
+        inSlope: {x: 0.022291299, y: 0.01210141, z: 0.023426231, w: 0.013419625}
+        outSlope: {x: 0.022291299, y: 0.01210141, z: 0.023426231, w: 0.013419625}
+        tangentMode: 0
+      - time: 1.5833334
+        value: {x: -0.48470208, y: 0.44904357, z: -0.16705811, w: 0.7317891}
+        inSlope: {x: -0.00004470345, y: -0.000023603425, z: -0.000045776334, w: -0.000025749188}
+        outSlope: {x: -0.00004470345, y: -0.000023603425, z: -0.000045776334, w: -0.000025749188}
+        tangentMode: 0
+      - time: 2.8333333
+        value: {x: -0.47531852, y: 0.45317888, z: -0.15009119, w: 0.7390358}
+        inSlope: {x: -0.004878763, y: -0.002214076, z: -0.0062896064, w: -0.0030570053}
+        outSlope: {x: -0.004878763, y: -0.002214076, z: -0.0062896064, w: -0.0030570053}
+        tangentMode: 0
+      - time: 4.1250005
+        value: {x: -0.4947102, y: 0.4435435, z: -0.17476983, w: 0.72662675}
+        inSlope: {x: -0.02872461, y: -0.015299645, z: -0.03529869, w: -0.018701753}
+        outSlope: {x: -0.02872461, y: -0.015299645, z: -0.03529869, w: -0.018701753}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: -0.494732, y: 0.4436738, z: -0.17742954, w: 0.7258874}
+        inSlope: {x: 0.0018689703, y: 0.0010278265, z: 0.0017566748, w: 0.0010743182}
+        outSlope: {x: 0.0018689703, y: 0.0010278265, z: 0.0017566748, w: 0.0010743182}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_lf_jnt/Sloth_shoulder_lf_jnt/Sloth_elbow_lf_jnt/Sloth_hand_lf_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -0.04997313, y: 0.9462621, z: 0.012605634, w: 0.31926748}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: -0.04997313, y: 0.9462621, z: 0.012605634, w: 0.31926748}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_lf_jnt/Sloth_shoulder_lf_jnt/Sloth_elbow_lf_jnt/Sloth_hand_lf_jnt/Sloth_fingerMid_lf_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0, y: -0.17432675, z: -0, w: 0.98468786}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 0, y: -0.17432675, z: -0, w: 0.98468786}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_lf_jnt/Sloth_shoulder_lf_jnt/Sloth_elbow_lf_jnt/Sloth_hand_lf_jnt/Sloth_fingerMid_lf_jnt/Sloth_fingerMid_end_lf_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -0.010392602, y: 0.34783593, z: 0.022441879, w: 0.9372292}
+        inSlope: {x: -0.0703663, y: 2.9575746, z: -0.038563013, w: -1.3315}
+        outSlope: {x: -0.0703663, y: 2.9575746, z: -0.038563013, w: -1.3315}
+        tangentMode: 0
+      - time: 0.041666668
+        value: {x: -0.013324531, y: 0.4710682, z: 0.020835087, w: 0.88175005}
+        inSlope: {x: -0.03517591, y: 1.4784808, z: -0.01927688, w: -0.66558623}
+        outSlope: {x: -0.03517591, y: 1.4784808, z: -0.01927688, w: -0.66558623}
+        tangentMode: 0
+      - time: 0.08333333
+        value: {x: -0.013323927, y: 0.47104266, z: 0.020835472, w: 0.8817637}
+        inSlope: {x: 0.000028833745, y: -0.0012198685, z: 0.000018440185, w: 0.0006515979}
+        outSlope: {x: 0.000028833745, y: -0.0012198685, z: 0.000018440185, w: 0.0006515979}
+        tangentMode: 0
+      - time: 2.125
+        value: {x: -0.012217419, y: 0.42434162, z: 0.021502992, w: 0.90516436}
+        inSlope: {x: 0.0008667989, y: -0.036487628, z: 0.00049249735, w: 0.017105307}
+        outSlope: {x: 0.0008667989, y: -0.036487628, z: 0.00049249735, w: 0.017105307}
+        tangentMode: 0
+      - time: 4.2083335
+        value: {x: -0.010582617, y: 0.35577455, z: 0.022352902, w: 0.9342445}
+        inSlope: {x: 0.00047698533, y: -0.019935215, z: 0.00022584159, w: 0.0075924266}
+        outSlope: {x: 0.00047698533, y: -0.019935215, z: 0.00022584159, w: 0.0075924266}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: -0.010392602, y: 0.34783593, z: 0.022441879, w: 0.9372292}
+        inSlope: {x: 0.000015601576, y: -0.0006516005, z: 0.000007241992, w: 0.00024175736}
+        outSlope: {x: 0.000015601576, y: -0.0006516005, z: 0.000007241992, w: 0.00024175736}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_lf_jnt/Sloth_shoulder_lf_jnt/Sloth_elbow_lf_jnt/Sloth_hand_lf_jnt/Sloth_fingerUp_lf_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0, y: -0.19487832, z: -0, w: 0.98082745}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 0, y: -0.19487832, z: -0, w: 0.98082745}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_lf_jnt/Sloth_shoulder_lf_jnt/Sloth_elbow_lf_jnt/Sloth_hand_lf_jnt/Sloth_fingerUp_lf_jnt/Sloth_fingerUp_end_lf_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -0.105297014, y: 0.94728696, z: 0.024644516, w: 0.30158347}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: -0.105297014, y: 0.94728696, z: 0.024644516, w: 0.30158347}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_lf_jnt/Sloth_shoulder_lf_jnt/Sloth_elbow_lf_jnt/Sloth_hand_lf_jnt/Sloth_fingerDown_lf_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0, y: -0.19122235, z: -0, w: 0.98154676}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 0, y: -0.19122235, z: -0, w: 0.98154676}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_lf_jnt/Sloth_shoulder_lf_jnt/Sloth_elbow_lf_jnt/Sloth_hand_lf_jnt/Sloth_fingerDown_lf_jnt/Sloth_fingerDown_end_lf_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0, y: 0.19709824, z: -0, w: 0.98038375}
+        inSlope: {x: 0, y: 3.1303248, z: 0, w: -0.8530183}
+        outSlope: {x: 0, y: 3.1303248, z: 0, w: -0.8530183}
+        tangentMode: 0
+      - time: 0.041666668
+        value: {x: 0, y: 0.32752845, z: -0, w: 0.9448413}
+        inSlope: {x: 0, y: 1.5648338, z: 0, w: -0.42639542}
+        outSlope: {x: 0, y: 1.5648338, z: 0, w: -0.42639542}
+        tangentMode: 0
+      - time: 0.08333333
+        value: {x: 0, y: 0.32750106, z: -0, w: 0.9448508}
+        inSlope: {x: 0, y: -0.0013064145, z: 0, w: 0.00045275685}
+        outSlope: {x: 0, y: -0.0013064145, z: 0, w: 0.00045275685}
+        tangentMode: 0
+      - time: 2.125
+        value: {x: 0, y: 0.27770075, z: -0, w: 0.96066767}
+        inSlope: {x: 0, y: -0.0387253, z: 0, w: 0.011193731}
+        outSlope: {x: 0, y: -0.0387253, z: 0, w: 0.011193731}
+        tangentMode: 0
+      - time: 4.2083335
+        value: {x: 0, y: 0.20540841, z: -0, w: 0.9786763}
+        inSlope: {x: 0, y: -0.020883821, z: 0, w: 0.004383795}
+        outSlope: {x: 0, y: -0.020883821, z: 0, w: 0.004383795}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 0, y: 0.19709824, z: -0, w: 0.98038375}
+        inSlope: {x: 0, y: -0.00068199896, z: 0, w: 0.00013732963}
+        outSlope: {x: 0, y: -0.00068199896, z: 0, w: 0.00013732963}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_lf_jnt/Sloth_shoulder_lf_jnt/Sloth_elbow_lf_jnt/Sloth_hand_lf_jnt/Sloth_fingerUp_lf_ctrl_grp/Sloth_fingerUp_lf_ctrl
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 8.2092024e-17, y: 0.8953982, z: -8.2092024e-17, w: 0.44526628}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 8.2092024e-17, y: 0.8953982, z: -8.2092024e-17, w: 0.44526628}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_lf_jnt/Sloth_shoulder_lf_jnt/Sloth_elbow_lf_jnt/Sloth_hand_lf_jnt/Sloth_fingerMid_lf_ctrl_grp/Sloth_fingerMid_lf_ctrl
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 8.2092024e-17, y: 0.8953982, z: -8.2092024e-17, w: 0.44526628}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 8.2092024e-17, y: 0.8953982, z: -8.2092024e-17, w: 0.44526628}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_lf_jnt/Sloth_shoulder_lf_jnt/Sloth_elbow_lf_jnt/Sloth_hand_lf_jnt/Sloth_fingerDown_lf_ctrl_grp/Sloth_fingerDown_lf_ctrl
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -0.26011884, y: -0.49658766, z: -0.62267905, w: 0.54590267}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - time: 1.7500001
+        value: {x: -0.26011884, y: -0.49658766, z: -0.62267905, w: 0.54590267}
+        inSlope: {x: -0.004431371, y: -0.0039249696, z: 0.0019376297, w: -0.0034761461}
+        outSlope: {x: -0.004431371, y: -0.0039249696, z: 0.0019376297, w: -0.0034761461}
+        tangentMode: 0
+      - time: 2.5833333
+        value: {x: -0.30551583, y: -0.5356502, z: -0.601706, w: 0.5076305}
+        inSlope: {x: 0.0018732538, y: 0.0015606873, z: -0.0009140964, w: 0.0016930095}
+        outSlope: {x: 0.0018732538, y: 0.0015606873, z: -0.0009140964, w: 0.0016930095}
+        tangentMode: 0
+      - time: 4.6250005
+        value: {x: -0.2625043, y: -0.49869803, z: -0.6216334, w: 0.5440254}
+        inSlope: {x: 0.013568014, y: 0.011985157, z: -0.00596522, w: 0.010719514}
+        outSlope: {x: 0.013568014, y: 0.011985157, z: -0.00596522, w: 0.010719514}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: -0.26011884, y: -0.49658766, z: -0.62267905, w: 0.54590267}
+        inSlope: {x: 0.00097418204, y: 0.00086260174, z: -0.00042629405, w: 0.00076389604}
+        outSlope: {x: 0.00097418204, y: 0.00086260174, z: -0.00042629405, w: 0.00076389604}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_rt_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0.3826529, y: 0.13765812, z: -0.17146996, w: 0.89734334}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - time: 1.2083334
+        value: {x: 0.38311434, y: 0.1461912, z: -0.16471614, w: 0.89706194}
+        inSlope: {x: 0.0016297097, y: 0.032311488, z: 0.025670698, w: -0.0012409682}
+        outSlope: {x: 0.0016297097, y: 0.032311488, z: 0.025670698, w: -0.0012409682}
+        tangentMode: 0
+      - time: 1.8333334
+        value: {x: 0.38289917, y: 0.15120639, z: -0.16392015, w: 0.8964681}
+        inSlope: {x: -0.0075541674, y: 0.06162889, z: -0.023946207, w: -0.011594286}
+        outSlope: {x: -0.0075541674, y: 0.06162889, z: -0.023946207, w: -0.011594286}
+        tangentMode: 0
+      - time: 2.5833333
+        value: {x: 0.3719502, y: 0.23520227, z: -0.19532447, w: 0.87645954}
+        inSlope: {x: 0.00041520564, y: -0.004797041, z: 0.00033509592, w: 0.0011851784}
+        outSlope: {x: 0.00041520564, y: -0.004797041, z: 0.00033509592, w: 0.0011851784}
+        tangentMode: 0
+      - time: 4.166667
+        value: {x: 0.37963405, y: 0.1559487, z: -0.18280125, w: 0.89338773}
+        inSlope: {x: 0.0045862375, y: -0.071338624, z: -0.0004709977, w: 0.010414878}
+        outSlope: {x: 0.0045862375, y: -0.071338624, z: -0.0004709977, w: 0.010414878}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 0.3826529, y: 0.13765812, z: -0.17146996, w: 0.89734334}
+        inSlope: {x: 0.00036192077, y: 0.00042021435, z: 0.0025055504, w: 0.00026035408}
+        outSlope: {x: 0.00036192077, y: 0.00042021435, z: 0.0025055504, w: 0.00026035408}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_rt_jnt/Sloth_shoulder_rt_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0.15827802, y: 0.21749029, z: -0.6831598, w: 0.67892474}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - time: 1.7916667
+        value: {x: 0.15640502, y: 0.21731919, z: -0.6801721, w: 0.6824044}
+        inSlope: {x: -0.0030634431, y: -0.00029432803, z: 0.0049130963, w: 0.0056912955}
+        outSlope: {x: -0.0030634431, y: -0.00029432803, z: 0.0049130963, w: 0.0056912955}
+        tangentMode: 0
+      - time: 2.75
+        value: {x: 0.1478704, y: 0.21632813, z: -0.66616315, w: 0.6982572}
+        inSlope: {x: 0.0021019536, y: 0.00028753228, z: -0.003531926, w: -0.0039038584}
+        outSlope: {x: 0.0021019536, y: 0.00028753228, z: -0.003531926, w: -0.0039038584}
+        tangentMode: 0
+      - time: 4.8333335
+        value: {x: 0.15833847, y: 0.21749552, z: -0.6832558, w: 0.6788123}
+        inSlope: {x: -0.0008001912, y: -0.000069379705, z: 0.0012688618, w: 0.0014862992}
+        outSlope: {x: -0.0008001912, y: -0.000069379705, z: 0.0012688618, w: 0.0014862992}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 0.15827802, y: 0.21749029, z: -0.6831598, w: 0.67892474}
+        inSlope: {x: -0.00019383505, y: -0.000016808573, z: 0.00030756113, w: 0.00036192077}
+        outSlope: {x: -0.00019383505, y: -0.000016808573, z: 0.00030756113, w: 0.00036192077}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_rt_jnt/Sloth_shoulder_rt_jnt/Sloth_elbow_rt_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -0.39240786, y: 0.37357584, z: -0.3843837, w: 0.7474667}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - time: 1.0000001
+        value: {x: -0.3913766, y: 0.37450027, z: -0.38361531, w: 0.7479393}
+        inSlope: {x: 0.022408243, y: 0.020054337, z: 0.016659018, w: 0.010214565}
+        outSlope: {x: 0.022408243, y: 0.020054337, z: 0.016659018, w: 0.010214565}
+        tangentMode: 0
+      - time: 1.5833334
+        value: {x: -0.38238725, y: 0.3824602, z: -0.37702063, w: 0.751904}
+        inSlope: {x: -0.000044345827, y: -0.000040054292, z: -0.000032544114, w: -0.000019311894}
+        outSlope: {x: -0.000044345827, y: -0.000040054292, z: -0.000032544114, w: -0.000019311894}
+        tangentMode: 0
+      - time: 2.875
+        value: {x: -0.3700971, y: 0.39252445, z: -0.36749202, w: 0.7575635}
+        inSlope: {x: -0.006260979, y: -0.005151262, z: -0.004167072, w: -0.0024111224}
+        outSlope: {x: -0.006260979, y: -0.005151262, z: -0.004167072, w: -0.0024111224}
+        tangentMode: 0
+      - time: 4.166667
+        value: {x: -0.3926601, y: 0.37320262, z: -0.38409764, w: 0.7476677}
+        inSlope: {x: -0.028267372, y: -0.025078751, z: -0.02195772, w: -0.0136020705}
+        outSlope: {x: -0.028267372, y: -0.025078751, z: -0.02195772, w: -0.0136020705}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: -0.39240786, y: 0.37357584, z: -0.3843837, w: 0.7474667}
+        inSlope: {x: 0.0018067429, y: 0.0016350809, z: 0.0012981942, w: 0.0008010895}
+        outSlope: {x: 0.0018067429, y: 0.0016350809, z: 0.0012981942, w: 0.0008010895}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_rt_jnt/Sloth_shoulder_rt_jnt/Sloth_elbow_rt_jnt/Sloth_hand_rt_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -0.048738465, y: 0.9161182, z: 0.01675658, w: 0.3975817}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: -0.048738465, y: 0.9161182, z: 0.01675658, w: 0.3975817}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_rt_jnt/Sloth_shoulder_rt_jnt/Sloth_elbow_rt_jnt/Sloth_hand_rt_jnt/Sloth_fingerMid_rt_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0.000000012707185, y: -0.17432675, z: 0.0000000022496491, w: 0.98468786}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 0.000000012707185, y: -0.17432675, z: 0.0000000022496491, w: 0.98468786}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_rt_jnt/Sloth_shoulder_rt_jnt/Sloth_elbow_rt_jnt/Sloth_hand_rt_jnt/Sloth_fingerMid_rt_jnt/Sloth_fingerMid_end_rt_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -0.009632081, y: 0.31612343, z: 0.02277865, w: 0.94839567}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: -0.009632081, y: 0.31612343, z: 0.02277865, w: 0.94839567}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_rt_jnt/Sloth_shoulder_rt_jnt/Sloth_elbow_rt_jnt/Sloth_hand_rt_jnt/Sloth_fingerUp_rt_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0.000000012657368, y: -0.19487832, z: 0.000000002514863, w: 0.98082745}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 0.000000012657368, y: -0.19487832, z: 0.000000002514863, w: 0.98082745}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_rt_jnt/Sloth_shoulder_rt_jnt/Sloth_elbow_rt_jnt/Sloth_hand_rt_jnt/Sloth_fingerUp_rt_jnt/Sloth_fingerUp_end_rt_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -0.10285631, y: 0.91862404, z: 0.033397462, w: 0.38004616}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: -0.10285631, y: 0.91862404, z: 0.033397462, w: 0.38004616}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_rt_jnt/Sloth_shoulder_rt_jnt/Sloth_elbow_rt_jnt/Sloth_hand_rt_jnt/Sloth_fingerDown_rt_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0.000000010342276, y: -0.19122235, z: 0.000000002014855, w: 0.98154676}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 0.000000010342276, y: -0.19122235, z: 0.000000002014855, w: 0.98154676}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_rt_jnt/Sloth_shoulder_rt_jnt/Sloth_elbow_rt_jnt/Sloth_hand_rt_jnt/Sloth_fingerDown_rt_jnt/Sloth_fingerDown_end_rt_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0, y: 0.16401987, z: -0, w: 0.98645705}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 0, y: 0.16401987, z: -0, w: 0.98645705}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_rt_jnt/Sloth_shoulder_rt_jnt/Sloth_elbow_rt_jnt/Sloth_hand_rt_jnt/Sloth_fingerUp_rt_ctrl_grp/Sloth_fingerUp_rt_ctrl
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 8.4116175e-17, y: 0.8548559, z: -8.4116175e-17, w: 0.5188655}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 8.4116175e-17, y: 0.8548559, z: -8.4116175e-17, w: 0.5188655}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_rt_jnt/Sloth_shoulder_rt_jnt/Sloth_elbow_rt_jnt/Sloth_hand_rt_jnt/Sloth_fingerMid_rt_ctrl_grp/Sloth_fingerMid_rt_ctrl
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 8.4116175e-17, y: 0.8548559, z: -8.4116175e-17, w: 0.5188655}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 8.4116175e-17, y: 0.8548559, z: -8.4116175e-17, w: 0.5188655}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_rt_jnt/Sloth_shoulder_rt_jnt/Sloth_elbow_rt_jnt/Sloth_hand_rt_jnt/Sloth_fingerDown_rt_ctrl_grp/Sloth_fingerDown_rt_ctrl
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0.07644223, y: 0.56111604, z: 0.098441005, w: 0.8182999}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 0.07644223, y: 0.56111604, z: 0.098441005, w: 0.8182999}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_neck_ctrl_grp/Sloth_neck_ctrl
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0.048046492, y: 0.15128641, z: -0.29885063, w: 0.941006}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - time: 1.7500001
+        value: {x: 0.048046492, y: 0.15128641, z: -0.29885063, w: 0.941006}
+        inSlope: {x: -0.0021333864, y: -0.0067176884, z: -0.00034260782, w: 0.0010778914}
+        outSlope: {x: -0.0021333864, y: -0.0067176884, z: -0.00034260782, w: 0.0010778914}
+        tangentMode: 0
+      - time: 2.5833333
+        value: {x: 0.025783759, y: 0.081186615, z: -0.3015881, w: 0.9496255}
+        inSlope: {x: 0.0009357105, y: 0.0029463158, z: 0.000080108606, w: -0.0002517699}
+        outSlope: {x: 0.0009357105, y: 0.0029463158, z: 0.000080108606, w: -0.0002517699}
+        tangentMode: 0
+      - time: 4.6250005
+        value: {x: 0.046897113, y: 0.14766729, z: -0.29903316, w: 0.9415807}
+        inSlope: {x: 0.006543726, y: 0.020604685, z: 0.0010256744, w: -0.003230088}
+        outSlope: {x: 0.006543726, y: 0.020604685, z: 0.0010256744, w: -0.003230088}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 0.048046492, y: 0.15128641, z: -0.29885063, w: 0.941006}
+        inSlope: {x: 0.00046903073, y: 0.0014770087, z: 0.0000758174, w: -0.0002374658}
+        outSlope: {x: 0.00046903073, y: 0.0014770087, z: 0.0000758174, w: -0.0002374658}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_lf_ctrl_grp/Sloth_clav_lf_ctrl
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0.11280881, y: 0.21118717, z: -0.1494688, w: 0.95934}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - time: 1.7500001
+        value: {x: 0.11280881, y: 0.21118717, z: -0.1494688, w: 0.95934}
+        inSlope: {x: -0.00097105, y: -0.006863243, z: -0.0007517345, w: 0.00150633}
+        outSlope: {x: -0.00097105, y: -0.006863243, z: -0.0007517345, w: 0.00150633}
+        tangentMode: 0
+      - time: 2.5833333
+        value: {x: 0.10143133, y: 0.1395651, z: -0.15741177, w: 0.97234505}
+        inSlope: {x: 0.0005301831, y: 0.0030101524, z: 0.0003370641, w: -0.00043272952}
+        outSlope: {x: 0.0005301831, y: 0.0030101524, z: 0.0003370641, w: -0.00043272952}
+        tangentMode: 0
+      - time: 4.6250005
+        value: {x: 0.11228278, y: 0.20748954, z: -0.14987408, w: 0.960145}
+        inSlope: {x: 0.003014707, y: 0.021051718, z: 0.002309198, w: -0.004539718}
+        outSlope: {x: 0.003014707, y: 0.021051718, z: 0.002309198, w: -0.004539718}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 0.11280881, y: 0.21118717, z: -0.1494688, w: 0.95934}
+        inSlope: {x: 0.00021332584, y: 0.0015088377, z: 0.0001652247, w: -0.00033187994}
+        outSlope: {x: 0.00021332584, y: 0.0015088377, z: 0.0001652247, w: -0.00033187994}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_rt_ctrl_grp/Sloth_clav_rt_ctrl
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -0.07602681, y: -0.20788096, z: 0.0824001, w: 0.9717076}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: -0.07602681, y: -0.20788096, z: 0.0824001, w: 0.9717076}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_ctrl_grp/Sloth_splineB_ctrl
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0.00009830337, y: -0.09782327, z: -0.5341313, w: 0.8397228}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 0.00009830337, y: -0.09782327, z: -0.5341313, w: 0.8397228}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_hips_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -0.52028835, y: 0.76432747, z: -0.06254127, w: -0.3757554}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - time: 1.0000001
+        value: {x: -0.52108634, y: 0.7636058, z: -0.06382619, w: -0.37590083}
+        inSlope: {x: -0.017357107, y: -0.015720602, z: -0.027832292, w: -0.0031174414}
+        outSlope: {x: -0.017357107, y: -0.015720602, z: -0.027832292, w: -0.0031174414}
+        tangentMode: 0
+      - time: 1.5833334
+        value: {x: -0.52788687, y: 0.75734425, z: -0.07443197, w: -0.3771273}
+        inSlope: {x: 0.001585721, y: 0.0010685914, z: 0.002678989, w: -0.00060045684}
+        outSlope: {x: 0.001585721, y: 0.0010685914, z: 0.002678989, w: -0.00060045684}
+        tangentMode: 0
+      - time: 3.625
+        value: {x: -0.52629644, y: 0.761358, z: -0.07366028, w: -0.3713763}
+        inSlope: {x: -0.0051913164, y: 0.0007238374, z: -0.011794366, w: 0.011175492}
+        outSlope: {x: -0.0051913164, y: 0.0007238374, z: -0.011794366, w: 0.011175492}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: -0.52028835, y: 0.76432747, z: -0.06254127, w: -0.3757554}
+        inSlope: {x: 0.0004992504, y: 0.00017023152, z: 0.00097024813, w: -0.0005049725}
+        outSlope: {x: 0.0004992504, y: 0.00017023152, z: 0.00097024813, w: -0.0005049725}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_lf_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0.22632354, y: -0, z: -0, w: 0.9740522}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 0.22632354, y: -0, z: -0, w: 0.9740522}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_lf_jnt/Sloth_knee_lf_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0.6841447, y: -0.15747926, z: 0.25551805, w: 0.66472316}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - time: 2
+        value: {x: 0.6841447, y: -0.15747926, z: 0.25551805, w: 0.66472316}
+        inSlope: {x: 0.0061790827, y: 0.0023766116, z: 0.0014637681, w: -0.0063643334}
+        outSlope: {x: 0.0061790827, y: 0.0023766116, z: 0.0014637681, w: -0.0063643334}
+        tangentMode: 0
+      - time: 2.5416667
+        value: {x: 0.7097878, y: -0.14729604, z: 0.26152068, w: 0.63726926}
+        inSlope: {x: -0.00000071525847, y: -0.00000035762923, z: 0, w: 0.00000071525847}
+        outSlope: {x: -0.00000071525847, y: -0.00000035762923, z: 0, w: 0.00000071525847}
+        tangentMode: 0
+      - time: 4.0000005
+        value: {x: 0.7086757, y: -0.14775178, z: 0.26126352, w: 0.6385058}
+        inSlope: {x: -0.014261468, y: -0.0058341557, z: -0.0033005439, w: 0.015824301}
+        outSlope: {x: -0.014261468, y: -0.0058341557, z: -0.0033005439, w: 0.015824301}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 0.6841447, y: -0.15747926, z: 0.25551805, w: 0.66472316}
+        inSlope: {x: -0.0026865108, y: -0.0010324756, z: -0.00063658005, w: 0.0027651892}
+        outSlope: {x: -0.0026865108, y: -0.0010324756, z: -0.00063658005, w: 0.0027651892}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_lf_jnt/Sloth_knee_lf_jnt/Sloth_feet_lf_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0.5715429, y: -0, z: -0, w: 0.8205722}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 0.5715429, y: -0, z: -0, w: 0.8205722}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_lf_jnt/Sloth_knee_lf_jnt/Sloth_feet_lf_jnt/Sloth_toes_lf_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_lf_jnt/Sloth_knee_lf_jnt/Sloth_feet_lf_jnt/Sloth_toes_lf_jnt/Sloth_toes_end_lf_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0.5715429, y: -0, z: -0, w: 0.8205722}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 0.5715429, y: -0, z: -0, w: 0.8205722}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_lf_jnt/Sloth_knee_lf_jnt/Sloth_feet_lf_jnt/Sloth_toes_lf_ctrl_grp/Sloth_toes_lf_ctrl
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0.6841447, y: -0.15747926, z: 0.25551805, w: 0.66472316}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - time: 2
+        value: {x: 0.6841447, y: -0.15747926, z: 0.25551805, w: 0.66472316}
+        inSlope: {x: 0.006179798, y: 0.0023766116, z: 0.0014641257, w: -0.0063643334}
+        outSlope: {x: 0.006179798, y: 0.0023766116, z: 0.0014641257, w: -0.0063643334}
+        tangentMode: 0
+      - time: 2.5416667
+        value: {x: 0.7097878, y: -0.14729604, z: 0.26152068, w: 0.63726926}
+        inSlope: {x: -0.00000071525847, y: -0.00000035762923, z: 0, w: 0.00000071525847}
+        outSlope: {x: -0.00000071525847, y: -0.00000035762923, z: 0, w: 0.00000071525847}
+        tangentMode: 0
+      - time: 4.0000005
+        value: {x: 0.7086756, y: -0.1477518, z: 0.2612635, w: 0.6385058}
+        inSlope: {x: -0.014261468, y: -0.0058341557, z: -0.0033005439, w: 0.015824301}
+        outSlope: {x: -0.014261468, y: -0.0058341557, z: -0.0033005439, w: 0.015824301}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 0.6841447, y: -0.15747926, z: 0.25551805, w: 0.66472316}
+        inSlope: {x: -0.0026865108, y: -0.0010324756, z: -0.00063658005, w: 0.0027651892}
+        outSlope: {x: -0.0026865108, y: -0.0010324756, z: -0.00063658005, w: 0.0027651892}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_lf_jnt/Sloth_knee_lf_jnt/Sloth_feet_lf_ctrl_grp/Sloth_feet_lf_ctrl
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0.22632354, y: -0, z: -0, w: 0.9740522}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 0.22632354, y: -0, z: -0, w: 0.9740522}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_lf_jnt/Sloth_knee_lf_ctrl_grp/Sloth_knee_lf_ctrl
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0.7297401, y: 0.47442368, z: 0.43762225, w: -0.22558442}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - time: 1.0000001
+        value: {x: 0.72878534, y: 0.47516757, z: 0.43783325, w: -0.22669336}
+        inSlope: {x: -0.02077603, y: 0.01610541, z: 0.004606246, w: -0.024092134}
+        outSlope: {x: -0.02077603, y: 0.01610541, z: 0.004606246, w: -0.024092134}
+        tangentMode: 0
+      - time: 1.5833334
+        value: {x: 0.7217264, y: 0.47823286, z: 0.44188142, w: -0.23483}
+        inSlope: {x: 0.011066431, y: -0.019062985, z: 0.011157626, w: 0.01619499}
+        outSlope: {x: 0.011066431, y: -0.019062985, z: 0.011157626, w: 0.01619499}
+        tangentMode: 0
+      - time: 2.7083333
+        value: {x: 0.7305085, y: 0.46421754, z: 0.4496978, w: -0.22052501}
+        inSlope: {x: -0.0021393318, y: 0.0028799796, z: -0.000266433, w: -0.0015699877}
+        outSlope: {x: -0.0021393318, y: 0.0028799796, z: -0.000266433, w: -0.0015699877}
+        tangentMode: 0
+      - time: 4.2083335
+        value: {x: 0.73156476, y: 0.46331382, z: 0.4491706, w: -0.21999791}
+        inSlope: {x: 0.0028631673, y: 0.003943901, z: -0.009546492, w: -0.0016608146}
+        outSlope: {x: 0.0028631673, y: 0.003943901, z: -0.009546492, w: -0.0016608146}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 0.7297401, y: 0.47442368, z: 0.43762225, w: -0.22558442}
+        inSlope: {x: -0.00054216594, y: 0.00214506, z: -0.001989134, w: -0.0011004251}
+        outSlope: {x: -0.00054216594, y: 0.00214506, z: -0.001989134, w: -0.0011004251}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_rt_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0.1740269, y: -0, z: -0, w: 0.9847409}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 0.1740269, y: -0, z: -0, w: 0.9847409}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_rt_jnt/Sloth_knee_rt_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0.5485954, y: -0.13030043, z: 0.2896401, w: 0.77341676}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 0.5485954, y: -0.13030043, z: 0.2896401, w: 0.77341676}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_rt_jnt/Sloth_knee_rt_jnt/Sloth_feet_rt_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0.652917, y: -0, z: -0, w: 0.7574294}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - time: 0.75
+        value: {x: 0.652917, y: -0, z: -0, w: 0.7574294}
+        inSlope: {x: 0.029020058, y: 0, z: 0, w: -0.025096167}
+        outSlope: {x: 0.029020058, y: 0, z: 0, w: -0.025096167}
+        tangentMode: 0
+      - time: 1.1250001
+        value: {x: 0.7063285, y: -0, z: -0, w: 0.7078842}
+        inSlope: {x: -0.04927612, y: 0, z: 0, w: 0.049034365}
+        outSlope: {x: -0.04927612, y: 0, z: 0, w: 0.049034365}
+        tangentMode: 0
+      - time: 1.5833334
+        value: {x: 0.6500357, y: -0, z: -0, w: 0.75990367}
+        inSlope: {x: -0.014006866, y: 0, z: 0, w: 0.011999857}
+        outSlope: {x: -0.014006866, y: 0, z: 0, w: 0.011999857}
+        tangentMode: 0
+      - time: 3.1666667
+        value: {x: 0.6513443, y: -0, z: -0, w: 0.7587823}
+        inSlope: {x: 0.0012753021, y: 0, z: 0, w: -0.0010950576}
+        outSlope: {x: 0.0012753021, y: 0, z: 0, w: -0.0010950576}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 0.652917, y: -0, z: -0, w: 0.7574294}
+        inSlope: {x: 0.000031471372, y: 0, z: 0, w: -0.000027179822}
+        outSlope: {x: 0.000031471372, y: 0, z: 0, w: -0.000027179822}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_rt_jnt/Sloth_knee_rt_jnt/Sloth_feet_rt_jnt/Sloth_toes_rt_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_rt_jnt/Sloth_knee_rt_jnt/Sloth_feet_rt_jnt/Sloth_toes_rt_jnt/Sloth_toes_end_rt_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0.652917, y: -0, z: -0, w: 0.7574294}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - time: 0.75
+        value: {x: 0.652917, y: -0, z: -0, w: 0.7574294}
+        inSlope: {x: 0.029020058, y: 0, z: 0, w: -0.025096167}
+        outSlope: {x: 0.029020058, y: 0, z: 0, w: -0.025096167}
+        tangentMode: 0
+      - time: 1.1250001
+        value: {x: 0.7063285, y: -0, z: -0, w: 0.7078842}
+        inSlope: {x: -0.04927612, y: 0, z: 0, w: 0.049034365}
+        outSlope: {x: -0.04927612, y: 0, z: 0, w: 0.049034365}
+        tangentMode: 0
+      - time: 1.5833334
+        value: {x: 0.6500357, y: -0, z: -0, w: 0.75990367}
+        inSlope: {x: -0.014006866, y: 0, z: 0, w: 0.011999857}
+        outSlope: {x: -0.014006866, y: 0, z: 0, w: 0.011999857}
+        tangentMode: 0
+      - time: 3.1666667
+        value: {x: 0.65134436, y: -0, z: -0, w: 0.75878227}
+        inSlope: {x: 0.0012753021, y: 0, z: 0, w: -0.0010950576}
+        outSlope: {x: 0.0012753021, y: 0, z: 0, w: -0.0010950576}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 0.652917, y: -0, z: -0, w: 0.7574294}
+        inSlope: {x: 0.000031471372, y: 0, z: 0, w: -0.000027179822}
+        outSlope: {x: 0.000031471372, y: 0, z: 0, w: -0.000027179822}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_rt_jnt/Sloth_knee_rt_jnt/Sloth_feet_rt_jnt/Sloth_toes_rt_ctrl_grp/Sloth_toes_rt_ctrl
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0.5485954, y: -0.13030043, z: 0.2896401, w: 0.77341676}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 0.5485954, y: -0.13030043, z: 0.2896401, w: 0.77341676}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_rt_jnt/Sloth_knee_rt_jnt/Sloth_feet_rt_ctrl_grp/Sloth_feet_rt_ctrl
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0.1740269, y: -0, z: -0, w: 0.9847409}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 0.1740269, y: -0, z: -0, w: 0.9847409}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_rt_jnt/Sloth_knee_rt_ctrl_grp/Sloth_knee_rt_ctrl
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -0.27263802, y: -0.42290917, z: -0.03752505, w: 0.86337024}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - time: 1.0000001
+        value: {x: -0.27130324, y: -0.4222309, z: -0.037710506, w: 0.8641143}
+        inSlope: {x: 0.02901041, y: 0.0146841975, z: -0.004079773, w: 0.01609325}
+        outSlope: {x: 0.02901041, y: 0.0146841975, z: -0.004079773, w: 0.01609325}
+        tangentMode: 0
+      - time: 1.5833334
+        value: {x: -0.26003987, y: -0.41657156, z: -0.039512567, w: 0.8702219}
+        inSlope: {x: -0.0029761773, y: -0.0007785554, z: -0.00031819922, w: -0.0012767308}
+        outSlope: {x: -0.0029761773, y: -0.0007785554, z: -0.00031819922, w: -0.0012767308}
+        tangentMode: 0
+      - time: 3.625
+        value: {x: -0.2603665, y: -0.4210812, z: -0.034252014, w: 0.8681744}
+        inSlope: {x: 0.0137411095, y: -0.0027111717, z: 0.009232057, w: 0.0031728684}
+        outSlope: {x: 0.0137411095, y: -0.0027111717, z: 0.009232057, w: 0.0031728684}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: -0.27263802, y: -0.42290917, z: -0.03752505, w: 0.86337024}
+        inSlope: {x: -0.0010750334, y: -0.000063658, z: -0.00040197527, w: -0.0003891006}
+        outSlope: {x: -0.0010750334, y: -0.000063658, z: -0.00040197527, w: -0.0003891006}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_lf_ctrl_grp/Sloth_leg_lf_ctrl
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -0.22718796, y: -0.27062225, z: 0.019760597, w: 0.9352854}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - time: 1.0000001
+        value: {x: -0.22588587, y: -0.26985413, z: 0.01936558, w: 0.93583083}
+        inSlope: {x: 0.028266367, y: 0.01674449, z: -0.008581234, w: 0.0118174525}
+        outSlope: {x: 0.028266367, y: 0.01674449, z: -0.008581234, w: 0.0118174525}
+        tangentMode: 0
+      - time: 1.5833334
+        value: {x: -0.21875131, y: -0.2617442, z: 0.016403912, w: 0.93987703}
+        inSlope: {x: -0.028784737, y: 0.0014698502, z: 0.0013992407, w: -0.0063164197}
+        outSlope: {x: -0.028784737, y: 0.0014698502, z: 0.0013992407, w: -0.0063164197}
+        tangentMode: 0
+      - time: 2.7083333
+        value: {x: -0.2412509, y: -0.2623742, z: 0.016737554, w: 0.9341722}
+        inSlope: {x: 0.0034348397, y: 0.00029289746, z: -0.0015890538, w: 0.0009970673}
+        outSlope: {x: 0.0034348397, y: 0.00029289746, z: -0.0015890538, w: 0.0009970673}
+        tangentMode: 0
+      - time: 4.2083335
+        value: {x: -0.24223389, y: -0.2629844, z: 0.0177134, w: 0.9337281}
+        inSlope: {x: 0.006139907, y: -0.0073817773, z: 0.0050116316, w: -0.0005822196}
+        outSlope: {x: 0.006139907, y: -0.0073817773, z: 0.0050116316, w: -0.0005822196}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: -0.22718796, y: -0.27062225, z: 0.019760597, w: 0.9352854}
+        inSlope: {x: 0.0028914323, y: -0.0012474108, z: 0.00019235982, w: 0.000337602}
+        outSlope: {x: 0.0028914323, y: -0.0012474108, z: 0.00019235982, w: 0.000337602}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_rt_ctrl_grp/Sloth_leg_rt_ctrl
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -0.00886927, y: 0.10558265, z: 0.08323709, w: 0.990881}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: -0.00886927, y: 0.10558265, z: 0.08323709, w: 0.990881}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_ctrl_grp/Sloth_splineA_ctrl
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0.00009830337, y: -0.09782327, z: -0.5341313, w: 0.8397228}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 0.00009830337, y: -0.09782327, z: -0.5341313, w: 0.8397228}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_hips_ctrl_grp/Sloth_hips_ctrl
+  m_CompressedRotationCurves: []
+  m_EulerCurves: []
+  m_PositionCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -0.045096878, y: 0.7135068, z: -0.011734605}
+        inSlope: {x: -2.220446e-16, y: 1.0658141e-14, z: -1.2688262e-16}
+        outSlope: {x: -2.220446e-16, y: 1.0658141e-14, z: -1.2688262e-16}
+        tangentMode: 0
+      - time: 1.2916667
+        value: {x: -0.045096878, y: 0.7180036, z: -0.011734605}
+        inSlope: {x: -9.5161796e-17, y: 0.0057802782, z: 1.2688239e-16}
+        outSlope: {x: -2.2204482e-16, y: 0.005768525, z: -1.2688274e-16}
+        tangentMode: 0
+      - time: 3.3333333
+        value: {x: -0.045096878, y: 0.7172776, z: -0.011734605}
+        inSlope: {x: -9.5161796e-17, y: -0.0012819101, z: 1.2688239e-16}
+        outSlope: {x: -2.2204418e-16, y: -0.0012939426, z: -1.2688239e-16}
+        tangentMode: 0
+      - time: 4.916667
+        value: {x: -0.045096878, y: 0.7134667, z: -0.011734605}
+        inSlope: {x: -9.516125e-17, y: 0.0018299068, z: 1.2688166e-16}
+        outSlope: {x: -2.2204545e-16, y: 0.0018176336, z: -1.2688311e-16}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: -0.045096878, y: 0.7135068, z: -0.011734605}
+        inSlope: {x: -9.5162345e-17, y: -0.000013427903, z: 1.2688311e-16}
+        outSlope: {x: -9.5162345e-17, y: -0.000013427903, z: 1.2688311e-16}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -0.03070381, y: 0.00042644178, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: -0.03070381, y: 0.00042644178, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -0.18972392, y: 0.0000065194886, z: -2.1316282e-16}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: -0.18972392, y: 0.0000065194886, z: -2.1316282e-16}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -0.17255825, y: -7.105427e-17, z: -1.7763568e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: -0.17255825, y: -7.105427e-17, z: -1.7763568e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_neck_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -0.058770165, y: -2.842171e-16, z: 1.4210854e-16}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: -0.058770165, y: -2.842171e-16, z: 1.4210854e-16}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_neck_jnt/Sloth_head_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -0.19077234, y: -6.750156e-16, z: -3.6788312e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: -0.19077234, y: -6.750156e-16, z: -3.6788312e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_neck_jnt/Sloth_head_jnt/Sloth_head_end_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -2.842171e-16, y: 0, z: -4.440892e-18}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: -2.842171e-16, y: 0, z: -4.440892e-18}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_neck_jnt/Sloth_head_ctrl_grp/Sloth_head_ctrl
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -0.13475691, y: 0.015206324, z: -0.12486571}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: -0.13475691, y: 0.015206324, z: -0.12486571}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_lf_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -0.060793113, y: 0.0342398, z: 0.027640421}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: -0.060793113, y: 0.0342398, z: 0.027640421}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_lf_jnt/Sloth_shoulder_lf_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -0.23828106, y: -0.03493857, z: -4.8849813e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: -0.23828106, y: -0.03493857, z: -4.8849813e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_lf_jnt/Sloth_shoulder_lf_jnt/Sloth_elbow_lf_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -0.27222157, y: 1.0900372e-16, z: 4.440892e-18}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: -0.27222157, y: 1.0900372e-16, z: 4.440892e-18}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_lf_jnt/Sloth_shoulder_lf_jnt/Sloth_elbow_lf_jnt/Sloth_hand_lf_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -0.05203826, y: 0, z: -3.1974422e-16}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: -0.05203826, y: 0, z: -3.1974422e-16}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_lf_jnt/Sloth_shoulder_lf_jnt/Sloth_elbow_lf_jnt/Sloth_hand_lf_jnt/Sloth_fingerMid_lf_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -0.13395143, y: 1.1132283e-16, z: 8.8817837e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: -0.13395143, y: 1.1132283e-16, z: 8.8817837e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_lf_jnt/Sloth_shoulder_lf_jnt/Sloth_elbow_lf_jnt/Sloth_hand_lf_jnt/Sloth_fingerMid_lf_jnt/Sloth_fingerMid_end_lf_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -0.055209756, y: 0.0305889, z: -0.00024887008}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: -0.055209756, y: 0.0305889, z: -0.00024887008}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_lf_jnt/Sloth_shoulder_lf_jnt/Sloth_elbow_lf_jnt/Sloth_hand_lf_jnt/Sloth_fingerUp_lf_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -0.120296724, y: 2.3877776e-18, z: 5.3290704e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: -0.120296724, y: 2.3877776e-18, z: 5.3290704e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_lf_jnt/Sloth_shoulder_lf_jnt/Sloth_elbow_lf_jnt/Sloth_hand_lf_jnt/Sloth_fingerUp_lf_jnt/Sloth_fingerUp_end_lf_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -0.053258065, y: -0.02814179, z: -0.000095719275}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: -0.053258065, y: -0.02814179, z: -0.000095719275}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_lf_jnt/Sloth_shoulder_lf_jnt/Sloth_elbow_lf_jnt/Sloth_hand_lf_jnt/Sloth_fingerDown_lf_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -0.122506835, y: -1.648009e-17, z: -8.881784e-18}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: -0.122506835, y: -1.648009e-17, z: -8.881784e-18}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_lf_jnt/Sloth_shoulder_lf_jnt/Sloth_elbow_lf_jnt/Sloth_hand_lf_jnt/Sloth_fingerDown_lf_jnt/Sloth_fingerDown_end_lf_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -0, y: 1.4210854e-16, z: 4.440892e-18}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: -0, y: 1.4210854e-16, z: 4.440892e-18}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_lf_jnt/Sloth_shoulder_lf_jnt/Sloth_elbow_lf_jnt/Sloth_hand_lf_jnt/Sloth_fingerUp_lf_ctrl_grp/Sloth_fingerUp_lf_ctrl
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -0, y: 0, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: -0, y: 0, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_lf_jnt/Sloth_shoulder_lf_jnt/Sloth_elbow_lf_jnt/Sloth_hand_lf_jnt/Sloth_fingerMid_lf_ctrl_grp/Sloth_fingerMid_lf_ctrl
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -0, y: 0, z: 4.440892e-18}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: -0, y: 0, z: 4.440892e-18}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_lf_jnt/Sloth_shoulder_lf_jnt/Sloth_elbow_lf_jnt/Sloth_hand_lf_jnt/Sloth_fingerDown_lf_ctrl_grp/Sloth_fingerDown_lf_ctrl
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -0.08212927, y: 0.023177437, z: 0.06411879}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: -0.08212927, y: 0.023177437, z: 0.06411879}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_rt_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0.0607935, y: -0.034238998, z: -0.027640449}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 0.0607935, y: -0.034238998, z: -0.027640449}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_rt_jnt/Sloth_shoulder_rt_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0.238281, y: 0.034938, z: -2.4424906e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 0.238281, y: 0.034938, z: -2.4424906e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_rt_jnt/Sloth_shoulder_rt_jnt/Sloth_elbow_rt_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0.27222103, y: -0.00000012878644, z: -0.000000013401222}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 0.27222103, y: -0.00000012878644, z: -0.000000013401222}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_rt_jnt/Sloth_shoulder_rt_jnt/Sloth_elbow_rt_jnt/Sloth_hand_rt_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0.052038424, y: 0.00000047982815, z: -0.000000044929525}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 0.052038424, y: 0.00000047982815, z: -0.000000044929525}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_rt_jnt/Sloth_shoulder_rt_jnt/Sloth_elbow_rt_jnt/Sloth_hand_rt_jnt/Sloth_fingerMid_rt_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0.13395156, y: -0.00000008886694, z: 0.000000064576554}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 0.13395156, y: -0.00000008886694, z: 0.000000064576554}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_rt_jnt/Sloth_shoulder_rt_jnt/Sloth_elbow_rt_jnt/Sloth_hand_rt_jnt/Sloth_fingerMid_rt_jnt/Sloth_fingerMid_end_rt_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0.05520992, y: -0.030588422, z: 0.00024882518}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 0.05520992, y: -0.030588422, z: 0.00024882518}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_rt_jnt/Sloth_shoulder_rt_jnt/Sloth_elbow_rt_jnt/Sloth_hand_rt_jnt/Sloth_fingerUp_rt_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0.120297045, y: -0.00000013201021, z: 0.0000001486563}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 0.120297045, y: -0.00000013201021, z: 0.0000001486563}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_rt_jnt/Sloth_shoulder_rt_jnt/Sloth_elbow_rt_jnt/Sloth_hand_rt_jnt/Sloth_fingerUp_rt_jnt/Sloth_fingerUp_end_rt_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0.053258233, y: 0.028142268, z: 0.00009567434}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 0.053258233, y: 0.028142268, z: 0.00009567434}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_rt_jnt/Sloth_shoulder_rt_jnt/Sloth_elbow_rt_jnt/Sloth_hand_rt_jnt/Sloth_fingerDown_rt_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0.12250664, y: 0.000000055385925, z: -0.0000000569497}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 0.12250664, y: 0.000000055385925, z: -0.0000000569497}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_rt_jnt/Sloth_shoulder_rt_jnt/Sloth_elbow_rt_jnt/Sloth_hand_rt_jnt/Sloth_fingerDown_rt_jnt/Sloth_fingerDown_end_rt_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -0, y: 1.4210854e-16, z: -6.661338e-18}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: -0, y: 1.4210854e-16, z: -6.661338e-18}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_rt_jnt/Sloth_shoulder_rt_jnt/Sloth_elbow_rt_jnt/Sloth_hand_rt_jnt/Sloth_fingerUp_rt_ctrl_grp/Sloth_fingerUp_rt_ctrl
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -0, y: 1.4210854e-16, z: -3.9968027e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: -0, y: 1.4210854e-16, z: -3.9968027e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_rt_jnt/Sloth_shoulder_rt_jnt/Sloth_elbow_rt_jnt/Sloth_hand_rt_jnt/Sloth_fingerMid_rt_ctrl_grp/Sloth_fingerMid_rt_ctrl
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -0, y: 1.4210854e-16, z: -2.220446e-18}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: -0, y: 1.4210854e-16, z: -2.220446e-18}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_rt_jnt/Sloth_shoulder_rt_jnt/Sloth_elbow_rt_jnt/Sloth_hand_rt_jnt/Sloth_fingerDown_rt_ctrl_grp/Sloth_fingerDown_rt_ctrl
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1.4210854e-16, y: 1.4210854e-16, z: -1.3322676e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 1.4210854e-16, y: 1.4210854e-16, z: -1.3322676e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_neck_ctrl_grp/Sloth_neck_ctrl
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -0.06029818, y: 0.055124, z: 0.02016392}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: -0.06029818, y: 0.055124, z: 0.02016392}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_lf_ctrl_grp/Sloth_clav_lf_ctrl
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -0.00044871258, y: -0.0031661682, z: -0.008604443}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: -0.00044871258, y: -0.0031661682, z: -0.008604443}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_rt_ctrl_grp/Sloth_clav_rt_ctrl
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -0, y: 0, z: -3.1086245e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: -0, y: 0, z: -3.1086245e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_ctrl_grp/Sloth_splineB_ctrl
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0.033355728, y: -0.0033763745, z: 1.0658141e-16}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 0.033355728, y: -0.0033763745, z: 1.0658141e-16}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_hips_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0.01251649, y: -0.0030932312, z: -0.13511367}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 0.01251649, y: -0.0030932312, z: -0.13511367}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_lf_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -7.105427e-17, y: -0.17878447, z: 0.025224553}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: -7.105427e-17, y: -0.17878447, z: 0.025224553}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_lf_jnt/Sloth_knee_lf_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -1.4210854e-16, y: -0.0827081, z: -0.027245022}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: -1.4210854e-16, y: -0.0827081, z: -0.027245022}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_lf_jnt/Sloth_knee_lf_jnt/Sloth_feet_lf_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1.4210854e-16, y: -0.023605594, z: 0.02217316}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 1.4210854e-16, y: -0.023605594, z: 0.02217316}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_lf_jnt/Sloth_knee_lf_jnt/Sloth_feet_lf_jnt/Sloth_toes_lf_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 5.9674484e-17, y: -0.012809532, z: 0.076857194}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 5.9674484e-17, y: -0.012809532, z: 0.076857194}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_lf_jnt/Sloth_knee_lf_jnt/Sloth_feet_lf_jnt/Sloth_toes_lf_jnt/Sloth_toes_end_lf_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 3.5527136e-17, y: 0, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 3.5527136e-17, y: 0, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_lf_jnt/Sloth_knee_lf_jnt/Sloth_feet_lf_jnt/Sloth_toes_lf_ctrl_grp/Sloth_toes_lf_ctrl
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -0, y: 0, z: -4.440892e-18}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: -0, y: 0, z: -4.440892e-18}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_lf_jnt/Sloth_knee_lf_jnt/Sloth_feet_lf_ctrl_grp/Sloth_feet_lf_ctrl
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -1.7763568e-17, y: 0, z: -8.881784e-18}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: -1.7763568e-17, y: 0, z: -8.881784e-18}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_lf_jnt/Sloth_knee_lf_ctrl_grp/Sloth_knee_lf_ctrl
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0.01251649, y: -0.0030932312, z: 0.13511367}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 0.01251649, y: -0.0030932312, z: 0.13511367}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_rt_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -0, y: 0.17878447, z: -0.025224553}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: -0, y: 0.17878447, z: -0.025224553}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_rt_jnt/Sloth_knee_rt_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 2.1316282e-16, y: 0.0827081, z: 0.027245022}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 2.1316282e-16, y: 0.0827081, z: 0.027245022}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_rt_jnt/Sloth_knee_rt_jnt/Sloth_feet_rt_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -0, y: 0.023605594, z: -0.02217316}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: -0, y: 0.023605594, z: -0.02217316}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_rt_jnt/Sloth_knee_rt_jnt/Sloth_feet_rt_jnt/Sloth_toes_rt_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1.7763568e-17, y: 0.01280952, z: -0.076857194}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 1.7763568e-17, y: 0.01280952, z: -0.076857194}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_rt_jnt/Sloth_knee_rt_jnt/Sloth_feet_rt_jnt/Sloth_toes_rt_jnt/Sloth_toes_end_rt_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -3.5527136e-17, y: 4.440892e-18, z: -2.220446e-18}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: -3.5527136e-17, y: 4.440892e-18, z: -2.220446e-18}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_rt_jnt/Sloth_knee_rt_jnt/Sloth_feet_rt_jnt/Sloth_toes_rt_ctrl_grp/Sloth_toes_rt_ctrl
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -0, y: 0, z: -3.330669e-18}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: -0, y: 0, z: -3.330669e-18}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_rt_jnt/Sloth_knee_rt_jnt/Sloth_feet_rt_ctrl_grp/Sloth_feet_rt_ctrl
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1.7763568e-17, y: 0, z: -1.9984014e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 1.7763568e-17, y: 0, z: -1.9984014e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_rt_jnt/Sloth_knee_rt_ctrl_grp/Sloth_knee_rt_ctrl
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1.7763568e-17, y: -3.5527136e-17, z: -8.881784e-18}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 1.7763568e-17, y: -3.5527136e-17, z: -8.881784e-18}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_lf_ctrl_grp/Sloth_leg_lf_ctrl
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -0, y: -3.5527136e-17, z: -2.5535128e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: -0, y: -3.5527136e-17, z: -2.5535128e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_rt_ctrl_grp/Sloth_leg_rt_ctrl
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -7.105427e-17, y: 0, z: 3.330669e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: -7.105427e-17, y: 0, z: 3.330669e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_ctrl_grp/Sloth_splineA_ctrl
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -0, y: -3.5527136e-17, z: -8.881784e-18}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: -0, y: -3.5527136e-17, z: -8.881784e-18}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_hips_ctrl_grp/Sloth_hips_ctrl
+  m_ScaleCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_neck_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_neck_jnt/Sloth_head_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_neck_jnt/Sloth_head_jnt/Sloth_head_end_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_neck_jnt/Sloth_head_ctrl_grp/Sloth_head_ctrl
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_lf_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_lf_jnt/Sloth_shoulder_lf_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_lf_jnt/Sloth_shoulder_lf_jnt/Sloth_elbow_lf_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_lf_jnt/Sloth_shoulder_lf_jnt/Sloth_elbow_lf_jnt/Sloth_hand_lf_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_lf_jnt/Sloth_shoulder_lf_jnt/Sloth_elbow_lf_jnt/Sloth_hand_lf_jnt/Sloth_fingerMid_lf_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_lf_jnt/Sloth_shoulder_lf_jnt/Sloth_elbow_lf_jnt/Sloth_hand_lf_jnt/Sloth_fingerMid_lf_jnt/Sloth_fingerMid_end_lf_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_lf_jnt/Sloth_shoulder_lf_jnt/Sloth_elbow_lf_jnt/Sloth_hand_lf_jnt/Sloth_fingerUp_lf_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_lf_jnt/Sloth_shoulder_lf_jnt/Sloth_elbow_lf_jnt/Sloth_hand_lf_jnt/Sloth_fingerUp_lf_jnt/Sloth_fingerUp_end_lf_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_lf_jnt/Sloth_shoulder_lf_jnt/Sloth_elbow_lf_jnt/Sloth_hand_lf_jnt/Sloth_fingerDown_lf_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_lf_jnt/Sloth_shoulder_lf_jnt/Sloth_elbow_lf_jnt/Sloth_hand_lf_jnt/Sloth_fingerDown_lf_jnt/Sloth_fingerDown_end_lf_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_lf_jnt/Sloth_shoulder_lf_jnt/Sloth_elbow_lf_jnt/Sloth_hand_lf_jnt/Sloth_fingerUp_lf_ctrl_grp/Sloth_fingerUp_lf_ctrl
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_lf_jnt/Sloth_shoulder_lf_jnt/Sloth_elbow_lf_jnt/Sloth_hand_lf_jnt/Sloth_fingerMid_lf_ctrl_grp/Sloth_fingerMid_lf_ctrl
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_lf_jnt/Sloth_shoulder_lf_jnt/Sloth_elbow_lf_jnt/Sloth_hand_lf_jnt/Sloth_fingerDown_lf_ctrl_grp/Sloth_fingerDown_lf_ctrl
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_rt_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_rt_jnt/Sloth_shoulder_rt_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_rt_jnt/Sloth_shoulder_rt_jnt/Sloth_elbow_rt_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_rt_jnt/Sloth_shoulder_rt_jnt/Sloth_elbow_rt_jnt/Sloth_hand_rt_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_rt_jnt/Sloth_shoulder_rt_jnt/Sloth_elbow_rt_jnt/Sloth_hand_rt_jnt/Sloth_fingerMid_rt_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_rt_jnt/Sloth_shoulder_rt_jnt/Sloth_elbow_rt_jnt/Sloth_hand_rt_jnt/Sloth_fingerMid_rt_jnt/Sloth_fingerMid_end_rt_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_rt_jnt/Sloth_shoulder_rt_jnt/Sloth_elbow_rt_jnt/Sloth_hand_rt_jnt/Sloth_fingerUp_rt_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_rt_jnt/Sloth_shoulder_rt_jnt/Sloth_elbow_rt_jnt/Sloth_hand_rt_jnt/Sloth_fingerUp_rt_jnt/Sloth_fingerUp_end_rt_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_rt_jnt/Sloth_shoulder_rt_jnt/Sloth_elbow_rt_jnt/Sloth_hand_rt_jnt/Sloth_fingerDown_rt_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_rt_jnt/Sloth_shoulder_rt_jnt/Sloth_elbow_rt_jnt/Sloth_hand_rt_jnt/Sloth_fingerDown_rt_jnt/Sloth_fingerDown_end_rt_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_rt_jnt/Sloth_shoulder_rt_jnt/Sloth_elbow_rt_jnt/Sloth_hand_rt_jnt/Sloth_fingerUp_rt_ctrl_grp/Sloth_fingerUp_rt_ctrl
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_rt_jnt/Sloth_shoulder_rt_jnt/Sloth_elbow_rt_jnt/Sloth_hand_rt_jnt/Sloth_fingerMid_rt_ctrl_grp/Sloth_fingerMid_rt_ctrl
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_rt_jnt/Sloth_shoulder_rt_jnt/Sloth_elbow_rt_jnt/Sloth_hand_rt_jnt/Sloth_fingerDown_rt_ctrl_grp/Sloth_fingerDown_rt_ctrl
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_neck_ctrl_grp/Sloth_neck_ctrl
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_lf_ctrl_grp/Sloth_clav_lf_ctrl
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_rt_ctrl_grp/Sloth_clav_rt_ctrl
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_ctrl_grp/Sloth_splineB_ctrl
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_hips_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_lf_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_lf_jnt/Sloth_knee_lf_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_lf_jnt/Sloth_knee_lf_jnt/Sloth_feet_lf_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_lf_jnt/Sloth_knee_lf_jnt/Sloth_feet_lf_jnt/Sloth_toes_lf_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_lf_jnt/Sloth_knee_lf_jnt/Sloth_feet_lf_jnt/Sloth_toes_lf_jnt/Sloth_toes_end_lf_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_lf_jnt/Sloth_knee_lf_jnt/Sloth_feet_lf_jnt/Sloth_toes_lf_ctrl_grp/Sloth_toes_lf_ctrl
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_lf_jnt/Sloth_knee_lf_jnt/Sloth_feet_lf_ctrl_grp/Sloth_feet_lf_ctrl
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_lf_jnt/Sloth_knee_lf_ctrl_grp/Sloth_knee_lf_ctrl
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_rt_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_rt_jnt/Sloth_knee_rt_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_rt_jnt/Sloth_knee_rt_jnt/Sloth_feet_rt_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_rt_jnt/Sloth_knee_rt_jnt/Sloth_feet_rt_jnt/Sloth_toes_rt_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_rt_jnt/Sloth_knee_rt_jnt/Sloth_feet_rt_jnt/Sloth_toes_rt_jnt/Sloth_toes_end_rt_jnt
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_rt_jnt/Sloth_knee_rt_jnt/Sloth_feet_rt_jnt/Sloth_toes_rt_ctrl_grp/Sloth_toes_rt_ctrl
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_rt_jnt/Sloth_knee_rt_jnt/Sloth_feet_rt_ctrl_grp/Sloth_feet_rt_ctrl
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_rt_jnt/Sloth_knee_rt_ctrl_grp/Sloth_knee_rt_ctrl
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_lf_ctrl_grp/Sloth_leg_lf_ctrl
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_rt_ctrl_grp/Sloth_leg_rt_ctrl
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_splineA_ctrl_grp/Sloth_splineA_ctrl
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 4.9583335
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Sloth_root_jnt/Sloth_hips_ctrl_grp/Sloth_hips_ctrl
+  m_FloatCurves: []
+  m_PPtrCurves: []
+  m_SampleRate: 24
+  m_WrapMode: 0
+  m_Bounds:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
+  m_ClipBindingConstant:
+    genericBindings: []
+    pptrCurveMapping: []
+  m_AnimationClipSettings:
+    serializedVersion: 2
+    m_AdditiveReferencePoseClip: {fileID: 0}
+    m_AdditiveReferencePoseTime: 0
+    m_StartTime: 0
+    m_StopTime: 4.9583335
+    m_OrientationOffsetY: 0
+    m_Level: 0
+    m_CycleOffset: 0
+    m_HasAdditiveReferencePose: 0
+    m_LoopTime: 0
+    m_LoopBlend: 0
+    m_LoopBlendOrientation: 0
+    m_LoopBlendPositionY: 0
+    m_LoopBlendPositionXZ: 0
+    m_KeepOriginalOrientation: 0
+    m_KeepOriginalPositionY: 1
+    m_KeepOriginalPositionXZ: 0
+    m_HeightFromFeet: 0
+    m_Mirror: 0
+  m_EditorCurves: []
+  m_EulerEditorCurves: []
+  m_HasGenericRootTransform: 0
+  m_HasMotionFloatCurves: 0
+  m_GenerateMotionCurves: 0
+  m_Events: []

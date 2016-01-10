@@ -63,7 +63,7 @@ public class ClawCut : MonoBehaviour {
     {
         switch (col.gameObject.name)
         {
-            case "UperUpLeftAttackZone":
+            case "UpperUpLeftAttackZone":
                 GetComponentInParent<MiniGameController>().canPlantRightArm = true;
                 _currentPosition = ClawStatus.UpperUpLeft;
                 break;
@@ -113,7 +113,7 @@ public class ClawCut : MonoBehaviour {
     {
         switch (col.gameObject.name)
         {
-            case "UperUpLeftAttackZone" :
+            case "UpperUpLeftAttackZone" :
                 GetComponentInParent<MiniGameController>().canPlantRightArm = false;
                 _currentPosition = ClawStatus.None;
                 break;

@@ -42,7 +42,7 @@ public class LevelManager : MonoBehaviour {
         switch (state) {
             case GameState.moveMode:
                 GameManager.instance.songManager.PlaySong(SongManager.Song.MoveMode);
-                StartCoroutine(CheckDistanceToTarget());
+                StartCoroutine(CheckDistanceToTarget());   
                 break;
 
             case GameState.killMode:

@@ -3,6 +3,8 @@ using System.Collections;
 
 public class MiniGameController : MonoBehaviour {
 
+    //Nombre de hits effectués par le paresseux
+    private int _slothHits=0;
 
     //Les bras du paresseux
     public GameObject rightArm;
@@ -43,6 +45,18 @@ public class MiniGameController : MonoBehaviour {
     private Vector3 _lastPostLeftArm;
     public float timeToExitWound;
 
+    //Variables smoothing entrée des griffes
+    private float _startTimeRightArmEnter;
+    private float _currentTimeRightArmEnter;
+    private float _startTimeLeftArmEnter;
+    private float _currentTimeLeftArmEnter;
+    private Vector3 _lastPosRightArmEnter;
+    private Vector3 _lastPostLeftArmEnter;
+    public float timeToEnter;
+
+
+
+
 
     //Variables pour les pulsions de sang lors de la sortie des griffes
     private bool _doPulseBloodRightArm;
@@ -52,10 +66,18 @@ public class MiniGameController : MonoBehaviour {
     private bool _canMoveVerticalRightArm=true;
     private bool _canMoveVerticalLeftArm = true;
 
+    //Peut-on bouger horizontalement les griffes
+    private bool _canMoveHorizontalRightArm = true;
+    private bool _canMoveHorizontalLeftArm = true;
+
+    private float _xPositionForAttack;
+
 
 	// Use this for initialization
 	void Start () {
         _minArmZ = rightArm.transform.localPosition.z;
+        _xPositionForAttack = GameObject.Find("UpperUpLeftAttackZone").transform.localPosition.x;
+
 	}
 	
 	// Update is called once per frame
@@ -71,7 +93,8 @@ public class MiniGameController : MonoBehaviour {
     private void SticksInputs()
     {
         //Taux de translation pour le bras droit à l'horizontal et à la vertical
-        var xRightArm = Input.GetAxis("LeftAnalogHorizontal") * armSpeed;
+        var xRightArm = (_canMoveHorizontalRightArm) ? Input.GetAxis("LeftAnalogHorizontal") * armSpeed : 0.0f;
+
 
         //Si le bras droit est planté ou pressque
         if (rightArm.transform.localPosition.z <= _minArmZ + 0.1)
@@ -94,7 +117,8 @@ public class MiniGameController : MonoBehaviour {
 
         
         //Taux de translation pour le bras gauche à l'horizontal et à la vertical
-        var xLeftArm = Input.GetAxis("RightAnalogHorizontal") * armSpeed;
+        var xLeftArm = (_canMoveHorizontalLeftArm) ? Input.GetAxis("RightAnalogHorizontal") * armSpeed : 0.0f; 
+
         var yLeftArm = 0.0f;
 
 
@@ -134,22 +158,56 @@ public class MiniGameController : MonoBehaviour {
         var pierceRightArm=0.0f;
         var pierceLeftArm=0.0f;
 
-        if (canPlantRightArm)
+        if (canPlantRightArm) //Si on peut percer avec le bras droit
         {
             pierceRightArm = Input.GetAxis("LeftTrigger") * armPierceSpeed;
             if (pierceRightArm > 0.0f)
             {
+                _currentTimeRightArmEnter = Time.time - _startTimeRightArmEnter;
                 _canMoveVerticalRightArm = false;
+
+                if (rightArm.transform.localPosition.z >= maxArmZ - 0.2) 
+                {
+                    _canMoveHorizontalRightArm = true;
+                }
+                else
+                {
+                    _canMoveHorizontalRightArm = false;
+                }
+                
+            }
+            else
+            {
+                _startTimeRightArmEnter = Time.time;
+                _lastPosRightArmEnter = rightArm.transform.localPosition;
+                _canMoveHorizontalRightArm = true;
             }
         }
 
 
-        if (canPlantLeftArm)
+        if (canPlantLeftArm) //Si on peut percer avec le bras gauche
         {
             pierceLeftArm = Input.GetAxis("RightTrigger") * armPierceSpeed;
-            if (pierceRightArm > 0.0f)
+            if (pierceLeftArm > 0.0f)
             {
+                _currentTimeLeftArmEnter = Time.time - _startTimeLeftArmEnter;
                 _canMoveVerticalLeftArm = false;
+
+                if (leftArm.transform.localPosition.z >= maxArmZ - 0.2) //Si la main est presque rendu au bout de la distance, alors on peut bouger à l'horizontal
+                {
+                    _canMoveHorizontalLeftArm = true;
+                }
+                else
+                {
+                    _canMoveHorizontalLeftArm = false;
+                }
+                
+            }
+            else
+            {
+                _startTimeLeftArmEnter = Time.time;
+                _lastPostLeftArmEnter = leftArm.transform.localPosition;
+                _canMoveHorizontalLeftArm = true;
             }
         }
 
@@ -158,50 +216,103 @@ public class MiniGameController : MonoBehaviour {
         //On retire la griffe droite
         if (pierceRightArm < 0.01 && rightArm.transform.localPosition.z != _minArmZ)
         {
-            _doPulseBloodRightArm = true;
+            _doPulseBloodRightArm = false;
             _currentTimeRightArm = Time.time - _startTimeRightArm;
             rightArm.transform.localPosition = Vector3.Lerp(_lastPosRightArm,
                 new Vector3(_lastPosRightArm.x, _lastPosRightArm.y, _minArmZ),
                 _currentTimeRightArm/timeToExitWound);
+            if (rightArm.transform.localPosition.z <= _minArmZ)
+            {
+                _slothHits++;//On incrémente de 1 le nombre d'hits du paresseux
+            }
         }
         //On perce avec la griffe droite 
-        else
+        else if(pierceRightArm>0)
         {
-            rightArm.transform.localPosition = new Vector3(rightArm.transform.localPosition.x,
-            rightArm.transform.localPosition.y,
-            Mathf.Clamp(rightArm.transform.localPosition.z + pierceRightArm, _minArmZ, maxArmZ));
+            //Si on n'est pas rendu presque au bout, on lerp
+            if (!(rightArm.transform.localPosition.z == maxArmZ))
+            {
+                _currentTimeRightArm = Time.time - _startTimeRightArm;
+                rightArm.transform.localPosition = Vector3.Lerp(_lastPosRightArmEnter,
+                new Vector3(maxRightArmX, _lastPosRightArmEnter.y, maxArmZ),
+                _currentTimeRightArmEnter / timeToEnter);
+
+                
+            }
+            else
+            {
+                //On griffe et ca fait saigner le bras gauche!
+                _doPulseBloodRightArm = true;
+                rightArm.transform.localPosition = new Vector3(rightArm.transform.localPosition.x,
+                rightArm.transform.localPosition.y,
+                Mathf.Clamp(rightArm.transform.localPosition.z + pierceRightArm, _minArmZ, maxArmZ));
+            }
+            //Partie pour preparer a retirer la griffe
             _startTimeRightArm = Time.time;
             _lastPosRightArm = rightArm.transform.localPosition;
+
         }
 
 
         //On retire la griffe gauche
         if (pierceLeftArm < 0.01 && leftArm.transform.localPosition.z != _minArmZ)
         {
-            _doPulseBloodLeftArm = true;
             _currentTimeLeftArm = Time.time - _startTimeLeftArm;
+
+            
+
             leftArm.transform.localPosition = Vector3.Lerp(_lastPostLeftArm,
                 new Vector3(_lastPostLeftArm.x, _lastPostLeftArm.y, _minArmZ),
                 _currentTimeLeftArm / timeToExitWound);
+            _doPulseBloodLeftArm = false;
+            if (leftArm.transform.localPosition.z <= _minArmZ)
+            {
+                _slothHits++;//On incrémente de 1 le nombre d'hits du paresseux
+            }
         }
         //On perce avec la griffe gauche
-        else
+        else if (pierceLeftArm > 0)
         {
-            leftArm.transform.localPosition = new Vector3(leftArm.transform.localPosition.x,
-            leftArm.transform.localPosition.y,
-            Mathf.Clamp(leftArm.transform.localPosition.z + pierceLeftArm, _minArmZ, maxArmZ));
+
+            if (!(leftArm.transform.localPosition.z == maxArmZ))
+            {
+                _currentTimeLeftArmEnter = Time.time - _startTimeLeftArmEnter;
+                leftArm.transform.localPosition = Vector3.Lerp(_lastPostLeftArmEnter,
+                new Vector3(minLeftArmX, _lastPostLeftArmEnter.y, maxArmZ),
+                _currentTimeLeftArmEnter / timeToEnter);
+            }
+
+            else
+            {
+                //On griffe et ca fait saigner le bras gauche!
+                _doPulseBloodLeftArm = true;
+                leftArm.transform.localPosition = new Vector3(leftArm.transform.localPosition.x,
+                leftArm.transform.localPosition.y,
+                Mathf.Clamp(leftArm.transform.localPosition.z + pierceRightArm, _minArmZ, maxArmZ));
+            }
+            //Partie pour preparer a retirer la griffe
             _startTimeLeftArm = Time.time;
             _lastPostLeftArm = leftArm.transform.localPosition;
+
         }
     }
 
     private void PulseBlood()
     {
-        if (_doPulseBloodLeftArm) { 
-
+        if (_doPulseBloodLeftArm) {
+            leftArm.GetComponent<EllipsoidParticleEmitter>().emit = true;
         }
-        if (_doPulseBloodRightArm){
+        else
+        {
+            leftArm.GetComponent<EllipsoidParticleEmitter>().emit = false;
+        }
 
+        if (_doPulseBloodRightArm){
+            rightArm.GetComponent<EllipsoidParticleEmitter>().emit = true;
+        }
+        else
+        {
+            rightArm.GetComponent<EllipsoidParticleEmitter>().emit = false;
         }
     }
 
