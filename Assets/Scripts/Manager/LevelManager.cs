@@ -38,6 +38,7 @@ public class LevelManager : MonoBehaviour {
     }
 
     private void OnStart_State(GameState state) {
+        Debug.Log("Current Level State: " + state);
         switch (state) {
             case GameState.moveMode:
                 GameManager.instance.songManager.PlaySong(SongManager.Song.MoveMode);
@@ -45,7 +46,8 @@ public class LevelManager : MonoBehaviour {
                 break;
 
             case GameState.killMode:
-                //Camera.main.GetComponent<KillModeCameraSwitch>().StartCameraAnim(KillMode_StartKilling, enemyTarget.transform.position, enemyTarget.transform.forward);
+                Camera.main.GetComponent<KillModeCameraSwitch>().StartCameraAnim(KillMode_StartKilling, enemyTarget.transform.position, enemyTarget.transform.forward);
+                sloth.SetActive(true);
                 break;
 
             case GameState.endLevelCutscene:
@@ -65,7 +67,7 @@ public class LevelManager : MonoBehaviour {
                 break;
 
             case GameState.killMode:
-
+                enemyTarget.GetComponent<ModeEnabler>().disableScript();
                 break;
 
             case GameState.endLevelCutscene:
@@ -80,7 +82,7 @@ public class LevelManager : MonoBehaviour {
         bool notFound = true;
         while (notFound) {
             if (Vector3.Distance(sloth.transform.position, enemyTarget.transform.position) <= DISTANCE_TO_TARGET_NEEDED) {
-                notFound = true;
+                notFound = false;
                 SwitchState(GameState.killMode);
             }
             yield return new WaitForEndOfFrame();
@@ -91,6 +93,10 @@ public class LevelManager : MonoBehaviour {
 
     public GameObject enemyTarget { get; private set; }
     public GameObject sloth { get; private set; }
+
+    void KillMode_StartKilling() {
+        enemyTarget.GetComponent<ModeEnabler>().enableScript();
+    }
 
     //------------------------------------------------------------------------------------------------------------------
 }
