@@ -2,10 +2,11 @@
 using System.Collections;
 using System.Collections.Generic;
 
-enum ClawStatus : int { UpperUpLeft, UpperUpRight, LowerUpLeft, LowerUpRight, UpperBottomLeft, UpperBottomRight, LowerBottomLeft, LowerBottomRight, None };
+    
 
 public class ClawCut : MonoBehaviour {
 
+    public  enum ClawStatus : int { UpperUpLeft, UpperUpRight, LowerUpLeft, LowerUpRight, UpperBottomLeft, UpperBottomRight, LowerBottomLeft, LowerBottomRight, None };
 
     private ClawStatus _currentPosition;
 
@@ -88,9 +89,14 @@ public class ClawCut : MonoBehaviour {
                 _currentPosition = ClawStatus.UpperUpRight;
                 break;
 
+
+                //LE COEUR !!!
             case "LowerUpRightAttackZone":
                 GetComponentInParent<MiniGameController>().canPlantLeftArm = true;
                 _currentPosition = ClawStatus.LowerUpRight;
+                //On met du feed back dans le controller du joueur pour indiqué qu'il est sur le coeur
+                
+
                 break;
 
             case "UpperBottomRightAttackZone":
@@ -156,5 +162,5 @@ public class ClawCut : MonoBehaviour {
 
     }
 
-    public int GetClawPosition() { return (int) _currentPosition; }
+    public ClawStatus GetClawPosition() { return  _currentPosition; }
 }
