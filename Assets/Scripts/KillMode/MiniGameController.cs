@@ -2,9 +2,12 @@
 using System.Collections;
 
 public class MiniGameController : MonoBehaviour {
+    //MiniGame terminé
+    private bool _miniGameOver = false;
 
     //Nombre de hits effectués par le paresseux
     private int _slothHits=0;
+    public int targetHealth;
 
     //Les bras du paresseux
     public GameObject rightArm;
@@ -63,21 +66,18 @@ public class MiniGameController : MonoBehaviour {
     private bool _doPulseBloodLeftArm;
 
     //Peut-on bouger verticalement avec les griffes plantés
-    private bool _canMoveVerticalRightArm=true;
+    private bool _canMoveVerticalRightArm = true;
     private bool _canMoveVerticalLeftArm = true;
 
     //Peut-on bouger horizontalement les griffes
     private bool _canMoveHorizontalRightArm = true;
     private bool _canMoveHorizontalLeftArm = true;
 
-    private float _xPositionForAttack;
 
 
 	// Use this for initialization
 	void Start () {
         _minArmZ = rightArm.transform.localPosition.z;
-        _xPositionForAttack = GameObject.Find("UpperUpLeftAttackZone").transform.localPosition.x;
-
 	}
 	
 	// Update is called once per frame
@@ -85,6 +85,10 @@ public class MiniGameController : MonoBehaviour {
         SticksInputs();
         ClawsInputs();
         PulseBlood();
+        if (_miniGameOver)
+        {
+            LevelManager.instance.SwitchState(LevelManager.GameState.endLevelCutscene);
+        }
 	}
 
     /// <summary>
@@ -268,6 +272,10 @@ public class MiniGameController : MonoBehaviour {
             if (leftArm.transform.localPosition.z <= _minArmZ)
             {
                 _slothHits++;//On incrémente de 1 le nombre d'hits du paresseux
+                if (leftArm.GetComponent<ClawCut>().GetClawPosition() == (int) ClawStatus.UpperUpRight && _slothHits>=targetHealth)
+                {
+                    _miniGameOver = true;
+                }
             }
         }
         //On perce avec la griffe gauche

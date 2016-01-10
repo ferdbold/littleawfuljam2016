@@ -9,6 +9,7 @@ public class SlothController : MonoBehaviour {
     [SerializeField] private float FORWARDFORCE = 5f; //Force used to move sloth forward when pushed
     [SerializeField] private float SIDEFORCE = 3f; //Force used to move sloth sideways when pushed
     [SerializeField] private float ROTATIONFORCE = 2.5f; //Force used to rotate sloth when pushed in degrees per second
+    [SerializeField] private float PULLFORCETIME = 0.8f;
     [SerializeField] private AnimationCurve rotationAnimationCurve; //Curve which rotation follows
     [SerializeField] private float rotationAnimationTime = 1f;
     [SerializeField] private float TURNRATE = 25f; //Turn Rate when rotating in degrees per second (not pushed)
@@ -46,6 +47,11 @@ public class SlothController : MonoBehaviour {
         //Set default values
         gameObject.tag = "SlothNinja";
         ANIMTIMEBEFOREMOVE = ExtendArmClip.length;
+    }
+
+
+    void Start() {
+        //Dont put anything here since can be called for ragdoll purposes
     }
 	
 	// Update is called once per frame
@@ -133,8 +139,13 @@ public class SlothController : MonoBehaviour {
     }
 
 
-    private void PushSloth(Vector3 force) {
-        _rigidBody.AddRelativeForce(force, ForceMode.Impulse);
+    IEnumerator PushSloth(Vector3 force) {
+        yield return null;
+        for (float i = 0f; i < 1f; i += Time.deltaTime / PULLFORCETIME) {
+            _rigidBody.AddForce(force, ForceMode.Acceleration);
+            yield return null;
+        }
+        //_rigidBody.AddRelativeForce(force, ForceMode.Impulse);
     }
     
     /// <summary>
@@ -168,19 +179,27 @@ public class SlothController : MonoBehaviour {
     /// <returns></returns>
     IEnumerator MoveSloth(bool isRight, float holdTime) {
         //Play Arm extend animation
-        if (isRight) _animator.SetBool("MoveRight", true);
-        else _animator.SetBool("MoveLeft", true);
+        Vector3 relativeForce;
+        if (isRight) {
+            _animator.SetBool("MoveRight", true);
+            StartCoroutine(RotateSloth(new Vector3(0, ROTATIONFORCE, 0), rotationAnimationTime * 2f, rotationAnimationCurve));
+            relativeForce = _rigidBody.transform.rotation * new Vector3(SIDEFORCE, 0, FORWARDFORCE);
+        } else {
+            _animator.SetBool("MoveLeft", true);
+            StartCoroutine(RotateSloth(new Vector3(0, -ROTATIONFORCE, 0), rotationAnimationTime * 2f, rotationAnimationCurve));
+            relativeForce = _rigidBody.transform.rotation * new Vector3(-SIDEFORCE, 0, FORWARDFORCE);
+        }
         yield return new WaitForSeconds(ANIMTIMEBEFOREMOVE);
         if (isRight) _animator.SetBool("MoveRight", false);
         else _animator.SetBool("MoveLeft", false);
 
         //Apply force
         if (isRight) { 
-            if(!_hasHitWallRight) PushSloth(new Vector3(SIDEFORCE, 0, FORWARDFORCE)); //Push only if wall wasnt hit
-            StartCoroutine(RotateSloth(new Vector3(0, ROTATIONFORCE, 0),rotationAnimationTime,rotationAnimationCurve));
+            if(!_hasHitWallRight) StartCoroutine(PushSloth(relativeForce)); //Push only if wall wasnt hit
+            
         } else {
-            if (!_hasHitWallLeft) PushSloth(new Vector3(-SIDEFORCE, 0, FORWARDFORCE));
-            StartCoroutine(RotateSloth(new Vector3(0, -ROTATIONFORCE, 0), rotationAnimationTime, rotationAnimationCurve));
+            if (!_hasHitWallLeft) StartCoroutine(PushSloth(relativeForce));
+
         }
     }
 
