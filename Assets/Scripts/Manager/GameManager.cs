@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour {
             //OnStart_Level(currentLevel);
             if (songManager == null) songManager = GetComponentInChildren<SongManager>();
             if (currentLevel == GameLevel.playLevel) gameObject.AddComponent<LevelManager>();
+            currentPlayLevel = LevelID(SceneManager.GetActiveScene().name);
         }
         else {
             Destroy(gameObject);
@@ -104,6 +105,13 @@ public class GameManager : MonoBehaviour {
         switch (levelID) {
             case 1: return "Level_1";
             default: return "";
+        }
+    }
+
+    private int LevelID(string name) {
+        switch (name) {
+            case "Level_1": return 1;
+            default: return 0;
         }
     }
 

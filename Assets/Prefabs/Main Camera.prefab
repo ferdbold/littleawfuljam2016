@@ -29,7 +29,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 170216}
   m_LocalRotation: {x: 0.25881907, y: 0, z: 0, w: 0.9659258}
-  m_LocalPosition: {x: 0, y: 1.81, z: -1.86}
+  m_LocalPosition: {x: 0, y: 2.53, z: -2.599}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -132,9 +132,17 @@ MonoBehaviour:
       InstanceTarget: {fileID: 12472252}
   Modifications:
     Modificated:
+    - Object: {fileID: 425788}
+      ObjeckLink: 2082423978
+      PropertyPath: m_LocalPosition
+      Mode: 0
     - Object: {fileID: 11417586}
       ObjeckLink: -1305818005
       PropertyPath: player
+      Mode: 0
+    - Object: {fileID: 11417586}
+      ObjeckLink: -1305818005
+      PropertyPath: playerOverShoulder
       Mode: 0
     NonPrefabObjects: []
     NonPrefabComponents: []
@@ -154,8 +162,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  offsetPosition: {x: 0, y: 7, z: -6.5}
+  playerOverShoulder: {fileID: 0}
   lerpValue: 0.1
+  lerpCameraToPositionZone: {fileID: 0}
 --- !u!124 &12472252
 Behaviour:
   m_ObjectHideFlags: 1
