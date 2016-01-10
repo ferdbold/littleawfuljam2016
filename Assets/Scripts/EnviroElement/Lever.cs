@@ -10,11 +10,17 @@ public class Lever : Interactable {
     [SerializeField]
     private UnityEvent offEvent;
 
+    private Animator anim;
+
     private bool activated = false;
+
+    void Awake() {
+        anim = GetComponentInChildren<Animator>();
+    }
 
     public override void Activate() {
         activated = !activated;
         (activated ? onEvent : offEvent).Invoke();
-        //TODO Start Anim
+        anim.SetBool("isOpen", activated);
     }
 }
