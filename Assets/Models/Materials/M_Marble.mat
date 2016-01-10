@@ -51,7 +51,7 @@ Material:
       data:
         first:
           name: _Gloss
-        second: 0.436
+        second: 0.411
       data:
         first:
           name: _Diff_Texture
