@@ -49,7 +49,7 @@ public class SufferScript : MonoBehaviour {
         else{
             _currentTime = Time.time - _startTime;
             objectiveText.GetComponent<Text>().color = Color.Lerp(_colorFrom, _colorTo, _currentTime / timeToChangeColor);
-            Debug.Log(_colorFrom + "          " + _colorTo + "         " + objectiveText.GetComponent<Text>().color);
+            //Debug.Log(_colorFrom + "          " + _colorTo + "         " + objectiveText.GetComponent<Text>().color);
 
             if (_currentTime >= timeToChangeColor)
             {

@@ -31,6 +31,7 @@ public class SlothController : MonoBehaviour {
 
 
     //States Variables
+    private bool _controlsDisabled = false;
     private bool _canMoveLeft = true;
     private bool _canMoveRight = true;
     private bool _hasHitWallLeft = false; //have we hit a wall with left hand
@@ -56,6 +57,7 @@ public class SlothController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        if (_controlsDisabled) return;
         //Rotate Left
         if (_isRotatingLeft && _canMoveLeft) {
             _animator.SetBool("TurnLeft", true); //Set Animation value
@@ -70,6 +72,22 @@ public class SlothController : MonoBehaviour {
         } else {
             _animator.SetBool("TurnRight", false); //Set Animation value
         }
+    }
+
+    public void ActivateControls() {
+        _controlsDisabled = false;
+        _rigidBody.isKinematic = false;
+        _animator.SetBool("Kill", false);
+    }
+
+    public void DeactivateControls() {
+        _controlsDisabled = true;
+        _rigidBody.isKinematic = true;
+        _animator.SetBool("TurnLeft", false); //Set Animation value
+        _animator.SetBool("TurnRight", false); //Set Animation value
+        _animator.SetBool("MoveLeft", false); //Set Animation value
+        _animator.SetBool("MoveRight", false); //Set Animation value
+        _animator.SetBool("Kill", true); 
     }
 
     /// <summary>
@@ -94,6 +112,7 @@ public class SlothController : MonoBehaviour {
     /// Move Left Input was pressed
     /// </summary>
     public void MoveLeft(float holdTime) {
+        if (_controlsDisabled) return;
         if (_canMoveLeft) {
             StartCoroutine(StartCooldownMoveLeft());
             StartCoroutine(MoveSloth(false, holdTime));
@@ -104,6 +123,7 @@ public class SlothController : MonoBehaviour {
     /// Move Right Input was pressed
     /// </summary>
     public void MoveRight(float holdTime) {
+        if (_controlsDisabled) return;
         if (_canMoveRight) {
             StartCoroutine(StartCooldownMoveRight());
             StartCoroutine(MoveSloth(true, holdTime));

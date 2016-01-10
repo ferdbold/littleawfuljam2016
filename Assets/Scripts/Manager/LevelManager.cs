@@ -1,11 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
+using DG.Tweening;
 
 public class LevelManager : MonoBehaviour {
 
     public static LevelManager instance;
 
-    private const float DISTANCE_TO_TARGET_NEEDED = 5f;
+    private const float DISTANCE_TO_TARGET_NEEDED = 1f;
 
     void Start() {
         if (instance == null) {
@@ -46,7 +47,9 @@ public class LevelManager : MonoBehaviour {
                 break;
 
             case GameState.killMode:
-                sloth.SetActive(false); //TODO replace with anim
+                sloth.GetComponent<SlothController>().DeactivateControls();
+                sloth.transform.DOMove(enemyTarget.transform.position + new Vector3(-0.08f,0.1f,-0.54f),2f);
+                sloth.transform.DORotate(enemyTarget.transform.rotation.eulerAngles, 2f);
                 KillMode_StartKilling();
                 break;
 
