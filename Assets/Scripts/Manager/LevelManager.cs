@@ -5,7 +5,6 @@ public class LevelManager : MonoBehaviour {
 
     public static LevelManager instance;
 
-    private float _killMode_timer = 10f;
     private const float DISTANCE_TO_TARGET_NEEDED = 5f;
 
     void Start() {
@@ -46,7 +45,7 @@ public class LevelManager : MonoBehaviour {
                 break;
 
             case GameState.killMode:
-                Camera.main.GetComponent<KillModeCameraSwitch>().StartCameraAnim(KillMode_StartKilling, enemyTarget.transform.position, enemyTarget.transform.forward);
+                //Camera.main.GetComponent<KillModeCameraSwitch>().StartCameraAnim(KillMode_StartKilling, enemyTarget.transform.position, enemyTarget.transform.forward);
                 break;
 
             case GameState.endLevelCutscene:
@@ -80,7 +79,7 @@ public class LevelManager : MonoBehaviour {
     private IEnumerator CheckDistanceToTarget() {
         bool notFound = true;
         while (notFound) {
-            if (Vector3.Distance(sloth.transform.position, enemyTarget.transform.position) >= DISTANCE_TO_TARGET_NEEDED) {
+            if (Vector3.Distance(sloth.transform.position, enemyTarget.transform.position) <= DISTANCE_TO_TARGET_NEEDED) {
                 notFound = true;
                 SwitchState(GameState.killMode);
             }
@@ -92,19 +91,6 @@ public class LevelManager : MonoBehaviour {
 
     public GameObject enemyTarget { get; private set; }
     public GameObject sloth { get; private set; }
-
-    private void KillMode_StartKilling() {
-        Debug.Log("Starting Kill Mode");
-    }
-
-    IEnumerator KillMode_Timer() {
-        yield return new WaitForSeconds(_killMode_timer);
-        KillMode_StopKilling();
-    }
-
-    private void KillMode_StopKilling() {
-        SwitchState(GameState.endLevelCutscene);
-    }
 
     //------------------------------------------------------------------------------------------------------------------
 }
