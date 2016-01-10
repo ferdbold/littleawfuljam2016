@@ -41,7 +41,7 @@ Material:
       data:
         first:
           name: _Gloss
-        second: 0.3460641
+        second: 0.22
       data:
         first:
           name: _Diff_Texture
@@ -50,4 +50,4 @@ Material:
       data:
         first:
           name: _Color
-        second: {r: 0.89705884, g: 0.89705884, b: 0.89705884, a: 1}
+        second: {r: 0.9044118, g: 0.9044118, b: 0.9044118, a: 1}

@@ -6,9 +6,9 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: M_Marble
+  m_Name: M_Metal_Dark 2
   m_Shader: {fileID: 4800000, guid: 2121d10387c969e4dbd66ca772e5693a, type: 3}
-  m_ShaderKeywords: _DIFF_TEXTURE_ON _IS_DIFF_ON
+  m_ShaderKeywords: 
   m_LightmapFlags: 5
   m_CustomRenderQueue: -1
   stringTagMap: {}
@@ -26,14 +26,14 @@ Material:
         first:
           name: _node_1904
         second:
-          m_Texture: {fileID: 2800000, guid: 28c7aad1372ff114b90d330f8a2dd938, type: 3}
-          m_Scale: {x: 0.08, y: 0.05}
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
           name: _node_542
         second:
-          m_Texture: {fileID: 2800000, guid: 28c7aad1372ff114b90d330f8a2dd938, type: 3}
+          m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
@@ -41,21 +41,29 @@ Material:
           name: _Normal
         second:
           m_Texture: {fileID: 2800000, guid: 62bb69b9a86edcc448bd67652306761f, type: 3}
-          m_Scale: {x: 5, y: 1}
+          m_Scale: {x: 8, y: 0.005}
           m_Offset: {x: 0, y: 0}
     m_Floats:
       data:
         first:
           name: _Metallic
-        second: 0
+        second: 1
       data:
         first:
           name: _Gloss
-        second: 0.436
+        second: 0.154
       data:
         first:
           name: _Diff_Texture
-        second: 1
+        second: 0
+      data:
+        first:
+          name: _Tile_X
+        second: 0.5
+      data:
+        first:
+          name: _Tile_Y
+        second: 0
       data:
         first:
           name: _Is_Color
@@ -63,29 +71,25 @@ Material:
       data:
         first:
           name: _Is_Diff
-        second: 1
+        second: 0
       data:
         first:
           name: _Tile_x
-        second: 0.1
+        second: 0
       data:
         first:
           name: _Tile_y
-        second: 0.05
-      data:
-        first:
-          name: _node_4803
-        second: 0.8
+        second: 0
       data:
         first:
           name: _Use_Normal
-        second: 0.5
+        second: 0
       data:
         first:
           name: _Normal_Power
-        second: 0.8
+        second: 0.5
     m_Colors:
       data:
         first:
           name: _Diff_color
-        second: {r: 0.71323526, g: 0.71323526, b: 0.71323526, a: 1}
+        second: {r: 0.77205884, g: 0.77205884, b: 0.77205884, a: 1}
