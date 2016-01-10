@@ -13,7 +13,7 @@ GameObject:
   - 114: {fileID: 11468024}
   - 65: {fileID: 6595342}
   m_Layer: 0
-  m_Name: SM_Wall2m
+  m_Name: Wall_2m
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
