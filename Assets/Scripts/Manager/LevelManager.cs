@@ -46,12 +46,12 @@ public class LevelManager : MonoBehaviour {
                 break;
 
             case GameState.killMode:
-                Camera.main.GetComponent<KillModeCameraSwitch>().StartCameraAnim(KillMode_StartKilling, enemyTarget.transform.position, enemyTarget.transform.forward);
-                sloth.SetActive(true);
+                sloth.SetActive(false); //TODO replace with anim
+                KillMode_StartKilling();
                 break;
 
             case GameState.endLevelCutscene:
-
+                SwitchState(GameState.end); //TODO replace with cutscene
                 break;
 
             case GameState.end:
