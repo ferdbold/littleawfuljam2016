@@ -43,6 +43,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 440964}
   - 114: {fileID: 11438104}
+  - 65: {fileID: 6520962}
   m_Layer: 0
   m_Name: SM_Conveyer
   m_TagString: Untagged
@@ -184,6 +185,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 150558}
   m_Mesh: {fileID: 4300000, guid: 37fdc003b086f7048b04ba718eeb4e95, type: 3}
+--- !u!65 &6520962
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 138552}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 0.1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &6549076
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -194,7 +207,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.2, z: 2}
+  m_Size: {x: 0.6, y: 0.2, z: 1.6}
   m_Center: {x: 0, y: 0.1, z: 0}
 --- !u!114 &11438104
 MonoBehaviour:
@@ -250,7 +263,9 @@ MonoBehaviour:
       PropertyPath: m_Materials.Array.data[0]
       Mode: 0
     NonPrefabObjects: []
-    NonPrefabComponents: []
+    NonPrefabComponents:
+    - child: {fileID: 6520962}
+      parent: {fileID: 138552}
     RemovedObjects: 
     TransformParentChanges: []
   ParentPrefabGUID: 
