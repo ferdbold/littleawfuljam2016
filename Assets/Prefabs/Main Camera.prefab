@@ -14,6 +14,7 @@ GameObject:
   - 81: {fileID: 8136630}
   - 114: {fileID: 11417586}
   - 114: {fileID: 11413198}
+  - 114: {fileID: 11414606}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -94,6 +95,53 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DistanceToPlayer: 5
   DistanceBehindCamera: 125
+--- !u!114 &11414606
+MonoBehaviour:
+  m_ObjectHideFlags: 33
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 170216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46a02d0f612a241b293c0da4f82b712c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Properties:
+    Properties: []
+    Groups: []
+    Hidden: 
+  Links:
+    Links:
+    - LIIF: -839582364
+      InstanceTarget: {fileID: 11414606}
+    - LIIF: -1850562311
+      InstanceTarget: {fileID: 170216}
+    - LIIF: 2082423978
+      InstanceTarget: {fileID: 425788}
+    - LIIF: 1753482103
+      InstanceTarget: {fileID: 2043140}
+    - LIIF: 868865920
+      InstanceTarget: {fileID: 8136630}
+    - LIIF: -447526399
+      InstanceTarget: {fileID: 9249716}
+    - LIIF: 300910410
+      InstanceTarget: {fileID: 11413198}
+    - LIIF: -1305818005
+      InstanceTarget: {fileID: 11417586}
+    - LIIF: -1358731993
+      InstanceTarget: {fileID: 12472252}
+  Modifications:
+    Modificated:
+    - Object: {fileID: 11417586}
+      ObjeckLink: -1305818005
+      PropertyPath: player
+      Mode: 0
+    NonPrefabObjects: []
+    NonPrefabComponents: []
+    RemovedObjects: 
+    TransformParentChanges: []
+  ParentPrefabGUID: 
+  PrefabGUID: b9fd3100d38843e45b1e3e4ce34b6741
 --- !u!114 &11417586
 MonoBehaviour:
   m_ObjectHideFlags: 1
