@@ -324,4 +324,14 @@ public class MiniGameController : MonoBehaviour {
         }
     }
 
+    public bool IsAttackingLeft()
+    {
+        return !_canMoveVerticalRightArm;
+    }
+
+    public bool IsAttackingRight()
+    {
+        return !_canMoveVerticalLeftArm;
+    }
+
 }

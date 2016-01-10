@@ -7,7 +7,7 @@ public class ModeEnabler : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        script.enabled = false;
+        script.enabled = true;
 	}
 
     public void enableScript()
