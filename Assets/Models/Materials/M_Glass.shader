@@ -1,11 +1,11 @@
 // Shader created with Shader Forge v1.26 
 // Shader Forge (c) Neat Corporation / Joachim Holmer - http://www.acegikmo.com/shaderforge/
 // Note: Manually altering this data may prevent you from opening it in Shader Forge
-/*SF_DATA;ver:1.26;sub:START;pass:START;ps:flbk:,iptp:0,cusa:False,bamd:0,lico:1,lgpr:1,limd:3,spmd:1,trmd:1,grmd:1,uamb:False,mssp:True,bkdf:False,hqlp:False,rprd:True,enco:False,rmgx:True,rpth:0,vtps:0,hqsc:True,nrmq:0,nrsp:0,vomd:0,spxs:False,tesm:0,olmd:1,culm:2,bsrc:3,bdst:7,dpts:2,wrdp:False,dith:0,rfrpo:True,rfrpn:Refraction,coma:15,ufog:False,aust:False,igpj:False,qofs:0,qpre:3,rntp:2,fgom:False,fgoc:False,fgod:False,fgor:False,fgmd:0,fgcr:0.5,fgcg:0.5,fgcb:0.5,fgca:1,fgde:0.01,fgrn:0,fgrf:300,stcl:False,stva:128,stmr:255,stmw:255,stcp:6,stps:0,stfa:0,stfz:0,ofsf:0,ofsu:0,f2p0:False,fnsp:False,fnfb:False;n:type:ShaderForge.SFN_Final,id:0,x:34414,y:32442,varname:node_0,prsc:2|diff-553-RGB,spec-75-OUT,gloss-76-OUT,transm-29-OUT,lwrap-29-OUT,alpha-22-OUT;n:type:ShaderForge.SFN_Vector1,id:22,x:34145,y:32700,varname:node_22,prsc:2,v1:0.8;n:type:ShaderForge.SFN_Vector1,id:29,x:34145,y:32577,varname:node_29,prsc:2,v1:5;n:type:ShaderForge.SFN_Vector1,id:75,x:34145,y:32430,varname:node_75,prsc:2,v1:1;n:type:ShaderForge.SFN_Vector1,id:76,x:34145,y:32486,varname:node_76,prsc:2,v1:0.25;n:type:ShaderForge.SFN_Color,id:553,x:34061,y:32236,ptovrint:False,ptlb:Color,ptin:_Color,varname:node_553,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,c1:0.8235294,c2:0.9561866,c3:1,c4:1;proporder:553;pass:END;sub:END;*/
+/*SF_DATA;ver:1.26;sub:START;pass:START;ps:flbk:,iptp:0,cusa:False,bamd:0,lico:1,lgpr:1,limd:3,spmd:1,trmd:1,grmd:1,uamb:False,mssp:True,bkdf:False,hqlp:False,rprd:True,enco:False,rmgx:True,rpth:0,vtps:0,hqsc:True,nrmq:0,nrsp:0,vomd:0,spxs:False,tesm:0,olmd:1,culm:2,bsrc:3,bdst:7,dpts:2,wrdp:True,dith:0,rfrpo:True,rfrpn:Refraction,coma:15,ufog:False,aust:False,igpj:False,qofs:0,qpre:3,rntp:2,fgom:False,fgoc:False,fgod:False,fgor:False,fgmd:0,fgcr:0.5,fgcg:0.5,fgcb:0.5,fgca:1,fgde:0.01,fgrn:0,fgrf:300,stcl:False,stva:128,stmr:255,stmw:255,stcp:6,stps:0,stfa:0,stfz:0,ofsf:0,ofsu:0,f2p0:False,fnsp:False,fnfb:False;n:type:ShaderForge.SFN_Final,id:0,x:34414,y:32442,varname:node_0,prsc:2|diff-553-RGB,spec-75-OUT,gloss-76-OUT,transm-29-OUT,lwrap-29-OUT,alpha-22-OUT;n:type:ShaderForge.SFN_Vector1,id:22,x:34145,y:32700,varname:node_22,prsc:2,v1:0.5;n:type:ShaderForge.SFN_Vector1,id:29,x:34145,y:32579,varname:node_29,prsc:2,v1:5;n:type:ShaderForge.SFN_Vector1,id:75,x:34145,y:32430,varname:node_75,prsc:2,v1:1;n:type:ShaderForge.SFN_Vector1,id:76,x:34145,y:32486,varname:node_76,prsc:2,v1:0.5;n:type:ShaderForge.SFN_Color,id:553,x:34061,y:32236,ptovrint:False,ptlb:Color,ptin:_Color,varname:node_553,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,c1:0,c2:1,c3:2,c4:1;proporder:553;pass:END;sub:END;*/
 
 Shader "Shader Forge/Examples/Refraction" {
     Properties {
-        _Color ("Color", Color) = (0.8235294,0.9561866,1,1)
+        _Color ("Color", Color) = (0,1,2,1)
         [HideInInspector]_Cutoff ("Alpha cutoff", Range(0,1)) = 0.5
     }
     SubShader {
@@ -20,7 +20,7 @@ Shader "Shader Forge/Examples/Refraction" {
             }
             Blend SrcAlpha OneMinusSrcAlpha
             Cull Off
-            ZWrite Off
+            
             
             CGPROGRAM
             #pragma vertex vert
@@ -69,7 +69,7 @@ Shader "Shader Forge/Examples/Refraction" {
                 float Pi = 3.141592654;
                 float InvPi = 0.31830988618;
 ///////// Gloss:
-                float gloss = 1.0 - 0.25; // Convert roughness to gloss
+                float gloss = 1.0 - 0.5; // Convert roughness to gloss
                 float specPow = exp2( gloss * 10.0+1.0);
 /////// GI Data:
                 UnityLight light;
@@ -133,8 +133,8 @@ Shader "Shader Forge/Examples/Refraction" {
                 float3 directDiffuse = ((forwardLight+backLight) + ((1 +(fd90 - 1)*pow((1.00001-NdotLWrap), 5)) * (1 + (fd90 - 1)*pow((1.00001-NdotV), 5)) * NdotL))*(0.5-max(w.r,max(w.g,w.b))*0.5) * attenColor;
                 float3 diffuse = directDiffuse * diffuseColor;
 /// Final Color:
-                float3 finalColor = diffuse * 0.8 + specular;
-                return fixed4(finalColor,0.8);
+                float3 finalColor = diffuse * 0.5 + specular;
+                return fixed4(finalColor,0.5);
             }
             ENDCG
         }
@@ -145,7 +145,7 @@ Shader "Shader Forge/Examples/Refraction" {
             }
             Blend One One
             Cull Off
-            ZWrite Off
+            
             
             CGPROGRAM
             #pragma vertex vert
@@ -193,7 +193,7 @@ Shader "Shader Forge/Examples/Refraction" {
                 float Pi = 3.141592654;
                 float InvPi = 0.31830988618;
 ///////// Gloss:
-                float gloss = 1.0 - 0.25; // Convert roughness to gloss
+                float gloss = 1.0 - 0.5; // Convert roughness to gloss
                 float specPow = exp2( gloss * 10.0+1.0);
 ////// Specular:
                 float NdotL = max(0, dot( normalDirection, lightDirection ));
@@ -224,7 +224,7 @@ Shader "Shader Forge/Examples/Refraction" {
                 float3 directDiffuse = ((forwardLight+backLight) + ((1 +(fd90 - 1)*pow((1.00001-NdotLWrap), 5)) * (1 + (fd90 - 1)*pow((1.00001-NdotV), 5)) * NdotL))*(0.5-max(w.r,max(w.g,w.b))*0.5) * attenColor;
                 float3 diffuse = directDiffuse * diffuseColor;
 /// Final Color:
-                float3 finalColor = diffuse * 0.8 + specular;
+                float3 finalColor = diffuse * 0.5 + specular;
                 return fixed4(finalColor,0);
             }
             ENDCG

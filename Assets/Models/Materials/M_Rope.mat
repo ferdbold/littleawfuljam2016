@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: M_Rope
+  m_Shader: {fileID: 4800000, guid: 51b50a91d7fc67448a3ea72bdf8b98dd, type: 3}
+  m_ShaderKeywords: _DIFF_TEXTURE_ON
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _BumpMap
+        second:
+          m_Texture: {fileID: 2800000, guid: cc203518b3215cd48bb0f6dafcf0d218, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 1, y: 1}
+      data:
+        first:
+          name: _Diffuse
+        second:
+          m_Texture: {fileID: 2800000, guid: 51dd6160f81f73d4d8631ba4bb238af3, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 1, y: 1}
+    m_Floats:
+      data:
+        first:
+          name: _Metallic
+        second: 0
+      data:
+        first:
+          name: _Gloss
+        second: 0.912384
+      data:
+        first:
+          name: _Diff_Texture
+        second: 1
+      data:
+        first:
+          name: _Speed_X
+        second: 0
+      data:
+        first:
+          name: _Speed_Y
+        second: 0.3
+      data:
+        first:
+          name: _node_8508
+        second: 0
+      data:
+        first:
+          name: _Direction_X
+        second: 1
+      data:
+        first:
+          name: _Direction_Y
+        second: 1
+      data:
+        first:
+          name: _Speed
+        second: 2
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: 0.46323532, g: 0.3914716, b: 0.2282115, a: 1}

@@ -1,16 +1,19 @@
 // Shader created with Shader Forge v1.26 
 // Shader Forge (c) Neat Corporation / Joachim Holmer - http://www.acegikmo.com/shaderforge/
 // Note: Manually altering this data may prevent you from opening it in Shader Forge
-/*SF_DATA;ver:1.26;sub:START;pass:START;ps:flbk:,iptp:0,cusa:False,bamd:0,lico:1,lgpr:1,limd:3,spmd:0,trmd:0,grmd:1,uamb:True,mssp:True,bkdf:True,hqlp:False,rprd:True,enco:False,rmgx:True,rpth:0,vtps:0,hqsc:True,nrmq:1,nrsp:0,vomd:0,spxs:False,tesm:0,olmd:1,culm:2,bsrc:0,bdst:1,dpts:2,wrdp:True,dith:0,rfrpo:True,rfrpn:Refraction,coma:15,ufog:True,aust:True,igpj:False,qofs:0,qpre:1,rntp:1,fgom:False,fgoc:False,fgod:False,fgor:False,fgmd:0,fgcr:0.5,fgcg:0.5,fgcb:0.5,fgca:1,fgde:0.01,fgrn:0,fgrf:300,stcl:False,stva:128,stmr:255,stmw:255,stcp:6,stps:0,stfa:0,stfz:0,ofsf:0,ofsu:0,f2p0:False,fnsp:False,fnfb:False;n:type:ShaderForge.SFN_Final,id:2865,x:32719,y:32712,varname:node_2865,prsc:2|diff-1324-OUT,spec-358-OUT,gloss-1813-OUT,normal-5964-RGB;n:type:ShaderForge.SFN_Multiply,id:6343,x:32264,y:32576,varname:node_6343,prsc:2|A-2063-RGB,B-6665-RGB;n:type:ShaderForge.SFN_Color,id:6665,x:31894,y:32594,ptovrint:False,ptlb:Color,ptin:_Color,varname:_Color,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,c1:1.5,c2:1.5,c3:1.5,c4:1;n:type:ShaderForge.SFN_Tex2d,id:5964,x:32285,y:33002,ptovrint:True,ptlb:Normal Map,ptin:_BumpMap,varname:_BumpMap,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,tex:5e36ed9f57726b947a0dff653cf5d06b,ntxv:2,isnm:False|UVIN-1659-UVOUT;n:type:ShaderForge.SFN_Slider,id:358,x:32154,y:32744,ptovrint:False,ptlb:Metallic,ptin:_Metallic,varname:node_358,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0,max:1;n:type:ShaderForge.SFN_Slider,id:1813,x:32166,y:32868,ptovrint:False,ptlb:Gloss,ptin:_Gloss,varname:_Metallic_copy,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0.912384,max:1;n:type:ShaderForge.SFN_Tex2d,id:2063,x:32011,y:32375,ptovrint:False,ptlb:Diffuse,ptin:_Diffuse,varname:node_2063,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,tex:7b1bbece090fdb3458957ba0456cfc64,ntxv:0,isnm:False|UVIN-1659-UVOUT;n:type:ShaderForge.SFN_SwitchProperty,id:1324,x:32466,y:32457,ptovrint:False,ptlb:Diff_Texture?,ptin:_Diff_Texture,varname:node_1324,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,on:True|A-6665-RGB,B-6343-OUT;n:type:ShaderForge.SFN_Panner,id:1659,x:31500,y:32729,varname:node_1659,prsc:2,spu:-0.3,spv:0|UVIN-3739-UVOUT;n:type:ShaderForge.SFN_TexCoord,id:3739,x:31250,y:32729,varname:node_3739,prsc:2,uv:0;proporder:5964-6665-358-1813-2063-1324;pass:END;sub:END;*/
+/*SF_DATA;ver:1.26;sub:START;pass:START;ps:flbk:,iptp:0,cusa:False,bamd:0,lico:1,lgpr:1,limd:3,spmd:0,trmd:0,grmd:1,uamb:True,mssp:True,bkdf:True,hqlp:False,rprd:True,enco:False,rmgx:True,rpth:0,vtps:0,hqsc:True,nrmq:1,nrsp:0,vomd:0,spxs:False,tesm:0,olmd:1,culm:2,bsrc:0,bdst:1,dpts:2,wrdp:True,dith:0,rfrpo:True,rfrpn:Refraction,coma:15,ufog:True,aust:True,igpj:False,qofs:0,qpre:1,rntp:1,fgom:False,fgoc:False,fgod:False,fgor:False,fgmd:0,fgcr:0.5,fgcg:0.5,fgcb:0.5,fgca:1,fgde:0.01,fgrn:0,fgrf:300,stcl:False,stva:128,stmr:255,stmw:255,stcp:6,stps:0,stfa:0,stfz:0,ofsf:0,ofsu:0,f2p0:False,fnsp:False,fnfb:False;n:type:ShaderForge.SFN_Final,id:2865,x:32719,y:32712,varname:node_2865,prsc:2|diff-1324-OUT,spec-358-OUT,gloss-1813-OUT,normal-5964-RGB;n:type:ShaderForge.SFN_Multiply,id:6343,x:32264,y:32576,varname:node_6343,prsc:2|A-2063-RGB,B-6665-RGB;n:type:ShaderForge.SFN_Color,id:6665,x:31894,y:32594,ptovrint:False,ptlb:Color,ptin:_Color,varname:_Color,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,c1:1.5,c2:1.5,c3:1.5,c4:1;n:type:ShaderForge.SFN_Tex2d,id:5964,x:32285,y:33002,ptovrint:True,ptlb:Normal Map,ptin:_BumpMap,varname:_BumpMap,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,tex:5e36ed9f57726b947a0dff653cf5d06b,ntxv:3,isnm:False|UVIN-1659-UVOUT;n:type:ShaderForge.SFN_Slider,id:358,x:32154,y:32744,ptovrint:False,ptlb:Metallic,ptin:_Metallic,varname:node_358,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0,max:1;n:type:ShaderForge.SFN_Slider,id:1813,x:32154,y:32869,ptovrint:False,ptlb:Gloss,ptin:_Gloss,varname:_Metallic_copy,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0.912384,max:1;n:type:ShaderForge.SFN_Tex2d,id:2063,x:32011,y:32375,ptovrint:False,ptlb:Diffuse,ptin:_Diffuse,varname:node_2063,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,tex:7b1bbece090fdb3458957ba0456cfc64,ntxv:0,isnm:False|UVIN-1659-UVOUT;n:type:ShaderForge.SFN_SwitchProperty,id:1324,x:32466,y:32457,ptovrint:False,ptlb:Diff_Texture?,ptin:_Diff_Texture,varname:node_1324,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,on:True|A-6665-RGB,B-6343-OUT;n:type:ShaderForge.SFN_Panner,id:1659,x:31612,y:32738,varname:node_1659,prsc:2,spu:-0.3,spv:0|UVIN-4172-OUT,DIST-7431-OUT;n:type:ShaderForge.SFN_TexCoord,id:3739,x:30893,y:32629,varname:node_3739,prsc:2,uv:0;n:type:ShaderForge.SFN_Append,id:4172,x:31366,y:32738,varname:node_4172,prsc:2|A-5944-OUT,B-8623-OUT;n:type:ShaderForge.SFN_ValueProperty,id:1263,x:30926,y:32827,ptovrint:False,ptlb:Direction_X,ptin:_Direction_X,varname:node_1263,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,v1:1;n:type:ShaderForge.SFN_Multiply,id:5944,x:31162,y:32738,varname:node_5944,prsc:2|A-3739-U,B-1263-OUT;n:type:ShaderForge.SFN_ValueProperty,id:6176,x:30941,y:33001,ptovrint:False,ptlb:Direction_Y,ptin:_Direction_Y,varname:_Speed_Y,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,v1:1;n:type:ShaderForge.SFN_Multiply,id:8623,x:31133,y:32899,varname:node_8623,prsc:2|A-3739-V,B-6176-OUT;n:type:ShaderForge.SFN_Time,id:2842,x:31323,y:32927,varname:node_2842,prsc:2;n:type:ShaderForge.SFN_Multiply,id:7431,x:31550,y:32927,varname:node_7431,prsc:2|A-2842-T,B-2681-OUT;n:type:ShaderForge.SFN_ValueProperty,id:2681,x:31323,y:33084,ptovrint:False,ptlb:Speed,ptin:_Speed,varname:_Direction_Z,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,v1:1;proporder:5964-6665-358-1813-2063-1324-1263-6176-2681;pass:END;sub:END;*/
 
 Shader "Shader Forge/Shader1" {
     Properties {
-        _BumpMap ("Normal Map", 2D) = "black" {}
+        _BumpMap ("Normal Map", 2D) = "bump" {}
         _Color ("Color", Color) = (1.5,1.5,1.5,1)
         _Metallic ("Metallic", Range(0, 1)) = 0
         _Gloss ("Gloss", Range(0, 1)) = 0.912384
         _Diffuse ("Diffuse", 2D) = "white" {}
         [MaterialToggle] _Diff_Texture ("Diff_Texture?", Float ) = 0
+        _Direction_X ("Direction_X", Float ) = 1
+        _Direction_Y ("Direction_Y", Float ) = 1
+        _Speed ("Speed", Float ) = 1
     }
     SubShader {
         Tags {
@@ -49,6 +52,9 @@ Shader "Shader Forge/Shader1" {
             uniform float _Gloss;
             uniform sampler2D _Diffuse; uniform float4 _Diffuse_ST;
             uniform fixed _Diff_Texture;
+            uniform float _Direction_X;
+            uniform float _Direction_Y;
+            uniform float _Speed;
             struct VertexInput {
                 float4 vertex : POSITION;
                 float3 normal : NORMAL;
@@ -102,8 +108,8 @@ Shader "Shader Forge/Shader1" {
                 i.normalDir *= faceSign;
                 float3x3 tangentTransform = float3x3( i.tangentDir, i.bitangentDir, i.normalDir);
                 float3 viewDirection = normalize(_WorldSpaceCameraPos.xyz - i.posWorld.xyz);
-                float4 node_2839 = _Time + _TimeEditor;
-                float2 node_1659 = (i.uv0+node_2839.g*float2(-0.3,0));
+                float4 node_2842 = _Time + _TimeEditor;
+                float2 node_1659 = (float2((i.uv0.r*_Direction_X),(i.uv0.g*_Direction_Y))+(node_2842.g*_Speed)*float2(-0.3,0));
                 float4 _BumpMap_var = tex2D(_BumpMap,TRANSFORM_TEX(node_1659, _BumpMap));
                 float3 normalLocal = _BumpMap_var.rgb;
                 float3 normalDirection = normalize(mul( normalLocal, tangentTransform )); // Perturbed normals
@@ -223,6 +229,9 @@ Shader "Shader Forge/Shader1" {
             uniform float _Gloss;
             uniform sampler2D _Diffuse; uniform float4 _Diffuse_ST;
             uniform fixed _Diff_Texture;
+            uniform float _Direction_X;
+            uniform float _Direction_Y;
+            uniform float _Speed;
             struct VertexInput {
                 float4 vertex : POSITION;
                 float3 normal : NORMAL;
@@ -265,8 +274,8 @@ Shader "Shader Forge/Shader1" {
                 i.normalDir *= faceSign;
                 float3x3 tangentTransform = float3x3( i.tangentDir, i.bitangentDir, i.normalDir);
                 float3 viewDirection = normalize(_WorldSpaceCameraPos.xyz - i.posWorld.xyz);
-                float4 node_5273 = _Time + _TimeEditor;
-                float2 node_1659 = (i.uv0+node_5273.g*float2(-0.3,0));
+                float4 node_2842 = _Time + _TimeEditor;
+                float2 node_1659 = (float2((i.uv0.r*_Direction_X),(i.uv0.g*_Direction_Y))+(node_2842.g*_Speed)*float2(-0.3,0));
                 float4 _BumpMap_var = tex2D(_BumpMap,TRANSFORM_TEX(node_1659, _BumpMap));
                 float3 normalLocal = _BumpMap_var.rgb;
                 float3 normalDirection = normalize(mul( normalLocal, tangentTransform )); // Perturbed normals
@@ -342,6 +351,9 @@ Shader "Shader Forge/Shader1" {
             uniform float _Gloss;
             uniform sampler2D _Diffuse; uniform float4 _Diffuse_ST;
             uniform fixed _Diff_Texture;
+            uniform float _Direction_X;
+            uniform float _Direction_Y;
+            uniform float _Speed;
             struct VertexInput {
                 float4 vertex : POSITION;
                 float2 texcoord0 : TEXCOORD0;
@@ -373,8 +385,8 @@ Shader "Shader Forge/Shader1" {
                 
                 o.Emission = 0;
                 
-                float4 node_6866 = _Time + _TimeEditor;
-                float2 node_1659 = (i.uv0+node_6866.g*float2(-0.3,0));
+                float4 node_2842 = _Time + _TimeEditor;
+                float2 node_1659 = (float2((i.uv0.r*_Direction_X),(i.uv0.g*_Direction_Y))+(node_2842.g*_Speed)*float2(-0.3,0));
                 float4 _Diffuse_var = tex2D(_Diffuse,TRANSFORM_TEX(node_1659, _Diffuse));
                 float3 diffColor = lerp( _Color.rgb, (_Diffuse_var.rgb*_Color.rgb), _Diff_Texture );
                 float3 specColor = float3(_Metallic,_Metallic,_Metallic);
