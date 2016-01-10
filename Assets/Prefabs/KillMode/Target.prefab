@@ -758,6 +758,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55c10179784dcd440b463e7210f44e86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  targetHealth: 4
   rightArm: {fileID: 159218}
   leftArm: {fileID: 134528}
   canPlantRightArm: 0
