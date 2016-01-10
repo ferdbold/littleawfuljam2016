@@ -88,9 +88,14 @@ public class ClawCut : MonoBehaviour {
                 _currentPosition = ClawStatus.UpperUpRight;
                 break;
 
+
+                //LE COEUR !!!
             case "LowerUpRightAttackZone":
                 GetComponentInParent<MiniGameController>().canPlantLeftArm = true;
                 _currentPosition = ClawStatus.LowerUpRight;
+                //On met du feed back dans le controller du joueur pour indiqué qu'il est sur le coeur
+                
+
                 break;
 
             case "UpperBottomRightAttackZone":

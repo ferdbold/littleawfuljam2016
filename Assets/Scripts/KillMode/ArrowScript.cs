@@ -1,15 +1,19 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class ArowScript : MonoBehaviour {
+public class ArrowScript : MonoBehaviour {
 
+    //Reference sur la target et les flèches
     public GameObject target;
     public RectTransform rightArrow;
     public RectTransform leftArrow;
 
+    //Reference au position de base de leftArrow et rightArrow dans l'UI
     private Vector3 _leftArrowBaseRect;
     private Vector3 _rightArrowBaseRect;
 
+
+    //Variables pour les lerps des flèches
     private bool _isGoingOutLeft=true;
     private bool _isGoingOutRight = true;
     private float _startTimeLeft;
@@ -31,7 +35,7 @@ public class ArowScript : MonoBehaviour {
 	void Update () {
 
         //Effets de mouvements et d'opacité flèche gauche
-        if (target.GetComponent<MiniGameController>().IsAttackingLeft() || Input.GetKey(KeyCode.KeypadEnter))
+        if (target.GetComponent<MiniGameController>().IsAttackingLeft())
         {
             //On va vers l'extérieur
             if (_isGoingOutLeft)

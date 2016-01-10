@@ -272,7 +272,7 @@ public class MiniGameController : MonoBehaviour {
             if (leftArm.transform.localPosition.z <= _minArmZ)
             {
                 _slothHits++;//On incrémente de 1 le nombre d'hits du paresseux
-                if (leftArm.GetComponent<ClawCut>().GetClawPosition() == (int) ClawStatus.UpperUpRight && _slothHits>=targetHealth)
+                if (leftArm.GetComponent<ClawCut>().GetClawPosition() == (int) ClawStatus.LowerUpRight && _slothHits>=targetHealth)
                 {
                     _miniGameOver = true;
                 }
