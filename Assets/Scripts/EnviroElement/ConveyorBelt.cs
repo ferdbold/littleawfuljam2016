@@ -14,8 +14,9 @@ public class ConveyorBelt : MonoBehaviour {
 
     void OnTriggerStay(Collider other) {
         if (isOn) {
-            Rigidbody body = other.GetComponent<Rigidbody>();
+            Converable body = other.GetComponent<Converable>();
             if (body != null) {
+                body.locked = true;
                 body.transform.position += transform.forward * speed * Time.deltaTime;
             }
         }
