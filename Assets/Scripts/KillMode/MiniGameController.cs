@@ -3,6 +3,8 @@ using System.Collections;
 
 public class MiniGameController : MonoBehaviour {
 
+    //Nombre de hits effectués par le paresseux
+    private int _slothHits=0;
 
     //Les bras du paresseux
     public GameObject rightArm;
@@ -214,11 +216,15 @@ public class MiniGameController : MonoBehaviour {
         //On retire la griffe droite
         if (pierceRightArm < 0.01 && rightArm.transform.localPosition.z != _minArmZ)
         {
-            _doPulseBloodRightArm = true;
+            _doPulseBloodRightArm = false;
             _currentTimeRightArm = Time.time - _startTimeRightArm;
             rightArm.transform.localPosition = Vector3.Lerp(_lastPosRightArm,
                 new Vector3(_lastPosRightArm.x, _lastPosRightArm.y, _minArmZ),
                 _currentTimeRightArm/timeToExitWound);
+            if (rightArm.transform.localPosition.z <= _minArmZ)
+            {
+                _slothHits++;//On incrémente de 1 le nombre d'hits du paresseux
+            }
         }
         //On perce avec la griffe droite 
         else if(pierceRightArm>0)
@@ -236,7 +242,7 @@ public class MiniGameController : MonoBehaviour {
             else
             {
                 //On griffe et ca fait saigner le bras gauche!
-                _doPulseBloodLeftArm = true;
+                _doPulseBloodRightArm = true;
                 rightArm.transform.localPosition = new Vector3(rightArm.transform.localPosition.x,
                 rightArm.transform.localPosition.y,
                 Mathf.Clamp(rightArm.transform.localPosition.z + pierceRightArm, _minArmZ, maxArmZ));
@@ -258,6 +264,11 @@ public class MiniGameController : MonoBehaviour {
             leftArm.transform.localPosition = Vector3.Lerp(_lastPostLeftArm,
                 new Vector3(_lastPostLeftArm.x, _lastPostLeftArm.y, _minArmZ),
                 _currentTimeLeftArm / timeToExitWound);
+            _doPulseBloodLeftArm = false;
+            if (leftArm.transform.localPosition.z <= _minArmZ)
+            {
+                _slothHits++;//On incrémente de 1 le nombre d'hits du paresseux
+            }
         }
         //On perce avec la griffe gauche
         else if (pierceLeftArm > 0)
@@ -288,11 +299,20 @@ public class MiniGameController : MonoBehaviour {
 
     private void PulseBlood()
     {
-        if (_doPulseBloodLeftArm) { 
-
+        if (_doPulseBloodLeftArm) {
+            leftArm.GetComponent<EllipsoidParticleEmitter>().emit = true;
         }
-        if (_doPulseBloodRightArm){
+        else
+        {
+            leftArm.GetComponent<EllipsoidParticleEmitter>().emit = false;
+        }
 
+        if (_doPulseBloodRightArm){
+            rightArm.GetComponent<EllipsoidParticleEmitter>().emit = true;
+        }
+        else
+        {
+            rightArm.GetComponent<EllipsoidParticleEmitter>().emit = false;
         }
     }
 
