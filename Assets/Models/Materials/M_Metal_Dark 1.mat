@@ -88,6 +88,10 @@ Material:
         first:
           name: _Tile_Y
         second: 0
+      data:
+        first:
+          name: _Roughness_Map
+        second: 0
     m_Colors:
       data:
         first:
