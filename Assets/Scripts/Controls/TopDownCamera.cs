@@ -11,7 +11,7 @@ public class TopDownCamera : MonoBehaviour {
     [SerializeField] private float lerpValue = 0.1f;
 
     private Vector3 _targetPosition;
-    public LerpCameraToPositionZone lerpCameraToPositionZone;
+    [HideInInspector] public LerpCameraToPositionZone lerpCameraToPositionZone;
 
     void Start() {
         _targetPosition = transform.position;
