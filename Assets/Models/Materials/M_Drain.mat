@@ -37,11 +37,11 @@ Material:
       data:
         first:
           name: _Metallic
-        second: 1
+        second: 0.902
       data:
         first:
           name: _Gloss
-        second: 0.22
+        second: 0.432
       data:
         first:
           name: _Diff_Texture

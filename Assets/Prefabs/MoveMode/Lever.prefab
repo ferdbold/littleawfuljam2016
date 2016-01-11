@@ -495,6 +495,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8feed57a00cd6c84d8ff97a28335db4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _focusable: 1
   _icon: {fileID: 0}
   _prompt: Pull
   _animDuration: 0.5

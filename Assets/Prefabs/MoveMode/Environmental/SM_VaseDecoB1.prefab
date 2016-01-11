@@ -35,7 +35,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &412560
 Transform:
@@ -43,8 +43,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 116926}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.016055346, y: 0.008305763, z: 0.22200003}
+  m_LocalRotation: {x: -0.0000011622906, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.016055305, y: 0.008305683, z: 0.22200415}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 443788}
@@ -56,8 +56,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 133702}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -3.811, y: -1.417, z: 3.4653816}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -3.263, y: -1.417, z: 2.795}
+  m_LocalScale: {x: 2.4, y: 2.4, z: 2.4}
   m_Children:
   - {fileID: 412560}
   m_Father: {fileID: 0}
@@ -169,7 +169,19 @@ MonoBehaviour:
     - LIIF: -233967762
       InstanceTarget: {fileID: 116926}
   Modifications:
-    Modificated: []
+    Modificated:
+    - Object: {fileID: 412560}
+      ObjeckLink: -765337030
+      PropertyPath: m_LocalRotation
+      Mode: 0
+    - Object: {fileID: 412560}
+      ObjeckLink: -765337030
+      PropertyPath: m_LocalPosition
+      Mode: 0
+    - Object: {fileID: 116926}
+      ObjeckLink: -233967762
+      PropertyPath: m_Name
+      Mode: 0
     NonPrefabObjects: []
     NonPrefabComponents: []
     RemovedObjects: 
@@ -216,7 +228,35 @@ MonoBehaviour:
     - LIIF: 1387132749
       InstanceTarget: {fileID: 11449972}
   Modifications:
-    Modificated: []
+    Modificated:
+    - Object: {fileID: 443788}
+      ObjeckLink: -765337030
+      PropertyPath: m_LocalPosition
+      Mode: 0
+    - Object: {fileID: 443788}
+      ObjeckLink: -765337030
+      PropertyPath: m_LocalScale
+      Mode: 0
+    - Object: {fileID: 443788}
+      ObjeckLink: -765337030
+      PropertyPath: m_RootOrder
+      Mode: 0
+    - Object: {fileID: 133702}
+      ObjeckLink: -233967762
+      PropertyPath: m_Name
+      Mode: 0
+    - Object: {fileID: 412560}
+      ObjeckLink: -555761739
+      PropertyPath: m_LocalRotation
+      Mode: 0
+    - Object: {fileID: 412560}
+      ObjeckLink: -555761739
+      PropertyPath: m_LocalPosition
+      Mode: 0
+    - Object: {fileID: 412560}
+      ObjeckLink: -555761739
+      PropertyPath: m_LocalScale
+      Mode: 0
     NonPrefabObjects: []
     NonPrefabComponents: []
     RemovedObjects: 
@@ -229,7 +269,11 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 133702}

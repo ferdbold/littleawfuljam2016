@@ -24,9 +24,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 128610}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -5.9480534, y: -1.41, z: -2.9813385}
-  m_LocalScale: {x: 0.33287606, y: 0.33287606, z: 0.33287606}
+  m_LocalRotation: {x: -0.81872153, y: 0.19280222, z: -0.22173077, w: 0.4933132}
+  m_LocalPosition: {x: -10.375, y: -1.705, z: -2.972}
+  m_LocalScale: {x: 0.6749445, y: 0.6749443, z: 0.6749443}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -91,7 +91,51 @@ MonoBehaviour:
     - LIIF: -233967762
       InstanceTarget: {fileID: 128610}
   Modifications:
-    Modificated: []
+    Modificated:
+    - Object: {fileID: 2394478}
+      ObjeckLink: -1863392894
+      PropertyPath: m_LightmapIndexDynamic
+      Mode: 0
+    - Object: {fileID: 2394478}
+      ObjeckLink: -1863392894
+      PropertyPath: m_LightmapTilingOffsetDynamic.x
+      Mode: 0
+    - Object: {fileID: 2394478}
+      ObjeckLink: -1863392894
+      PropertyPath: m_LightmapTilingOffsetDynamic.y
+      Mode: 0
+    - Object: {fileID: 2394478}
+      ObjeckLink: -1863392894
+      PropertyPath: m_LightmapTilingOffsetDynamic.z
+      Mode: 0
+    - Object: {fileID: 2394478}
+      ObjeckLink: -1863392894
+      PropertyPath: m_AdditionalVertexStreams
+      Mode: 0
+    - Object: {fileID: 417554}
+      ObjeckLink: -765337030
+      PropertyPath: m_LocalRotation
+      Mode: 0
+    - Object: {fileID: 417554}
+      ObjeckLink: -765337030
+      PropertyPath: m_LocalPosition
+      Mode: 0
+    - Object: {fileID: 417554}
+      ObjeckLink: -765337030
+      PropertyPath: m_LocalScale
+      Mode: 0
+    - Object: {fileID: 417554}
+      ObjeckLink: -765337030
+      PropertyPath: m_RootOrder
+      Mode: 0
+    - Object: {fileID: 128610}
+      ObjeckLink: -233967762
+      PropertyPath: m_Name
+      Mode: 0
+    - Object: {fileID: 128610}
+      ObjeckLink: -233967762
+      PropertyPath: m_StaticEditorFlags
+      Mode: 0
     NonPrefabObjects: []
     NonPrefabComponents: []
     RemovedObjects: 
@@ -104,7 +148,11 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 128610}

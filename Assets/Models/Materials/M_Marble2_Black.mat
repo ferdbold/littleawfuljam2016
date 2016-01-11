@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: M_Marble2_Black
+  m_Shader: {fileID: 4800000, guid: 8837ce8409b81f34d878e41c498b6325, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 28c7aad1372ff114b90d330f8a2dd938, type: 3}
+          m_Scale: {x: 0.1, y: 0.05}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _BumpMap
+        second:
+          m_Texture: {fileID: 2800000, guid: 62bb69b9a86edcc448bd67652306761f, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _Metallic
+        second: 0.155
+      data:
+        first:
+          name: _Gloss
+        second: 0.314
+      data:
+        first:
+          name: _Rotation_Speed
+        second: 0
+      data:
+        first:
+          name: _Tile_X
+        second: 1
+      data:
+        first:
+          name: _Tile_Y
+        second: 1
+      data:
+        first:
+          name: _Normal_Power
+        second: 0.98
+      data:
+        first:
+          name: _node_9902
+        second: 0
+      data:
+        first:
+          name: _Tile_X_N
+        second: 20
+      data:
+        first:
+          name: _Tile_Y_N
+        second: 20
+      data:
+        first:
+          name: _Tile_X_D
+        second: 1
+      data:
+        first:
+          name: _Tile_Z_D
+        second: 1
+      data:
+        first:
+          name: _Rotation_Speed_copy
+        second: 0
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: 0.16206896, g: 0.16206896, b: 0.16206896, a: 1}
