@@ -51,7 +51,7 @@ Material:
       data:
         first:
           name: _Gloss
-        second: 0.182
+        second: 0.211
       data:
         first:
           name: _Diff_Texture
@@ -74,10 +74,6 @@ Material:
         second: 1
       data:
         first:
-          name: _node_4803
-        second: 0.8
-      data:
-        first:
           name: _Use_Normal
         second: 0.5
       data:
@@ -88,8 +84,12 @@ Material:
         first:
           name: _Roughness_Map
         second: 0.3263001
+      data:
+        first:
+          name: _node_4803
+        second: 0.8
     m_Colors:
       data:
         first:
           name: _Diff_color
-        second: {r: 1, g: 1, b: 1, a: 1}
+        second: {r: 0.7758621, g: 0.71143067, b: 0.6389453, a: 1}

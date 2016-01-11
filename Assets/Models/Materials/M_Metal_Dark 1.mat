@@ -54,6 +54,14 @@ Material:
         second: 0.462
       data:
         first:
+          name: _Tile_X
+        second: 0.5
+      data:
+        first:
+          name: _Tile_Y
+        second: 0
+      data:
+        first:
           name: _Diff_Texture
         second: 0
       data:
@@ -82,18 +90,10 @@ Material:
         second: 0.7
       data:
         first:
-          name: _Tile_X
-        second: 0.5
-      data:
-        first:
-          name: _Tile_Y
-        second: 0
-      data:
-        first:
           name: _Roughness_Map
         second: 0
     m_Colors:
       data:
         first:
           name: _Diff_color
-        second: {r: 0.6034483, g: 0.6034483, b: 0.6034483, a: 1}
+        second: {r: 0.3413793, g: 0.3413793, b: 0.3413793, a: 1}
