@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: M_Glass
+  m_Name: M_Glass 1
   m_Shader: {fileID: 4800000, guid: 9b25f9d89d4ac468a9a492cf8cae33f6, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
@@ -24,4 +24,4 @@ Material:
       data:
         first:
           name: _Color
-        second: {r: 0, g: 1, b: 2, a: 1}
+        second: {r: 0.941, g: 1, b: 1, a: 1}

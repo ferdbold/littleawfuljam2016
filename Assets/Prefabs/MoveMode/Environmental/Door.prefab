@@ -243,7 +243,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 135340}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.3101702, y: -12.5266075, z: 0.95189476}
+  m_LocalPosition: {x: -7.1536036, y: -0.396, z: -11.743374}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 403296}
@@ -586,6 +586,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60060ce480d3d4bf8b115fb74ff9b5d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _focusable: 1
   _icon: {fileID: 0}
   _prompt: Open
   _animDuration: 0.5
@@ -694,6 +695,10 @@ MonoBehaviour:
       InstanceTarget: {fileID: 6581852}
   Modifications:
     Modificated:
+    - Object: {fileID: 135340}
+      ObjeckLink: 1598987914
+      PropertyPath: m_Name
+      Mode: 0
     - Object: {fileID: 495590}
       ObjeckLink: -926898027
       PropertyPath: m_LocalPosition
@@ -744,11 +749,7 @@ MonoBehaviour:
       Mode: 0
     - Object: {fileID: 13754600}
       ObjeckLink: 15656249
-      PropertyPath: m_Materials.Array.data[0]
-      Mode: 0
-    - Object: {fileID: 403296}
-      ObjeckLink: 1271388441
-      PropertyPath: m_LocalScale
+      PropertyPath: m_Materials.Array.data[1]
       Mode: 0
     NonPrefabObjects: []
     NonPrefabComponents: []
@@ -898,9 +899,9 @@ MonoBehaviour:
     NonPrefabObjects:
     - child: {fileID: 22441088}
       parent: {fileID: 22424874}
-    - child: {fileID: 22425688}
-      parent: {fileID: 22441088}
     - child: {fileID: 22420424}
+      parent: {fileID: 22441088}
+    - child: {fileID: 22425688}
       parent: {fileID: 22441088}
     NonPrefabComponents: []
     RemovedObjects: 2627c0428a9e4e5f362ccc65539ca807c87730a2a0f41bf6c22ee7570e8836d71865769d7ab807122db9fe4f0c26e3bef4a90431e11a8a75159d7525657268295727d3b019fc415535d222bb8537d01309b9c00d976d4a2370f77efcd2f3f0cb35a93640b6acbbec2a04059a39e5ee0077af206bea3286a54a4e4a5d932a8660
@@ -918,7 +919,7 @@ SkinnedMeshRenderer:
   m_ReceiveShadows: 1
   m_Materials:
   - {fileID: 2100000, guid: 115657970a11e15469856dfe8d0e71ea, type: 2}
-  - {fileID: 2100000, guid: 9e4b80c09e7207540bf9b317c8e243f0, type: 2}
+  - {fileID: 2100000, guid: 1ae26af03b42f5e43b4eabb27ee72515, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
