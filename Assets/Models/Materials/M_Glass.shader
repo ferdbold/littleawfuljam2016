@@ -1,7 +1,7 @@
 // Shader created with Shader Forge v1.26 
 // Shader Forge (c) Neat Corporation / Joachim Holmer - http://www.acegikmo.com/shaderforge/
 // Note: Manually altering this data may prevent you from opening it in Shader Forge
-/*SF_DATA;ver:1.26;sub:START;pass:START;ps:flbk:,iptp:0,cusa:False,bamd:0,lico:1,lgpr:1,limd:3,spmd:1,trmd:1,grmd:1,uamb:False,mssp:True,bkdf:False,hqlp:False,rprd:True,enco:False,rmgx:True,rpth:0,vtps:0,hqsc:True,nrmq:0,nrsp:0,vomd:0,spxs:False,tesm:0,olmd:1,culm:2,bsrc:3,bdst:7,dpts:2,wrdp:True,dith:0,rfrpo:True,rfrpn:Refraction,coma:15,ufog:False,aust:False,igpj:False,qofs:0,qpre:3,rntp:2,fgom:False,fgoc:False,fgod:False,fgor:False,fgmd:0,fgcr:0.5,fgcg:0.5,fgcb:0.5,fgca:1,fgde:0.01,fgrn:0,fgrf:300,stcl:False,stva:128,stmr:255,stmw:255,stcp:6,stps:0,stfa:0,stfz:0,ofsf:0,ofsu:0,f2p0:False,fnsp:False,fnfb:False;n:type:ShaderForge.SFN_Final,id:0,x:34414,y:32442,varname:node_0,prsc:2|diff-553-RGB,spec-75-OUT,gloss-76-OUT,transm-29-OUT,lwrap-29-OUT,alpha-22-OUT;n:type:ShaderForge.SFN_Vector1,id:22,x:34145,y:32700,varname:node_22,prsc:2,v1:0.5;n:type:ShaderForge.SFN_Vector1,id:29,x:34145,y:32579,varname:node_29,prsc:2,v1:5;n:type:ShaderForge.SFN_Vector1,id:75,x:34145,y:32430,varname:node_75,prsc:2,v1:1;n:type:ShaderForge.SFN_Vector1,id:76,x:34145,y:32486,varname:node_76,prsc:2,v1:0.5;n:type:ShaderForge.SFN_Color,id:553,x:34061,y:32236,ptovrint:False,ptlb:Color,ptin:_Color,varname:node_553,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,c1:0,c2:1,c3:2,c4:1;proporder:553;pass:END;sub:END;*/
+/*SF_DATA;ver:1.26;sub:START;pass:START;ps:flbk:,iptp:0,cusa:False,bamd:0,lico:1,lgpr:1,limd:3,spmd:1,trmd:1,grmd:1,uamb:False,mssp:True,bkdf:False,hqlp:False,rprd:True,enco:False,rmgx:True,rpth:0,vtps:0,hqsc:True,nrmq:0,nrsp:0,vomd:0,spxs:False,tesm:0,olmd:1,culm:2,bsrc:3,bdst:7,dpts:2,wrdp:False,dith:0,rfrpo:True,rfrpn:Refraction,coma:15,ufog:False,aust:False,igpj:False,qofs:0,qpre:3,rntp:2,fgom:False,fgoc:False,fgod:False,fgor:False,fgmd:0,fgcr:0.5,fgcg:0.5,fgcb:0.5,fgca:1,fgde:0.01,fgrn:0,fgrf:300,stcl:False,stva:128,stmr:255,stmw:255,stcp:6,stps:0,stfa:0,stfz:0,ofsf:0,ofsu:0,f2p0:False,fnsp:False,fnfb:False;n:type:ShaderForge.SFN_Final,id:0,x:34414,y:32442,varname:node_0,prsc:2|diff-553-RGB,spec-75-OUT,gloss-76-OUT,transm-29-OUT,lwrap-29-OUT,alpha-22-OUT;n:type:ShaderForge.SFN_Vector1,id:22,x:34145,y:32700,varname:node_22,prsc:2,v1:0.5;n:type:ShaderForge.SFN_Vector1,id:29,x:34145,y:32579,varname:node_29,prsc:2,v1:5;n:type:ShaderForge.SFN_Vector1,id:75,x:34145,y:32430,varname:node_75,prsc:2,v1:1;n:type:ShaderForge.SFN_Vector1,id:76,x:34145,y:32486,varname:node_76,prsc:2,v1:0.5;n:type:ShaderForge.SFN_Color,id:553,x:34061,y:32236,ptovrint:False,ptlb:Color,ptin:_Color,varname:node_553,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,c1:0,c2:1,c3:2,c4:1;proporder:553;pass:END;sub:END;*/
 
 Shader "Shader Forge/Examples/Refraction" {
     Properties {
@@ -20,7 +20,7 @@ Shader "Shader Forge/Examples/Refraction" {
             }
             Blend SrcAlpha OneMinusSrcAlpha
             Cull Off
-            
+            ZWrite Off
             
             CGPROGRAM
             #pragma vertex vert
@@ -145,7 +145,7 @@ Shader "Shader Forge/Examples/Refraction" {
             }
             Blend One One
             Cull Off
-            
+            ZWrite Off
             
             CGPROGRAM
             #pragma vertex vert
