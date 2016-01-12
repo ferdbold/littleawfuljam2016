@@ -1,0 +1,444 @@
+fileFormatVersion: 2
+guid: 787e78a53d2134a4db126c36d9036ac6
+timeCreated: 1452564254
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Scientist_clav_lf_ctrl_grp
+    100002: Scientist_clav_lf_jnt
+    100004: Scientist_clav_rt_ctrl_grp
+    100006: Scientist_clav_rt_jnt
+    100008: Scientist_elbow_lf_ctrl_grp
+    100010: Scientist_elbow_lf_jnt
+    100012: Scientist_elbow_rt_ctrl_grp
+    100014: Scientist_elbow_rt_jnt
+    100016: Scientist_eyebrowIn_lf_ctrl_grp
+    100018: Scientist_eyebrowIn_lf_jnt
+    100020: Scientist_eyebrowIn_rt_ctrl_grp
+    100022: Scientist_eyebrowIn_rt_jnt
+    100024: Scientist_eyebrowMid_lf_ctrl_grp
+    100026: Scientist_eyebrowMid_lf_jnt
+    100028: Scientist_eyebrowMid_rt_ctrl_grp
+    100030: Scientist_eyebrowMid_rt_jnt
+    100032: Scientist_eyebrowOut_lf_ctrl_grp
+    100034: Scientist_eyebrowOut_lf_jnt
+    100036: Scientist_eyebrowOut_rt_ctrl_grp
+    100038: Scientist_eyebrowOut_rt_jnt
+    100040: Scientist_foot_lf_ctrl_grp
+    100042: Scientist_foot_lf_jnt
+    100044: Scientist_foot_rt_ctrl_grp
+    100046: Scientist_foot_rt_jnt
+    100048: Scientist_forearm_lf_ctl_grp
+    100050: Scientist_forearm_lf_jnt
+    100052: Scientist_forearm_rt_ctrl_grp
+    100054: Scientist_forearm_rt_jnt
+    100056: Scientist_hand_lf_ctrl_grp
+    100058: Scientist_hand_lf_jnt
+    100060: Scientist_hand_rt_ctrl_grp
+    100062: Scientist_hand_rt_jnt
+    100064: Scientist_head_ctrl_grp
+    100066: Scientist_head_end_lf_jnt
+    100068: Scientist_head_jnt
+    100070: Scientist_hips_ctrl_grp
+    100072: Scientist_hips_jnt
+    100074: Scientist_indexA_lf_ctrl_grp
+    100076: Scientist_indexA_lf_jnt
+    100078: Scientist_indexA_rt_ctrl_grp
+    100080: Scientist_indexA_rt_jnt
+    100082: Scientist_indexB_lf_ctrl_grp
+    100084: Scientist_indexB_lf_jnt
+    100086: Scientist_indexB_rt_ctrl_grp
+    100088: Scientist_indexB_rt_jnt
+    100090: Scientist_jaw_ctrl_grp
+    100092: Scientist_jaw_end_jnt
+    100094: Scientist_jaw_jnt
+    100096: Scientist_knee_ctrl_grp
+    100098: Scientist_knee_jnt
+    100100: Scientist_middleB_lf_ctrl_grp
+    100102: Scientist_middleB_lf_jnt
+    100104: Scientist_middleB_rt_ctrl_grp
+    100106: Scientist_middleB_rt_jnt
+    100108: Scientist_middlerA_lf_ctrl_grp
+    100110: Scientist_middlerA_lf_jnt
+    100112: Scientist_middlerA_rt_ctrl_grp
+    100114: Scientist_middlerA_rt_jnt
+    100116: Scientist_neck_ctrl_grp
+    100118: Scientist_neck_jnt
+    100120: Scientist_pinkyA_lf_ctrl_grp
+    100122: Scientist_pinkyA_lf_jnt
+    100124: Scientist_pinkyA_rt_ctrl_grp
+    100126: Scientist_pinkyA_rt_jnt
+    100128: Scientist_pinkyB_lf_ctrl_grp
+    100130: Scientist_pinkyB_lf_jnt
+    100132: Scientist_pinkyB_rt_ctrl_grp
+    100134: Scientist_pinkyB_rt_jnt
+    100136: Scientist_root_jnt
+    100138: Scientist_shoulder_lf_ctrl_grp
+    100140: Scientist_shoulder_lf_jnt
+    100142: Scientist_shoulder_rt_ctrl_grp
+    100144: Scientist_shoulder_rt_jnt
+    100146: Scientist_spline_ctrl_grp
+    100148: Scientist_spline_jnt
+    100150: Scientist_thumbA_lf_ctrl_grp
+    100152: Scientist_thumbA_lf_jnt
+    100154: Scientist_thumbA_rt_ctrl_grp
+    100156: Scientist_thumbA_rt_jnt
+    100158: Scientist_thumbB_lf_ctrl_grp
+    100160: Scientist_thumbB_lf_jnt
+    100162: Scientist_thumbB_rt_ctrl_grp
+    100164: Scientist_thumbB_rt_jnt
+    100166: SK_scientist
+    100168: //RootNode
+    400000: Scientist_clav_lf_ctrl_grp
+    400002: Scientist_clav_lf_jnt
+    400004: Scientist_clav_rt_ctrl_grp
+    400006: Scientist_clav_rt_jnt
+    400008: Scientist_elbow_lf_ctrl_grp
+    400010: Scientist_elbow_lf_jnt
+    400012: Scientist_elbow_rt_ctrl_grp
+    400014: Scientist_elbow_rt_jnt
+    400016: Scientist_eyebrowIn_lf_ctrl_grp
+    400018: Scientist_eyebrowIn_lf_jnt
+    400020: Scientist_eyebrowIn_rt_ctrl_grp
+    400022: Scientist_eyebrowIn_rt_jnt
+    400024: Scientist_eyebrowMid_lf_ctrl_grp
+    400026: Scientist_eyebrowMid_lf_jnt
+    400028: Scientist_eyebrowMid_rt_ctrl_grp
+    400030: Scientist_eyebrowMid_rt_jnt
+    400032: Scientist_eyebrowOut_lf_ctrl_grp
+    400034: Scientist_eyebrowOut_lf_jnt
+    400036: Scientist_eyebrowOut_rt_ctrl_grp
+    400038: Scientist_eyebrowOut_rt_jnt
+    400040: Scientist_foot_lf_ctrl_grp
+    400042: Scientist_foot_lf_jnt
+    400044: Scientist_foot_rt_ctrl_grp
+    400046: Scientist_foot_rt_jnt
+    400048: Scientist_forearm_lf_ctl_grp
+    400050: Scientist_forearm_lf_jnt
+    400052: Scientist_forearm_rt_ctrl_grp
+    400054: Scientist_forearm_rt_jnt
+    400056: Scientist_hand_lf_ctrl_grp
+    400058: Scientist_hand_lf_jnt
+    400060: Scientist_hand_rt_ctrl_grp
+    400062: Scientist_hand_rt_jnt
+    400064: Scientist_head_ctrl_grp
+    400066: Scientist_head_end_lf_jnt
+    400068: Scientist_head_jnt
+    400070: Scientist_hips_ctrl_grp
+    400072: Scientist_hips_jnt
+    400074: Scientist_indexA_lf_ctrl_grp
+    400076: Scientist_indexA_lf_jnt
+    400078: Scientist_indexA_rt_ctrl_grp
+    400080: Scientist_indexA_rt_jnt
+    400082: Scientist_indexB_lf_ctrl_grp
+    400084: Scientist_indexB_lf_jnt
+    400086: Scientist_indexB_rt_ctrl_grp
+    400088: Scientist_indexB_rt_jnt
+    400090: Scientist_jaw_ctrl_grp
+    400092: Scientist_jaw_end_jnt
+    400094: Scientist_jaw_jnt
+    400096: Scientist_knee_ctrl_grp
+    400098: Scientist_knee_jnt
+    400100: Scientist_middleB_lf_ctrl_grp
+    400102: Scientist_middleB_lf_jnt
+    400104: Scientist_middleB_rt_ctrl_grp
+    400106: Scientist_middleB_rt_jnt
+    400108: Scientist_middlerA_lf_ctrl_grp
+    400110: Scientist_middlerA_lf_jnt
+    400112: Scientist_middlerA_rt_ctrl_grp
+    400114: Scientist_middlerA_rt_jnt
+    400116: Scientist_neck_ctrl_grp
+    400118: Scientist_neck_jnt
+    400120: Scientist_pinkyA_lf_ctrl_grp
+    400122: Scientist_pinkyA_lf_jnt
+    400124: Scientist_pinkyA_rt_ctrl_grp
+    400126: Scientist_pinkyA_rt_jnt
+    400128: Scientist_pinkyB_lf_ctrl_grp
+    400130: Scientist_pinkyB_lf_jnt
+    400132: Scientist_pinkyB_rt_ctrl_grp
+    400134: Scientist_pinkyB_rt_jnt
+    400136: Scientist_root_jnt
+    400138: Scientist_shoulder_lf_ctrl_grp
+    400140: Scientist_shoulder_lf_jnt
+    400142: Scientist_shoulder_rt_ctrl_grp
+    400144: Scientist_shoulder_rt_jnt
+    400146: Scientist_spline_ctrl_grp
+    400148: Scientist_spline_jnt
+    400150: Scientist_thumbA_lf_ctrl_grp
+    400152: Scientist_thumbA_lf_jnt
+    400154: Scientist_thumbA_rt_ctrl_grp
+    400156: Scientist_thumbA_rt_jnt
+    400158: Scientist_thumbB_lf_ctrl_grp
+    400160: Scientist_thumbB_lf_jnt
+    400162: Scientist_thumbB_rt_ctrl_grp
+    400164: Scientist_thumbB_rt_jnt
+    400166: SK_scientist
+    400168: //RootNode
+    4300000: SK_scientist
+    7400000: Static
+    9500000: //RootNode
+    11400000: //RootNode
+    13700000: SK_scientist
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Static
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Scientist_root_jnt
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_hips_ctrl_grp
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_hips_jnt
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_hips_jnt/Scientist_knee_ctrl_grp
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_hips_jnt/Scientist_knee_jnt
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_hips_jnt/Scientist_knee_jnt/Scientist_foot_lf_ctrl_grp
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_hips_jnt/Scientist_knee_jnt/Scientist_foot_lf_jnt
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_hips_jnt/Scientist_knee_jnt/Scientist_foot_rt_ctrl_grp
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_hips_jnt/Scientist_knee_jnt/Scientist_foot_rt_jnt
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_spline_ctrl_grp
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_spline_jnt
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_spline_jnt/Scientist_clav_lf_ctrl_grp
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_spline_jnt/Scientist_clav_lf_jnt
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_spline_jnt/Scientist_clav_lf_jnt/Scientist_shoulder_lf_ctrl_grp
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_spline_jnt/Scientist_clav_lf_jnt/Scientist_shoulder_lf_jnt
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_spline_jnt/Scientist_clav_lf_jnt/Scientist_shoulder_lf_jnt/Scientist_elbow_lf_ctrl_grp
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_spline_jnt/Scientist_clav_lf_jnt/Scientist_shoulder_lf_jnt/Scientist_elbow_lf_jnt
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_spline_jnt/Scientist_clav_lf_jnt/Scientist_shoulder_lf_jnt/Scientist_elbow_lf_jnt/Scientist_forearm_lf_ctl_grp
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_spline_jnt/Scientist_clav_lf_jnt/Scientist_shoulder_lf_jnt/Scientist_elbow_lf_jnt/Scientist_forearm_lf_jnt
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_spline_jnt/Scientist_clav_lf_jnt/Scientist_shoulder_lf_jnt/Scientist_elbow_lf_jnt/Scientist_forearm_lf_jnt/Scientist_hand_lf_ctrl_grp
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_spline_jnt/Scientist_clav_lf_jnt/Scientist_shoulder_lf_jnt/Scientist_elbow_lf_jnt/Scientist_forearm_lf_jnt/Scientist_hand_lf_jnt
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_spline_jnt/Scientist_clav_lf_jnt/Scientist_shoulder_lf_jnt/Scientist_elbow_lf_jnt/Scientist_forearm_lf_jnt/Scientist_hand_lf_jnt/Scientist_indexA_lf_ctrl_grp
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_spline_jnt/Scientist_clav_lf_jnt/Scientist_shoulder_lf_jnt/Scientist_elbow_lf_jnt/Scientist_forearm_lf_jnt/Scientist_hand_lf_jnt/Scientist_indexA_lf_jnt
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_spline_jnt/Scientist_clav_lf_jnt/Scientist_shoulder_lf_jnt/Scientist_elbow_lf_jnt/Scientist_forearm_lf_jnt/Scientist_hand_lf_jnt/Scientist_indexA_lf_jnt/Scientist_indexB_lf_ctrl_grp
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_spline_jnt/Scientist_clav_lf_jnt/Scientist_shoulder_lf_jnt/Scientist_elbow_lf_jnt/Scientist_forearm_lf_jnt/Scientist_hand_lf_jnt/Scientist_indexA_lf_jnt/Scientist_indexB_lf_jnt
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_spline_jnt/Scientist_clav_lf_jnt/Scientist_shoulder_lf_jnt/Scientist_elbow_lf_jnt/Scientist_forearm_lf_jnt/Scientist_hand_lf_jnt/Scientist_middlerA_lf_ctrl_grp
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_spline_jnt/Scientist_clav_lf_jnt/Scientist_shoulder_lf_jnt/Scientist_elbow_lf_jnt/Scientist_forearm_lf_jnt/Scientist_hand_lf_jnt/Scientist_middlerA_lf_jnt
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_spline_jnt/Scientist_clav_lf_jnt/Scientist_shoulder_lf_jnt/Scientist_elbow_lf_jnt/Scientist_forearm_lf_jnt/Scientist_hand_lf_jnt/Scientist_middlerA_lf_jnt/Scientist_middleB_lf_ctrl_grp
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_spline_jnt/Scientist_clav_lf_jnt/Scientist_shoulder_lf_jnt/Scientist_elbow_lf_jnt/Scientist_forearm_lf_jnt/Scientist_hand_lf_jnt/Scientist_middlerA_lf_jnt/Scientist_middleB_lf_jnt
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_spline_jnt/Scientist_clav_lf_jnt/Scientist_shoulder_lf_jnt/Scientist_elbow_lf_jnt/Scientist_forearm_lf_jnt/Scientist_hand_lf_jnt/Scientist_pinkyA_lf_ctrl_grp
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_spline_jnt/Scientist_clav_lf_jnt/Scientist_shoulder_lf_jnt/Scientist_elbow_lf_jnt/Scientist_forearm_lf_jnt/Scientist_hand_lf_jnt/Scientist_pinkyA_lf_jnt
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_spline_jnt/Scientist_clav_lf_jnt/Scientist_shoulder_lf_jnt/Scientist_elbow_lf_jnt/Scientist_forearm_lf_jnt/Scientist_hand_lf_jnt/Scientist_pinkyA_lf_jnt/Scientist_pinkyB_lf_ctrl_grp
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_spline_jnt/Scientist_clav_lf_jnt/Scientist_shoulder_lf_jnt/Scientist_elbow_lf_jnt/Scientist_forearm_lf_jnt/Scientist_hand_lf_jnt/Scientist_pinkyA_lf_jnt/Scientist_pinkyB_lf_jnt
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_spline_jnt/Scientist_clav_lf_jnt/Scientist_shoulder_lf_jnt/Scientist_elbow_lf_jnt/Scientist_forearm_lf_jnt/Scientist_hand_lf_jnt/Scientist_thumbA_lf_ctrl_grp
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_spline_jnt/Scientist_clav_lf_jnt/Scientist_shoulder_lf_jnt/Scientist_elbow_lf_jnt/Scientist_forearm_lf_jnt/Scientist_hand_lf_jnt/Scientist_thumbA_lf_jnt
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_spline_jnt/Scientist_clav_lf_jnt/Scientist_shoulder_lf_jnt/Scientist_elbow_lf_jnt/Scientist_forearm_lf_jnt/Scientist_hand_lf_jnt/Scientist_thumbA_lf_jnt/Scientist_thumbB_lf_ctrl_grp
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_spline_jnt/Scientist_clav_lf_jnt/Scientist_shoulder_lf_jnt/Scientist_elbow_lf_jnt/Scientist_forearm_lf_jnt/Scientist_hand_lf_jnt/Scientist_thumbA_lf_jnt/Scientist_thumbB_lf_jnt
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_spline_jnt/Scientist_clav_rt_ctrl_grp
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_spline_jnt/Scientist_clav_rt_jnt
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_spline_jnt/Scientist_clav_rt_jnt/Scientist_shoulder_rt_ctrl_grp
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_spline_jnt/Scientist_clav_rt_jnt/Scientist_shoulder_rt_jnt
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_spline_jnt/Scientist_clav_rt_jnt/Scientist_shoulder_rt_jnt/Scientist_elbow_rt_ctrl_grp
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_spline_jnt/Scientist_clav_rt_jnt/Scientist_shoulder_rt_jnt/Scientist_elbow_rt_jnt
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_spline_jnt/Scientist_clav_rt_jnt/Scientist_shoulder_rt_jnt/Scientist_elbow_rt_jnt/Scientist_forearm_rt_ctrl_grp
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_spline_jnt/Scientist_clav_rt_jnt/Scientist_shoulder_rt_jnt/Scientist_elbow_rt_jnt/Scientist_forearm_rt_jnt
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_spline_jnt/Scientist_clav_rt_jnt/Scientist_shoulder_rt_jnt/Scientist_elbow_rt_jnt/Scientist_forearm_rt_jnt/Scientist_hand_rt_ctrl_grp
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_spline_jnt/Scientist_clav_rt_jnt/Scientist_shoulder_rt_jnt/Scientist_elbow_rt_jnt/Scientist_forearm_rt_jnt/Scientist_hand_rt_jnt
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_spline_jnt/Scientist_clav_rt_jnt/Scientist_shoulder_rt_jnt/Scientist_elbow_rt_jnt/Scientist_forearm_rt_jnt/Scientist_hand_rt_jnt/Scientist_indexA_rt_ctrl_grp
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_spline_jnt/Scientist_clav_rt_jnt/Scientist_shoulder_rt_jnt/Scientist_elbow_rt_jnt/Scientist_forearm_rt_jnt/Scientist_hand_rt_jnt/Scientist_indexA_rt_jnt
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_spline_jnt/Scientist_clav_rt_jnt/Scientist_shoulder_rt_jnt/Scientist_elbow_rt_jnt/Scientist_forearm_rt_jnt/Scientist_hand_rt_jnt/Scientist_indexA_rt_jnt/Scientist_indexB_rt_ctrl_grp
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_spline_jnt/Scientist_clav_rt_jnt/Scientist_shoulder_rt_jnt/Scientist_elbow_rt_jnt/Scientist_forearm_rt_jnt/Scientist_hand_rt_jnt/Scientist_indexA_rt_jnt/Scientist_indexB_rt_jnt
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_spline_jnt/Scientist_clav_rt_jnt/Scientist_shoulder_rt_jnt/Scientist_elbow_rt_jnt/Scientist_forearm_rt_jnt/Scientist_hand_rt_jnt/Scientist_middlerA_rt_ctrl_grp
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_spline_jnt/Scientist_clav_rt_jnt/Scientist_shoulder_rt_jnt/Scientist_elbow_rt_jnt/Scientist_forearm_rt_jnt/Scientist_hand_rt_jnt/Scientist_middlerA_rt_jnt
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_spline_jnt/Scientist_clav_rt_jnt/Scientist_shoulder_rt_jnt/Scientist_elbow_rt_jnt/Scientist_forearm_rt_jnt/Scientist_hand_rt_jnt/Scientist_middlerA_rt_jnt/Scientist_middleB_rt_ctrl_grp
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_spline_jnt/Scientist_clav_rt_jnt/Scientist_shoulder_rt_jnt/Scientist_elbow_rt_jnt/Scientist_forearm_rt_jnt/Scientist_hand_rt_jnt/Scientist_middlerA_rt_jnt/Scientist_middleB_rt_jnt
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_spline_jnt/Scientist_clav_rt_jnt/Scientist_shoulder_rt_jnt/Scientist_elbow_rt_jnt/Scientist_forearm_rt_jnt/Scientist_hand_rt_jnt/Scientist_pinkyA_rt_ctrl_grp
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_spline_jnt/Scientist_clav_rt_jnt/Scientist_shoulder_rt_jnt/Scientist_elbow_rt_jnt/Scientist_forearm_rt_jnt/Scientist_hand_rt_jnt/Scientist_pinkyA_rt_jnt
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_spline_jnt/Scientist_clav_rt_jnt/Scientist_shoulder_rt_jnt/Scientist_elbow_rt_jnt/Scientist_forearm_rt_jnt/Scientist_hand_rt_jnt/Scientist_pinkyA_rt_jnt/Scientist_pinkyB_rt_ctrl_grp
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_spline_jnt/Scientist_clav_rt_jnt/Scientist_shoulder_rt_jnt/Scientist_elbow_rt_jnt/Scientist_forearm_rt_jnt/Scientist_hand_rt_jnt/Scientist_pinkyA_rt_jnt/Scientist_pinkyB_rt_jnt
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_spline_jnt/Scientist_clav_rt_jnt/Scientist_shoulder_rt_jnt/Scientist_elbow_rt_jnt/Scientist_forearm_rt_jnt/Scientist_hand_rt_jnt/Scientist_thumbA_rt_ctrl_grp
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_spline_jnt/Scientist_clav_rt_jnt/Scientist_shoulder_rt_jnt/Scientist_elbow_rt_jnt/Scientist_forearm_rt_jnt/Scientist_hand_rt_jnt/Scientist_thumbA_rt_jnt
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_spline_jnt/Scientist_clav_rt_jnt/Scientist_shoulder_rt_jnt/Scientist_elbow_rt_jnt/Scientist_forearm_rt_jnt/Scientist_hand_rt_jnt/Scientist_thumbA_rt_jnt/Scientist_thumbB_rt_ctrl_grp
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_spline_jnt/Scientist_clav_rt_jnt/Scientist_shoulder_rt_jnt/Scientist_elbow_rt_jnt/Scientist_forearm_rt_jnt/Scientist_hand_rt_jnt/Scientist_thumbA_rt_jnt/Scientist_thumbB_rt_jnt
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_spline_jnt/Scientist_neck_ctrl_grp
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_spline_jnt/Scientist_neck_jnt
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_spline_jnt/Scientist_neck_jnt/Scientist_head_ctrl_grp
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_spline_jnt/Scientist_neck_jnt/Scientist_head_jnt
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_spline_jnt/Scientist_neck_jnt/Scientist_head_jnt/Scientist_head_end_lf_jnt
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_spline_jnt/Scientist_neck_jnt/Scientist_head_jnt/Scientist_head_end_lf_jnt/Scientist_eyebrowIn_lf_ctrl_grp
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_spline_jnt/Scientist_neck_jnt/Scientist_head_jnt/Scientist_head_end_lf_jnt/Scientist_eyebrowIn_lf_jnt
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_spline_jnt/Scientist_neck_jnt/Scientist_head_jnt/Scientist_head_end_lf_jnt/Scientist_eyebrowIn_rt_ctrl_grp
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_spline_jnt/Scientist_neck_jnt/Scientist_head_jnt/Scientist_head_end_lf_jnt/Scientist_eyebrowIn_rt_jnt
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_spline_jnt/Scientist_neck_jnt/Scientist_head_jnt/Scientist_head_end_lf_jnt/Scientist_eyebrowMid_lf_ctrl_grp
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_spline_jnt/Scientist_neck_jnt/Scientist_head_jnt/Scientist_head_end_lf_jnt/Scientist_eyebrowMid_lf_jnt
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_spline_jnt/Scientist_neck_jnt/Scientist_head_jnt/Scientist_head_end_lf_jnt/Scientist_eyebrowMid_rt_ctrl_grp
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_spline_jnt/Scientist_neck_jnt/Scientist_head_jnt/Scientist_head_end_lf_jnt/Scientist_eyebrowMid_rt_jnt
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_spline_jnt/Scientist_neck_jnt/Scientist_head_jnt/Scientist_head_end_lf_jnt/Scientist_eyebrowOut_lf_ctrl_grp
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_spline_jnt/Scientist_neck_jnt/Scientist_head_jnt/Scientist_head_end_lf_jnt/Scientist_eyebrowOut_lf_jnt
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_spline_jnt/Scientist_neck_jnt/Scientist_head_jnt/Scientist_head_end_lf_jnt/Scientist_eyebrowOut_rt_ctrl_grp
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_spline_jnt/Scientist_neck_jnt/Scientist_head_jnt/Scientist_head_end_lf_jnt/Scientist_eyebrowOut_rt_jnt
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_spline_jnt/Scientist_neck_jnt/Scientist_head_jnt/Scientist_head_end_lf_jnt/Scientist_jaw_ctrl_grp
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_spline_jnt/Scientist_neck_jnt/Scientist_head_jnt/Scientist_head_end_lf_jnt/Scientist_jaw_jnt
+        weight: 1
+      - path: Scientist_root_jnt/Scientist_spline_jnt/Scientist_neck_jnt/Scientist_head_jnt/Scientist_head_end_lf_jnt/Scientist_jaw_jnt/Scientist_jaw_end_jnt
+        weight: 1
+      - path: SK_scientist
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
