@@ -16,7 +16,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!1 &137908
 GameObject:
@@ -35,7 +35,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!1 &148066
 GameObject:
@@ -54,7 +54,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!1 &167716
 GameObject:
@@ -73,7 +73,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!1 &173962
 GameObject:
@@ -92,7 +92,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!4 &432750
 Transform:
@@ -190,7 +190,7 @@ MonoBehaviour:
   m_FillOrigin: 0
 --- !u!114 &11412054
 MonoBehaviour:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 33
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 148066}
@@ -353,7 +353,7 @@ MonoBehaviour:
   m_Text: GRIP
 --- !u!114 &11450288
 MonoBehaviour:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 33
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 167716}
@@ -387,9 +387,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eeee4118e0d194db286ed89b6929e8f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _focusable: 1
   _icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
   _prompt: Grip
   _animDuration: 0.5
+  _gripPrompt: Grip
+  _releasePrompt: Release
 --- !u!114 &11461796
 MonoBehaviour:
   m_ObjectHideFlags: 33
@@ -524,7 +527,7 @@ MonoBehaviour:
   m_ChildForceExpandHeight: 1
 --- !u!114 &11493242
 MonoBehaviour:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 33
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 133488}
@@ -671,7 +674,11 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 137908}
