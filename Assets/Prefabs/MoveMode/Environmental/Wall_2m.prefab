@@ -11,13 +11,12 @@ GameObject:
   - 33: {fileID: 3351446}
   - 23: {fileID: 2322772}
   - 114: {fileID: 11468024}
-  - 65: {fileID: 6595342}
   m_Layer: 0
   m_Name: Wall_2m
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 19
   m_IsActive: 1
 --- !u!4 &431328
 Transform:
@@ -41,7 +40,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: 115657970a11e15469856dfe8d0e71ea, type: 2}
+  - {fileID: 2100000, guid: b18727b513a0d3b43a5469fd2a5df398, type: 2}
   - {fileID: 2100000, guid: 1ae26af03b42f5e43b4eabb27ee72515, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
@@ -65,18 +64,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 112542}
   m_Mesh: {fileID: 4300000, guid: bb1e1c2941d513b4bb96484b0e61f47b, type: 3}
---- !u!65 &6595342
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 112542}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2.0088978, y: 0.5010863, z: 2.00575}
-  m_Center: {x: -0.0016103387, y: 0, z: 1.0002979}
 --- !u!114 &11468024
 MonoBehaviour:
   m_ObjectHideFlags: 33
@@ -105,7 +92,7 @@ MonoBehaviour:
     - LIIF: -233967762
       InstanceTarget: {fileID: 112542}
     - LIIF: 1937729987
-      InstanceTarget: {fileID: 6595342}
+      InstanceTarget: {fileID: 0}
   Modifications:
     Modificated:
     - Object: {fileID: 2322772}
@@ -136,7 +123,15 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: m_StaticEditorFlags
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b18727b513a0d3b43a5469fd2a5df398, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 112542}

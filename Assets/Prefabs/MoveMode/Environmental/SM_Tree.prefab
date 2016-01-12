@@ -16,7 +16,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!4 &413800
 Transform:
@@ -25,7 +25,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 160408}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -5.484994, y: -1.41, z: -2.7412615}
+  m_LocalPosition: {x: -2.098, y: -1.48, z: 6.96}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -91,7 +91,47 @@ MonoBehaviour:
     - LIIF: -233967762
       InstanceTarget: {fileID: 160408}
   Modifications:
-    Modificated: []
+    Modificated:
+    - Object: {fileID: 2345972}
+      ObjeckLink: -1863392894
+      PropertyPath: m_LightmapIndexDynamic
+      Mode: 0
+    - Object: {fileID: 2345972}
+      ObjeckLink: -1863392894
+      PropertyPath: m_LightmapTilingOffsetDynamic.x
+      Mode: 0
+    - Object: {fileID: 2345972}
+      ObjeckLink: -1863392894
+      PropertyPath: m_LightmapTilingOffsetDynamic.y
+      Mode: 0
+    - Object: {fileID: 2345972}
+      ObjeckLink: -1863392894
+      PropertyPath: m_LightmapTilingOffsetDynamic.z
+      Mode: 0
+    - Object: {fileID: 2345972}
+      ObjeckLink: -1863392894
+      PropertyPath: m_LightmapTilingOffsetDynamic.w
+      Mode: 0
+    - Object: {fileID: 2345972}
+      ObjeckLink: -1863392894
+      PropertyPath: m_AdditionalVertexStreams
+      Mode: 0
+    - Object: {fileID: 413800}
+      ObjeckLink: -765337030
+      PropertyPath: m_LocalPosition
+      Mode: 0
+    - Object: {fileID: 413800}
+      ObjeckLink: -765337030
+      PropertyPath: m_RootOrder
+      Mode: 0
+    - Object: {fileID: 160408}
+      ObjeckLink: -233967762
+      PropertyPath: m_Name
+      Mode: 0
+    - Object: {fileID: 160408}
+      ObjeckLink: -233967762
+      PropertyPath: m_StaticEditorFlags
+      Mode: 0
     NonPrefabObjects: []
     NonPrefabComponents: []
     RemovedObjects: 
@@ -104,7 +144,11 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 160408}
