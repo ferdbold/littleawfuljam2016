@@ -11,13 +11,12 @@ GameObject:
   - 33: {fileID: 3347488}
   - 23: {fileID: 2387702}
   - 114: {fileID: 11421154}
-  - 65: {fileID: 6531594}
   m_Layer: 0
   m_Name: SM_DrainSmall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 1
+  m_StaticEditorFlags: 19
   m_IsActive: 1
 --- !u!4 &419014
 Transform:
@@ -64,18 +63,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 109890}
   m_Mesh: {fileID: 4300000, guid: 56a39e51db8d42e4ab94c9e87a63166b, type: 3}
---- !u!65 &6531594
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 109890}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1.0000002, z: 0}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &11421154
 MonoBehaviour:
   m_ObjectHideFlags: 33
@@ -104,7 +91,7 @@ MonoBehaviour:
     - LIIF: -233967762
       InstanceTarget: {fileID: 109890}
     - LIIF: 2072458105
-      InstanceTarget: {fileID: 6531594}
+      InstanceTarget: {fileID: 0}
   Modifications:
     Modificated: []
     NonPrefabObjects: []
@@ -122,7 +109,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 0}
       propertyPath: m_StaticEditorFlags
-      value: 1
+      value: 19
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

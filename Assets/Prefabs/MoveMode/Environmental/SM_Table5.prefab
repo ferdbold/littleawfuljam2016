@@ -15,7 +15,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 1
+  m_StaticEditorFlags: 19
   m_IsActive: 1
 --- !u!1 &105944
 GameObject:
@@ -31,7 +31,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 1
+  m_StaticEditorFlags: 19
   m_IsActive: 1
 --- !u!1 &118136
 GameObject:
@@ -48,7 +48,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 1
+  m_StaticEditorFlags: 19
   m_IsActive: 1
 --- !u!1 &141360
 GameObject:
@@ -65,7 +65,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 1
+  m_StaticEditorFlags: 19
   m_IsActive: 1
 --- !u!1 &142616
 GameObject:
@@ -82,7 +82,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 1
+  m_StaticEditorFlags: 19
   m_IsActive: 1
 --- !u!1 &147296
 GameObject:
@@ -99,7 +99,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 1
+  m_StaticEditorFlags: 19
   m_IsActive: 1
 --- !u!1 &160066
 GameObject:
@@ -116,7 +116,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 1
+  m_StaticEditorFlags: 19
   m_IsActive: 1
 --- !u!1 &164916
 GameObject:
@@ -133,7 +133,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 1
+  m_StaticEditorFlags: 19
   m_IsActive: 1
 --- !u!1 &175490
 GameObject:
@@ -150,7 +150,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 1
+  m_StaticEditorFlags: 19
   m_IsActive: 1
 --- !u!1 &179758
 GameObject:
@@ -167,7 +167,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 1
+  m_StaticEditorFlags: 19
   m_IsActive: 1
 --- !u!1 &186752
 GameObject:
@@ -184,7 +184,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 1
+  m_StaticEditorFlags: 19
   m_IsActive: 0
 --- !u!4 &405536
 Transform:
@@ -794,7 +794,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 0}
       propertyPath: m_StaticEditorFlags
-      value: 1
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_IsActive

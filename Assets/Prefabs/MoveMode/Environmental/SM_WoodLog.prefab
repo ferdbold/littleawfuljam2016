@@ -15,7 +15,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 1
+  m_StaticEditorFlags: 19
   m_IsActive: 1
 --- !u!1 &163628
 GameObject:
@@ -32,7 +32,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 1
+  m_StaticEditorFlags: 19
   m_IsActive: 1
 --- !u!1 &172796
 GameObject:
@@ -48,7 +48,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 1
+  m_StaticEditorFlags: 19
   m_IsActive: 1
 --- !u!1 &192736
 GameObject:
@@ -65,7 +65,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 1
+  m_StaticEditorFlags: 19
   m_IsActive: 1
 --- !u!4 &410498
 Transform:
@@ -297,7 +297,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 0}
       propertyPath: m_StaticEditorFlags
-      value: 1
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_Materials.Array.data[0]

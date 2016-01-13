@@ -48,8 +48,10 @@ public class LevelManager : MonoBehaviour {
 
             case GameState.killMode:
                 sloth.GetComponent<SlothController>().DeactivateControls();
-                sloth.transform.DOMove(enemyTarget.transform.position + new Vector3(-0.08f,0.1f,-0.54f),2f);
-                sloth.transform.DORotate(enemyTarget.transform.rotation.eulerAngles, 2f);
+                sloth.transform.DOMove(new Vector3(enemyTarget.transform.position.x + 0.084f,
+                                                    0.14f,
+                                                    enemyTarget.transform.position.z - 0.54f), 2f);
+                sloth.transform.DORotate((enemyTarget.transform.rotation.eulerAngles)+ new Vector3(0,180,0), 2f);
                 KillMode_StartKilling();
                 break;
 
