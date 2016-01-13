@@ -9,6 +9,8 @@ public abstract class Interactable : MonoBehaviour {
 
 	private float _promptAlpha = 0f;
 	protected bool _focused = false;
+
+	[Tooltip("Whether this object displays a prompt upon entering the player entering a trigger box.")]
 	[SerializeField] private bool _focusable = true;
 
 	private CanvasGroup _promptCanvasGroup;

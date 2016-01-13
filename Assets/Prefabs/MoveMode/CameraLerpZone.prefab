@@ -11,6 +11,7 @@ GameObject:
   - 33: {fileID: 3316788}
   - 65: {fileID: 6521228}
   - 114: {fileID: 11448482}
+  - 114: {fileID: 11471816}
   m_Layer: 0
   m_Name: CameraLerpZone
   m_TagString: Untagged
@@ -60,6 +61,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 281c18146b1287240b31e982390a54e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  targetTransform: {fileID: 0}
+--- !u!114 &11471816
+MonoBehaviour:
+  m_ObjectHideFlags: 33
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 128898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46a02d0f612a241b293c0da4f82b712c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Properties:
+    Properties: []
+    Groups: []
+    Hidden: 
+  Links:
+    Links:
+    - LIIF: -816318936
+      InstanceTarget: {fileID: 11471816}
+    - LIIF: -146085169
+      InstanceTarget: {fileID: 128898}
+    - LIIF: -181669160
+      InstanceTarget: {fileID: 462148}
+    - LIIF: -2075378171
+      InstanceTarget: {fileID: 11448482}
+    - LIIF: 1464010040
+      InstanceTarget: {fileID: 6521228}
+    - LIIF: 1569895621
+      InstanceTarget: {fileID: 3316788}
+  Modifications:
+    Modificated: []
+    NonPrefabObjects: []
+    NonPrefabComponents: []
+    RemovedObjects: 
+    TransformParentChanges: []
+  ParentPrefabGUID: 
+  PrefabGUID: 771bc6b785e88f249a2eb3caed5d473e
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
