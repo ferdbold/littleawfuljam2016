@@ -3729,6 +3729,12 @@ MonoBehaviour:
   killCamCanvas: {fileID: 22301268}
   animator: {fileID: 9517832}
   killModeCameraAnchor: {fileID: 404992}
+  _slothDefaultController: {fileID: 9100000, guid: 693a87324089b5340ab1a490c1b87948,
+    type: 2}
+  _slothIKController: {fileID: 9100000, guid: 10395f1bbd5f7f941a9be8788b0e18b7, type: 2}
+  LeftHandAnchor: {fileID: 482080}
+  RightHandAnchor: {fileID: 402640}
+  ClimbAnimClip: {fileID: 7400000, guid: fc561a5a05de4434d96b216b273d621b, type: 2}
 --- !u!114 &11463406
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4296,9 +4302,25 @@ MonoBehaviour:
       ObjeckLink: 792988521
       PropertyPath: m_RootOrder
       Mode: 0
-    - Object: {fileID: 404992}
-      ObjeckLink: 1297981655
-      PropertyPath: m_LocalPosition
+    - Object: {fileID: 11455948}
+      ObjeckLink: -1238442313
+      PropertyPath: _slothDefaultController
+      Mode: 0
+    - Object: {fileID: 11455948}
+      ObjeckLink: -1238442313
+      PropertyPath: _slothIKController
+      Mode: 0
+    - Object: {fileID: 11455948}
+      ObjeckLink: -1238442313
+      PropertyPath: LeftHandAnchor
+      Mode: 0
+    - Object: {fileID: 11455948}
+      ObjeckLink: -1238442313
+      PropertyPath: RightHandAnchor
+      Mode: 0
+    - Object: {fileID: 11455948}
+      ObjeckLink: -1238442313
+      PropertyPath: ClimbAnimClip
       Mode: 0
     NonPrefabObjects: []
     NonPrefabComponents: []

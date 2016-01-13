@@ -586,6 +586,7 @@ GameObject:
   - 4: {fileID: 487098}
   - 95: {fileID: 9581304}
   - 114: {fileID: 11400758}
+  - 114: {fileID: 11487652}
   m_Layer: 0
   m_Name: SK_Sloth
   m_TagString: Untagged
@@ -3116,6 +3117,8 @@ MonoBehaviour:
       InstanceTarget: {fileID: 14480006}
     - LIIF: -196947938
       InstanceTarget: {fileID: 11448022}
+    - LIIF: 1986835000
+      InstanceTarget: {fileID: 11487652}
   Modifications:
     Modificated:
     - Object: {fileID: 451046}
@@ -3778,7 +3781,9 @@ MonoBehaviour:
       PropertyPath: m_ConnectedAnchor
       Mode: 0
     NonPrefabObjects: []
-    NonPrefabComponents: []
+    NonPrefabComponents:
+    - child: {fileID: 11487652}
+      parent: {fileID: 150760}
     RemovedObjects: 
     TransformParentChanges: []
   ParentPrefabGUID: 
@@ -4352,6 +4357,22 @@ MonoBehaviour:
     TransformParentChanges: []
   ParentPrefabGUID: 
   PrefabGUID: 132b3e006892f4141a49ba84fa81b13b
+--- !u!114 &11487652
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 150760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8271401a3d6a0884ebf2315ca4cc65ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ikActive: 0
+  rightHandObj: {fileID: 0}
+  leftHandObj: {fileID: 0}
+  lookObjRight: {fileID: 0}
+  lookObjLeft: {fileID: 0}
 --- !u!114 &11493894
 MonoBehaviour:
   m_ObjectHideFlags: 1
