@@ -51,6 +51,9 @@ public class Rope : Interactable {
 
 		_grippingButton = button;
 
+		Debug.Log("Cursor: " + _cursor);
+		Debug.Log("Snapper: " + _slothSnapper);
+
 		if (button == "left") {
 			_cursor.connectedBody = _slothSnapper.leftHand;
 		} else {
