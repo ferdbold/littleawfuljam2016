@@ -1,0 +1,864 @@
+fileFormatVersion: 2
+guid: ff8a870e60ca1844dae4b3c6f3871c4b
+timeCreated: 1452739955
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: SK_Sloth
+    100002: //RootNode
+    100004: Sloth_clav_lf_ctrl_grp
+    100006: Sloth_clav_lf_jnt
+    100008: Sloth_clav_rt_ctrl_grp
+    100010: Sloth_clav_rt_jnt
+    100012: Sloth_elbow_lf_jnt
+    100014: Sloth_elbow_rt_jnt
+    100016: Sloth_feet_lf_ctrl_grp
+    100018: Sloth_feet_lf_jnt
+    100020: Sloth_feet_rt_ctrl_grp
+    100022: Sloth_feet_rt_jnt
+    100024: Sloth_fingerDown_end_lf_jnt
+    100026: Sloth_fingerDown_end_rt_jnt
+    100028: Sloth_fingerDown_lf_ctrl_grp
+    100030: Sloth_fingerDown_lf_jnt
+    100032: Sloth_fingerDown_rt_ctrl_grp
+    100034: Sloth_fingerDown_rt_jnt
+    100036: Sloth_fingerMid_end_lf_jnt
+    100038: Sloth_fingerMid_end_rt_jnt
+    100040: Sloth_fingerMid_lf_ctrl_grp
+    100042: Sloth_fingerMid_lf_jnt
+    100044: Sloth_fingerMid_rt_ctrl_grp
+    100046: Sloth_fingerMid_rt_jnt
+    100048: Sloth_fingerUp_end_lf_jnt
+    100050: Sloth_fingerUp_end_rt_jnt
+    100052: Sloth_fingerUp_lf_ctrl_grp
+    100054: Sloth_fingerUp_lf_jnt
+    100056: Sloth_fingerUp_rt_ctrl_grp
+    100058: Sloth_fingerUp_rt_jnt
+    100060: Sloth_hand_lf_jnt
+    100062: Sloth_hand_rt_jnt
+    100064: Sloth_head_ctrl_grp
+    100066: Sloth_head_end_jnt
+    100068: Sloth_head_jnt
+    100070: Sloth_hips_ctrl_grp
+    100072: Sloth_hips_jnt
+    100074: Sloth_knee_lf_ctrl_grp
+    100076: Sloth_knee_lf_jnt
+    100078: Sloth_knee_rt_ctrl_grp
+    100080: Sloth_knee_rt_jnt
+    100082: Sloth_leg_lf_ctrl_grp
+    100084: Sloth_leg_lf_jnt
+    100086: Sloth_leg_rt_ctrl_grp
+    100088: Sloth_leg_rt_jnt
+    100090: Sloth_neck_ctrl_grp
+    100092: Sloth_neck_jnt
+    100094: Sloth_root_jnt
+    100096: Sloth_shoulder_lf_jnt
+    100098: Sloth_shoulder_rt_jnt
+    100100: Sloth_splineA_ctrl_grp
+    100102: Sloth_splineA_jnt
+    100104: Sloth_splineB_ctrl_grp
+    100106: Sloth_splineB_jnt
+    100108: Sloth_toes_end_lf_jnt
+    100110: Sloth_toes_end_rt_jnt
+    100112: Sloth_toes_lf_ctrl_grp
+    100114: Sloth_toes_lf_jnt
+    100116: Sloth_toes_rt_ctrl_grp
+    100118: Sloth_toes_rt_jnt
+    400000: SK_Sloth
+    400002: //RootNode
+    400004: Sloth_clav_lf_ctrl_grp
+    400006: Sloth_clav_lf_jnt
+    400008: Sloth_clav_rt_ctrl_grp
+    400010: Sloth_clav_rt_jnt
+    400012: Sloth_elbow_lf_jnt
+    400014: Sloth_elbow_rt_jnt
+    400016: Sloth_feet_lf_ctrl_grp
+    400018: Sloth_feet_lf_jnt
+    400020: Sloth_feet_rt_ctrl_grp
+    400022: Sloth_feet_rt_jnt
+    400024: Sloth_fingerDown_end_lf_jnt
+    400026: Sloth_fingerDown_end_rt_jnt
+    400028: Sloth_fingerDown_lf_ctrl_grp
+    400030: Sloth_fingerDown_lf_jnt
+    400032: Sloth_fingerDown_rt_ctrl_grp
+    400034: Sloth_fingerDown_rt_jnt
+    400036: Sloth_fingerMid_end_lf_jnt
+    400038: Sloth_fingerMid_end_rt_jnt
+    400040: Sloth_fingerMid_lf_ctrl_grp
+    400042: Sloth_fingerMid_lf_jnt
+    400044: Sloth_fingerMid_rt_ctrl_grp
+    400046: Sloth_fingerMid_rt_jnt
+    400048: Sloth_fingerUp_end_lf_jnt
+    400050: Sloth_fingerUp_end_rt_jnt
+    400052: Sloth_fingerUp_lf_ctrl_grp
+    400054: Sloth_fingerUp_lf_jnt
+    400056: Sloth_fingerUp_rt_ctrl_grp
+    400058: Sloth_fingerUp_rt_jnt
+    400060: Sloth_hand_lf_jnt
+    400062: Sloth_hand_rt_jnt
+    400064: Sloth_head_ctrl_grp
+    400066: Sloth_head_end_jnt
+    400068: Sloth_head_jnt
+    400070: Sloth_hips_ctrl_grp
+    400072: Sloth_hips_jnt
+    400074: Sloth_knee_lf_ctrl_grp
+    400076: Sloth_knee_lf_jnt
+    400078: Sloth_knee_rt_ctrl_grp
+    400080: Sloth_knee_rt_jnt
+    400082: Sloth_leg_lf_ctrl_grp
+    400084: Sloth_leg_lf_jnt
+    400086: Sloth_leg_rt_ctrl_grp
+    400088: Sloth_leg_rt_jnt
+    400090: Sloth_neck_ctrl_grp
+    400092: Sloth_neck_jnt
+    400094: Sloth_root_jnt
+    400096: Sloth_shoulder_lf_jnt
+    400098: Sloth_shoulder_rt_jnt
+    400100: Sloth_splineA_ctrl_grp
+    400102: Sloth_splineA_jnt
+    400104: Sloth_splineB_ctrl_grp
+    400106: Sloth_splineB_jnt
+    400108: Sloth_toes_end_lf_jnt
+    400110: Sloth_toes_end_rt_jnt
+    400112: Sloth_toes_lf_ctrl_grp
+    400114: Sloth_toes_lf_jnt
+    400116: Sloth_toes_rt_ctrl_grp
+    400118: Sloth_toes_rt_jnt
+    4300000: SK_Sloth
+    7400000: TurnRightHumanoid
+    9500000: //RootNode
+    11400000: //RootNode
+    13700000: SK_Sloth
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: "\nClip 'Take 001' has import animation warnings that
+      might lower retargeting quality:\nNote: Activate translation DOF on avatar to
+      improve retargeting quality.\n\t'Sloth_hips_jnt' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n"
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: TurnRightHumanoid
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: SK_Sloth
+        weight: 0
+      - path: Sloth_root_jnt
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_hips_ctrl_grp
+        weight: 0
+      - path: Sloth_root_jnt/Sloth_hips_jnt
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_lf_ctrl_grp
+        weight: 0
+      - path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_lf_jnt
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_lf_jnt/Sloth_knee_lf_ctrl_grp
+        weight: 0
+      - path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_lf_jnt/Sloth_knee_lf_jnt
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_lf_jnt/Sloth_knee_lf_jnt/Sloth_feet_lf_ctrl_grp
+        weight: 0
+      - path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_lf_jnt/Sloth_knee_lf_jnt/Sloth_feet_lf_jnt
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_lf_jnt/Sloth_knee_lf_jnt/Sloth_feet_lf_jnt/Sloth_toes_lf_ctrl_grp
+        weight: 0
+      - path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_lf_jnt/Sloth_knee_lf_jnt/Sloth_feet_lf_jnt/Sloth_toes_lf_jnt
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_lf_jnt/Sloth_knee_lf_jnt/Sloth_feet_lf_jnt/Sloth_toes_lf_jnt/Sloth_toes_end_lf_jnt
+        weight: 0
+      - path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_rt_ctrl_grp
+        weight: 0
+      - path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_rt_jnt
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_rt_jnt/Sloth_knee_rt_ctrl_grp
+        weight: 0
+      - path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_rt_jnt/Sloth_knee_rt_jnt
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_rt_jnt/Sloth_knee_rt_jnt/Sloth_feet_rt_ctrl_grp
+        weight: 0
+      - path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_rt_jnt/Sloth_knee_rt_jnt/Sloth_feet_rt_jnt
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_rt_jnt/Sloth_knee_rt_jnt/Sloth_feet_rt_jnt/Sloth_toes_rt_ctrl_grp
+        weight: 0
+      - path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_rt_jnt/Sloth_knee_rt_jnt/Sloth_feet_rt_jnt/Sloth_toes_rt_jnt
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_hips_jnt/Sloth_leg_rt_jnt/Sloth_knee_rt_jnt/Sloth_feet_rt_jnt/Sloth_toes_rt_jnt/Sloth_toes_end_rt_jnt
+        weight: 0
+      - path: Sloth_root_jnt/Sloth_splineA_ctrl_grp
+        weight: 0
+      - path: Sloth_root_jnt/Sloth_splineA_jnt
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_ctrl_grp
+        weight: 0
+      - path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_lf_ctrl_grp
+        weight: 0
+      - path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_lf_jnt
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_lf_jnt/Sloth_shoulder_lf_jnt
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_lf_jnt/Sloth_shoulder_lf_jnt/Sloth_elbow_lf_jnt
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_lf_jnt/Sloth_shoulder_lf_jnt/Sloth_elbow_lf_jnt/Sloth_hand_lf_jnt
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_lf_jnt/Sloth_shoulder_lf_jnt/Sloth_elbow_lf_jnt/Sloth_hand_lf_jnt/Sloth_fingerDown_lf_ctrl_grp
+        weight: 0
+      - path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_lf_jnt/Sloth_shoulder_lf_jnt/Sloth_elbow_lf_jnt/Sloth_hand_lf_jnt/Sloth_fingerDown_lf_jnt
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_lf_jnt/Sloth_shoulder_lf_jnt/Sloth_elbow_lf_jnt/Sloth_hand_lf_jnt/Sloth_fingerDown_lf_jnt/Sloth_fingerDown_end_lf_jnt
+        weight: 0
+      - path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_lf_jnt/Sloth_shoulder_lf_jnt/Sloth_elbow_lf_jnt/Sloth_hand_lf_jnt/Sloth_fingerMid_lf_ctrl_grp
+        weight: 0
+      - path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_lf_jnt/Sloth_shoulder_lf_jnt/Sloth_elbow_lf_jnt/Sloth_hand_lf_jnt/Sloth_fingerMid_lf_jnt
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_lf_jnt/Sloth_shoulder_lf_jnt/Sloth_elbow_lf_jnt/Sloth_hand_lf_jnt/Sloth_fingerMid_lf_jnt/Sloth_fingerMid_end_lf_jnt
+        weight: 0
+      - path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_lf_jnt/Sloth_shoulder_lf_jnt/Sloth_elbow_lf_jnt/Sloth_hand_lf_jnt/Sloth_fingerUp_lf_ctrl_grp
+        weight: 0
+      - path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_lf_jnt/Sloth_shoulder_lf_jnt/Sloth_elbow_lf_jnt/Sloth_hand_lf_jnt/Sloth_fingerUp_lf_jnt
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_lf_jnt/Sloth_shoulder_lf_jnt/Sloth_elbow_lf_jnt/Sloth_hand_lf_jnt/Sloth_fingerUp_lf_jnt/Sloth_fingerUp_end_lf_jnt
+        weight: 0
+      - path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_rt_ctrl_grp
+        weight: 0
+      - path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_rt_jnt
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_rt_jnt/Sloth_shoulder_rt_jnt
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_rt_jnt/Sloth_shoulder_rt_jnt/Sloth_elbow_rt_jnt
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_rt_jnt/Sloth_shoulder_rt_jnt/Sloth_elbow_rt_jnt/Sloth_hand_rt_jnt
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_rt_jnt/Sloth_shoulder_rt_jnt/Sloth_elbow_rt_jnt/Sloth_hand_rt_jnt/Sloth_fingerDown_rt_ctrl_grp
+        weight: 0
+      - path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_rt_jnt/Sloth_shoulder_rt_jnt/Sloth_elbow_rt_jnt/Sloth_hand_rt_jnt/Sloth_fingerDown_rt_jnt
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_rt_jnt/Sloth_shoulder_rt_jnt/Sloth_elbow_rt_jnt/Sloth_hand_rt_jnt/Sloth_fingerDown_rt_jnt/Sloth_fingerDown_end_rt_jnt
+        weight: 0
+      - path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_rt_jnt/Sloth_shoulder_rt_jnt/Sloth_elbow_rt_jnt/Sloth_hand_rt_jnt/Sloth_fingerMid_rt_ctrl_grp
+        weight: 0
+      - path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_rt_jnt/Sloth_shoulder_rt_jnt/Sloth_elbow_rt_jnt/Sloth_hand_rt_jnt/Sloth_fingerMid_rt_jnt
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_rt_jnt/Sloth_shoulder_rt_jnt/Sloth_elbow_rt_jnt/Sloth_hand_rt_jnt/Sloth_fingerMid_rt_jnt/Sloth_fingerMid_end_rt_jnt
+        weight: 0
+      - path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_rt_jnt/Sloth_shoulder_rt_jnt/Sloth_elbow_rt_jnt/Sloth_hand_rt_jnt/Sloth_fingerUp_rt_ctrl_grp
+        weight: 0
+      - path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_rt_jnt/Sloth_shoulder_rt_jnt/Sloth_elbow_rt_jnt/Sloth_hand_rt_jnt/Sloth_fingerUp_rt_jnt
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_clav_rt_jnt/Sloth_shoulder_rt_jnt/Sloth_elbow_rt_jnt/Sloth_hand_rt_jnt/Sloth_fingerUp_rt_jnt/Sloth_fingerUp_end_rt_jnt
+        weight: 0
+      - path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_neck_ctrl_grp
+        weight: 0
+      - path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_neck_jnt
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_neck_jnt/Sloth_head_ctrl_grp
+        weight: 0
+      - path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_neck_jnt/Sloth_head_jnt
+        weight: 1
+      - path: Sloth_root_jnt/Sloth_splineA_jnt/Sloth_splineB_jnt/Sloth_neck_jnt/Sloth_head_jnt/Sloth_head_end_jnt
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 1
+  humanDescription:
+    human:
+    - boneName: Sloth_root_jnt
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Sloth_leg_lf_jnt
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Sloth_leg_rt_jnt
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Sloth_knee_lf_jnt
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Sloth_knee_rt_jnt
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Sloth_feet_lf_jnt
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Sloth_feet_rt_jnt
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Sloth_splineA_jnt
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Sloth_splineB_jnt
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Sloth_neck_jnt
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Sloth_head_jnt
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Sloth_clav_lf_jnt
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Sloth_clav_rt_jnt
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Sloth_shoulder_lf_jnt
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Sloth_shoulder_rt_jnt
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Sloth_elbow_lf_jnt
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Sloth_elbow_rt_jnt
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Sloth_hand_lf_jnt
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Sloth_hand_rt_jnt
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Sloth_toes_lf_jnt
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Sloth_toes_rt_jnt
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Sloth_fingerMid_lf_jnt
+      humanName: Left Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Sloth_fingerUp_lf_jnt
+      humanName: Left Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Sloth_fingerDown_lf_jnt
+      humanName: Left Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Sloth_fingerMid_rt_jnt
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Sloth_fingerUp_rt_jnt
+      humanName: Right Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Sloth_fingerDown_rt_jnt
+      humanName: Right Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: SK_Sloth_humanoid(Clone)
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Sloth_geo
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Sloth_root_jnt
+      position: {x: -1.2434498e-16, y: 0.34537193, z: -0.011734605}
+      rotation: {x: -0.49651596, y: 0.50345993, z: -0.49651596, w: 0.50345993}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Sloth_hips_ctrl_grp
+      position: {x: 0.033355728, y: -0.0033763694, z: 0}
+      rotation: {x: 0, y: -9.244464e-33, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Sloth_splineA_ctrl_grp
+      position: {x: -0.03070381, y: 0.000426445, z: 0}
+      rotation: {x: 0, y: -9.244464e-33, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Sloth_splineA_jnt
+      position: {x: -0.03070381, y: 0.00042644178, z: 2.86385e-17}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Sloth_splineB_ctrl_grp
+      position: {x: -0.18972392, y: 0.000006523132, z: 0}
+      rotation: {x: 8.019914e-17, y: -1.04148776e-16, z: 0.027349843, w: 0.9996259}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Sloth_splineB_jnt
+      position: {x: -0.18972392, y: 0.0000065194886, z: -1.598119e-16}
+      rotation: {x: 0, y: 0, z: 0.027349845, w: 0.9996259}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Sloth_clav_lf_ctrl_grp
+      position: {x: -0.07838051, y: 0.031544585, z: -0.06456753}
+      rotation: {x: 0.4825607, y: -0.51685125, z: 0.4825607, w: 0.51685125}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Sloth_clav_rt_ctrl_grp
+      position: {x: -0.07838081, y: 0.031544637, z: 0.0645675}
+      rotation: {x: 0.51685125, y: 0.4825607, z: 0.51685125, w: -0.4825607}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Sloth_neck_ctrl_grp
+      position: {x: -0.17255825, y: 0, z: 0}
+      rotation: {x: -1.1847393e-17, y: -9.6548806e-17, z: 0.05560081, w: 0.9984531}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Sloth_neck_jnt
+      position: {x: -0.17255825, y: -1.0658141e-16, z: -2.4474552e-17}
+      rotation: {x: 0, y: 0, z: 0.05560081, w: 0.9984531}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Sloth_head_ctrl_grp
+      position: {x: -0.058770165, y: 0, z: 0}
+      rotation: {x: 6.6393526e-17, y: -9.6644964e-17, z: -0.0033887278, w: 0.9999943}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Sloth_head_jnt
+      position: {x: -0.058770165, y: -1.9539925e-16, z: -1.078428e-16}
+      rotation: {x: 0, y: -0, z: -0.003388728, w: 0.9999943}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Sloth_head_end_jnt
+      position: {x: -0.19077234, y: -6.750156e-16, z: -3.6788312e-17}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Sloth_clav_lf_jnt
+      position: {x: -0.078380495, y: 0.03154459, z: -0.06456753}
+      rotation: {x: 0.4615901, y: -0.6183644, z: 0.4920527, w: 0.4030437}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Sloth_shoulder_lf_jnt
+      position: {x: -0.060793113, y: 0.0342398, z: 0.027640421}
+      rotation: {x: -0.012053118, y: 0.082202315, z: -0.16198756, w: 0.9832892}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Sloth_elbow_lf_jnt
+      position: {x: -0.23828106, y: -0.03493857, z: -4.8849813e-17}
+      rotation: {x: 0.0029848916, y: 0.026873136, z: 0.0061862846, w: 0.9996153}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Sloth_hand_lf_jnt
+      position: {x: -0.27222157, y: 1.0900372e-16, z: 4.440892e-18}
+      rotation: {x: 0.000039064395, y: -0.0022045816, z: -0.00048413273, w: 0.9999975}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Sloth_fingerDown_lf_ctrl_grp
+      position: {x: -0.053258132, y: -0.028141784, z: -0.000095710755}
+      rotation: {x: -0.024818577, y: 0.1517577, z: 0.105256155, w: 0.98248404}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Sloth_fingerMid_lf_ctrl_grp
+      position: {x: -0.052038267, y: 0, z: 0}
+      rotation: {x: -0.010964244, y: 0.13546705, z: 0.050358724, w: 0.9894405}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Sloth_fingerUp_lf_ctrl_grp
+      position: {x: -0.05520977, y: 0.030588912, z: -0.00024887084}
+      rotation: {x: -0.005765483, y: 0.15628645, z: 0.024050014, w: 0.9874021}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Sloth_fingerMid_lf_jnt
+      position: {x: -0.05203826, y: 0, z: -1.7319479e-16}
+      rotation: {x: -0.011045059, y: 0.074932426, z: 0.027855547, w: 0.9967384}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Sloth_fingerMid_end_lf_jnt
+      position: {x: -0.13395143, y: 1.1132283e-16, z: 8.8817837e-17}
+      rotation: {x: 0, y: -0.17432675, z: -0, w: 0.98468786}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Sloth_fingerUp_lf_jnt
+      position: {x: -0.055209756, y: 0.0305889, z: -0.00024887008}
+      rotation: {x: -0.005820613, y: 0.07832145, z: 0.012052703, w: 0.99683833}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Sloth_fingerUp_end_lf_jnt
+      position: {x: -0.120296724, y: 2.3877776e-18, z: 5.3290704e-17}
+      rotation: {x: 0, y: -0.19487832, z: -0, w: 0.98082745}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Sloth_fingerDown_lf_jnt
+      position: {x: -0.053258065, y: -0.02814179, z: -0.000095719275}
+      rotation: {x: -0.025176233, y: 0.063976236, z: 0.044372898, w: 0.9966465}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Sloth_fingerDown_end_lf_jnt
+      position: {x: -0.122506835, y: -1.648009e-17, z: -8.881784e-18}
+      rotation: {x: 0, y: -0.19122235, z: -0, w: 0.98154676}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Sloth_clav_rt_jnt
+      position: {x: -0.07838109, y: 0.031544685, z: 0.06456753}
+      rotation: {x: 0.6183614, y: 0.46159232, z: 0.4030475, w: -0.4920512}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Sloth_shoulder_rt_jnt
+      position: {x: 0.0607935, y: -0.034238998, z: -0.027640449}
+      rotation: {x: -0.01205555, y: 0.082200274, z: -0.16198096, w: 0.9832904}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Sloth_elbow_rt_jnt
+      position: {x: 0.238281, y: 0.034938, z: -2.4424906e-17}
+      rotation: {x: 0.002984812, y: 0.02687348, z: 0.0061850986, w: 0.99961525}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Sloth_hand_rt_jnt
+      position: {x: 0.27222103, y: -0.00000012878644, z: -0.000000013401222}
+      rotation: {x: 0.000041993804, y: -0.002204281, z: -0.00048403098, w: 0.9999975}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Sloth_fingerDown_rt_ctrl_grp
+      position: {x: 0.053258207, y: 0.028142242, z: 0.00009567261}
+      rotation: {x: -0.024818577, y: 0.1517577, z: 0.105256155, w: 0.98248404}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Sloth_fingerMid_rt_ctrl_grp
+      position: {x: 0.05203842, y: 0.00000045776366, z: -0.000000057220458}
+      rotation: {x: -0.010964244, y: 0.13546705, z: 0.050358724, w: 0.9894405}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Sloth_fingerUp_rt_ctrl_grp
+      position: {x: 0.05520992, y: -0.030588454, z: 0.0002488327}
+      rotation: {x: -0.005765483, y: 0.15628645, z: 0.024050014, w: 0.9874021}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Sloth_fingerMid_rt_jnt
+      position: {x: 0.052038424, y: 0.00000047982815, z: -0.000000044929525}
+      rotation: {x: -0.011044858, y: 0.07493376, z: 0.027858477, w: 0.9967382}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Sloth_fingerMid_end_rt_jnt
+      position: {x: 0.13395156, y: -0.00000008886694, z: 0.000000064576554}
+      rotation: {x: 0.000000012707185, y: -0.17432675, z: 0.0000000022496491, w: 0.98468786}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Sloth_fingerUp_rt_jnt
+      position: {x: 0.05520992, y: -0.030588422, z: 0.00024882518}
+      rotation: {x: -0.00582022, y: 0.07832314, z: 0.012055442, w: 0.99683815}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Sloth_fingerUp_end_rt_jnt
+      position: {x: 0.120297045, y: -0.00000013201021, z: 0.0000001486563}
+      rotation: {x: 0.000000012657368, y: -0.19487832, z: 0.000000002514863, w: 0.98082745}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Sloth_fingerDown_rt_jnt
+      position: {x: 0.053258233, y: 0.028142268, z: 0.00009567434}
+      rotation: {x: -0.025175817, y: 0.06397688, z: 0.04437606, w: 0.99664634}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Sloth_fingerDown_end_rt_jnt
+      position: {x: 0.12250664, y: 0.000000055385925, z: -0.0000000569497}
+      rotation: {x: 0.000000010342276, y: -0.19122235, z: 0.000000002014855, w: 0.98154676}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Sloth_hips_jnt
+      position: {x: 0.033355728, y: -0.0033763745, z: 1.2454215e-16}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Sloth_leg_lf_ctrl_grp
+      position: {x: 0.012516479, y: -0.0030932308, z: -0.13511367}
+      rotation: {x: 0.49651596, y: -0.50345993, z: 0.49651596, w: 0.50345993}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Sloth_leg_rt_ctrl_grp
+      position: {x: 0.012516499, y: -0.0030932312, z: 0.13511367}
+      rotation: {x: 0.50345993, y: 0.49651596, z: 0.50345993, w: -0.49651596}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Sloth_leg_lf_jnt
+      position: {x: 0.01251649, y: -0.0030932312, z: -0.13511367}
+      rotation: {x: 0.496516, y: -0.50345993, z: 0.496516, w: 0.50345993}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Sloth_knee_lf_ctrl_grp
+      position: {x: -0, y: -0.17878447, z: 0.025224557}
+      rotation: {x: -8.413409e-17, y: -2.852381e-17, z: 1.3838707e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Sloth_knee_lf_jnt
+      position: {x: 3.5527136e-17, y: -0.17878447, z: 0.025224553}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Sloth_feet_lf_ctrl_grp
+      position: {x: -0, y: -0.082708105, z: -0.027245022}
+      rotation: {x: -8.413409e-17, y: -2.852381e-17, z: 1.3838707e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Sloth_feet_lf_jnt
+      position: {x: 5.3290704e-17, y: -0.0827081, z: -0.027245022}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Sloth_toes_lf_ctrl_grp
+      position: {x: -0, y: -0.023605594, z: 0.02217316}
+      rotation: {x: -8.413409e-17, y: -2.852381e-17, z: 1.3838707e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Sloth_toes_lf_jnt
+      position: {x: 5.3290704e-17, y: -0.023605594, z: 0.02217316}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Sloth_toes_end_lf_jnt
+      position: {x: 5.9674484e-17, y: -0.012809532, z: 0.076857194}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Sloth_leg_rt_jnt
+      position: {x: 0.01251649, y: -0.0030932312, z: 0.13511367}
+      rotation: {x: 0.50345993, y: 0.496516, z: 0.50345993, w: -0.496516}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Sloth_knee_rt_ctrl_grp
+      position: {x: -0, y: 0.17878447, z: -0.025224557}
+      rotation: {x: 2.1167026e-17, y: 3.3149296e-17, z: -4.7142185e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Sloth_knee_rt_jnt
+      position: {x: 8.8817837e-17, y: 0.17878447, z: -0.025224553}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Sloth_feet_rt_ctrl_grp
+      position: {x: -0, y: 0.082708105, z: 0.027245022}
+      rotation: {x: 2.1167026e-17, y: 3.3149296e-17, z: -4.7142185e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Sloth_feet_rt_jnt
+      position: {x: 8.8817837e-17, y: 0.0827081, z: 0.027245022}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Sloth_toes_rt_ctrl_grp
+      position: {x: -0, y: 0.023605594, z: -0.02217316}
+      rotation: {x: 2.1167026e-17, y: 3.3149296e-17, z: -4.7142185e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Sloth_toes_rt_jnt
+      position: {x: -0, y: 0.023605594, z: -0.02217316}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Sloth_toes_end_rt_jnt
+      position: {x: 1.7763568e-17, y: 0.01280952, z: -0.076857194}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: e7aa2ffcae15e824abda8e2ce7da2863,
+    type: 3}
+  animationType: 3
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
