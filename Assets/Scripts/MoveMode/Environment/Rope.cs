@@ -46,7 +46,7 @@ public class Rope : Interactable {
 		if (_activated) {
 			_cursor.transform.Translate(_speed * Time.deltaTime, 0, 0);
 
-			if (_cursor.transform.position.x > 1) {
+			if (_cursor.transform.localPosition.x > 1) {
 				Release();
 			}
 		}

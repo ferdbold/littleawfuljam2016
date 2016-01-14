@@ -53,7 +53,7 @@ public class RagdollToggle : MonoBehaviour {
 
 			if (!_ragdolled) {
 				// Move whole gameObject to same world position as ragdoll root to remove drift
-				transform.position = new Vector3(_ragdollRoot.position.x, 0f, _ragdollRoot.position.z);
+				transform.position = new Vector3(_ragdollRoot.position.x, _ragdollRoot.position.y, _ragdollRoot.position.z);
 				transform.rotation = Quaternion.identity;
 				_ragdollRoot.localPosition = Vector3.zero;
 				_ragdollRoot.rotation = Quaternion.identity;
