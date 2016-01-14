@@ -27,10 +27,8 @@ public class Snapper : MonoBehaviour {
 
 		if (hand == "left") {
 			target.connectedBody = this._leftHand;
-			//this._leftHand.connectedBody = target;
 		} else {
 			target.connectedBody = this._rightHand;
-			//this._rightHand.connectedBody = target;
 		}
 	}
 
@@ -40,12 +38,6 @@ public class Snapper : MonoBehaviour {
 	/// <param name="hand">Which hand to release, "left" or "right"</param>
 	public void Release() {
 		_ragdoller.ragdolled = false;
-
-		/*if (hand == "left") {
-			this._leftHand.connectedBody = null;
-		} else {
-			this._rightHand.connectedBody = null;
-		}*/
 	}
 
 	public Rigidbody leftHand { get { return _leftHand; } }

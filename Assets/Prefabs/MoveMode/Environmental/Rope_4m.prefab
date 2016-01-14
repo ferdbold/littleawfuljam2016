@@ -178,8 +178,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 435330}
   - 54: {fileID: 5467698}
-  - 145: {fileID: 14559602}
   - 114: {fileID: 11425314}
+  - 59: {fileID: 5928648}
   m_Layer: 0
   m_Name: Cursor
   m_TagString: Untagged
@@ -639,7 +639,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 199156}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071067}
-  m_LocalPosition: {x: -3.36, y: 0.65, z: -0.7243241}
+  m_LocalPosition: {x: -3.36, y: 1.22, z: -0.7243241}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 447378}
@@ -1273,6 +1273,38 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!59 &5928648
+HingeJoint:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 122660}
+  m_ConnectedBody: {fileID: 0}
+  m_Anchor: {x: 0, y: 0, z: 0}
+  m_Axis: {x: 1, y: 0, z: 0}
+  m_AutoConfigureConnectedAnchor: 0
+  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_UseSpring: 0
+  m_Spring:
+    spring: 0
+    damper: 0
+    targetPosition: 0
+  m_UseMotor: 0
+  m_Motor:
+    targetVelocity: 0
+    force: 0
+    freeSpin: 0
+  m_UseLimits: 0
+  m_Limits:
+    min: 0
+    max: 0
+    bounciness: 0
+    bounceMinVelocity: 0.2
+    contactDistance: 0
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 0
+  m_EnablePreprocessing: 1
 --- !u!65 &6587980
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -1692,6 +1724,10 @@ MonoBehaviour:
       Mode: 0
     - Object: {fileID: 2307126}
       ObjeckLink: -1863392894
+      PropertyPath: m_LightmapTilingOffsetDynamic.z
+      Mode: 0
+    - Object: {fileID: 2307126}
+      ObjeckLink: -1863392894
       PropertyPath: m_LightmapTilingOffsetDynamic.w
       Mode: 0
     - Object: {fileID: 2307126}
@@ -2044,10 +2080,6 @@ MonoBehaviour:
     - Object: {fileID: 2386704}
       ObjeckLink: 761876581
       PropertyPath: m_LightmapTilingOffsetDynamic.y
-      Mode: 0
-    - Object: {fileID: 2386704}
-      ObjeckLink: 761876581
-      PropertyPath: m_LightmapTilingOffsetDynamic.z
       Mode: 0
     - Object: {fileID: 2386704}
       ObjeckLink: 761876581
@@ -2563,8 +2595,8 @@ MonoBehaviour:
       InstanceTarget: {fileID: 122660}
     - LIIF: 249781867
       InstanceTarget: {fileID: 11425314}
-    - LIIF: -1211655850
-      InstanceTarget: {fileID: 14559602}
+    - LIIF: 207082181
+      InstanceTarget: {fileID: 5928648}
   Modifications:
     Modificated:
     - Object: {fileID: 2356280}
@@ -2594,10 +2626,6 @@ MonoBehaviour:
     - Object: {fileID: 2386704}
       ObjeckLink: -773751581
       PropertyPath: m_LightmapTilingOffsetDynamic.y
-      Mode: 0
-    - Object: {fileID: 2386704}
-      ObjeckLink: -773751581
-      PropertyPath: m_LightmapTilingOffsetDynamic.z
       Mode: 0
     - Object: {fileID: 2386704}
       ObjeckLink: -773751581
@@ -2769,6 +2797,10 @@ MonoBehaviour:
       Mode: 0
     - Object: {fileID: 448724}
       ObjeckLink: -1247574711
+      PropertyPath: m_LocalPosition
+      Mode: 0
+    - Object: {fileID: 448724}
+      ObjeckLink: -1247574711
       PropertyPath: m_RootOrder
       Mode: 0
     - Object: {fileID: 2307126}
@@ -2782,6 +2814,10 @@ MonoBehaviour:
     - Object: {fileID: 2307126}
       ObjeckLink: -315501192
       PropertyPath: m_LightmapTilingOffsetDynamic.y
+      Mode: 0
+    - Object: {fileID: 2307126}
+      ObjeckLink: -315501192
+      PropertyPath: m_LightmapTilingOffsetDynamic.z
       Mode: 0
     - Object: {fileID: 2307126}
       ObjeckLink: -315501192
@@ -2811,6 +2847,10 @@ MonoBehaviour:
       ObjeckLink: 180523315
       PropertyPath: m_AdditionalVertexStreams
       Mode: 0
+    - Object: {fileID: 11479356}
+      ObjeckLink: 1590996354
+      PropertyPath: _speed
+      Mode: 0
     - Object: {fileID: 22478514}
       ObjeckLink: -1454259022
       PropertyPath: m_LocalPosition
@@ -2850,26 +2890,12 @@ MonoBehaviour:
     - Object: {fileID: 22409878}
       ObjeckLink: -1536445062
       PropertyPath: m_SizeDelta
-      Mode: 0
-    - Object: {fileID: 14559602}
-      ObjeckLink: -1211655850
-      PropertyPath: m_AutoConfigureConnectedAnchor
-      Mode: 0
-    - Object: {fileID: 14559602}
-      ObjeckLink: -1211655850
-      PropertyPath: m_ConnectedAnchor
-      Mode: 0
-    - Object: {fileID: 14559602}
-      ObjeckLink: -1211655850
-      PropertyPath: m_Spring
-      Mode: 0
-    - Object: {fileID: 14559602}
-      ObjeckLink: -1211655850
-      PropertyPath: m_MaxDistance
       Mode: 0
     NonPrefabObjects: []
-    NonPrefabComponents: []
-    RemovedObjects: 
+    NonPrefabComponents:
+    - child: {fileID: 5928648}
+      parent: {fileID: 122660}
+    RemovedObjects: 5699c7b7
     TransformParentChanges: []
   ParentPrefabGUID: 
   PrefabGUID: 3770ff0088d9c4d5b91ff8962a0f5afa
@@ -2888,6 +2914,7 @@ MonoBehaviour:
   _icon: {fileID: 0}
   _prompt: Grip
   _animDuration: 0.5
+  _speed: 0.8
   _gripPrompt: Grip
   _releasePrompt: Release
 --- !u!114 &11480906
@@ -3069,26 +3096,6 @@ MonoBehaviour:
     TransformParentChanges: []
   ParentPrefabGUID: 
   PrefabGUID: bb43bbc6dae5e3a41b9ee931f84dfe5e
---- !u!145 &14559602
-SpringJoint:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 122660}
-  m_ConnectedBody: {fileID: 0}
-  m_Anchor: {x: 0, y: 0, z: 0}
-  m_AutoConfigureConnectedAnchor: 0
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
-  serializedVersion: 2
-  m_Spring: 500
-  m_Damper: 0.2
-  m_MinDistance: 0
-  m_MaxDistance: 0.1
-  m_Tolerance: 0.025
-  m_BreakForce: Infinity
-  m_BreakTorque: Infinity
-  m_EnableCollision: 0
-  m_EnablePreprocessing: 1
 --- !u!222 &22234426
 CanvasRenderer:
   m_ObjectHideFlags: 1

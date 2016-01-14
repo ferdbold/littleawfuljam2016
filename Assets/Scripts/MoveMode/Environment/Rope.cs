@@ -5,6 +5,9 @@
 /// </summary>
 public class Rope : Interactable {
 
+	[Tooltip("The rope speed (NOTE: This is relative to the length of the rope, so longer ropes will be faster)")]
+	[SerializeField] private float _speed = 0.4f;
+
 	[Header("Rope Prompts")]
 	[SerializeField] private string _gripPrompt = "Grip";
 	[SerializeField] private string _releasePrompt = "Release";
@@ -28,6 +31,7 @@ public class Rope : Interactable {
 	public new void Update() {
 		base.Update();
 
+		// Listen for inputs
 		if (Input.GetButtonDown("GripLeft") && _focused) {
 			Grip("left");
 		} else if (Input.GetButtonDown("GripRight") && _focused) {
@@ -36,6 +40,15 @@ public class Rope : Interactable {
 			Release();
 		} else if (Input.GetButtonUp("GripRight") && _grippingButton == "right" && _activated) {
 			Release();
+		}
+
+		// Move cursor forward
+		if (_activated) {
+			_cursor.transform.Translate(_speed * Time.deltaTime, 0, 0);
+
+			if (_cursor.transform.position.x > 1) {
+				Release();
+			}
 		}
 	}
 
@@ -52,12 +65,6 @@ public class Rope : Interactable {
 		_grippingButton = button;
 
 		_slothSnapper.Grip(_cursor, button);
-
-		/*if (button == "left") {
-			_cursor.connectedBody = _slothSnapper.leftHand;
-		} else {
-			_cursor.connectedBody = _slothSnapper.rightHand;
-		}*/
 	}
 
 	/// <summary>
@@ -70,5 +77,7 @@ public class Rope : Interactable {
 		_slothSnapper.Release();
 		_cursor.connectedBody = null;
 		_grippingButton = string.Empty;
+
+		_cursor.transform.localPosition = Vector3.zero;
 	}
 }
