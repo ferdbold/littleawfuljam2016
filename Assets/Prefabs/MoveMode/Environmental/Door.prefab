@@ -13,7 +13,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 18
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &117052
 GameObject:
@@ -68,7 +68,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 18
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &143274
 GameObject:
@@ -83,7 +83,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 18
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &145304
 GameObject:
@@ -155,7 +155,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 18
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &172552
 GameObject:
@@ -170,7 +170,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 18
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &403296
 Transform:
@@ -242,8 +242,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 135340}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.2739105, y: -1.46, z: -11.482269}
+  m_LocalRotation: {x: 0, y: -0.997393, z: 0, w: 0.072161265}
+  m_LocalPosition: {x: 0.2054064, y: 0, z: 4.3272357}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 403296}
@@ -421,6 +421,10 @@ MonoBehaviour:
       InstanceTarget: {fileID: 11417436}
   Modifications:
     Modificated:
+    - Object: {fileID: 145304}
+      ObjeckLink: -515230537
+      PropertyPath: m_StaticEditorFlags
+      Mode: 0
     - Object: {fileID: 22424874}
       ObjeckLink: 666889240
       PropertyPath: m_LocalPosition
@@ -465,6 +469,10 @@ MonoBehaviour:
       ObjeckLink: 1571190209
       PropertyPath: m_SizeDelta
       Mode: 0
+    - Object: {fileID: 150908}
+      ObjeckLink: -443960290
+      PropertyPath: m_StaticEditorFlags
+      Mode: 0
     - Object: {fileID: 11491706}
       ObjeckLink: -859360270
       PropertyPath: m_Sprite
@@ -489,9 +497,17 @@ MonoBehaviour:
       ObjeckLink: 460922243
       PropertyPath: m_SizeDelta
       Mode: 0
+    - Object: {fileID: 150478}
+      ObjeckLink: 653252192
+      PropertyPath: m_StaticEditorFlags
+      Mode: 0
     - Object: {fileID: 11436456}
       ObjeckLink: 2078129167
       PropertyPath: m_MinWidth
+      Mode: 0
+    - Object: {fileID: 117052}
+      ObjeckLink: 1784418237
+      PropertyPath: m_StaticEditorFlags
       Mode: 0
     - Object: {fileID: 11493186}
       ObjeckLink: 736061645
@@ -499,12 +515,12 @@ MonoBehaviour:
       Mode: 0
     NonPrefabObjects: []
     NonPrefabComponents:
-    - child: {fileID: 11400984}
-      parent: {fileID: 150908}
-    - child: {fileID: 11435560}
-      parent: {fileID: 150478}
     - child: {fileID: 11494316}
       parent: {fileID: 117052}
+    - child: {fileID: 11435560}
+      parent: {fileID: 150478}
+    - child: {fileID: 11400984}
+      parent: {fileID: 150908}
     RemovedObjects: 
     TransformParentChanges: []
   ParentPrefabGUID: 
@@ -592,6 +608,7 @@ MonoBehaviour:
   _animDuration: 0.5
   _openPrompt: Open
   _closePrompt: Close
+  _doorLocked: 0
 --- !u!114 &11446890
 MonoBehaviour:
   m_ObjectHideFlags: 33
@@ -695,9 +712,9 @@ MonoBehaviour:
       InstanceTarget: {fileID: 6581852}
   Modifications:
     Modificated:
-    - Object: {fileID: 135340}
-      ObjeckLink: 1598987914
-      PropertyPath: m_Name
+    - Object: {fileID: 495590}
+      ObjeckLink: -926898027
+      PropertyPath: m_LocalRotation
       Mode: 0
     - Object: {fileID: 495590}
       ObjeckLink: -926898027
@@ -746,10 +763,6 @@ MonoBehaviour:
     - Object: {fileID: 22425688}
       ObjeckLink: -755531692
       PropertyPath: m_SizeDelta
-      Mode: 0
-    - Object: {fileID: 13754600}
-      ObjeckLink: 15656249
-      PropertyPath: m_Materials.Array.data[0]
       Mode: 0
     NonPrefabObjects: []
     NonPrefabComponents: []
@@ -899,9 +912,9 @@ MonoBehaviour:
     NonPrefabObjects:
     - child: {fileID: 22441088}
       parent: {fileID: 22424874}
-    - child: {fileID: 22420424}
-      parent: {fileID: 22441088}
     - child: {fileID: 22425688}
+      parent: {fileID: 22441088}
+    - child: {fileID: 22420424}
       parent: {fileID: 22441088}
     NonPrefabComponents: []
     RemovedObjects: 2627c0428a9e4e5f362ccc65539ca807c87730a2a0f41bf6c22ee7570e8836d71865769d7ab807122db9fe4f0c26e3bef4a90431e11a8a75159d7525657268295727d3b019fc415535d222bb8537d01309b9c00d976d4a2370f77efcd2f3f0cb35a93640b6acbbec2a04059a39e5ee0077af206bea3286a54a4e4a5d932a8660
