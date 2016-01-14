@@ -45,7 +45,7 @@ public class Door : Interactable {
         _opened = newState;
         _meshCollider.enabled = !newState;
 
-        _prompt = (newState) ? _openPrompt : _closePrompt;
+        _prompt = (newState) ? _closePrompt : _openPrompt;
         _animator.SetBool("Open", newState);
     }
 }
