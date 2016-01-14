@@ -178,7 +178,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 435330}
   - 54: {fileID: 5467698}
-  - 59: {fileID: 5913998}
+  - 145: {fileID: 14559602}
+  - 114: {fileID: 11425314}
   m_Layer: 0
   m_Name: Cursor
   m_TagString: Untagged
@@ -196,7 +197,6 @@ GameObject:
   - 4: {fileID: 450912}
   - 65: {fileID: 6587980}
   - 114: {fileID: 11439160}
-  - 54: {fileID: 5404518}
   m_Layer: 0
   m_Name: Path
   m_TagString: Untagged
@@ -639,7 +639,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 199156}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071067}
-  m_LocalPosition: {x: -7.260415, y: -0.403, z: -12.814}
+  m_LocalPosition: {x: -3.36, y: 0.65, z: -0.7243241}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 447378}
@@ -1258,21 +1258,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 152562}
   m_Mesh: {fileID: 4300002, guid: a3ae1b8b06d07714d994ac4915a62e6c, type: 3}
---- !u!54 &5404518
-Rigidbody:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 128006}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!54 &5467698
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -1283,43 +1268,11 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
+  m_UseGravity: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!59 &5913998
-HingeJoint:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 122660}
-  m_ConnectedBody: {fileID: 0}
-  m_Anchor: {x: 0, y: 0, z: 0}
-  m_Axis: {x: 1, y: 0, z: 0}
-  m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -7.120415, y: -0.403, z: -12.814}
-  m_UseSpring: 0
-  m_Spring:
-    spring: 0
-    damper: 0
-    targetPosition: 0
-  m_UseMotor: 0
-  m_Motor:
-    targetVelocity: 0
-    force: 0
-    freeSpin: 0
-  m_UseLimits: 0
-  m_Limits:
-    min: 0
-    max: 0
-    bounciness: 0
-    bounceMinVelocity: 0.2
-    contactDistance: 0
-  m_BreakForce: Infinity
-  m_BreakTorque: Infinity
-  m_EnableCollision: 0
-  m_EnablePreprocessing: 1
 --- !u!65 &6587980
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -1339,7 +1292,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 199156}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 4, y: 1.5, z: 1}
@@ -1457,14 +1410,6 @@ MonoBehaviour:
       Mode: 0
     - Object: {fileID: 2382262}
       ObjeckLink: 314960063
-      PropertyPath: m_LightmapTilingOffsetDynamic.w
-      Mode: 0
-    - Object: {fileID: 2382262}
-      ObjeckLink: 314960063
-      PropertyPath: m_Materials.Array.data[0]
-      Mode: 0
-    - Object: {fileID: 2382262}
-      ObjeckLink: 314960063
       PropertyPath: m_AdditionalVertexStreams
       Mode: 0
     - Object: {fileID: 2359244}
@@ -1510,10 +1455,6 @@ MonoBehaviour:
     - Object: {fileID: 2366528}
       ObjeckLink: 1668269760
       PropertyPath: m_LightmapTilingOffsetDynamic.w
-      Mode: 0
-    - Object: {fileID: 2366528}
-      ObjeckLink: 1668269760
-      PropertyPath: m_Materials.Array.data[0]
       Mode: 0
     - Object: {fileID: 2366528}
       ObjeckLink: 1668269760
@@ -1534,10 +1475,6 @@ MonoBehaviour:
     - Object: {fileID: 2347644}
       ObjeckLink: 761876581
       PropertyPath: m_LightmapTilingOffsetDynamic.y
-      Mode: 0
-    - Object: {fileID: 2347644}
-      ObjeckLink: 761876581
-      PropertyPath: m_LightmapTilingOffsetDynamic.z
       Mode: 0
     - Object: {fileID: 2347644}
       ObjeckLink: 761876581
@@ -1636,13 +1573,25 @@ MonoBehaviour:
       ObjeckLink: -765337030
       PropertyPath: m_LocalScale
       Mode: 0
+    - Object: {fileID: 151746}
+      ObjeckLink: -233967762
+      PropertyPath: m_StaticEditorFlags
+      Mode: 0
     - Object: {fileID: 2399232}
       ObjeckLink: -1177710409
       PropertyPath: m_Materials.Array.data[0]
       Mode: 0
+    - Object: {fileID: 152562}
+      ObjeckLink: -1582923485
+      PropertyPath: m_StaticEditorFlags
+      Mode: 0
     - Object: {fileID: 2337866}
       ObjeckLink: -103357253
       PropertyPath: m_Materials.Array.data[0]
+      Mode: 0
+    - Object: {fileID: 190218}
+      ObjeckLink: 744650535
+      PropertyPath: m_StaticEditorFlags
       Mode: 0
     NonPrefabObjects:
     - child: {fileID: 421372}
@@ -1673,6 +1622,33 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 5
+--- !u!114 &11425314
+MonoBehaviour:
+  m_ObjectHideFlags: 33
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 122660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46a02d0f612a241b293c0da4f82b712c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Properties:
+    Properties: []
+    Groups: []
+    Hidden: 
+  Links:
+    Links: []
+  Modifications:
+    Modificated: []
+    NonPrefabObjects:
+    - child: {fileID: 435330}
+      parent: {fileID: 450912}
+    NonPrefabComponents: []
+    RemovedObjects: fcbef10ede8a20dff7870a77042dd7c6376a6db1b0faaf51a9c2fb64729b674f681628181cfc705b839af171e37ce1d11bb739a19cd34ff87fb9e58ef0d7a38322436357c01731aa3b091f52b75376f9e351f1a8c59ad748a55b74150c8a771d2082ff73e39590019408450bf5ddd7e6d4d26f692e12634b315bba70559cf7107d4b7de5dd9b9fdb643a596b2a38235f990350cc9a0d22c9e799264017b16fef2bcaa3945bc3c32d8954c7b90594f390859e0d3c911b47ead77ab29ef3fe59a46801e65e3b975c86876d40788957602c78d531edfa116cf1ea265c6abc5e91063391c20aa85ea951b3c5cca6fee017f25e2753a093dbc2cf04270afb82add45e604cc9725a5562e7a99a37c786a3caa6650f1df569f394eea6dce1f7bc9eb6a5948eb57abb7cffb9306032d02f0b35de27427e18b6fc7c603e3649990835c0131ee5d4726f3a0890d48061bbadc82ba76b5ee30e5699c7b7
+    TransformParentChanges: []
+  ParentPrefabGUID: 
+  PrefabGUID: 3770ff0088d9c4d5b91ff8962a0f5afa
 --- !u!114 &11427740
 MonoBehaviour:
   m_ObjectHideFlags: 33
@@ -1713,10 +1689,6 @@ MonoBehaviour:
     - Object: {fileID: 2307126}
       ObjeckLink: -1863392894
       PropertyPath: m_LightmapTilingOffsetDynamic.y
-      Mode: 0
-    - Object: {fileID: 2307126}
-      ObjeckLink: -1863392894
-      PropertyPath: m_LightmapTilingOffsetDynamic.z
       Mode: 0
     - Object: {fileID: 2307126}
       ObjeckLink: -1863392894
@@ -1828,8 +1800,6 @@ MonoBehaviour:
   Modifications:
     Modificated: []
     NonPrefabObjects:
-    - child: {fileID: 447378}
-      parent: {fileID: 448724}
     - child: {fileID: 472970}
       parent: {fileID: 447378}
     - child: {fileID: 462280}
@@ -1868,8 +1838,10 @@ MonoBehaviour:
       parent: {fileID: 460918}
     - child: {fileID: 430434}
       parent: {fileID: 436188}
+    - child: {fileID: 447378}
+      parent: {fileID: 448724}
     NonPrefabComponents: []
-    RemovedObjects: fcbef10ede8a20dff7870a77042dd7c6376a6db1b0faaf51a9c2fb64729b674f681628181cfc705b839af171e37ce1d11bb739a19cd34ff87fb9e58ef0d7a38322436357c01731aa3b091f52b75376f9e351f1a8c59ad748a55b74150c8a771d2082ff73e39590019408450bf5ddd7e6d4d26f692e12634b315bba70559cf7107d4b7de5dd9b9fdb643a596b2a38235f990350cc9a0d22c9e799264017b16fef2bcaa3945bc3c32d8954c7b90594f390859e0d3c911b47ead77ab29ef3fe59a46801e65e3b975c86876d40788957602c78d531edfa116cf1ea265c6abc5e91063391c20aa85ea951b3c5cca6fee017f25e2753a093dbc2cf04270afb82add45e604cc9725a5562e7a99a37c786a3caa6650f1df569f394eea6dce1f7bc9eb6a5948eb57abb7cffb9306032d02f0b35de27427e18b6fc7c603e3649990835c0131ee5d4726f3a089012443367d48061bbadc82ba7221b3053
+    RemovedObjects: fcbef10ede8a20dff7870a77042dd7c6376a6db1b0faaf51a9c2fb64729b674f681628181cfc705b839af171e37ce1d11bb739a19cd34ff87fb9e58ef0d7a38322436357c01731aa3b091f52b75376f9e351f1a8c59ad748a55b74150c8a771d2082ff73e39590019408450bf5ddd7e6d4d26f692e12634b315bba70559cf7107d4b7de5dd9b9fdb643a596b2a38235f990350cc9a0d22c9e799264017b16fef2bcaa3945bc3c32d8954c7b90594f390859e0d3c911b47ead77ab29ef3fe59a46801e65e3b975c86876d40788957602c78d531edfa116cf1ea265c6abc5e91063391c20aa85ea951b3c5cca6fee017f25e2753a093dbc2cf04270afb82add45e604cc9725a5562e7a99a37c786a3caa6650f1df569f394eea6dce1f7bc9eb6a5948eb57abb7cffb9306032d02f0b35de27427e18b6fc7c603e3649990835c0131ee5d4726f3a0890d48061bbadc82ba76b5ee30e5699c7b7
     TransformParentChanges: []
   ParentPrefabGUID: 
   PrefabGUID: 3770ff0088d9c4d5b91ff8962a0f5afa
@@ -1898,7 +1870,7 @@ MonoBehaviour:
     - child: {fileID: 450912}
       parent: {fileID: 448724}
     NonPrefabComponents: []
-    RemovedObjects: fcbef10ede8a20dff7870a77042dd7c6376a6db1b0faaf51a9c2fb64729b674f681628181cfc705b839af171e37ce1d11bb739a19cd34ff87fb9e58ef0d7a38322436357c01731aa3b091f52b75376f9e351f1a8c59ad748a55b74150c8a771d2082ff73e39590019408450bf5ddd7e6d4d26f692e12634b315bba70559cf7107d4b7de5dd9b9fdb643a596b2a38235f990350cc9a0d22c9e799264017b16fef2bcaa3945bc3c32d8954c7b90594f390859e0d3c911b47ead77ab29ef3fe59a46801e65e3b975c86876d40788957602c78d531edfa116cf1ea265c6abc5e91063391c20aa85ea951b3c5cca6fee017f25e2753a093dbc2cf04270afb82add45e604cc9725a5562e7a99a37c786a3caa6650f1df569f394eea6dce1f7bc9eb6a5948eb57abb7cffb9306032d02f0b35de27427e18b6fc7c603e3649990835c0131ee5d4726f3a089012443367d48061bbadc82ba7221b3053
+    RemovedObjects: fcbef10ede8a20dff7870a77042dd7c6376a6db1b0faaf51a9c2fb64729b674f681628181cfc705b839af171e37ce1d11bb739a19cd34ff87fb9e58ef0d7a38322436357c01731aa3b091f52b75376f9e351f1a8c59ad748a55b74150c8a771d2082ff73e39590019408450bf5ddd7e6d4d26f692e12634b315bba70559cf7107d4b7de5dd9b9fdb643a596b2a38235f990350cc9a0d22c9e799264017b16fef2bcaa3945bc3c32d8954c7b90594f390859e0d3c911b47ead77ab29ef3fe59a46801e65e3b975c86876d40788957602c78d531edfa116cf1ea265c6abc5e91063391c20aa85ea951b3c5cca6fee017f25e2753a093dbc2cf04270afb82add45e604cc9725a5562e7a99a37c786a3caa6650f1df569f394eea6dce1f7bc9eb6a5948eb57abb7cffb9306032d02f0b35de27427e18b6fc7c603e3649990835c0131ee5d4726f3a0890d48061bbadc82ba76b5ee30e5699c7b7
     TransformParentChanges: []
   ParentPrefabGUID: 
   PrefabGUID: 3770ff0088d9c4d5b91ff8962a0f5afa
@@ -2003,63 +1975,55 @@ MonoBehaviour:
       Mode: 0
     - Object: {fileID: 2356280}
       ObjeckLink: 314960063
+      PropertyPath: m_AdditionalVertexStreams
+      Mode: 0
+    - Object: {fileID: 2389938}
+      ObjeckLink: 1022581588
+      PropertyPath: m_LightmapIndexDynamic
+      Mode: 0
+    - Object: {fileID: 2389938}
+      ObjeckLink: 1022581588
+      PropertyPath: m_LightmapTilingOffsetDynamic.x
+      Mode: 0
+    - Object: {fileID: 2389938}
+      ObjeckLink: 1022581588
+      PropertyPath: m_LightmapTilingOffsetDynamic.y
+      Mode: 0
+    - Object: {fileID: 2389938}
+      ObjeckLink: 1022581588
       PropertyPath: m_LightmapTilingOffsetDynamic.z
       Mode: 0
-    - Object: {fileID: 2356280}
-      ObjeckLink: 314960063
+    - Object: {fileID: 2389938}
+      ObjeckLink: 1022581588
       PropertyPath: m_LightmapTilingOffsetDynamic.w
       Mode: 0
-    - Object: {fileID: 2356280}
-      ObjeckLink: 314960063
+    - Object: {fileID: 2389938}
+      ObjeckLink: 1022581588
+      PropertyPath: m_AdditionalVertexStreams
+      Mode: 0
+    - Object: {fileID: 2386740}
+      ObjeckLink: 1668269760
+      PropertyPath: m_LightmapIndexDynamic
+      Mode: 0
+    - Object: {fileID: 2386740}
+      ObjeckLink: 1668269760
+      PropertyPath: m_LightmapTilingOffsetDynamic.x
+      Mode: 0
+    - Object: {fileID: 2386740}
+      ObjeckLink: 1668269760
+      PropertyPath: m_LightmapTilingOffsetDynamic.y
+      Mode: 0
+    - Object: {fileID: 2386740}
+      ObjeckLink: 1668269760
+      PropertyPath: m_LightmapTilingOffsetDynamic.z
+      Mode: 0
+    - Object: {fileID: 2386740}
+      ObjeckLink: 1668269760
+      PropertyPath: m_LightmapTilingOffsetDynamic.w
+      Mode: 0
+    - Object: {fileID: 2386740}
+      ObjeckLink: 1668269760
       PropertyPath: m_Materials.Array.data[0]
-      Mode: 0
-    - Object: {fileID: 2356280}
-      ObjeckLink: 314960063
-      PropertyPath: m_AdditionalVertexStreams
-      Mode: 0
-    - Object: {fileID: 2389938}
-      ObjeckLink: 1022581588
-      PropertyPath: m_LightmapIndexDynamic
-      Mode: 0
-    - Object: {fileID: 2389938}
-      ObjeckLink: 1022581588
-      PropertyPath: m_LightmapTilingOffsetDynamic.x
-      Mode: 0
-    - Object: {fileID: 2389938}
-      ObjeckLink: 1022581588
-      PropertyPath: m_LightmapTilingOffsetDynamic.y
-      Mode: 0
-    - Object: {fileID: 2389938}
-      ObjeckLink: 1022581588
-      PropertyPath: m_LightmapTilingOffsetDynamic.z
-      Mode: 0
-    - Object: {fileID: 2389938}
-      ObjeckLink: 1022581588
-      PropertyPath: m_LightmapTilingOffsetDynamic.w
-      Mode: 0
-    - Object: {fileID: 2389938}
-      ObjeckLink: 1022581588
-      PropertyPath: m_AdditionalVertexStreams
-      Mode: 0
-    - Object: {fileID: 2386740}
-      ObjeckLink: 1668269760
-      PropertyPath: m_LightmapIndexDynamic
-      Mode: 0
-    - Object: {fileID: 2386740}
-      ObjeckLink: 1668269760
-      PropertyPath: m_LightmapTilingOffsetDynamic.x
-      Mode: 0
-    - Object: {fileID: 2386740}
-      ObjeckLink: 1668269760
-      PropertyPath: m_LightmapTilingOffsetDynamic.y
-      Mode: 0
-    - Object: {fileID: 2386740}
-      ObjeckLink: 1668269760
-      PropertyPath: m_LightmapTilingOffsetDynamic.z
-      Mode: 0
-    - Object: {fileID: 2386740}
-      ObjeckLink: 1668269760
-      PropertyPath: m_LightmapTilingOffsetDynamic.w
       Mode: 0
     - Object: {fileID: 2386740}
       ObjeckLink: 1668269760
@@ -2591,22 +2555,18 @@ MonoBehaviour:
       InstanceTarget: {fileID: 11439006}
     - LIIF: -1878508945
       InstanceTarget: {fileID: 11439160}
-    - LIIF: 1731413010
-      InstanceTarget: {fileID: 5913998}
     - LIIF: -1151237932
       InstanceTarget: {fileID: 5467698}
     - LIIF: 1953663709
       InstanceTarget: {fileID: 435330}
     - LIIF: -1490302803
       InstanceTarget: {fileID: 122660}
-    - LIIF: 1395661602
-      InstanceTarget: {fileID: 5404518}
+    - LIIF: 249781867
+      InstanceTarget: {fileID: 11425314}
+    - LIIF: -1211655850
+      InstanceTarget: {fileID: 14559602}
   Modifications:
     Modificated:
-    - Object: {fileID: 2328240}
-      ObjeckLink: 1534131228
-      PropertyPath: m_Materials.Array.data[0]
-      Mode: 0
     - Object: {fileID: 2356280}
       ObjeckLink: 1911659139
       PropertyPath: m_LightmapIndexDynamic
@@ -2618,18 +2578,6 @@ MonoBehaviour:
     - Object: {fileID: 2356280}
       ObjeckLink: 1911659139
       PropertyPath: m_LightmapTilingOffsetDynamic.y
-      Mode: 0
-    - Object: {fileID: 2356280}
-      ObjeckLink: 1911659139
-      PropertyPath: m_LightmapTilingOffsetDynamic.z
-      Mode: 0
-    - Object: {fileID: 2356280}
-      ObjeckLink: 1911659139
-      PropertyPath: m_LightmapTilingOffsetDynamic.w
-      Mode: 0
-    - Object: {fileID: 2356280}
-      ObjeckLink: 1911659139
-      PropertyPath: m_Materials.Array.data[0]
       Mode: 0
     - Object: {fileID: 2356280}
       ObjeckLink: 1911659139
@@ -2657,15 +2605,7 @@ MonoBehaviour:
       Mode: 0
     - Object: {fileID: 2386704}
       ObjeckLink: -773751581
-      PropertyPath: m_Materials.Array.data[0]
-      Mode: 0
-    - Object: {fileID: 2386704}
-      ObjeckLink: -773751581
       PropertyPath: m_AdditionalVertexStreams
-      Mode: 0
-    - Object: {fileID: 2343506}
-      ObjeckLink: -1590053093
-      PropertyPath: m_Materials.Array.data[0]
       Mode: 0
     - Object: {fileID: 2386740}
       ObjeckLink: -128986212
@@ -2761,15 +2701,7 @@ MonoBehaviour:
       Mode: 0
     - Object: {fileID: 2366528}
       ObjeckLink: -444773507
-      PropertyPath: m_Materials.Array.data[0]
-      Mode: 0
-    - Object: {fileID: 2366528}
-      ObjeckLink: -444773507
       PropertyPath: m_AdditionalVertexStreams
-      Mode: 0
-    - Object: {fileID: 2337866}
-      ObjeckLink: -610296867
-      PropertyPath: m_Materials.Array.data[0]
       Mode: 0
     - Object: {fileID: 2347644}
       ObjeckLink: 1801009764
@@ -2785,15 +2717,7 @@ MonoBehaviour:
       Mode: 0
     - Object: {fileID: 2347644}
       ObjeckLink: 1801009764
-      PropertyPath: m_LightmapTilingOffsetDynamic.z
-      Mode: 0
-    - Object: {fileID: 2347644}
-      ObjeckLink: 1801009764
       PropertyPath: m_LightmapTilingOffsetDynamic.w
-      Mode: 0
-    - Object: {fileID: 2347644}
-      ObjeckLink: 1801009764
-      PropertyPath: m_Materials.Array.data[0]
       Mode: 0
     - Object: {fileID: 2347644}
       ObjeckLink: 1801009764
@@ -2817,19 +2741,7 @@ MonoBehaviour:
       Mode: 0
     - Object: {fileID: 2382262}
       ObjeckLink: 1596143658
-      PropertyPath: m_LightmapTilingOffsetDynamic.w
-      Mode: 0
-    - Object: {fileID: 2382262}
-      ObjeckLink: 1596143658
-      PropertyPath: m_Materials.Array.data[0]
-      Mode: 0
-    - Object: {fileID: 2382262}
-      ObjeckLink: 1596143658
       PropertyPath: m_AdditionalVertexStreams
-      Mode: 0
-    - Object: {fileID: 2399232}
-      ObjeckLink: -867171431
-      PropertyPath: m_Materials.Array.data[0]
       Mode: 0
     - Object: {fileID: 2365106}
       ObjeckLink: -1632470313
@@ -2854,10 +2766,6 @@ MonoBehaviour:
     - Object: {fileID: 2365106}
       ObjeckLink: -1632470313
       PropertyPath: m_AdditionalVertexStreams
-      Mode: 0
-    - Object: {fileID: 448724}
-      ObjeckLink: -1247574711
-      PropertyPath: m_LocalPosition
       Mode: 0
     - Object: {fileID: 448724}
       ObjeckLink: -1247574711
@@ -2877,10 +2785,6 @@ MonoBehaviour:
       Mode: 0
     - Object: {fileID: 2307126}
       ObjeckLink: -315501192
-      PropertyPath: m_LightmapTilingOffsetDynamic.z
-      Mode: 0
-    - Object: {fileID: 2307126}
-      ObjeckLink: -315501192
       PropertyPath: m_LightmapTilingOffsetDynamic.w
       Mode: 0
     - Object: {fileID: 2307126}
@@ -2905,10 +2809,6 @@ MonoBehaviour:
       Mode: 0
     - Object: {fileID: 2328958}
       ObjeckLink: 180523315
-      PropertyPath: m_LightmapTilingOffsetDynamic.w
-      Mode: 0
-    - Object: {fileID: 2328958}
-      ObjeckLink: 180523315
       PropertyPath: m_AdditionalVertexStreams
       Mode: 0
     - Object: {fileID: 22478514}
@@ -2951,9 +2851,21 @@ MonoBehaviour:
       ObjeckLink: -1536445062
       PropertyPath: m_SizeDelta
       Mode: 0
-    - Object: {fileID: 5913998}
-      ObjeckLink: 1731413010
+    - Object: {fileID: 14559602}
+      ObjeckLink: -1211655850
+      PropertyPath: m_AutoConfigureConnectedAnchor
+      Mode: 0
+    - Object: {fileID: 14559602}
+      ObjeckLink: -1211655850
       PropertyPath: m_ConnectedAnchor
+      Mode: 0
+    - Object: {fileID: 14559602}
+      ObjeckLink: -1211655850
+      PropertyPath: m_Spring
+      Mode: 0
+    - Object: {fileID: 14559602}
+      ObjeckLink: -1211655850
+      PropertyPath: m_MaxDistance
       Mode: 0
     NonPrefabObjects: []
     NonPrefabComponents: []
@@ -3062,13 +2974,25 @@ MonoBehaviour:
       ObjeckLink: -765337030
       PropertyPath: m_LocalScale
       Mode: 0
+    - Object: {fileID: 104568}
+      ObjeckLink: -233967762
+      PropertyPath: m_StaticEditorFlags
+      Mode: 0
     - Object: {fileID: 2328240}
       ObjeckLink: -1177710409
       PropertyPath: m_Materials.Array.data[0]
       Mode: 0
+    - Object: {fileID: 199142}
+      ObjeckLink: -1582923485
+      PropertyPath: m_StaticEditorFlags
+      Mode: 0
     - Object: {fileID: 2343506}
       ObjeckLink: -103357253
       PropertyPath: m_Materials.Array.data[0]
+      Mode: 0
+    - Object: {fileID: 191940}
+      ObjeckLink: 744650535
+      PropertyPath: m_StaticEditorFlags
       Mode: 0
     NonPrefabObjects:
     - child: {fileID: 469650}
@@ -3125,10 +3049,6 @@ MonoBehaviour:
       Mode: 0
     - Object: {fileID: 2328958}
       ObjeckLink: -1863392894
-      PropertyPath: m_LightmapTilingOffsetDynamic.w
-      Mode: 0
-    - Object: {fileID: 2328958}
-      ObjeckLink: -1863392894
       PropertyPath: m_AdditionalVertexStreams
       Mode: 0
     - Object: {fileID: 472970}
@@ -3149,6 +3069,26 @@ MonoBehaviour:
     TransformParentChanges: []
   ParentPrefabGUID: 
   PrefabGUID: bb43bbc6dae5e3a41b9ee931f84dfe5e
+--- !u!145 &14559602
+SpringJoint:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 122660}
+  m_ConnectedBody: {fileID: 0}
+  m_Anchor: {x: 0, y: 0, z: 0}
+  m_AutoConfigureConnectedAnchor: 0
+  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  serializedVersion: 2
+  m_Spring: 500
+  m_Damper: 0.2
+  m_MinDistance: 0
+  m_MaxDistance: 0.1
+  m_Tolerance: 0.025
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 0
+  m_EnablePreprocessing: 1
 --- !u!222 &22234426
 CanvasRenderer:
   m_ObjectHideFlags: 1

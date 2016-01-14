@@ -8,20 +8,18 @@ public class RagdollToggle : MonoBehaviour {
 
 	private bool _ragdolled = false;
 
-	/// <summary>
-	/// The animator to turn off during ragdoll mode
-	/// </summary>
+	[Tooltip("The animator to turn off during ragdoll mode")]
 	[SerializeField] private Animator _characterAnimator;
 
-	/// <summary>
-	/// The root of the rig to ragdoll (pelvis bone)
-	/// </summary>
+	[Tooltip("The root of the rig to ragdoll (pelvis bone)")]
 	[SerializeField] private Transform _ragdollRoot;
 
 	private BoxCollider _characterCollider;
+	private Rigidbody _characterRigidbody;
 
 	public void Awake() {
 		_characterCollider = GetComponent<BoxCollider>();
+		_characterRigidbody = GetComponent<Rigidbody>();
 		ragdolled = false;
 	}
 
@@ -49,6 +47,9 @@ public class RagdollToggle : MonoBehaviour {
 
 			// Disable character animations while ragdolling
 			_characterAnimator.enabled = !value;
+
+			// Disable global prefab gravity while ragdolling
+			_characterRigidbody.useGravity = !value;
 
 			if (!_ragdolled) {
 				// Move whole gameObject to same world position as ragdoll root to remove drift

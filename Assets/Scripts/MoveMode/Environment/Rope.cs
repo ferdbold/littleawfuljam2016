@@ -51,14 +51,13 @@ public class Rope : Interactable {
 
 		_grippingButton = button;
 
-		Debug.Log("Cursor: " + _cursor);
-		Debug.Log("Snapper: " + _slothSnapper);
+		_slothSnapper.Grip(_cursor, button);
 
-		if (button == "left") {
+		/*if (button == "left") {
 			_cursor.connectedBody = _slothSnapper.leftHand;
 		} else {
 			_cursor.connectedBody = _slothSnapper.rightHand;
-		}
+		}*/
 	}
 
 	/// <summary>
@@ -68,8 +67,8 @@ public class Rope : Interactable {
 		_activated = false;
 		_prompt = _gripPrompt;
 
-		_grippingButton = string.Empty;
-
+		_slothSnapper.Release();
 		_cursor.connectedBody = null;
+		_grippingButton = string.Empty;
 	}
 }
