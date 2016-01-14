@@ -32,7 +32,7 @@ public class Lever : Interactable {
 
     public override void Activate() {
         activated = !activated;
-        _prompt = activated ? _openPrompt : _closePrompt;
+        _prompt = activated ? _closePrompt : _openPrompt;
         (activated ? onEvent : offEvent).Invoke();
         anim.SetBool("isOpen", activated);
     }
