@@ -25,7 +25,7 @@ public class Lever : Interactable {
     void Awake() {
         base.Awake();
         anim = GetComponentInChildren<Animator>();
-        _prompt = activated ? _openPrompt : _closePrompt;
+        _prompt = activated ? _closePrompt : _openPrompt;
         (activated ? onEvent : offEvent).Invoke();
         anim.SetBool("isOpen", activated);
     }
