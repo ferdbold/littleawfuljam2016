@@ -70,7 +70,7 @@ public class ModeEnabler : MonoBehaviour {
 
     IEnumerator SlothIKControllerOnDelay() {
         yield return new WaitForSeconds(ClimbAnimClip.length);
-        _slothAnimator.runtimeAnimatorController = _slothIKController;
+        //_slothAnimator.runtimeAnimatorController = _slothIKController;
         _ikSlothController.leftHandObj = LeftHandAnchor;
         _ikSlothController.lookObjLeft = LeftHandAnchor;
         _ikSlothController.rightHandObj = RightHandAnchor;
