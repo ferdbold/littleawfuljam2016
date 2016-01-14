@@ -4302,26 +4302,6 @@ MonoBehaviour:
       ObjeckLink: 792988521
       PropertyPath: m_RootOrder
       Mode: 0
-    - Object: {fileID: 11455948}
-      ObjeckLink: -1238442313
-      PropertyPath: _slothDefaultController
-      Mode: 0
-    - Object: {fileID: 11455948}
-      ObjeckLink: -1238442313
-      PropertyPath: _slothIKController
-      Mode: 0
-    - Object: {fileID: 11455948}
-      ObjeckLink: -1238442313
-      PropertyPath: LeftHandAnchor
-      Mode: 0
-    - Object: {fileID: 11455948}
-      ObjeckLink: -1238442313
-      PropertyPath: RightHandAnchor
-      Mode: 0
-    - Object: {fileID: 11455948}
-      ObjeckLink: -1238442313
-      PropertyPath: ClimbAnimClip
-      Mode: 0
     NonPrefabObjects: []
     NonPrefabComponents: []
     RemovedObjects: 
