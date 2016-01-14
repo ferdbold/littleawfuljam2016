@@ -42,6 +42,7 @@ GameObject:
   - 54: {fileID: 5479602}
   - 144: {fileID: 14469156}
   - 136: {fileID: 13621090}
+  - 114: {fileID: 11415330}
   m_Layer: 0
   m_Name: Sloth_shoulder_rt_jnt
   m_TagString: Untagged
@@ -107,6 +108,7 @@ GameObject:
   - 54: {fileID: 5444278}
   - 144: {fileID: 14431204}
   - 136: {fileID: 13624692}
+  - 114: {fileID: 11416366}
   m_Layer: 0
   m_Name: Sloth_elbow_rt_jnt
   m_TagString: Untagged
@@ -279,6 +281,7 @@ GameObject:
   - 54: {fileID: 5431402}
   - 144: {fileID: 14422898}
   - 136: {fileID: 13684246}
+  - 114: {fileID: 11402190}
   m_Layer: 0
   m_Name: Sloth_elbow_lf_jnt
   m_TagString: Untagged
@@ -294,6 +297,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 413568}
+  - 114: {fileID: 11495498}
   m_Layer: 0
   m_Name: OverTheShoulderPosition
   m_TagString: Untagged
@@ -324,6 +328,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 428878}
+  - 114: {fileID: 11434320}
   m_Layer: 0
   m_Name: Sloth_hand_lf_jnt
   m_TagString: Untagged
@@ -524,6 +529,7 @@ GameObject:
   - 65: {fileID: 6557356}
   - 114: {fileID: 11412774}
   - 114: {fileID: 11445358}
+  - 114: {fileID: 11453864}
   m_Layer: 0
   m_Name: SlothNinja
   m_TagString: SlothNinja
@@ -930,6 +936,7 @@ GameObject:
   - 54: {fileID: 5452138}
   - 144: {fileID: 14443140}
   - 136: {fileID: 13679858}
+  - 114: {fileID: 11419472}
   m_Layer: 0
   m_Name: Sloth_shoulder_lf_jnt
   m_TagString: Untagged
@@ -1605,7 +1612,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 104174}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.52, y: 0.2, z: 18.86}
+  m_LocalPosition: {x: -1.52, y: 0.2, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 421968}
@@ -2291,13 +2298,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
-  m_WarningMessage: "\nBinding warning: Some transforms are animated by both a Humanoid
-    animation clip and a Generic animation clip. Only the Humanoid clip will be applied
-    on those transforms.\n\tTransform 'Sloth_leg_rt_jnt'\n\tTransform 'Sloth_shoulder_rt_jnt'\n\tTransform
-    'Sloth_leg_lf_jnt'\n\tTransform 'Sloth_clav_rt_jnt'\n\tTransform 'Sloth_knee_rt_jnt'\n\tTransform
-    'Sloth_elbow_rt_jnt'\n\tTransform 'Sloth_clav_lf_jnt'\n\tTransform 'Sloth_splineA_jnt'\n\tTransform
-    'Sloth_hand_rt_jnt'\n\tTransform 'Sloth_knee_lf_jnt'\n\tand more ...\n\tFrom animation
-    clip 'TurnLeft'\n\tFrom animation clip 'TurnLeft'"
+  m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &11400758
@@ -2445,6 +2446,53 @@ MonoBehaviour:
     TransformParentChanges: []
   ParentPrefabGUID: 
   PrefabGUID: 132b3e006892f4141a49ba84fa81b13b
+--- !u!114 &11402190
+MonoBehaviour:
+  m_ObjectHideFlags: 33
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 122262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46a02d0f612a241b293c0da4f82b712c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Properties:
+    Properties: []
+    Groups: []
+    Hidden: 
+  Links:
+    Links: []
+  Modifications:
+    Modificated: []
+    NonPrefabObjects:
+    - child: {fileID: 496954}
+      parent: {fileID: 428878}
+    - child: {fileID: 496106}
+      parent: {fileID: 400352}
+    - child: {fileID: 489180}
+      parent: {fileID: 478472}
+    - child: {fileID: 478472}
+      parent: {fileID: 428878}
+    - child: {fileID: 478364}
+      parent: {fileID: 428878}
+    - child: {fileID: 474818}
+      parent: {fileID: 424876}
+    - child: {fileID: 468928}
+      parent: {fileID: 428878}
+    - child: {fileID: 439922}
+      parent: {fileID: 428878}
+    - child: {fileID: 428878}
+      parent: {fileID: 474818}
+    - child: {fileID: 412386}
+      parent: {fileID: 478364}
+    - child: {fileID: 400352}
+      parent: {fileID: 428878}
+    NonPrefabComponents: []
+    RemovedObjects: baf46e12998dbb4b0e6aceae80f446709291510ba7c9bc26a931ada51b9bf80df1ee3f0e6930d7e635ae962d69e59fdd480feb973caf4038514148f782182747945bedb011ec3cee3429247acbc9da5e0515c6b861879cc0cc146d5305e875e5bb01a25cabfa1aa3598cad842e14ef273e7489442c5a370335dd2c3d5c3176536d048c24b2ac6fa748387a0eac44e2d9a8e083baf61ef048bf9260da65e20596ffdfc755103b4f88ecfc71320b5140c7070ebae3dfd8780bd97ad316faf01e472abcc974c00426cb2e438496c725a472474b7c21acbacecc15439e855523a576af328196fb0a7f4439e8fbbad2bd0616f0c3bcfb9fefb8107739080553a6fef820183d9214f8b2c7959b75ef6256a0004cb35a1286fb0d260a6acaf95a96c8500ae175598576b61d184d80826437984a977a80ff49c378d67eb32ac39df8354e826f62c45031dfd581cbb7b70e87faed1eed680ffce2a06fe320ece82bd2ba5fa7c86caaa0efb2bd0a2937da2c06b57c352018e2abd36aa07dfa5f7d41cb5d520b5614d836f98d8b4ef30039eb27a88396c572eee83892850c7031e866a6e4422cff1723f052923d831d20c4f80d463953e7ec7a714e5f3d89eb9ae44a26af88925537f3b09992f232ec297ee955d579d2979b22d72cd23ae1dcb6c607d08574282e2f2e8f4a0649bf56d41088bea9bc89f7c684474cbed3423c03644345064712a6993f868883d852c5c1a6a478ba49d5e24797996a81deb7b40f9c7b13dddb303607476df887b8e7e430c710750b980f7a69ddded0ada79ddf336c27a37d3887107354656fa71eee52b0aa1ed042f438b26c76e628724b36877359ab18e7f5ead536dca530e19b908c8c1fe7a264b5
+    TransformParentChanges: []
+  ParentPrefabGUID: 
+  PrefabGUID: 17161f33def0be547a9a1cecf982898e
 --- !u!114 &11404494
 MonoBehaviour:
   m_ObjectHideFlags: 33
@@ -2635,6 +2683,55 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   locked: 0
+--- !u!114 &11415330
+MonoBehaviour:
+  m_ObjectHideFlags: 33
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 105538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46a02d0f612a241b293c0da4f82b712c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Properties:
+    Properties: []
+    Groups: []
+    Hidden: 
+  Links:
+    Links: []
+  Modifications:
+    Modificated: []
+    NonPrefabObjects:
+    - child: {fileID: 494558}
+      parent: {fileID: 428000}
+    - child: {fileID: 479828}
+      parent: {fileID: 447302}
+    - child: {fileID: 476568}
+      parent: {fileID: 428000}
+    - child: {fileID: 473564}
+      parent: {fileID: 428000}
+    - child: {fileID: 461208}
+      parent: {fileID: 428000}
+    - child: {fileID: 456548}
+      parent: {fileID: 494558}
+    - child: {fileID: 451198}
+      parent: {fileID: 428000}
+    - child: {fileID: 447302}
+      parent: {fileID: 418096}
+    - child: {fileID: 428000}
+      parent: {fileID: 479828}
+    - child: {fileID: 422814}
+      parent: {fileID: 461208}
+    - child: {fileID: 417964}
+      parent: {fileID: 476568}
+    - child: {fileID: 410250}
+      parent: {fileID: 428000}
+    NonPrefabComponents: []
+    RemovedObjects: baf46e12998dbb4b0e6aceae80f446709291510ba7c9bc26a931ada51b9bf80df1ee3f0e6930d7e635ae962d69e59fdd480feb973caf4038514148f782182747945bedb011ec3cee3429247acbc9da5e0515c6b861879cc0cc146d5305e875e5bb01a25cabfa1aa3598cad842e14ef273e7489442c5a370335dd2c3d5c3176536d048c24b2ac6fa748387a0eac44e2d9a8e083baf61ef048bf9260da65e20596ffdfc755103b4f88ecfc71320b5140c7070ebae3dfd8780bd97ad316faf01e472abcc974c00426cb2e438496c725a472474b7c21acbacecc15439e855523a576af328196fb0a7f4439e8fbbad2bd0616f0c3bcfb9fefb8107739080553a6fef820183d9214f8b2c7959b75ef6256a0004cb35a1286fb0d260a6acaf95a96c8500ae175598576b61d184d80826437984a977a80ff49c378d67eb32ac39df8354e826f62c45031dfd581cbb7b70e87faed1eed680ffce2a06fe320ece82bd2ba5fa7c86caaa0efb2bd0a2937da2c06b57c352018e2abd36aa07dfa5f7d41cb5d520b5614d836f98d8b4ef30039eb27a88396c572eee83892850c7031e866a6e4422cff1723f052923d831d20c4f80d463953e7ec7a714e5f3d89eb9ae44a26af88925537f3b09992f232ec297ee955d579d2979b22d72cd23ae1dcb6c607d08574282e2f2e8f4a0649bf56d41088bea9bc89f7c684474cbed3423c03644345064712a6993f868883d852c5c1a6a478ba49d5e24797996a81deb7b40f9c7b13dddb303607476df887b8e7e430c710750b980f7a69ddded0ada79ddf336c27a37d3887107354656fa71eee52b0aa1ed042f438b26c76e628724b36877359ab18e7f5ead536dca530e19b908c8c1fe7a264b5
+    TransformParentChanges: []
+  ParentPrefabGUID: 
+  PrefabGUID: 17161f33def0be547a9a1cecf982898e
 --- !u!114 &11415614
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2648,6 +2745,53 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _characterAnimator: {fileID: 9581304}
   _ragdollRoot: {fileID: 464086}
+--- !u!114 &11416366
+MonoBehaviour:
+  m_ObjectHideFlags: 33
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 109104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46a02d0f612a241b293c0da4f82b712c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Properties:
+    Properties: []
+    Groups: []
+    Hidden: 
+  Links:
+    Links: []
+  Modifications:
+    Modificated: []
+    NonPrefabObjects:
+    - child: {fileID: 494558}
+      parent: {fileID: 428000}
+    - child: {fileID: 479828}
+      parent: {fileID: 447302}
+    - child: {fileID: 476568}
+      parent: {fileID: 428000}
+    - child: {fileID: 473564}
+      parent: {fileID: 428000}
+    - child: {fileID: 461208}
+      parent: {fileID: 428000}
+    - child: {fileID: 456548}
+      parent: {fileID: 494558}
+    - child: {fileID: 451198}
+      parent: {fileID: 428000}
+    - child: {fileID: 428000}
+      parent: {fileID: 479828}
+    - child: {fileID: 422814}
+      parent: {fileID: 461208}
+    - child: {fileID: 417964}
+      parent: {fileID: 476568}
+    - child: {fileID: 410250}
+      parent: {fileID: 428000}
+    NonPrefabComponents: []
+    RemovedObjects: baf46e12998dbb4b0e6aceae80f446709291510ba7c9bc26a931ada51b9bf80df1ee3f0e6930d7e635ae962d69e59fdd480feb973caf4038514148f782182747945bedb011ec3cee3429247acbc9da5e0515c6b861879cc0cc146d5305e875e5bb01a25cabfa1aa3598cad842e14ef273e7489442c5a370335dd2c3d5c3176536d048c24b2ac6fa748387a0eac44e2d9a8e083baf61ef048bf9260da65e20596ffdfc755103b4f88ecfc71320b5140c7070ebae3dfd8780bd97ad316faf01e472abcc974c00426cb2e438496c725a472474b7c21acbacecc15439e855523a576af328196fb0a7f4439e8fbbad2bd0616f0c3bcfb9fefb8107739080553a6fef820183d9214f8b2c7959b75ef6256a0004cb35a1286fb0d260a6acaf95a96c8500ae175598576b61d184d80826437984a977a80ff49c378d67eb32ac39df8354e826f62c45031dfd581cbb7b70e87faed1eed680ffce2a06fe320ece82bd2ba5fa7c86caaa0efb2bd0a2937da2c06b57c352018e2abd36aa07dfa5f7d41cb5d520b5614d836f98d8b4ef30039eb27a88396c572eee83892850c7031e866a6e4422cff1723f052923d831d20c4f80d463953e7ec7a714e5f3d89eb9ae44a26af88925537f3b09992f232ec297ee955d579d2979b22d72cd23ae1dcb6c607d08574282e2f2e8f4a0649bf56d41088bea9bc89f7c684474cbed3423c03644345064712a6993f868883d852c5c1a6a478ba49d5e24797996a81deb7b40f9c7b13dddb303607476df887b8e7e430c710750b980f7a69ddded0ada79ddf336c27a37d3887107354656fa71eee52b0aa1ed042f438b26c76e628724b36877359ab18e7f5ead536dca530e19b908c8c1fe7a264b5
+    TransformParentChanges: []
+  ParentPrefabGUID: 
+  PrefabGUID: 17161f33def0be547a9a1cecf982898e
 --- !u!114 &11417280
 MonoBehaviour:
   m_ObjectHideFlags: 33
@@ -2675,6 +2819,55 @@ MonoBehaviour:
     TransformParentChanges: []
   ParentPrefabGUID: 
   PrefabGUID: 132b3e006892f4141a49ba84fa81b13b
+--- !u!114 &11419472
+MonoBehaviour:
+  m_ObjectHideFlags: 33
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 190804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46a02d0f612a241b293c0da4f82b712c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Properties:
+    Properties: []
+    Groups: []
+    Hidden: 
+  Links:
+    Links: []
+  Modifications:
+    Modificated: []
+    NonPrefabObjects:
+    - child: {fileID: 496954}
+      parent: {fileID: 428878}
+    - child: {fileID: 496106}
+      parent: {fileID: 400352}
+    - child: {fileID: 489180}
+      parent: {fileID: 478472}
+    - child: {fileID: 478472}
+      parent: {fileID: 428878}
+    - child: {fileID: 478364}
+      parent: {fileID: 428878}
+    - child: {fileID: 474818}
+      parent: {fileID: 424876}
+    - child: {fileID: 468928}
+      parent: {fileID: 428878}
+    - child: {fileID: 439922}
+      parent: {fileID: 428878}
+    - child: {fileID: 428878}
+      parent: {fileID: 474818}
+    - child: {fileID: 424876}
+      parent: {fileID: 461272}
+    - child: {fileID: 412386}
+      parent: {fileID: 478364}
+    - child: {fileID: 400352}
+      parent: {fileID: 428878}
+    NonPrefabComponents: []
+    RemovedObjects: baf46e12998dbb4b0e6aceae80f446709291510ba7c9bc26a931ada51b9bf80df1ee3f0e6930d7e635ae962d69e59fdd480feb973caf4038514148f782182747945bedb011ec3cee3429247acbc9da5e0515c6b861879cc0cc146d5305e875e5bb01a25cabfa1aa3598cad842e14ef273e7489442c5a370335dd2c3d5c3176536d048c24b2ac6fa748387a0eac44e2d9a8e083baf61ef048bf9260da65e20596ffdfc755103b4f88ecfc71320b5140c7070ebae3dfd8780bd97ad316faf01e472abcc974c00426cb2e438496c725a472474b7c21acbacecc15439e855523a576af328196fb0a7f4439e8fbbad2bd0616f0c3bcfb9fefb8107739080553a6fef820183d9214f8b2c7959b75ef6256a0004cb35a1286fb0d260a6acaf95a96c8500ae175598576b61d184d80826437984a977a80ff49c378d67eb32ac39df8354e826f62c45031dfd581cbb7b70e87faed1eed680ffce2a06fe320ece82bd2ba5fa7c86caaa0efb2bd0a2937da2c06b57c352018e2abd36aa07dfa5f7d41cb5d520b5614d836f98d8b4ef30039eb27a88396c572eee83892850c7031e866a6e4422cff1723f052923d831d20c4f80d463953e7ec7a714e5f3d89eb9ae44a26af88925537f3b09992f232ec297ee955d579d2979b22d72cd23ae1dcb6c607d08574282e2f2e8f4a0649bf56d41088bea9bc89f7c684474cbed3423c03644345064712a6993f868883d852c5c1a6a478ba49d5e24797996a81deb7b40f9c7b13dddb303607476df887b8e7e430c710750b980f7a69ddded0ada79ddf336c27a37d3887107354656fa71eee52b0aa1ed042f438b26c76e628724b36877359ab18e7f5ead536dca530e19b908c8c1fe7a264b5
+    TransformParentChanges: []
+  ParentPrefabGUID: 
+  PrefabGUID: 17161f33def0be547a9a1cecf982898e
 --- !u!114 &11419488
 MonoBehaviour:
   m_ObjectHideFlags: 33
@@ -3128,14 +3321,62 @@ MonoBehaviour:
       InstanceTarget: {fileID: 11487652}
     - LIIF: 1265772774
       InstanceTarget: {fileID: 11482402}
+    - LIIF: 1500743478
+      InstanceTarget: {fileID: 11495498}
+    - LIIF: -169404245
+      InstanceTarget: {fileID: 11419472}
+    - LIIF: -600386070
+      InstanceTarget: {fileID: 11402190}
+    - LIIF: -1679740763
+      InstanceTarget: {fileID: 11434320}
+    - LIIF: 529304720
+      InstanceTarget: {fileID: 11415330}
+    - LIIF: -1251695897
+      InstanceTarget: {fileID: 11416366}
+    - LIIF: 581227289
+      InstanceTarget: {fileID: 11453864}
   Modifications:
     Modificated:
     - Object: {fileID: 451046}
       ObjeckLink: -1587012727
+      PropertyPath: m_LocalPosition
+      Mode: 0
+    - Object: {fileID: 451046}
+      ObjeckLink: -1587012727
       PropertyPath: m_RootOrder
       Mode: 0
+    - Object: {fileID: 14422898}
+      ObjeckLink: -953096985
+      PropertyPath: m_ConnectedAnchor
+      Mode: 0
+    - Object: {fileID: 14425420}
+      ObjeckLink: -1744079600
+      PropertyPath: m_ConnectedAnchor
+      Mode: 0
+    - Object: {fileID: 14429960}
+      ObjeckLink: -580290033
+      PropertyPath: m_ConnectedAnchor
+      Mode: 0
+    - Object: {fileID: 14443140}
+      ObjeckLink: 1815338909
+      PropertyPath: m_ConnectedAnchor
+      Mode: 0
+    - Object: {fileID: 14444914}
+      ObjeckLink: 947757863
+      PropertyPath: m_ConnectedAnchor
+      Mode: 0
+    - Object: {fileID: 14469156}
+      ObjeckLink: 1416827015
+      PropertyPath: m_ConnectedAnchor
+      Mode: 0
+    - Object: {fileID: 14469954}
+      ObjeckLink: 514289509
+      PropertyPath: m_ConnectedAnchor
+      Mode: 0
     NonPrefabObjects: []
-    NonPrefabComponents: []
+    NonPrefabComponents:
+    - child: {fileID: 11453864}
+      parent: {fileID: 146428}
     RemovedObjects: 
     TransformParentChanges: []
   ParentPrefabGUID: 
@@ -3287,6 +3528,51 @@ MonoBehaviour:
     TransformParentChanges: []
   ParentPrefabGUID: 
   PrefabGUID: 132b3e006892f4141a49ba84fa81b13b
+--- !u!114 &11434320
+MonoBehaviour:
+  m_ObjectHideFlags: 33
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 128638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46a02d0f612a241b293c0da4f82b712c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Properties:
+    Properties: []
+    Groups: []
+    Hidden: 
+  Links:
+    Links: []
+  Modifications:
+    Modificated: []
+    NonPrefabObjects:
+    - child: {fileID: 496954}
+      parent: {fileID: 428878}
+    - child: {fileID: 496106}
+      parent: {fileID: 400352}
+    - child: {fileID: 489180}
+      parent: {fileID: 478472}
+    - child: {fileID: 478472}
+      parent: {fileID: 428878}
+    - child: {fileID: 478364}
+      parent: {fileID: 428878}
+    - child: {fileID: 468928}
+      parent: {fileID: 428878}
+    - child: {fileID: 439922}
+      parent: {fileID: 428878}
+    - child: {fileID: 428878}
+      parent: {fileID: 474818}
+    - child: {fileID: 412386}
+      parent: {fileID: 478364}
+    - child: {fileID: 400352}
+      parent: {fileID: 428878}
+    NonPrefabComponents: []
+    RemovedObjects: baf46e12998dbb4b0e6aceae80f446709291510ba7c9bc26a931ada51b9bf80df1ee3f0e6930d7e635ae962d69e59fdd480feb973caf4038514148f782182747945bedb011ec3cee3429247acbc9da5e0515c6b861879cc0cc146d5305e875e5bb01a25cabfa1aa3598cad842e14ef273e7489442c5a370335dd2c3d5c3176536d048c24b2ac6fa748387a0eac44e2d9a8e083baf61ef048bf9260da65e20596ffdfc755103b4f88ecfc71320b5140c7070ebae3dfd8780bd97ad316faf01e472abcc974c00426cb2e438496c725a472474b7c21acbacecc15439e855523a576af328196fb0a7f4439e8fbbad2bd0616f0c3bcfb9fefb8107739080553a6fef820183d9214f8b2c7959b75ef6256a0004cb35a1286fb0d260a6acaf95a96c8500ae175598576b61d184d80826437984a977a80ff49c378d67eb32ac39df8354e826f62c45031dfd581cbb7b70e87faed1eed680ffce2a06fe320ece82bd2ba5fa7c86caaa0efb2bd0a2937da2c06b57c352018e2abd36aa07dfa5f7d41cb5d520b5614d836f98d8b4ef30039eb27a88396c572eee83892850c7031e866a6e4422cff1723f052923d831d20c4f80d463953e7ec7a714e5f3d89eb9ae44a26af88925537f3b09992f232ec297ee955d579d2979b22d72cd23ae1dcb6c607d08574282e2f2e8f4a0649bf56d41088bea9bc89f7c684474cbed3423c03644345064712a6993f868883d852c5c1a6a478ba49d5e24797996a81deb7b40f9c7b13dddb303607476df887b8e7e430c710750b980f7a69ddded0ada79ddf336c27a37d3887107354656fa71eee52b0aa1ed042f438b26c76e628724b36877359ab18e7f5ead536dca530e19b908c8c1fe7a264b5
+    TransformParentChanges: []
+  ParentPrefabGUID: 
+  PrefabGUID: 17161f33def0be547a9a1cecf982898e
 --- !u!114 &11443156
 MonoBehaviour:
   m_ObjectHideFlags: 33
@@ -3749,14 +4035,6 @@ MonoBehaviour:
       ObjeckLink: -1334059621
       PropertyPath: m_LocalPosition
       Mode: 0
-    - Object: {fileID: 6506646}
-      ObjeckLink: -953989178
-      PropertyPath: m_Enabled
-      Mode: 0
-    - Object: {fileID: 9581304}
-      ObjeckLink: 1440167776
-      PropertyPath: m_WarningMessage
-      Mode: 0
     - Object: {fileID: 14409036}
       ObjeckLink: 862316210
       PropertyPath: m_ConnectedAnchor
@@ -3795,6 +4073,20 @@ MonoBehaviour:
       Mode: 0
     NonPrefabObjects: []
     NonPrefabComponents:
+    - child: {fileID: 11419472}
+      parent: {fileID: 190804}
+    - child: {fileID: 11402190}
+      parent: {fileID: 122262}
+    - child: {fileID: 11434320}
+      parent: {fileID: 128638}
+    - child: {fileID: 11415330}
+      parent: {fileID: 105538}
+    - child: {fileID: 11416366}
+      parent: {fileID: 109104}
+    - child: {fileID: 11453864}
+      parent: {fileID: 146428}
+    - child: {fileID: 11495498}
+      parent: {fileID: 124582}
     - child: {fileID: 11487652}
       parent: {fileID: 150760}
     RemovedObjects: 
@@ -3938,6 +4230,20 @@ MonoBehaviour:
     TransformParentChanges: []
   ParentPrefabGUID: 
   PrefabGUID: 132b3e006892f4141a49ba84fa81b13b
+--- !u!114 &11453864
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 146428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 296e49adecf96441d869e7bb9f3815a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _ragdollRoot: {fileID: 464086}
+  _leftHand: {fileID: 5431402}
+  _rightHand: {fileID: 5444278}
 --- !u!114 &11456704
 MonoBehaviour:
   m_ObjectHideFlags: 33
@@ -4366,7 +4672,7 @@ MonoBehaviour:
     - child: {fileID: 414080}
       parent: {fileID: 451046}
     NonPrefabComponents: []
-    RemovedObjects: baf46e12998dbb4b0e6aceae80f446709291510ba7c9bc26a931ada51b9bf80df1ee3f0e6930d7e635ae962d69e59fdd480feb973caf4038514148f782182747945bedb011ec3cee3429247acbc9da5e0515c6b861879cc0cc146d5305e875e5bb01a25cabfa1aa3598cad842e14ef273e7489442c5a370335dd2c3d5c3176536d048c24b2ac6fa748387a0eac44e2d9a8e083baf61ef048bf9260da65e20596ffdfc755103b4f88ecfc71320b5140c7070ebae3dfd8780bd97ad316faf01e472abcc974c00426cb2e438496c725a472474b7c21acbacecc15439e855523a576af328196fb0a7f4439e8fbbad2bd0616f0c3bcfb9fefb8107739080553a6fef820183d9214f8b2c7959b75ef6256a0004cb35a1286fb0d260a6acaf95a96c8500ae175598576b61d184d80826437984a977a80ff49c378d67eb32ac39df8354e826f62c45031dfd581cbb7b70e87faed1eed680ffce2a06fe320ece82bd2ba5fa7c86caaa0efb2bd0a2937da2c06b57c352018e2abd36aa07dfa5f7d41cb5d520b5614d836f98d8b4ef30039eb27a88396c572eee83892850c7031e866a6e4422cff1723f052923d831d20c4f80d463953e7ec7a714e5f3d89eb9ae44a26af88925537f3b09992f232ec297ee955d579d2979b22d72cd23ae1dcb6c607d08574282e2f2e8f4a0649bf56d41088bea9bc89f7c684474cbed3423c03644345064712a6993f868883d852c5c1a6a478ba49d5e24797996a81deb7b40f9c7b13dddb303607476df887b8e7e430c710750b980f7a69ddded0ada79ddf336c27a37d3887107354656fa71eee52b0aa1ed042f438b26c76e628724b
+    RemovedObjects: baf46e12998dbb4b0e6aceae80f446709291510ba7c9bc26a931ada51b9bf80df1ee3f0e6930d7e635ae962d69e59fdd480feb973caf4038514148f782182747945bedb011ec3cee3429247acbc9da5e0515c6b861879cc0cc146d5305e875e5bb01a25cabfa1aa3598cad842e14ef273e7489442c5a370335dd2c3d5c3176536d048c24b2ac6fa748387a0eac44e2d9a8e083baf61ef048bf9260da65e20596ffdfc755103b4f88ecfc71320b5140c7070ebae3dfd8780bd97ad316faf01e472abcc974c00426cb2e438496c725a472474b7c21acbacecc15439e855523a576af328196fb0a7f4439e8fbbad2bd0616f0c3bcfb9fefb8107739080553a6fef820183d9214f8b2c7959b75ef6256a0004cb35a1286fb0d260a6acaf95a96c8500ae175598576b61d184d80826437984a977a80ff49c378d67eb32ac39df8354e826f62c45031dfd581cbb7b70e87faed1eed680ffce2a06fe320ece82bd2ba5fa7c86caaa0efb2bd0a2937da2c06b57c352018e2abd36aa07dfa5f7d41cb5d520b5614d836f98d8b4ef30039eb27a88396c572eee83892850c7031e866a6e4422cff1723f052923d831d20c4f80d463953e7ec7a714e5f3d89eb9ae44a26af88925537f3b09992f232ec297ee955d579d2979b22d72cd23ae1dcb6c607d08574282e2f2e8f4a0649bf56d41088bea9bc89f7c684474cbed3423c03644345064712a6993f868883d852c5c1a6a478ba49d5e24797996a81deb7b40f9c7b13dddb303607476df887b8e7e430c710750b980f7a69ddded0ada79ddf336c27a37d3887107354656fa71eee52b0aa1ed042f438b26c76e628724b36877359ab18e7f5ead536dca530e19b908c8c1fe7a264b5
     TransformParentChanges: []
   ParentPrefabGUID: 
   PrefabGUID: 17161f33def0be547a9a1cecf982898e
@@ -4425,6 +4731,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HOLDTIMEFORROTATION: 0.15
+--- !u!114 &11495498
+MonoBehaviour:
+  m_ObjectHideFlags: 33
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 124582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46a02d0f612a241b293c0da4f82b712c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Properties:
+    Properties: []
+    Groups: []
+    Hidden: 
+  Links:
+    Links: []
+  Modifications:
+    Modificated: []
+    NonPrefabObjects:
+    - child: {fileID: 413568}
+      parent: {fileID: 421968}
+    NonPrefabComponents: []
+    RemovedObjects: baf46e12998dbb4b0e6aceae80f446709291510ba7c9bc26a931ada51b9bf80df1ee3f0e6930d7e635ae962d69e59fdd480feb973caf4038514148f782182747945bedb011ec3cee3429247acbc9da5e0515c6b861879cc0cc146d5305e875e5bb01a25cabfa1aa3598cad842e14ef273e7489442c5a370335dd2c3d5c3176536d048c24b2ac6fa748387a0eac44e2d9a8e083baf61ef048bf9260da65e20596ffdfc755103b4f88ecfc71320b5140c7070ebae3dfd8780bd97ad316faf01e472abcc974c00426cb2e438496c725a472474b7c21acbacecc15439e855523a576af328196fb0a7f4439e8fbbad2bd0616f0c3bcfb9fefb8107739080553a6fef820183d9214f8b2c7959b75ef6256a0004cb35a1286fb0d260a6acaf95a96c8500ae175598576b61d184d80826437984a977a80ff49c378d67eb32ac39df8354e826f62c45031dfd581cbb7b70e87faed1eed680ffce2a06fe320ece82bd2ba5fa7c86caaa0efb2bd0a2937da2c06b57c352018e2abd36aa07dfa5f7d41cb5d520b5614d836f98d8b4ef30039eb27a88396c572eee83892850c7031e866a6e4422cff1723f052923d831d20c4f80d463953e7ec7a714e5f3d89eb9ae44a26af88925537f3b09992f232ec297ee955d579d2979b22d72cd23ae1dcb6c607d08574282e2f2e8f4a0649bf56d41088bea9bc89f7c684474cbed3423c03644345064712a6993f868883d852c5c1a6a478ba49d5e24797996a81deb7b40f9c7b13dddb303607476df887b8e7e430c710750b980f7a69ddded0ada79ddf336c27a37d3887107354656fa71eee52b0aa1ed042f438b26c76e628724b36877359ab18e7f5ead536dca530e19b908c8c1fe7a264b5
+    TransformParentChanges: []
+  ParentPrefabGUID: 
+  PrefabGUID: 17161f33def0be547a9a1cecf982898e
 --- !u!114 &11496316
 MonoBehaviour:
   m_ObjectHideFlags: 33
