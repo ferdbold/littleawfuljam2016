@@ -14,7 +14,8 @@ public class LevelManager : MonoBehaviour {
             currentState = GameState.moveMode;
             enemyTarget = GameObject.FindGameObjectWithTag("enemy-target");
             sloth = GameObject.FindGameObjectWithTag("SlothNinja");
-            OnStart_State(currentState);
+			_ragdollToggle = sloth.GetComponent<RagdollToggle>();
+			OnStart_State(currentState);
         }
         else {
             Destroy(this);
@@ -86,7 +87,7 @@ public class LevelManager : MonoBehaviour {
     private IEnumerator CheckDistanceToTarget() {
         bool notFound = true;
         while (notFound) {
-            if (Vector3.Distance(sloth.transform.position, enemyTarget.transform.position) <= DISTANCE_TO_TARGET_NEEDED) {
+            if (!_ragdollToggle.ragdolled && Vector3.Distance(sloth.transform.position, enemyTarget.transform.position) <= DISTANCE_TO_TARGET_NEEDED) {
                 notFound = false;
                 SwitchState(GameState.killMode);
             }
@@ -98,6 +99,7 @@ public class LevelManager : MonoBehaviour {
 
     public GameObject enemyTarget { get; private set; }
     public GameObject sloth { get; private set; }
+	private RagdollToggle _ragdollToggle;
 
     void KillMode_StartKilling() {
         enemyTarget.GetComponent<ModeEnabler>().enableScript();

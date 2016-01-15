@@ -5,13 +5,16 @@
 /// </summary>
 [RequireComponent(typeof(RagdollToggle))]
 public class Snapper : MonoBehaviour {
-	[Tooltip("The snapping ragdoll root bone")]
-	[SerializeField] private Transform _ragdollRoot;
+    [Tooltip("The snapping ragdoll root bone")]
+    [SerializeField] private Transform _ragdollRoot;
 
-	[SerializeField] private Rigidbody _leftHand;
-	[SerializeField] private Rigidbody _rightHand;
+    [SerializeField] private Rigidbody _leftHand;
+    [SerializeField] private Rigidbody _rightHand;
+
+    public bool IsGripped { get; private set; }
 
 	private RagdollToggle _ragdoller;
+
 
 	public void Awake() {
 		_ragdoller = GetComponent<RagdollToggle>();
@@ -24,8 +27,10 @@ public class Snapper : MonoBehaviour {
 	/// <param name="hand">Which hand to grip with, "left" or "right"</param>
 	public void Grip(Joint target, string hand) {
 		_ragdoller.ragdolled = true;
+        IsGripped = true;
 
-		if (hand == "left") {
+
+        if (hand == "left") {
 			target.connectedBody = this._leftHand;
 		} else {
 			target.connectedBody = this._rightHand;
@@ -38,7 +43,9 @@ public class Snapper : MonoBehaviour {
 	/// <param name="hand">Which hand to release, "left" or "right"</param>
 	public void Release() {
 		_ragdoller.ragdolled = false;
-	}
+        IsGripped = false;
+
+    }
 
 	public Rigidbody leftHand { get { return _leftHand; } }
 	public Rigidbody rightHand { get { return _rightHand; } }

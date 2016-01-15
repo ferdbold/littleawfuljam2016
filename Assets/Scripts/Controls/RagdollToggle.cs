@@ -7,6 +7,12 @@ using System.Collections;
 public class RagdollToggle : MonoBehaviour {
 
 	private bool _ragdolled = false;
+	private bool _chillIsHoldedDown = false;
+
+	//Cooldown
+	private float RAGDOLLCOOLDOWN = 2f;
+	private float _curRagdollCooldown = 0f;
+	private bool _ragdollOnCD = false;
 
 	[Tooltip("The animator to turn off during ragdoll mode")]
 	[SerializeField] private Animator _characterAnimator;
@@ -16,16 +22,31 @@ public class RagdollToggle : MonoBehaviour {
 
 	private BoxCollider _characterCollider;
 	private Rigidbody _characterRigidbody;
+    private Snapper _slothSnapper;
 
 	public void Awake() {
 		_characterCollider = GetComponent<BoxCollider>();
 		_characterRigidbody = GetComponent<Rigidbody>();
+        _slothSnapper = GetComponent<Snapper>();
 		ragdolled = false;
 	}
 
 	public void Update () {
-		if (Input.GetKeyDown(KeyCode.Space)) {
+		if (_curRagdollCooldown > 0) _curRagdollCooldown -= Time.deltaTime;
+		else if (_curRagdollCooldown <= 0) _ragdollOnCD = false;
+
+
+		if (Input.GetAxis("Chill") > 0 && !_slothSnapper.IsGripped && !_chillIsHoldedDown && !_ragdollOnCD) {
 			ragdolled = !ragdolled;
+			_chillIsHoldedDown = true;
+			if (!ragdolled)
+			{
+				_ragdollOnCD = true;
+				_curRagdollCooldown = RAGDOLLCOOLDOWN;
+			}
+		} 
+		if ((Input.GetAxis("Chill") <= 0)) {
+			_chillIsHoldedDown = false;
 		}
 	}
 
