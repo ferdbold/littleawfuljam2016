@@ -105,38 +105,22 @@ public class MiniGameController : MonoBehaviour {
         SticksInputs();
         ClawsInputs();
         PulseBlood();
+		AudioFeedback();
 
-        if (_isPiercingWithLeftArm || _isPiercingWithRightArm)
-        {
-			if (!_audio1.isPlaying && !_audio2.isPlaying)
-			{
-				if(Random.Range(0f, 1f) >= 0.5f)
-				{
-					_audio1.Play();
-					_audio1.pitch = Mathf.Clamp(_audio1.pitch + Random.Range(-0.1f, 0.1f), _initialPitch1 - maxPitchDifference, _initialPitch1 + maxPitchDifference);
-				}
-				else
-				{
-					_audio2.Play();
-					_audio2.pitch = Mathf.Clamp(_audio2.pitch + Random.Range(-0.1f, 0.1f), _initialPitch2 - maxPitchDifference, _initialPitch2 + maxPitchDifference);
-				}
-				
-
-			}
-        }
-        else
-        {
-            if (_audio1.isPlaying)
-                _audio1.Stop();
-			if (_audio2.isPlaying)
-				_audio2.Stop();
+		//Si la game est terminé
+		if (_miniGameOver)
+		{
+			LevelManager.instance.SwitchState(LevelManager.GameState.endLevelCutscene);
 		}
+
+
+
 	}
 
-    /// <summary>
-    /// On traite tous les inputs des sticks afin d'effectuer le déplacement des mains du paresseux
-    /// </summary>
-    private void SticksInputs()
+	/// <summary>
+	/// On traite tous les inputs des sticks afin d'effectuer le déplacement des mains du paresseux
+	/// </summary>
+	private void SticksInputs()
     {
 
 		var xRightArm = 0.0f;
@@ -411,6 +395,38 @@ public class MiniGameController : MonoBehaviour {
 
         }
     }
+
+	/// <summary>
+	/// Méthode qui effectue le feedback audio yo
+	/// </summary>
+	private void AudioFeedback()
+	{
+		if (_isPiercingWithLeftArm || _isPiercingWithRightArm)
+		{
+			if (!_audio1.isPlaying && !_audio2.isPlaying)
+			{
+				if (Random.Range(0f, 1f) >= 0.5f)
+				{
+					_audio1.Play();
+					_audio1.pitch = Mathf.Clamp(_audio1.pitch + Random.Range(-0.1f, 0.1f), _initialPitch1 - maxPitchDifference, _initialPitch1 + maxPitchDifference);
+				}
+				else
+				{
+					_audio2.Play();
+					_audio2.pitch = Mathf.Clamp(_audio2.pitch + Random.Range(-0.1f, 0.1f), _initialPitch2 - maxPitchDifference, _initialPitch2 + maxPitchDifference);
+				}
+
+
+			}
+		}
+		else
+		{
+			if (_audio1.isPlaying)
+				_audio1.Stop();
+			if (_audio2.isPlaying)
+				_audio2.Stop();
+		}
+	}
 
     public bool IsKillable()
     {

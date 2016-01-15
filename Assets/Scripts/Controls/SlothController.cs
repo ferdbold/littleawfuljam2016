@@ -92,6 +92,10 @@ public class SlothController : MonoBehaviour {
         _animator.SetBool("Kill", true); 
     }
 
+	public bool AreControlsEnabled() {
+		if (_controlsDisabled == true) return false;
+		else return true;
+	}
 
     /// <summary>
     /// Move Left Input was pressed
@@ -148,7 +152,6 @@ public class SlothController : MonoBehaviour {
         yield return null;
         for (float i = 0f; i < 1f; i += Time.deltaTime / PULLFORCETIME) {
 			if (_controlsDisabled || _ragdollToggle.ragdolled) break;
-			Debug.Log((_controlsDisabled || _ragdollToggle.ragdolled));
             _rigidBody.AddForce(force*Time.deltaTime, ForceMode.Acceleration);
             yield return null;
         }
