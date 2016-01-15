@@ -103,15 +103,19 @@ public class GameManager : MonoBehaviour {
 
     private string LevelName(int levelID) {
         switch (levelID) {
-            case 1: return "Level_1";
+            case 1: return "Blockin_lvl_1";
+			case 2: return "Blocking_lvl_2";
+			case 3: return "Blocking_LVL_3";
             default: return "";
         }
     }
 
     private int LevelID(string name) {
         switch (name) {
-            case "Level_1": return 1;
-            default: return 0;
+            case "Blockin_lvl_1": return 1;
+			case "Blocking_lvl_2": return 2;
+			case "Blocking_LVL_3": return 3;
+			default: return 0;
         }
     }
 
