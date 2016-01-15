@@ -13,7 +13,8 @@ public class GameManager : MonoBehaviour {
             instance = this;
             DontDestroyOnLoad(gameObject);
             currentPlayLevel = 0;
-            //OnStart_Level(currentLevel);
+			//OnStart_Level(currentLevel);
+			gameObject.AddComponent<EscapeScript>();
             if (songManager == null) songManager = GetComponentInChildren<SongManager>();
             if (currentLevel == GameLevel.playLevel) gameObject.AddComponent<LevelManager>();
             currentPlayLevel = LevelID(SceneManager.GetActiveScene().name);
@@ -29,6 +30,12 @@ public class GameManager : MonoBehaviour {
             instance = null;
         }
     }
+
+	void OnLevelWasLoaded() {
+		if (currentLevel == GameLevel.playLevel) {
+			gameObject.AddComponent<LevelManager>();
+		}
+	}
 
     #endregion
 
@@ -60,7 +67,6 @@ public class GameManager : MonoBehaviour {
                 break;
 
             case GameLevel.playLevel:
-                gameObject.AddComponent<LevelManager>();
                 if (!GoToNextPlayLevel()) {
                     currentPlayLevel = 0;
                     GoToNextPlayLevel();
