@@ -43,7 +43,6 @@ public class LevelManager : MonoBehaviour {
         Debug.Log("Current Level State: " + state);
         switch (state) {
             case GameState.moveMode:
-                GameManager.instance.songManager.PlaySong(SongManager.Song.MoveMode);
                 StartCoroutine(CheckDistanceToTarget());   
                 break;
 
