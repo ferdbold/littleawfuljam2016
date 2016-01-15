@@ -6,8 +6,7 @@ public class PlayerController : MonoBehaviour {
     private SlothController slothController;
 
     /// <summary>  Time for input to be hold to be considered "holding"  </summary>
-    [SerializeField]
-    private float HOLDTIMEFORROTATION = 0.15f;
+    private float HOLDTIMEFORROTATION = 0.25f;
 
     private float holdTimeLeft = 0;
     private float holdTimeRight = 0;
