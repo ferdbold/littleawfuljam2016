@@ -2,8 +2,16 @@
 using System.Collections;
 
 public class MiniGameController : MonoBehaviour {
-    //MiniGame terminé
-    private bool _miniGameOver = false;
+
+	//Audio stuff
+    private AudioSource _audio1;
+    private AudioSource _audio2;
+	private float _initialPitch1;
+	private float _initialPitch2;
+	public float maxPitchDifference = 0.15f;
+
+	//MiniGame terminé
+	private bool _miniGameOver = false;
 
     //Nombre de hits effectués par le paresseux
     private int _slothHits=0;
@@ -83,26 +91,52 @@ public class MiniGameController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         _minArmZ = rightArm.transform.localPosition.z;
+        AudioSource[] array = GetComponents<AudioSource>();
+        _audio1 = array[0];
+        _audio2 = array[1];
+		_initialPitch1 = array[0].pitch;
+		_initialPitch2 = array[1].pitch;
 	}
 	
+
+
 	// Update is called once per frame
 	void Update () {
         SticksInputs();
         ClawsInputs();
         PulseBlood();
-        if (_miniGameOver)
-        {
-            LevelManager.instance.SwitchState(LevelManager.GameState.endLevelCutscene);
-        }
+		AudioFeedback();
+
+		//Si la game est terminé
+		if (_miniGameOver)
+		{
+			LevelManager.instance.SwitchState(LevelManager.GameState.endLevelCutscene);
+		}
+
+
+
 	}
 
-    /// <summary>
-    /// On traite tous les inputs des sticks afin d'effectuer le déplacement des mains du paresseux
-    /// </summary>
-    private void SticksInputs()
+	/// <summary>
+	/// On traite tous les inputs des sticks afin d'effectuer le déplacement des mains du paresseux
+	/// </summary>
+	private void SticksInputs()
     {
-        //Taux de translation pour le bras droit à l'horizontal et à la vertical
-        var xRightArm = (_canMoveHorizontalRightArm) ? Input.GetAxis("LeftAnalogHorizontal") * armSpeed : 0.0f;
+
+		var xRightArm = 0.0f;
+
+		if (Mathf.Abs(Input.GetAxis("LeftAnalogHorizontal")) > Mathf.Abs(Input.GetAxis("LeftAnalogHorizontalController")))
+		{
+			xRightArm = (_canMoveHorizontalLeftArm) ? Input.GetAxis("LeftAnalogHorizontal") * armSpeed : 0.0f;
+		}
+		else
+		{
+			xRightArm = (_canMoveHorizontalLeftArm) ? Input.GetAxis("LeftAnalogHorizontalController") * armSpeed : 0.0f;
+		}
+
+
+		//Taux de translation pour le bras droit à l'horizontal et à la vertical
+		//var xRightArm = (_canMoveHorizontalRightArm) ? Input.GetAxis("LeftAnalogHorizontal") * armSpeed : 0.0f;
 
 
         //Si le bras droit est planté ou pressque
@@ -117,18 +151,35 @@ public class MiniGameController : MonoBehaviour {
         }
 
         var yRightArm = 0.0f;
-       
-        //Si le bras droit est planté
-        if (_canMoveVerticalRightArm)
-        {
-            yRightArm = -Input.GetAxis("LeftAnalogVertical") * armSpeed;
+
+		//Si le bras droit est planté
+		if (_canMoveVerticalRightArm)
+		{
+			if (Mathf.Abs(Input.GetAxis("LeftAnalogVertical")) > Mathf.Abs(Input.GetAxis("LeftAnalogVerticalController"))) {
+				yRightArm = -Input.GetAxis("LeftAnalogVertical") * armSpeed;
+			}
+			else
+			{
+				yRightArm = -Input.GetAxis("LeftAnalogVerticalController") * armSpeed;
+			}
         }
 
-        
-        //Taux de translation pour le bras gauche à l'horizontal et à la vertical
-        var xLeftArm = (_canMoveHorizontalLeftArm) ? Input.GetAxis("RightAnalogHorizontal") * armSpeed : 0.0f; 
 
-        var yLeftArm = 0.0f;
+		//Taux de translation pour le bras gauche à l'horizontal et à la vertical
+
+		var xLeftArm=0.0f;
+
+		if (Mathf.Abs(Input.GetAxis("RightAnalogHorizontalController")) > Mathf.Abs(Input.GetAxis("RightAnalogHorizontal")))
+		{
+			 xLeftArm = (_canMoveHorizontalLeftArm) ? Input.GetAxis("RightAnalogHorizontalController") * armSpeed : 0.0f;
+		}
+		else
+		{
+			 xLeftArm = (_canMoveHorizontalLeftArm) ?  Input.GetAxis("RightAnalogHorizontal") * armSpeed : 0.0f;
+		}
+		
+
+        
 
 
         //Si le bras gauche est planté ou pressque
@@ -142,11 +193,20 @@ public class MiniGameController : MonoBehaviour {
             _canMoveVerticalLeftArm = false;
         }
 
-        //Si le bras gauche est planté
-        if (_canMoveVerticalLeftArm)
+		var yLeftArm = 0.0f;
+
+		//Si le bras gauche est planté
+		if (_canMoveVerticalLeftArm)
         {
-            yLeftArm = -Input.GetAxis("RightAnalogVertical") * armSpeed;
-        }
+			if (Mathf.Abs(Input.GetAxis("RightAnalogVertical")) > Mathf.Abs(Input.GetAxis("RightAnalogVerticalController")))
+			{
+				yLeftArm = -Input.GetAxis("RightAnalogVertical") * armSpeed;
+			}
+			else
+			{
+				yLeftArm = -Input.GetAxis("RightAnalogVerticalController") * armSpeed;
+			}
+		}
 
         //On effectue la translation pour le right arm + on clamp sur un range
         rightArm.transform.localPosition = new Vector3(Mathf.Clamp(rightArm.transform.localPosition.x + xRightArm, minRightArmX, maxRightArmX),
@@ -157,7 +217,8 @@ public class MiniGameController : MonoBehaviour {
         leftArm.transform.localPosition = new Vector3(Mathf.Clamp(leftArm.transform.localPosition.x + xLeftArm, minLeftArmX, maxLeftArmX),
             Mathf.Clamp(leftArm.transform.localPosition.y + yLeftArm, minArmY, maxArmY),
             leftArm.transform.localPosition.z);
-    }
+		
+	}
 
     /// <summary>
     /// On call cette fonction dans update pour les inputs des gachettes avec les griffes du paresseux
@@ -173,9 +234,9 @@ public class MiniGameController : MonoBehaviour {
             if (pierceRightArm > 0.0f)
             {
                 _currentTimeRightArmEnter = Time.time - _startTimeRightArmEnter;
-                _canMoveVerticalRightArm = false;
+                _canMoveVerticalRightArm = false; 
 
-                if (rightArm.transform.localPosition.z >= maxArmZ) 
+				if (rightArm.transform.localPosition.z >= maxArmZ) 
                 {
                     _canMoveHorizontalRightArm = true;
                 }
@@ -273,6 +334,7 @@ public class MiniGameController : MonoBehaviour {
         //On retire la griffe gauche
         if (pierceLeftArm < 0.01 && leftArm.transform.localPosition.z != _minArmZ)
         {
+            
             //CONDITION DE VICTOIRE 
             if (leftArm.transform.localPosition.z == maxArmZ)
             {
@@ -292,10 +354,13 @@ public class MiniGameController : MonoBehaviour {
                 new Vector3(_lastPostLeftArm.x, _lastPostLeftArm.y, _minArmZ),
                 _currentTimeLeftArm / timeToExitWound);
             _doPulseBloodLeftArm = false;
+            _isPiercingWithLeftArm = false;
             _leftArmDamageDone = false;
 
-            
-        }
+			Debug.Log("Check ici");
+
+
+		}
 
         //On perce avec la griffe gauche
         else if (pierceLeftArm > 0)
@@ -330,6 +395,38 @@ public class MiniGameController : MonoBehaviour {
 
         }
     }
+
+	/// <summary>
+	/// Méthode qui effectue le feedback audio yo
+	/// </summary>
+	private void AudioFeedback()
+	{
+		if (_isPiercingWithLeftArm || _isPiercingWithRightArm)
+		{
+			if (!_audio1.isPlaying && !_audio2.isPlaying)
+			{
+				if (Random.Range(0f, 1f) >= 0.5f)
+				{
+					_audio1.Play();
+					_audio1.pitch = Mathf.Clamp(_audio1.pitch + Random.Range(-0.1f, 0.1f), _initialPitch1 - maxPitchDifference, _initialPitch1 + maxPitchDifference);
+				}
+				else
+				{
+					_audio2.Play();
+					_audio2.pitch = Mathf.Clamp(_audio2.pitch + Random.Range(-0.1f, 0.1f), _initialPitch2 - maxPitchDifference, _initialPitch2 + maxPitchDifference);
+				}
+
+
+			}
+		}
+		else
+		{
+			if (_audio1.isPlaying)
+				_audio1.Stop();
+			if (_audio2.isPlaying)
+				_audio2.Stop();
+		}
+	}
 
     public bool IsKillable()
     {

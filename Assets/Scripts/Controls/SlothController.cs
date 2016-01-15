@@ -25,6 +25,7 @@ public class SlothController : MonoBehaviour {
     public SphereCollider leftHandCollider;
     private Rigidbody _rigidBody;
     private Animator _animator;
+	private RagdollToggle _ragdollToggle;
 
     [Header("Animations")]
     public AnimationClip ExtendArmClip;
@@ -45,8 +46,9 @@ public class SlothController : MonoBehaviour {
         //Get components
         _rigidBody = GetComponent<Rigidbody>();
         _animator = gameObject.GetComponentInChildren<Animator>();
-        //Set default values
-        gameObject.tag = "SlothNinja";
+		_ragdollToggle = GetComponent<RagdollToggle>();
+		//Set default values
+		gameObject.tag = "SlothNinja";
         ANIMTIMEBEFOREMOVE = ExtendArmClip.length;
     }
 
@@ -57,7 +59,7 @@ public class SlothController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (_controlsDisabled) return;
+        if (_controlsDisabled || _ragdollToggle.ragdolled) return;
         //Rotate Left
         if (_isRotatingLeft && _canMoveLeft) {
             _animator.SetBool("TurnLeft", true); //Set Animation value
@@ -90,29 +92,16 @@ public class SlothController : MonoBehaviour {
         _animator.SetBool("Kill", true); 
     }
 
-    /// <summary>
-    /// Check controls
-    /// </summary>
-    private void CheckControls() {
-        //Left
-        if (Input.GetKeyDown(KeyCode.A) && _canMoveLeft) {
-            StartCoroutine(StartCooldownMoveLeft());
-            StartCoroutine(MoveSloth(false,0f));
-        } else if(Input.GetKeyUp(KeyCode.A)) {
-        }
-        //Right
-        if (Input.GetKeyDown(KeyCode.D) && _canMoveRight) {
-            StartCoroutine(StartCooldownMoveRight());
-            StartCoroutine(MoveSloth(true,0f));
-        } else if (Input.GetKeyUp(KeyCode.D)) {
-        }
-    }
+	public bool AreControlsEnabled() {
+		if (_controlsDisabled == true) return false;
+		else return true;
+	}
 
     /// <summary>
     /// Move Left Input was pressed
     /// </summary>
     public void MoveLeft(float holdTime) {
-        if (_controlsDisabled) return;
+        if (_controlsDisabled || _ragdollToggle.ragdolled) return;
         if (_canMoveLeft) {
             StartCoroutine(StartCooldownMoveLeft());
             StartCoroutine(MoveSloth(false, holdTime));
@@ -123,7 +112,7 @@ public class SlothController : MonoBehaviour {
     /// Move Right Input was pressed
     /// </summary>
     public void MoveRight(float holdTime) {
-        if (_controlsDisabled) return;
+        if (_controlsDisabled || _ragdollToggle.ragdolled) return;
         if (_canMoveRight) {
             StartCoroutine(StartCooldownMoveRight());
             StartCoroutine(MoveSloth(true, holdTime));
@@ -162,6 +151,7 @@ public class SlothController : MonoBehaviour {
     IEnumerator PushSloth(Vector3 force) {
         yield return null;
         for (float i = 0f; i < 1f; i += Time.deltaTime / PULLFORCETIME) {
+			if (_controlsDisabled || _ragdollToggle.ragdolled) break;
             _rigidBody.AddForce(force*Time.deltaTime, ForceMode.Acceleration);
             yield return null;
         }
