@@ -31,6 +31,7 @@ public class Rope : Interactable {
 	public new void Update() {
 		base.Update();
 
+
 		// Listen for inputs
 		if (Input.GetButtonDown("GripLeft") && _focused) {
 			Grip("left");
@@ -59,6 +60,8 @@ public class Rope : Interactable {
 	/// </summary>
 	/// <param name="button">"left" or "right"</param>
 	public void Grip(string button) {
+		_cursor.transform.localPosition = new Vector3(CalculateCursorStartingPosition(), 0, 0);
+
 		_activated = true;
 		_prompt = _releasePrompt;
 
@@ -79,5 +82,33 @@ public class Rope : Interactable {
 		_grippingButton = string.Empty;
 
 		_cursor.transform.localPosition = Vector3.zero;
+	}
+		
+	/// <summary>
+	/// Calculates the cursor starting position upon a grip to be closest to the sloth
+	/// </summary>
+	/// <returns>The cursor starting X position, ranging from 0 to 1</returns>
+	private float CalculateCursorStartingPosition() {
+		Vector3 slothPos = _slothSnapper.transform.position;
+		Vector3 worldPathStartPos = _path.transform.position;
+		Vector3 worldPathEndPos = worldPathStartPos + Quaternion.Euler(_path.transform.rotation.eulerAngles) * new Vector3(_path.transform.localScale.x, 0, 0);
+		Vector3 localPathEndPos = worldPathEndPos - worldPathStartPos;
+
+		// Exit early if the sloth is out of bounds
+		if (slothPos.x < worldPathStartPos.x) {
+			return 0;
+		} else if (slothPos.x > worldPathEndPos.x) {
+			return 1;
+		}
+
+		// Find closest intersection point
+		Ray worldPath = new Ray(worldPathStartPos, worldPathEndPos - worldPathStartPos);
+		Vector3 worldIntersection = worldPath.origin + worldPath.direction * Vector3.Dot(worldPath.direction, slothPos - worldPath.origin);
+		Vector3 localIntersection = worldIntersection - worldPathStartPos;
+
+		Debug.DrawLine(slothPos, worldIntersection, Color.white, 1.0f);
+
+		// Calculate cursor offset X
+		return localIntersection.x / localPathEndPos.x;
 	}
 }
