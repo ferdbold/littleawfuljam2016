@@ -35,11 +35,11 @@ public class GameManager : MonoBehaviour {
 
     public SongManager songManager { get; private set; }
 
-    #endregion
+	#endregion
 
-    #region Switch Level
+	#region Switch Level
 
-    public enum GameLevel { menu, playLevel }
+	public enum GameLevel { menu, playLevel }
     public GameLevel currentLevel;
     public int currentPlayLevel { get; private set; }
 
@@ -118,6 +118,14 @@ public class GameManager : MonoBehaviour {
 			default: return 0;
         }
     }
+
+	public void Play() {
+		SwitchLevel(GameLevel.playLevel);
+	}
+
+	public void Quit() {
+		Application.Quit();
+	}
 
     #endregion
 }
