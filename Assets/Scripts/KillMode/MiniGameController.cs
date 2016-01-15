@@ -230,12 +230,8 @@ public class MiniGameController : MonoBehaviour {
             rightArm.transform.localPosition = Vector3.Lerp(_lastPosRightArm,
                 new Vector3(_lastPosRightArm.x, _lastPosRightArm.y, _minArmZ),
                 _currentTimeRightArm/timeToExitWound);
-            if (rightArm.transform.localPosition.z <= _minArmZ+0.1f && _isPiercingWithRightArm)
-            {
-                //_slothHits++;//On incrémente de 1 le nombre d'hits du paresseux
-                _isPiercingWithRightArm = false;
-                _rightArmDamageDone = false;
-            }
+            _isPiercingWithRightArm = false;
+            _rightArmDamageDone = false;
         }
         //On perce avec la griffe droite 
         else if(pierceRightArm>0)
@@ -272,10 +268,22 @@ public class MiniGameController : MonoBehaviour {
 
         }
 
+        
 
         //On retire la griffe gauche
         if (pierceLeftArm < 0.01 && leftArm.transform.localPosition.z != _minArmZ)
         {
+            //CONDITION DE VICTOIRE 
+            if (leftArm.transform.localPosition.z == maxArmZ)
+            {
+                if ((leftArm.GetComponent<ClawCut>().GetClawPosition() == (ClawCut.ClawStatus.LowerUpRight)
+                    || leftArm.GetComponent<ClawCut>().GetClawPosition() == ClawCut.ClawStatus.UpperUpRight)
+                    && _slothHits > targetHealth)
+                {
+                    _miniGameOver = true;
+                }
+            }
+
             _currentTimeLeftArm = Time.time - _startTimeLeftArm;
 
             
@@ -284,18 +292,11 @@ public class MiniGameController : MonoBehaviour {
                 new Vector3(_lastPostLeftArm.x, _lastPostLeftArm.y, _minArmZ),
                 _currentTimeLeftArm / timeToExitWound);
             _doPulseBloodLeftArm = false;
-            if (leftArm.transform.localPosition.z <= _minArmZ+0.1f && _isPiercingWithLeftArm)
-            {
-                _isPiercingWithLeftArm = false;
-                Debug.Log(leftArm.GetComponent<ClawCut>().GetClawPosition() + "    " + _slothHits);
-                _leftArmDamageDone = false;
-                //_slothHits++;//On incrémente de 1 le nombre d'hits du paresseux
-                if (leftArm.GetComponent<ClawCut>().GetClawPosition() == ClawCut.ClawStatus.LowerUpRight && _slothHits>=targetHealth)
-                {
-                    _miniGameOver = true;
-                }
-            }
+            _leftArmDamageDone = false;
+
+            
         }
+
         //On perce avec la griffe gauche
         else if (pierceLeftArm > 0)
         {
