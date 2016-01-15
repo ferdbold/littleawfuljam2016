@@ -4793,7 +4793,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b0a5fbfaa0a2d94aa66378140120ce7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HOLDTIMEFORROTATION: 0.15
 --- !u!114 &11495498
 MonoBehaviour:
   m_ObjectHideFlags: 33
@@ -5683,7 +5682,11 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4b7506a159135d340abf23203168e455, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 104174}

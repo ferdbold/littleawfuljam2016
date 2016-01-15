@@ -2527,6 +2527,8 @@ MonoBehaviour:
   Modifications:
     Modificated: []
     NonPrefabObjects:
+    - child: {fileID: 421848}
+      parent: {fileID: 462614}
     - child: {fileID: 438560}
       parent: {fileID: 421848}
     - child: {fileID: 477654}
@@ -2645,8 +2647,6 @@ MonoBehaviour:
       parent: {fileID: 487136}
     - child: {fileID: 483848}
       parent: {fileID: 403366}
-    - child: {fileID: 421848}
-      parent: {fileID: 462614}
     NonPrefabComponents: []
     RemovedObjects: 8fad988e35477c5714d6840dd12aa0bdcf1d7279b2237b17f0cc70b1420f3e067a68da2023a3300ed965590ec64723c792f2f0cabe40aa700846af1f943ed26993eaf8ba7771aa5b3c540b596da799ebe452d4fa864eb6883ab35401c1c001fa3190b4f7d6676b8dc260aeeeb6c7a13f8b533c9c37b4578a25717230fa75b5c46c4ad42bc22228882871310a425876780d8851c0fc1e548cd42e87b96a928fd8c2049655b656c673c25e3f8077189567670c1b3e546c5fd991e0e57f3dbe7b26018c3ee42bb0f25868e1703d20071cb8ae885417e92d8f406c2fa8e094c74f4f58f5cf3fae82f156d8e0d49d0d91253f372f28079b92ea34b0537da8389a3f5ca3d8899e14e6502a1d7f5202f64af78ca862be31949730c3d6787f4c222b73c86037d7552cafd9814aa3b985cc9b32137c68c16d08a703a140995ea17df22343fe7cc5d075a8513048d2fa64a9b0a4222d694702fa768c210c8310fee7814033c99ded0d938a39ecfd5ffca4b09e0b53837985a0e6aa1efaf6d7a8921c69efd712ff64945c9ed26af080ebfeaaa44451ff5d3073b2e66533b83f2913ebfe303f015ef3bcc83af3b246bb45325f1f9a748ffbe113762e15503a1f5dc80ec95c6ba83cb16c0aa461e16956744239bcc1912bd7f1989454dac9d412ebc4b2e20b7fc85727d57237c95e54f1fcb486ab197cf50828bb93084944651eb13f117bd055ecb5c4a529400f56c202d95c1ed7f8d1297c60da16db7cdaaf0a7aa1
     TransformParentChanges: []
@@ -4448,6 +4448,10 @@ Prefab:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4b7506a159135d340abf23203168e455, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 185948}
