@@ -75,6 +75,9 @@ public class MiniGameController : MonoBehaviour {
     private bool _canMoveHorizontalRightArm = true;
     private bool _canMoveHorizontalLeftArm = true;
 
+    private bool _leftArmDamageDone = false;
+    private bool _rightArmDamageDone = false;
+
 
 
 	// Use this for initialization
@@ -103,7 +106,7 @@ public class MiniGameController : MonoBehaviour {
 
 
         //Si le bras droit est planté ou pressque
-        if (rightArm.transform.localPosition.z <= _minArmZ + 0.1)
+        if (rightArm.transform.localPosition.z <= _minArmZ)
         {
             _canMoveVerticalRightArm = true;
         }
@@ -129,7 +132,7 @@ public class MiniGameController : MonoBehaviour {
 
 
         //Si le bras gauche est planté ou pressque
-        if (leftArm.transform.localPosition.z <= _minArmZ + 0.1)
+        if (leftArm.transform.localPosition.z <= _minArmZ)
         {
             _canMoveVerticalLeftArm = true;
         }
@@ -172,7 +175,7 @@ public class MiniGameController : MonoBehaviour {
                 _currentTimeRightArmEnter = Time.time - _startTimeRightArmEnter;
                 _canMoveVerticalRightArm = false;
 
-                if (rightArm.transform.localPosition.z >= maxArmZ - 0.2) 
+                if (rightArm.transform.localPosition.z >= maxArmZ) 
                 {
                     _canMoveHorizontalRightArm = true;
                 }
@@ -199,7 +202,7 @@ public class MiniGameController : MonoBehaviour {
                 _currentTimeLeftArmEnter = Time.time - _startTimeLeftArmEnter;
                 _canMoveVerticalLeftArm = false;
 
-                if (leftArm.transform.localPosition.z >= maxArmZ - 0.2) //Si la main est presque rendu au bout de la distance, alors on peut bouger à l'horizontal
+                if (leftArm.transform.localPosition.z >= maxArmZ) //Si la main est presque rendu au bout de la distance, alors on peut bouger à l'horizontal
                 {
                     _canMoveHorizontalLeftArm = true;
                 }
@@ -227,10 +230,11 @@ public class MiniGameController : MonoBehaviour {
             rightArm.transform.localPosition = Vector3.Lerp(_lastPosRightArm,
                 new Vector3(_lastPosRightArm.x, _lastPosRightArm.y, _minArmZ),
                 _currentTimeRightArm/timeToExitWound);
-            if (rightArm.transform.localPosition.z <= _minArmZ && _isPiercingWithRightArm)
+            if (rightArm.transform.localPosition.z <= _minArmZ+0.1f && _isPiercingWithRightArm)
             {
-                _slothHits++;//On incrémente de 1 le nombre d'hits du paresseux
+                //_slothHits++;//On incrémente de 1 le nombre d'hits du paresseux
                 _isPiercingWithRightArm = false;
+                _rightArmDamageDone = false;
             }
         }
         //On perce avec la griffe droite 
@@ -249,6 +253,13 @@ public class MiniGameController : MonoBehaviour {
             }
             else
             {
+
+                if (!_rightArmDamageDone)
+                {
+                    _rightArmDamageDone = true;
+                    _slothHits++;
+                }
+
                 //On griffe et ca fait saigner le bras gauche!
                 _doPulseBloodRightArm = true;
                 rightArm.transform.localPosition = new Vector3(rightArm.transform.localPosition.x,
@@ -273,11 +284,12 @@ public class MiniGameController : MonoBehaviour {
                 new Vector3(_lastPostLeftArm.x, _lastPostLeftArm.y, _minArmZ),
                 _currentTimeLeftArm / timeToExitWound);
             _doPulseBloodLeftArm = false;
-            if (leftArm.transform.localPosition.z <= _minArmZ && _isPiercingWithLeftArm)
+            if (leftArm.transform.localPosition.z <= _minArmZ+0.1f && _isPiercingWithLeftArm)
             {
                 _isPiercingWithLeftArm = false;
                 Debug.Log(leftArm.GetComponent<ClawCut>().GetClawPosition() + "    " + _slothHits);
-                _slothHits++;//On incrémente de 1 le nombre d'hits du paresseux
+                _leftArmDamageDone = false;
+                //_slothHits++;//On incrémente de 1 le nombre d'hits du paresseux
                 if (leftArm.GetComponent<ClawCut>().GetClawPosition() == ClawCut.ClawStatus.LowerUpRight && _slothHits>=targetHealth)
                 {
                     _miniGameOver = true;
@@ -295,11 +307,17 @@ public class MiniGameController : MonoBehaviour {
                 leftArm.transform.localPosition = Vector3.Lerp(_lastPostLeftArmEnter,
                 new Vector3(minLeftArmX, _lastPostLeftArmEnter.y, maxArmZ),
                 _currentTimeLeftArmEnter / timeToEnter);
+
             }
 
             else
             {
                 //On griffe et ca fait saigner le bras gauche!
+                if (!_leftArmDamageDone)
+                {
+                    _leftArmDamageDone = true;
+                    _slothHits++;
+                }
                 _doPulseBloodLeftArm = true;
                 leftArm.transform.localPosition = new Vector3(leftArm.transform.localPosition.x,
                 leftArm.transform.localPosition.y,
