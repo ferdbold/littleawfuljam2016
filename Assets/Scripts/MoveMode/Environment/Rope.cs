@@ -106,8 +106,6 @@ public class Rope : Interactable {
 		Vector3 worldIntersection = worldPath.origin + worldPath.direction * Vector3.Dot(worldPath.direction, slothPos - worldPath.origin);
 		Vector3 localIntersection = worldIntersection - worldPathStartPos;
 
-		Debug.DrawLine(slothPos, worldIntersection, Color.white, 1.0f);
-
 		// Calculate cursor offset X
 		return localIntersection.x / localPathEndPos.x;
 	}
