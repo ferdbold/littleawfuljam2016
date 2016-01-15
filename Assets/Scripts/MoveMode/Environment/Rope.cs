@@ -60,6 +60,7 @@ public class Rope : Interactable {
 	/// </summary>
 	/// <param name="button">"left" or "right"</param>
 	public void Grip(string button) {
+		Debug.Log("Grip");
 		_cursor.transform.localPosition = new Vector3(CalculateCursorStartingPosition(), 0, 0);
 
 		_activated = true;
@@ -96,9 +97,9 @@ public class Rope : Interactable {
 
 		// Exit early if the sloth is out of bounds
 		if (slothPos.x < worldPathStartPos.x) {
-			return 0;
+			//return 0;
 		} else if (slothPos.x > worldPathEndPos.x) {
-			return 1;
+		//	return 1;
 		}
 
 		// Find closest intersection point
@@ -107,6 +108,7 @@ public class Rope : Interactable {
 		Vector3 localIntersection = worldIntersection - worldPathStartPos;
 
 		// Calculate cursor offset X
+		Debug.Log(localIntersection.x / localPathEndPos.x);
 		return localIntersection.x / localPathEndPos.x;
 	}
 }
