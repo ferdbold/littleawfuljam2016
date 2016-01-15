@@ -24,7 +24,6 @@ public class IKSlothController : MonoBehaviour {
 
             //if the IK is active, set the position and rotation directly to the goal. 
             if (ikActive) {
-                Debug.Log("IK STUFF NOW !");
 
                 // Set the look target position, if one has been assigned
                 if (rightHandObj != null) {
