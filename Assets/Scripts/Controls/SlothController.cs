@@ -162,7 +162,7 @@ public class SlothController : MonoBehaviour {
     IEnumerator PushSloth(Vector3 force) {
         yield return null;
         for (float i = 0f; i < 1f; i += Time.deltaTime / PULLFORCETIME) {
-            _rigidBody.AddForce(force, ForceMode.Acceleration);
+            _rigidBody.AddForce(force*Time.deltaTime, ForceMode.Acceleration);
             yield return null;
         }
         //_rigidBody.AddRelativeForce(force, ForceMode.Impulse);
