@@ -10,7 +10,7 @@ public class RagdollToggle : MonoBehaviour {
 	private bool _chillIsHoldedDown = false;
 
 	//Cooldown
-	private float RAGDOLLCOOLDOWN = 2f;
+	private float RAGDOLLCOOLDOWN = 1f;
 	private float _curRagdollCooldown = 0f;
 	private bool _ragdollOnCD = false;
 
@@ -23,11 +23,13 @@ public class RagdollToggle : MonoBehaviour {
 	private BoxCollider _characterCollider;
 	private Rigidbody _characterRigidbody;
     private Snapper _slothSnapper;
+	private SlothController _slothController;
 
 	public void Awake() {
 		_characterCollider = GetComponent<BoxCollider>();
 		_characterRigidbody = GetComponent<Rigidbody>();
         _slothSnapper = GetComponent<Snapper>();
+		_slothController = GetComponent<SlothController>();
 		ragdolled = false;
 	}
 
@@ -36,7 +38,7 @@ public class RagdollToggle : MonoBehaviour {
 		else if (_curRagdollCooldown <= 0) _ragdollOnCD = false;
 
 
-		if (Input.GetAxis("Chill") > 0 && !_slothSnapper.IsGripped && !_chillIsHoldedDown && !_ragdollOnCD) {
+		if (Input.GetAxis("Chill") > 0 && !_slothSnapper.IsGripped && !_chillIsHoldedDown && !_ragdollOnCD && _slothController.AreControlsEnabled()) {
 			ragdolled = !ragdolled;
 			_chillIsHoldedDown = true;
 			if (!ragdolled)
