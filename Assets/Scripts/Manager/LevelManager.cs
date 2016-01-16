@@ -10,10 +10,11 @@ public class LevelManager : MonoBehaviour {
 
     void Start() {
         if (instance == null) {
-            instance = this;
-            currentState = GameState.moveMode;
+			sloth = GameObject.FindGameObjectWithTag("SlothNinja");
+			instance = this;
+			currentState = GameState.moveMode;
             enemyTarget = GameObject.FindGameObjectWithTag("enemy-target");
-            sloth = GameObject.FindGameObjectWithTag("SlothNinja");
+			Debug.Log(sloth == null);		
 			_ragdollToggle = sloth.GetComponent<RagdollToggle>();
 			OnStart_State(currentState);
         }
@@ -43,7 +44,6 @@ public class LevelManager : MonoBehaviour {
         Debug.Log("Current Level State: " + state);
         switch (state) {
             case GameState.moveMode:
-                GameManager.instance.songManager.PlaySong(SongManager.Song.MoveMode);
                 StartCoroutine(CheckDistanceToTarget());   
                 break;
 

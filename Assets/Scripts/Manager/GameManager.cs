@@ -13,10 +13,12 @@ public class GameManager : MonoBehaviour {
             instance = this;
             DontDestroyOnLoad(gameObject);
             currentPlayLevel = 0;
-            //OnStart_Level(currentLevel);
+			//OnStart_Level(currentLevel);
+			gameObject.AddComponent<EscapeScript>();
             if (songManager == null) songManager = GetComponentInChildren<SongManager>();
             if (currentLevel == GameLevel.playLevel) gameObject.AddComponent<LevelManager>();
             currentPlayLevel = LevelID(SceneManager.GetActiveScene().name);
+			songManager.PlaySong(SongManager.Song.MoveMode);
         }
         else {
             Destroy(gameObject);
@@ -29,17 +31,23 @@ public class GameManager : MonoBehaviour {
         }
     }
 
+	void OnLevelWasLoaded() {
+		if (currentLevel == GameLevel.playLevel) {
+			gameObject.AddComponent<LevelManager>();
+		}
+	}
+
     #endregion
 
     #region Reference
 
     public SongManager songManager { get; private set; }
 
-    #endregion
+	#endregion
 
-    #region Switch Level
+	#region Switch Level
 
-    public enum GameLevel { menu, playLevel }
+	public enum GameLevel { menu, playLevel }
     public GameLevel currentLevel;
     public int currentPlayLevel { get; private set; }
 
@@ -59,7 +67,6 @@ public class GameManager : MonoBehaviour {
                 break;
 
             case GameLevel.playLevel:
-                gameObject.AddComponent<LevelManager>();
                 if (!GoToNextPlayLevel()) {
                     currentPlayLevel = 0;
                     GoToNextPlayLevel();
@@ -118,6 +125,14 @@ public class GameManager : MonoBehaviour {
 			default: return 0;
         }
     }
+
+	public void Play() {
+		SwitchLevel(GameLevel.playLevel);
+	}
+
+	public void Quit() {
+		Application.Quit();
+	}
 
     #endregion
 }
