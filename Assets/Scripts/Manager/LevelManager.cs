@@ -13,8 +13,7 @@ public class LevelManager : MonoBehaviour {
 			sloth = GameObject.FindGameObjectWithTag("SlothNinja");
 			instance = this;
 			currentState = GameState.moveMode;
-            enemyTarget = GameObject.FindGameObjectWithTag("enemy-target");
-			Debug.Log(sloth == null);		
+            enemyTarget = GameObject.FindGameObjectWithTag("enemy-target");		
 			_ragdollToggle = sloth.GetComponent<RagdollToggle>();
 			OnStart_State(currentState);
         }
