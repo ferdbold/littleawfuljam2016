@@ -997,6 +997,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &153238
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 428384}
+  m_Layer: 8
+  m_Name: EnemyAnchor
+  m_TagString: EnemyTargetAnchor
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &154588
 GameObject:
   m_ObjectHideFlags: 1
@@ -2386,6 +2401,18 @@ Transform:
   - {fileID: 420598}
   m_Father: {fileID: 448626}
   m_RootOrder: 1
+--- !u!4 &428384
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 153238}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.11199992, y: -0.44099998, z: -0.5240001}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 451426}
+  m_RootOrder: 0
 --- !u!4 &430082
 Transform:
   m_ObjectHideFlags: 1
@@ -2739,10 +2766,11 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 117658}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.19174683, y: 0.6048336, z: 3}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071067}
+  m_LocalPosition: {x: -5.748, y: -0.827, z: 2.127}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 428384}
   - {fileID: 488888}
   - {fileID: 472074}
   m_Father: {fileID: 0}
@@ -3022,7 +3050,7 @@ Transform:
   - {fileID: 475410}
   - {fileID: 404992}
   m_Father: {fileID: 451426}
-  m_RootOrder: 1
+  m_RootOrder: 2
 --- !u!4 &472912
 Transform:
   m_ObjectHideFlags: 1
@@ -3240,7 +3268,7 @@ Transform:
   - {fileID: 408126}
   - {fileID: 22461132}
   m_Father: {fileID: 451426}
-  m_RootOrder: 0
+  m_RootOrder: 1
 --- !u!4 &489242
 Transform:
   m_ObjectHideFlags: 1
@@ -4655,14 +4683,10 @@ MonoBehaviour:
       InstanceTarget: {fileID: 118888}
     - LIIF: -840800747
       InstanceTarget: {fileID: 168004}
-    - LIIF: -1705748958
-      InstanceTarget: {fileID: 0}
     - LIIF: 882701166
       InstanceTarget: {fileID: 123812}
     - LIIF: -2000661601
       InstanceTarget: {fileID: 11450666}
-    - LIIF: -1914187157
-      InstanceTarget: {fileID: 0}
     - LIIF: -831536724
       InstanceTarget: {fileID: 402640}
     - LIIF: -1258764663
@@ -4681,16 +4705,8 @@ MonoBehaviour:
       InstanceTarget: {fileID: 463494}
     - LIIF: 114984772
       InstanceTarget: {fileID: 443438}
-    - LIIF: -1872791311
-      InstanceTarget: {fileID: 0}
     - LIIF: 1123316587
       InstanceTarget: {fileID: 408126}
-    - LIIF: -1581436891
-      InstanceTarget: {fileID: 0}
-    - LIIF: -428877372
-      InstanceTarget: {fileID: 0}
-    - LIIF: 1977919568
-      InstanceTarget: {fileID: 0}
     - LIIF: -1238442313
       InstanceTarget: {fileID: 11455948}
     - LIIF: 2065277302
@@ -4699,16 +4715,6 @@ MonoBehaviour:
       InstanceTarget: {fileID: 6580750}
     - LIIF: 694890208
       InstanceTarget: {fileID: 6555190}
-    - LIIF: -1281193119
-      InstanceTarget: {fileID: 0}
-    - LIIF: -1116441311
-      InstanceTarget: {fileID: 0}
-    - LIIF: -1913643556
-      InstanceTarget: {fileID: 0}
-    - LIIF: -26208440
-      InstanceTarget: {fileID: 0}
-    - LIIF: 1896743433
-      InstanceTarget: {fileID: 0}
     - LIIF: -2008962641
       InstanceTarget: {fileID: 3303968}
     - LIIF: -1617368049
@@ -4717,16 +4723,6 @@ MonoBehaviour:
       InstanceTarget: {fileID: 11401832}
     - LIIF: -456565419
       InstanceTarget: {fileID: 5429304}
-    - LIIF: -537279125
-      InstanceTarget: {fileID: 0}
-    - LIIF: 1340708752
-      InstanceTarget: {fileID: 0}
-    - LIIF: -1008218949
-      InstanceTarget: {fileID: 0}
-    - LIIF: -883545285
-      InstanceTarget: {fileID: 0}
-    - LIIF: 45088849
-      InstanceTarget: {fileID: 0}
     - LIIF: -1501934529
       InstanceTarget: {fileID: 6512018}
     - LIIF: 1871148488
@@ -4741,28 +4737,10 @@ MonoBehaviour:
       InstanceTarget: {fileID: 11455144}
     - LIIF: -1539009241
       InstanceTarget: {fileID: 5453560}
-    - LIIF: -1255902437
-      InstanceTarget: {fileID: 0}
-    - LIIF: -371883318
-      InstanceTarget: {fileID: 0}
-    - LIIF: 1523832871
-      InstanceTarget: {fileID: 0}
     - LIIF: -21171974
       InstanceTarget: {fileID: 6523446}
     - LIIF: -238442453
       InstanceTarget: {fileID: 6545054}
-    - LIIF: 2067310422
-      InstanceTarget: {fileID: 0}
-    - LIIF: -560593762
-      InstanceTarget: {fileID: 0}
-    - LIIF: 754968739
-      InstanceTarget: {fileID: 0}
-    - LIIF: -62220375
-      InstanceTarget: {fileID: 0}
-    - LIIF: -1127750083
-      InstanceTarget: {fileID: 0}
-    - LIIF: 1640285544
-      InstanceTarget: {fileID: 0}
     - LIIF: -1609619730
       InstanceTarget: {fileID: 195018}
     - LIIF: 691918756
@@ -5121,8 +5099,248 @@ MonoBehaviour:
       InstanceTarget: {fileID: 8263706}
     - LIIF: 1708379919
       InstanceTarget: {fileID: 8214280}
+    - LIIF: -560745831
+      InstanceTarget: {fileID: 19978310}
+    - LIIF: 312014955
+      InstanceTarget: {fileID: 19936388}
+    - LIIF: -1889088597
+      InstanceTarget: {fileID: 19930844}
+    - LIIF: -1761581044
+      InstanceTarget: {fileID: 19918296}
+    - LIIF: -800450904
+      InstanceTarget: {fileID: 19909466}
+    - LIIF: 651239799
+      InstanceTarget: {fileID: 19908824}
+    - LIIF: 381580939
+      InstanceTarget: {fileID: 19894382}
+    - LIIF: 366461641
+      InstanceTarget: {fileID: 19888416}
+    - LIIF: 1958976665
+      InstanceTarget: {fileID: 19879078}
+    - LIIF: 445839727
+      InstanceTarget: {fileID: 19860110}
+    - LIIF: -904078951
+      InstanceTarget: {fileID: 19845908}
+    - LIIF: 1801858855
+      InstanceTarget: {fileID: 19830310}
+    - LIIF: 2141159611
+      InstanceTarget: {fileID: 499826}
+    - LIIF: -209642340
+      InstanceTarget: {fileID: 491468}
+    - LIIF: -253767758
+      InstanceTarget: {fileID: 482950}
+    - LIIF: 1548493488
+      InstanceTarget: {fileID: 474068}
+    - LIIF: -832374151
+      InstanceTarget: {fileID: 451084}
+    - LIIF: -1060975455
+      InstanceTarget: {fileID: 440900}
+    - LIIF: -571905352
+      InstanceTarget: {fileID: 418892}
+    - LIIF: 1042912646
+      InstanceTarget: {fileID: 401906}
+    - LIIF: 330446234
+      InstanceTarget: {fileID: 174620}
+    - LIIF: -1780424734
+      InstanceTarget: {fileID: 161532}
+    - LIIF: -1848684535
+      InstanceTarget: {fileID: 144586}
+    - LIIF: -319490368
+      InstanceTarget: {fileID: 144154}
+    - LIIF: -1624730399
+      InstanceTarget: {fileID: 134316}
+    - LIIF: 2026582001
+      InstanceTarget: {fileID: 124022}
+    - LIIF: -566696328
+      InstanceTarget: {fileID: 117386}
+    - LIIF: 841847758
+      InstanceTarget: {fileID: 115342}
+    - LIIF: 1592349262
+      InstanceTarget: {fileID: 153238}
+    - LIIF: -1937016504
+      InstanceTarget: {fileID: 428384}
+    - LIIF: 1278543137
+      InstanceTarget: {fileID: 100488}
+    - LIIF: 2039314491
+      InstanceTarget: {fileID: 112106}
+    - LIIF: 442752214
+      InstanceTarget: {fileID: 113556}
+    - LIIF: -1730344755
+      InstanceTarget: {fileID: 118206}
+    - LIIF: 2132012083
+      InstanceTarget: {fileID: 120684}
+    - LIIF: -540847928
+      InstanceTarget: {fileID: 135492}
+    - LIIF: 147098198
+      InstanceTarget: {fileID: 137386}
+    - LIIF: 1502483531
+      InstanceTarget: {fileID: 150160}
+    - LIIF: 68526844
+      InstanceTarget: {fileID: 160410}
+    - LIIF: 1386740789
+      InstanceTarget: {fileID: 161524}
+    - LIIF: -1642164686
+      InstanceTarget: {fileID: 164090}
+    - LIIF: -1388602357
+      InstanceTarget: {fileID: 172506}
+    - LIIF: 1859415288
+      InstanceTarget: {fileID: 175770}
+    - LIIF: -1154559032
+      InstanceTarget: {fileID: 183474}
+    - LIIF: 1834802145
+      InstanceTarget: {fileID: 183968}
+    - LIIF: -778311364
+      InstanceTarget: {fileID: 186052}
+    - LIIF: 2036303009
+      InstanceTarget: {fileID: 186560}
+    - LIIF: -1780157509
+      InstanceTarget: {fileID: 186654}
+    - LIIF: 1407206782
+      InstanceTarget: {fileID: 188708}
+    - LIIF: -1053959665
+      InstanceTarget: {fileID: 191664}
+    - LIIF: -933518202
+      InstanceTarget: {fileID: 194772}
+    - LIIF: -1654098928
+      InstanceTarget: {fileID: 196552}
+    - LIIF: -569601515
+      InstanceTarget: {fileID: 11413568}
+    - LIIF: -1932326462
+      InstanceTarget: {fileID: 11414884}
+    - LIIF: 505083748
+      InstanceTarget: {fileID: 11416792}
+    - LIIF: 206463105
+      InstanceTarget: {fileID: 11421488}
+    - LIIF: -594690989
+      InstanceTarget: {fileID: 11421884}
+    - LIIF: 781692238
+      InstanceTarget: {fileID: 11427024}
+    - LIIF: -1457927089
+      InstanceTarget: {fileID: 11434414}
+    - LIIF: 780269869
+      InstanceTarget: {fileID: 11438116}
+    - LIIF: 1482269530
+      InstanceTarget: {fileID: 11439546}
+    - LIIF: -667986311
+      InstanceTarget: {fileID: 11442454}
+    - LIIF: -1891776781
+      InstanceTarget: {fileID: 11443126}
+    - LIIF: 2010396750
+      InstanceTarget: {fileID: 11446778}
+    - LIIF: -1875008107
+      InstanceTarget: {fileID: 11452356}
+    - LIIF: -928238224
+      InstanceTarget: {fileID: 11452688}
+    - LIIF: 233244254
+      InstanceTarget: {fileID: 11461490}
+    - LIIF: 64339527
+      InstanceTarget: {fileID: 11463260}
+    - LIIF: 785242317
+      InstanceTarget: {fileID: 11464728}
+    - LIIF: 1870825266
+      InstanceTarget: {fileID: 11467022}
+    - LIIF: 1453087672
+      InstanceTarget: {fileID: 11480830}
+    - LIIF: -1392787763
+      InstanceTarget: {fileID: 11487162}
+    - LIIF: -1889729430
+      InstanceTarget: {fileID: 11494444}
+    - LIIF: -1842822699
+      InstanceTarget: {fileID: 11497718}
+    - LIIF: -993419637
+      InstanceTarget: {fileID: 11497740}
+    - LIIF: 1036360009
+      InstanceTarget: {fileID: 11499456}
+    - LIIF: -439315458
+      InstanceTarget: {fileID: 22201246}
+    - LIIF: 352961206
+      InstanceTarget: {fileID: 22209094}
+    - LIIF: -1780142084
+      InstanceTarget: {fileID: 22223002}
+    - LIIF: 1738449766
+      InstanceTarget: {fileID: 22229334}
+    - LIIF: 179778204
+      InstanceTarget: {fileID: 22229836}
+    - LIIF: -956885838
+      InstanceTarget: {fileID: 22230506}
+    - LIIF: -2091492037
+      InstanceTarget: {fileID: 22236306}
+    - LIIF: 2133639454
+      InstanceTarget: {fileID: 22241096}
+    - LIIF: 1046544163
+      InstanceTarget: {fileID: 22247424}
+    - LIIF: -478049686
+      InstanceTarget: {fileID: 22251136}
+    - LIIF: 519924579
+      InstanceTarget: {fileID: 22264968}
+    - LIIF: 2070453096
+      InstanceTarget: {fileID: 22265312}
+    - LIIF: 1417830830
+      InstanceTarget: {fileID: 22268002}
+    - LIIF: 1755641957
+      InstanceTarget: {fileID: 22268284}
+    - LIIF: -30527521
+      InstanceTarget: {fileID: 22272398}
+    - LIIF: 1746073980
+      InstanceTarget: {fileID: 22274266}
+    - LIIF: -410329245
+      InstanceTarget: {fileID: 22275064}
+    - LIIF: -607439054
+      InstanceTarget: {fileID: 22278326}
+    - LIIF: 1058818711
+      InstanceTarget: {fileID: 22290248}
+    - LIIF: 1526781079
+      InstanceTarget: {fileID: 22313442}
+    - LIIF: 181201795
+      InstanceTarget: {fileID: 22411546}
+    - LIIF: -1326486489
+      InstanceTarget: {fileID: 22412682}
+    - LIIF: 724963187
+      InstanceTarget: {fileID: 22415918}
+    - LIIF: 4711556
+      InstanceTarget: {fileID: 22423090}
+    - LIIF: -1903334843
+      InstanceTarget: {fileID: 22424628}
+    - LIIF: -1764197412
+      InstanceTarget: {fileID: 22426350}
+    - LIIF: 2061098212
+      InstanceTarget: {fileID: 22430758}
+    - LIIF: -1158298412
+      InstanceTarget: {fileID: 22431076}
+    - LIIF: 51333405
+      InstanceTarget: {fileID: 22432968}
+    - LIIF: -1742514565
+      InstanceTarget: {fileID: 22434890}
+    - LIIF: 837985058
+      InstanceTarget: {fileID: 22441936}
+    - LIIF: -2137132056
+      InstanceTarget: {fileID: 22456208}
+    - LIIF: -1146036690
+      InstanceTarget: {fileID: 22460762}
+    - LIIF: -1463015952
+      InstanceTarget: {fileID: 22461132}
+    - LIIF: -920777712
+      InstanceTarget: {fileID: 22462022}
+    - LIIF: -266371295
+      InstanceTarget: {fileID: 22462474}
+    - LIIF: 235101600
+      InstanceTarget: {fileID: 22464116}
+    - LIIF: 1492822691
+      InstanceTarget: {fileID: 22469256}
+    - LIIF: 2093175038
+      InstanceTarget: {fileID: 22469354}
+    - LIIF: 26499884
+      InstanceTarget: {fileID: 22471420}
+    - LIIF: -238943088
+      InstanceTarget: {fileID: 22477560}
+    - LIIF: -266512028
+      InstanceTarget: {fileID: 22478332}
   Modifications:
     Modificated:
+    - Object: {fileID: 451426}
+      ObjeckLink: 792988521
+      PropertyPath: m_LocalRotation
+      Mode: 0
     - Object: {fileID: 451426}
       ObjeckLink: 792988521
       PropertyPath: m_LocalPosition
@@ -5131,53 +5349,83 @@ MonoBehaviour:
       ObjeckLink: 792988521
       PropertyPath: m_RootOrder
       Mode: 0
-    - Object: {fileID: 0}
-      ObjeckLink: -1872791311
-      PropertyPath: m_LocalRotation
+    - Object: {fileID: 488888}
+      ObjeckLink: -1349373018
+      PropertyPath: m_RootOrder
       Mode: 0
-    - Object: {fileID: 0}
-      ObjeckLink: -1872791311
-      PropertyPath: m_LocalPosition
+    - Object: {fileID: 11455948}
+      ObjeckLink: -1238442313
+      PropertyPath: killCamCanvas
       Mode: 0
-    - Object: {fileID: 0}
-      ObjeckLink: -1872791311
-      PropertyPath: m_LocalScale
+    - Object: {fileID: 472074}
+      ObjeckLink: 691918756
+      PropertyPath: m_RootOrder
       Mode: 0
-    - Object: {fileID: 0}
-      ObjeckLink: -1872791311
-      PropertyPath: m_AnchoredPosition
-      Mode: 0
-    - Object: {fileID: 0}
-      ObjeckLink: -1872791311
-      PropertyPath: m_SizeDelta
-      Mode: 0
-    - Object: {fileID: 0}
-      ObjeckLink: -1872791311
-      PropertyPath: m_Pivot
-      Mode: 0
-    - Object: {fileID: 0}
-      ObjeckLink: -1581436891
-      PropertyPath: m_LocalPosition
-      Mode: 0
-    - Object: {fileID: 0}
-      ObjeckLink: -428877372
-      PropertyPath: m_LocalPosition
-      Mode: 0
-    - Object: {fileID: 0}
-      ObjeckLink: 1977919568
-      PropertyPath: m_LocalPosition
-      Mode: 0
-    - Object: {fileID: 13750408}
-      ObjeckLink: -1350146122
-      PropertyPath: m_Materials.Array.data[0]
-      Mode: 0
-    NonPrefabObjects: []
-    NonPrefabComponents:
-    - child: {fileID: 8263706}
-      parent: {fileID: 178930}
-    - child: {fileID: 8214280}
-      parent: {fileID: 178930}
-    RemovedObjects: 
+    NonPrefabObjects:
+    - child: {fileID: 499826}
+      parent: {fileID: 418892}
+    - child: {fileID: 491468}
+      parent: {fileID: 418892}
+    - child: {fileID: 482950}
+      parent: {fileID: 451084}
+    - child: {fileID: 474068}
+      parent: {fileID: 451084}
+    - child: {fileID: 451084}
+      parent: {fileID: 402640}
+    - child: {fileID: 440900}
+      parent: {fileID: 418892}
+    - child: {fileID: 418892}
+      parent: {fileID: 482080}
+    - child: {fileID: 401906}
+      parent: {fileID: 451084}
+    - child: {fileID: 428384}
+      parent: {fileID: 451426}
+    - child: {fileID: 22411546}
+      parent: {fileID: 22430758}
+    - child: {fileID: 22412682}
+      parent: {fileID: 22461132}
+    - child: {fileID: 22415918}
+      parent: {fileID: 22430758}
+    - child: {fileID: 22423090}
+      parent: {fileID: 22461132}
+    - child: {fileID: 22424628}
+      parent: {fileID: 22461132}
+    - child: {fileID: 22426350}
+      parent: {fileID: 22461132}
+    - child: {fileID: 22430758}
+      parent: {fileID: 22461132}
+    - child: {fileID: 22431076}
+      parent: {fileID: 22461132}
+    - child: {fileID: 22432968}
+      parent: {fileID: 22471420}
+    - child: {fileID: 22434890}
+      parent: {fileID: 22426350}
+    - child: {fileID: 22441936}
+      parent: {fileID: 22431076}
+    - child: {fileID: 22456208}
+      parent: {fileID: 22430758}
+    - child: {fileID: 22460762}
+      parent: {fileID: 22461132}
+    - child: {fileID: 22461132}
+      parent: {fileID: 488888}
+    - child: {fileID: 22462022}
+      parent: {fileID: 22430758}
+    - child: {fileID: 22462474}
+      parent: {fileID: 22461132}
+    - child: {fileID: 22464116}
+      parent: {fileID: 22431076}
+    - child: {fileID: 22469256}
+      parent: {fileID: 22461132}
+    - child: {fileID: 22469354}
+      parent: {fileID: 22461132}
+    - child: {fileID: 22471420}
+      parent: {fileID: 22461132}
+    - child: {fileID: 22477560}
+      parent: {fileID: 22431076}
+    - child: {fileID: 22478332}
+      parent: {fileID: 22431076}
+    NonPrefabComponents: []
+    RemovedObjects: 2256549a6bd2e78df1785f902530bda1c4d96fe650a8e475618ba2b3217574bddc1df08d481770fe09020e716bc5f9df9097e94fbbcce7c33b2b56cb5100b0021b7324b5ca82d5e927d8d35a56a7387b9e0496dea3e8ff2ca9974afc3de6c7bc68c5c461
     TransformParentChanges: []
   ParentPrefabGUID: 
   PrefabGUID: b721da317768efb47ac58f38dc86aeea

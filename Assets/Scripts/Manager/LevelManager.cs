@@ -13,7 +13,9 @@ public class LevelManager : MonoBehaviour {
 			sloth = GameObject.FindGameObjectWithTag("SlothNinja");
 			instance = this;
 			currentState = GameState.moveMode;
-            enemyTarget = GameObject.FindGameObjectWithTag("enemy-target");		
+            enemyTarget = GameObject.FindGameObjectWithTag("enemy-target");
+			_enemyKillTargetAnchor = GameObject.FindGameObjectWithTag("EnemyTargetAnchor").transform;
+
 			_ragdollToggle = sloth.GetComponent<RagdollToggle>();
 			OnStart_State(currentState);
         }
@@ -48,10 +50,10 @@ public class LevelManager : MonoBehaviour {
 
             case GameState.killMode:
                 sloth.GetComponent<SlothController>().DeactivateControls();
-                sloth.transform.DOMove(new Vector3(	enemyTarget.transform.position.x + 0.084f,
-													enemyTarget.transform.position.y - 0.4552f,
-                                                    enemyTarget.transform.position.z - 0.54f), 2f);
-                sloth.transform.DOLocalRotate((enemyTarget.transform.rotation.eulerAngles)+ new Vector3(0,180,0), 2f);
+                sloth.transform.DOMove(new Vector3(_enemyKillTargetAnchor.transform.position.x + 0,
+													_enemyKillTargetAnchor.transform.position.y - 0,
+													_enemyKillTargetAnchor.transform.position.z - 0.00f), 2f);
+                sloth.transform.DORotate((_enemyKillTargetAnchor.transform.rotation.eulerAngles)+ new Vector3(0,0,0), 2f);
                 KillMode_StartKilling();
                 break;
 
@@ -99,6 +101,7 @@ public class LevelManager : MonoBehaviour {
     public GameObject enemyTarget { get; private set; }
     public GameObject sloth { get; private set; }
 	private RagdollToggle _ragdollToggle;
+	private Transform _enemyKillTargetAnchor;
 
     void KillMode_StartKilling() {
         enemyTarget.GetComponent<ModeEnabler>().enableScript();
