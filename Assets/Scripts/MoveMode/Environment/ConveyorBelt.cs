@@ -9,8 +9,24 @@ public class ConveyorBelt : MonoBehaviour {
     [SerializeField]
     private bool isOn;
 
-    public void TurnOn() { isOn = true; }
-    public void TurnOff() { isOn = false; }
+    public void TurnOn() {
+		SetUsability(true);
+	}
+    public void TurnOff() {
+		SetUsability(false);
+	}
+
+	void Start() {
+		SetUsability(isOn);
+	}
+
+	private void SetUsability(bool state) {
+		isOn = state;
+		transform.GetChild(0).FindChild("Object004")
+							 .GetComponent<MeshRenderer>()
+							 .material
+							 .SetFloat("_Speed", isOn ? 1f : 0f);
+	}
 
     void OnTriggerStay(Collider other) {
         if (isOn) {
