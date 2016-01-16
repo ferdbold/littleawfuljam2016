@@ -29,7 +29,7 @@ public class Door : Interactable {
             _meshCollider.enabled = !_opened;
 
             _prompt = (_opened) ? _closePrompt : _openPrompt;
-            _animator.SetBool("Opened", _opened);
+            _animator.SetBool("Open", _opened);
         }
 	}
 
