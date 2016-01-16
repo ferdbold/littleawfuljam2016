@@ -106,6 +106,7 @@ public class MiniGameController : MonoBehaviour {
         ClawsInputs();
         PulseBlood();
 		AudioFeedback();
+		UpdateUI();
 
 		//Si la game est terminé
 		if (_miniGameOver)
@@ -115,6 +116,45 @@ public class MiniGameController : MonoBehaviour {
 
 
 
+	}
+
+	private void UpdateUI()
+	{
+		if (canPlantLeftArm)
+		{
+			GetComponentInChildren<Canvas>().GetComponent<ControlsScript>().EnableRT();
+		}
+		else
+		{
+			GetComponentInChildren<Canvas>().GetComponent<ControlsScript>().DisableRT();
+		}
+		if (canPlantRightArm)
+		{
+			GetComponentInChildren<Canvas>().GetComponent<ControlsScript>().EnableLT();
+		}
+		else
+		{
+			GetComponentInChildren<Canvas>().GetComponent<ControlsScript>().DisableLT();
+		}
+
+		if (!_canMoveVerticalLeftArm)
+		{
+			GetComponentInChildren<Canvas>().GetComponent<ControlsScript>().GreyRT();
+		}
+		else
+		{
+			GetComponentInChildren<Canvas>().GetComponent<ControlsScript>().WhiteRT();
+
+		}
+
+		if (!_canMoveVerticalRightArm)
+		{
+			GetComponentInChildren<Canvas>().GetComponent<ControlsScript>().GreyLT();
+		}
+		else
+		{
+			GetComponentInChildren<Canvas>().GetComponent<ControlsScript>().WhiteLT();
+		}
 	}
 
 	/// <summary>
@@ -357,7 +397,6 @@ public class MiniGameController : MonoBehaviour {
             _isPiercingWithLeftArm = false;
             _leftArmDamageDone = false;
 
-			Debug.Log("Check ici");
 
 
 		}
