@@ -26,18 +26,18 @@ Material:
         first:
           name: _BumpMap
         second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
+          m_Texture: {fileID: 2800000, guid: 62bb69b9a86edcc448bd67652306761f, type: 3}
+          m_Scale: {x: 50, y: 1}
           m_Offset: {x: 0, y: 0}
     m_Floats:
       data:
         first:
           name: _Metallic
-        second: 0.068
+        second: 0.07
       data:
         first:
           name: _Gloss
-        second: 0.875
+        second: 0.74
       data:
         first:
           name: _Rotation_Speed
@@ -45,11 +45,11 @@ Material:
       data:
         first:
           name: _Normal_Power
-        second: 1
+        second: 0.5
       data:
         first:
           name: _Tile_X_N
-        second: 1.5
+        second: 1
       data:
         first:
           name: _Tile_Y_N
@@ -57,7 +57,7 @@ Material:
       data:
         first:
           name: _Tile_X_D
-        second: 1.5
+        second: 1
       data:
         first:
           name: _Tile_Z_D
