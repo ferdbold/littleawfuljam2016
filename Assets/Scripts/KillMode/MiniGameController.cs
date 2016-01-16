@@ -87,6 +87,18 @@ public class MiniGameController : MonoBehaviour {
     private bool _rightArmDamageDone = false;
 
 
+	void Awake()
+	{
+		foreach (ParticleSystem elem in leftArm.GetComponentsInChildren<ParticleSystem>())
+		{
+			elem.enableEmission = false;
+		}
+		foreach (ParticleSystem elem in rightArm.GetComponentsInChildren<ParticleSystem>())
+		{
+			elem.enableEmission = false;
+		}
+	}
+
 
 	// Use this for initialization
 	void Start () {
@@ -482,20 +494,40 @@ public class MiniGameController : MonoBehaviour {
     private void PulseBlood()
     {
         if (_doPulseBloodLeftArm) {
-            leftArm.GetComponent<EllipsoidParticleEmitter>().emit = true;
+			ParticleSystem [] tempSystem = leftArm.GetComponentsInChildren<ParticleSystem>();
+			foreach(ParticleSystem element in tempSystem)
+			{
+				element.enableEmission = true;
+			}
+            //leftArm.GetComponent<EllipsoidParticleEmitter>().emit = true;
         }
         else
         {
-            leftArm.GetComponent<EllipsoidParticleEmitter>().emit = false;
+			ParticleSystem[] tempSystem = leftArm.GetComponentsInChildren<ParticleSystem>();
+			foreach (ParticleSystem element in tempSystem)
+			{
+				element.enableEmission = false;
+				//element.Pause();
+			}
+			//leftArm.GetComponent<EllipsoidParticleEmitter>().emit = false;
         }
 
         if (_doPulseBloodRightArm){
-            rightArm.GetComponent<EllipsoidParticleEmitter>().emit = true;
-        }
+			//rightArm.GetComponent<EllipsoidParticleEmitter>().emit = true;
+			ParticleSystem[] tempSystem = rightArm.GetComponentsInChildren<ParticleSystem>();
+			foreach (ParticleSystem element in tempSystem)
+			{
+				element.enableEmission = true;
+			}
+		}
         else
         {
-            rightArm.GetComponent<EllipsoidParticleEmitter>().emit = false;
-        }
+			ParticleSystem[] tempSystem = rightArm.GetComponentsInChildren<ParticleSystem>();
+			foreach (ParticleSystem element in tempSystem)
+			{
+				element.enableEmission = false;
+			}
+		}
     }
 
     public bool IsAttackingLeft()
