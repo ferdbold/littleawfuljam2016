@@ -56,7 +56,7 @@ public class LevelManager : MonoBehaviour {
                 break;
 
             case GameState.endLevelCutscene:
-                SwitchState(GameState.end); //TODO replace with cutscene
+				StartCoroutine(WaitForEndCutscene());
                 break;
 
             case GameState.end:
@@ -80,6 +80,12 @@ public class LevelManager : MonoBehaviour {
                 break;
         }
     }
+
+	private IEnumerator WaitForEndCutscene() {
+		enemyTarget.transform.root.GetComponentInChildren<Animator>().SetBool("IsDead", true);
+		yield return new WaitForSeconds(3f);
+		SwitchState(GameState.end);
+	}
 
     //------------------------------------------------------------------------------------------------------------------
 

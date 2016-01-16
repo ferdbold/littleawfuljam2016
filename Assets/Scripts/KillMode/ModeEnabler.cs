@@ -58,8 +58,8 @@ public class ModeEnabler : MonoBehaviour {
         killCamCanvas.enabled = false;
         animator.SetBool("InKillMode", false);
         //Camera
-        _topDownCamera.enabled = true;
-        _lookAtCamera.enabled = false;
+        //_topDownCamera.enabled = true;
+        //_lookAtCamera.enabled = false;
         //Sloth Controller
         _slothAnimator.runtimeAnimatorController = _slothDefaultController;
         _ikSlothController.ikActive = false;
