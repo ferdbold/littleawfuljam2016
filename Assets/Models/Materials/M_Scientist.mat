@@ -49,7 +49,7 @@ Material:
       data:
         first:
           name: _Tile_X_N
-        second: 1.5
+        second: 1
       data:
         first:
           name: _Tile_Y_N
@@ -57,7 +57,7 @@ Material:
       data:
         first:
           name: _Tile_X_D
-        second: 1.5
+        second: 1
       data:
         first:
           name: _Tile_Z_D
