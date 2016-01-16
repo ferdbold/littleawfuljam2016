@@ -1614,7 +1614,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 104174}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.52, y: 0.2, z: 10}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 421968}
@@ -3349,17 +3349,49 @@ MonoBehaviour:
       InstanceTarget: {fileID: 14589030}
   Modifications:
     Modificated:
+    - Object: {fileID: 104174}
+      ObjeckLink: -1362204146
+      PropertyPath: m_Name
+      Mode: 0
+    - Object: {fileID: 451046}
+      ObjeckLink: -1587012727
+      PropertyPath: m_LocalPosition
+      Mode: 0
     - Object: {fileID: 451046}
       ObjeckLink: -1587012727
       PropertyPath: m_RootOrder
       Mode: 0
-    - Object: {fileID: 11466670}
-      ObjeckLink: 2044024297
-      PropertyPath: FORWARDFORCE
+    - Object: {fileID: 13778714}
+      ObjeckLink: 1191654960
+      PropertyPath: m_Materials.Array.data[0]
       Mode: 0
-    - Object: {fileID: 11466670}
-      ObjeckLink: 2044024297
-      PropertyPath: SIDEFORCE
+    - Object: {fileID: 14422898}
+      ObjeckLink: -953096985
+      PropertyPath: m_ConnectedAnchor
+      Mode: 0
+    - Object: {fileID: 14425420}
+      ObjeckLink: -1744079600
+      PropertyPath: m_ConnectedAnchor
+      Mode: 0
+    - Object: {fileID: 14429960}
+      ObjeckLink: -580290033
+      PropertyPath: m_ConnectedAnchor
+      Mode: 0
+    - Object: {fileID: 14443140}
+      ObjeckLink: 1815338909
+      PropertyPath: m_ConnectedAnchor
+      Mode: 0
+    - Object: {fileID: 14444914}
+      ObjeckLink: 947757863
+      PropertyPath: m_ConnectedAnchor
+      Mode: 0
+    - Object: {fileID: 14469156}
+      ObjeckLink: 1416827015
+      PropertyPath: m_ConnectedAnchor
+      Mode: 0
+    - Object: {fileID: 14469954}
+      ObjeckLink: 514289509
+      PropertyPath: m_ConnectedAnchor
       Mode: 0
     NonPrefabObjects: []
     NonPrefabComponents: []
@@ -4029,6 +4061,10 @@ MonoBehaviour:
       ObjeckLink: 226809364
       PropertyPath: SIDEFORCE
       Mode: 0
+    - Object: {fileID: 13778714}
+      ObjeckLink: -1158092141
+      PropertyPath: m_Materials.Array.data[0]
+      Mode: 0
     - Object: {fileID: 9581304}
       ObjeckLink: 1440167776
       PropertyPath: m_WarningMessage
@@ -4091,20 +4127,20 @@ MonoBehaviour:
       parent: {fileID: 158850}
     - child: {fileID: 11451974}
       parent: {fileID: 195160}
-    - child: {fileID: 11495498}
-      parent: {fileID: 124582}
     - child: {fileID: 11453864}
       parent: {fileID: 146428}
-    - child: {fileID: 11434320}
-      parent: {fileID: 128638}
-    - child: {fileID: 11419472}
-      parent: {fileID: 190804}
     - child: {fileID: 11416366}
       parent: {fileID: 109104}
     - child: {fileID: 11415330}
       parent: {fileID: 105538}
+    - child: {fileID: 11434320}
+      parent: {fileID: 128638}
     - child: {fileID: 11402190}
       parent: {fileID: 122262}
+    - child: {fileID: 11419472}
+      parent: {fileID: 190804}
+    - child: {fileID: 11495498}
+      parent: {fileID: 124582}
     - child: {fileID: 11487652}
       parent: {fileID: 150760}
     RemovedObjects: 
@@ -4793,7 +4829,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b0a5fbfaa0a2d94aa66378140120ce7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HOLDTIMEFORROTATION: 0.15
 --- !u!114 &11495498
 MonoBehaviour:
   m_ObjectHideFlags: 33
@@ -5173,7 +5208,7 @@ SkinnedMeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: f7a30323db454464b9d65c132d42ac15, type: 2}
+  - {fileID: 2100000, guid: 4b7506a159135d340abf23203168e455, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -5289,7 +5324,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.23828106, y: -0.03493858, z: 0.000000117346644}
+  m_ConnectedAnchor: {x: -0.23828103, y: -0.03493858, z: 0.000000113621354}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_TwistLimitSpring:
@@ -5331,7 +5366,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.000000014901161, y: 0.17878446, z: -0.025224742}
+  m_ConnectedAnchor: {x: -0.000000014901161, y: 0.17878446, z: -0.025224745}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: -1}
   m_TwistLimitSpring:
@@ -5373,7 +5408,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.04587223, y: -0.0064696893, z: -0.13511373}
+  m_ConnectedAnchor: {x: 0.04587223, y: -0.0064696847, z: -0.13511369}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: 1}
   m_TwistLimitSpring:
@@ -5457,7 +5492,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.11443431, y: 0.0063158604, z: -0.12536062}
+  m_ConnectedAnchor: {x: -0.11443427, y: 0.006315885, z: -0.12536065}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: 1}
   m_TwistLimitSpring:
@@ -5499,7 +5534,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.000000059604645, y: -0.17878446, z: 0.025224756}
+  m_ConnectedAnchor: {x: -0.000000014901161, y: -0.17878446, z: 0.025224753}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: 1}
   m_TwistLimitSpring:
@@ -5541,7 +5576,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: -1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.11443407, y: 0.006315854, z: 0.12536097}
+  m_ConnectedAnchor: {x: -0.11443404, y: 0.0063158567, z: 0.12536103}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: -1}
   m_TwistLimitSpring:
@@ -5583,7 +5618,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.04587223, y: -0.0064696725, z: 0.1351137}
+  m_ConnectedAnchor: {x: 0.04587223, y: -0.0064696753, z: 0.13511367}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: -1}
   m_TwistLimitSpring:
@@ -5683,7 +5718,11 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4b7506a159135d340abf23203168e455, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 104174}

@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System.Collections;
 
 /// <summary>
 /// Interactable rope the character can grip
@@ -7,6 +8,7 @@ public class Rope : Interactable {
 
 	[Tooltip("The rope speed (NOTE: This is relative to the length of the rope, so longer ropes will be faster)")]
 	[SerializeField] private float _speed = 0.4f;
+	[SerializeField] private float _grabCooldown = 0.5f; //Time until the player can grab again
 
 	[Header("Rope Prompts")]
 	[SerializeField] private string _gripPrompt = "Grip";
@@ -17,8 +19,9 @@ public class Rope : Interactable {
 	private Snapper _slothSnapper;
 
 	private bool _activated = false;
+	private bool _canGrab = true;
 	private string _grippingButton = string.Empty;
-
+	
 	public new void Awake() {
 		base.Awake();
 
@@ -33,9 +36,9 @@ public class Rope : Interactable {
 
 
 		// Listen for inputs
-		if (Input.GetButtonDown("GripLeft") && _focused) {
+		if (Input.GetButtonDown("GripLeft") && _focused && _canGrab) {
 			Grip("left");
-		} else if (Input.GetButtonDown("GripRight") && _focused) {
+		} else if (Input.GetButtonDown("GripRight") && _focused && _canGrab) {
 			Grip("right");
 		} else if (Input.GetButtonUp("GripLeft") && _grippingButton == "left" && _activated) {
 			Release();
@@ -68,6 +71,7 @@ public class Rope : Interactable {
 		_grippingButton = button;
 
 		_slothSnapper.Grip(_cursor, button);
+		StartGrabCooldown();
 	}
 
 	/// <summary>
@@ -82,6 +86,7 @@ public class Rope : Interactable {
 		_grippingButton = string.Empty;
 
 		_cursor.transform.localPosition = Vector3.zero;
+		StartGrabCooldown();
 	}
 		
 	/// <summary>
@@ -108,5 +113,19 @@ public class Rope : Interactable {
 
 		// Calculate cursor offset X
 		return localIntersection.x / localPathEndPos.x;
+	}
+
+	/// <summary>
+	/// Starts the grab cooldown coroutine
+	/// </summary>
+	private void StartGrabCooldown() {
+		StopCoroutine("GrabCooldown");
+		StartCoroutine("GrabCooldown");
+	}
+
+	IEnumerator GrabCooldown() {
+		_canGrab = false;
+		yield return new WaitForSeconds(_grabCooldown);
+		_canGrab = true;
 	}
 }
