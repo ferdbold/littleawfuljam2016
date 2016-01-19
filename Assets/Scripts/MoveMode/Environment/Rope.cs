@@ -98,12 +98,14 @@ public class Rope : Interactable {
 		Vector3 worldPathStartPos = _path.transform.position;
 		Vector3 worldPathEndPos = worldPathStartPos + Quaternion.Euler(_path.transform.rotation.eulerAngles) * new Vector3(_path.transform.localScale.x, 0, 0);
 		Vector3 localPathEndPos = worldPathEndPos - worldPathStartPos;
+		Vector3 projectedSlothPos = Vector3.Project(transform.rotation * slothPos - worldPathStartPos, localPathEndPos);
 
-		// Exit early if the sloth is out of bounds
-		if (slothPos.x < worldPathStartPos.x) {
-			//return 0;
-		} else if (slothPos.x > worldPathEndPos.x) {
-		//	return 1;
+		Debug.Log("Projected sloth pos: " + projectedSlothPos);
+
+		// Exit early if the sloth is before the rope
+		// FIXME: The projection here is screwed up
+		if (projectedSlothPos.x < 0) {
+			return 0;
 		}
 
 		// Find closest intersection point

@@ -9,6 +9,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 474768}
   - 114: {fileID: 11486648}
+  - 114: {fileID: 11476150}
   m_Layer: 0
   m_Name: PlayerController
   m_TagString: Untagged
@@ -28,6 +29,39 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!114 &11476150
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 126974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46a02d0f612a241b293c0da4f82b712c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Properties:
+    Properties: []
+    Groups: []
+    Hidden: 
+  Links:
+    Links:
+    - LIIF: 55855225
+      InstanceTarget: {fileID: 11476150}
+    - LIIF: 4322302
+      InstanceTarget: {fileID: 126974}
+    - LIIF: -1585612935
+      InstanceTarget: {fileID: 474768}
+    - LIIF: 1747210023
+      InstanceTarget: {fileID: 11486648}
+  Modifications:
+    Modificated: []
+    NonPrefabObjects: []
+    NonPrefabComponents: []
+    RemovedObjects: 
+    TransformParentChanges: []
+  ParentPrefabGUID: 
+  PrefabGUID: 2b5d4b1723cdfa442bcb9c10d07354dd
 --- !u!114 &11486648
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -39,7 +73,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b0a5fbfaa0a2d94aa66378140120ce7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HOLDTIMEFORROTATION: 0.15
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
