@@ -18,6 +18,7 @@ public class ModeEnabler : MonoBehaviour {
     private Animator _slothAnimator;
     private IKSlothController _ikSlothController;
 
+
     //Cameras
     private Camera _camera;
     private TopDownCamera _topDownCamera;
@@ -41,6 +42,7 @@ public class ModeEnabler : MonoBehaviour {
 
     public void enableScript()
     {
+        Debug.Log("Je suis enablé");
         script.enabled = true;
         killCamCanvas.enabled = true;
         animator.SetBool("InKillMode", true);
@@ -54,6 +56,7 @@ public class ModeEnabler : MonoBehaviour {
 
     public void disableScript()
     {
+        Debug.Log("Je suis disablé");
         script.enabled = false;
         killCamCanvas.enabled = false;
         animator.SetBool("InKillMode", false);

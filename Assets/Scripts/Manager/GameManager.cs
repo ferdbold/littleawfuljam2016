@@ -63,6 +63,7 @@ public class GameManager : MonoBehaviour {
     private void OnStart_Level(GameLevel level) {
         switch (level) {
             case GameLevel.menu:
+                currentPlayLevel = 0;
                 SceneManager.LoadScene(MENU_LEVEL);
                 break;
 
@@ -76,15 +77,13 @@ public class GameManager : MonoBehaviour {
     }
 
     private void OnEnd_Level(GameLevel level) {
+   
         switch (level) {
             case GameLevel.menu:
 
                 break;
 
-            case GameLevel.playLevel:
-                foreach (LevelManager mode in transform) {
-                    Destroy(mode);
-                }
+            case GameLevel.playLevel: 
                 break;
         }
     }

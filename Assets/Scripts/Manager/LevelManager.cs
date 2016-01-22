@@ -6,7 +6,7 @@ public class LevelManager : MonoBehaviour {
 
     public static LevelManager instance;
 
-    private const float DISTANCE_TO_TARGET_NEEDED = 1f;
+    private const float DISTANCE_TO_TARGET_NEEDED = 2f;
 
     void Start() {
         if (instance == null) {
@@ -33,7 +33,7 @@ public class LevelManager : MonoBehaviour {
     //-------------------------------------------------------------------------------------------------------------------------
 
     public enum GameState { moveMode, killMode, endLevelCutscene, end }
-    public GameState currentState { get; private set; }
+    public GameState currentState;
 
     public void SwitchState(GameState state) {
         OnEnd_State(currentState);
@@ -62,6 +62,8 @@ public class LevelManager : MonoBehaviour {
                 break;
 
             case GameState.end:
+                instance = null;
+                Destroy(this);
                 GameManager.instance.GoToNextPlayLevel();
                 break;
         }

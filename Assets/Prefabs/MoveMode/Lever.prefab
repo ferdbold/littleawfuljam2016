@@ -186,7 +186,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 106268}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.24175577, y: -1.2218412e-16, z: 1.23}
+  m_LocalPosition: {x: -51.532516, y: -593.4317, z: -7.2199697}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 22465336}
@@ -623,6 +623,22 @@ MonoBehaviour:
       ObjeckLink: -1583942645
       PropertyPath: m_Controller
       Mode: 0
+    - Object: {fileID: 13701404}
+      ObjeckLink: -2118148631
+      PropertyPath: m_Materials.Array.data[0]
+      Mode: 0
+    - Object: {fileID: 13701404}
+      ObjeckLink: -2118148631
+      PropertyPath: m_Materials.Array.data[1]
+      Mode: 0
+    - Object: {fileID: 13701404}
+      ObjeckLink: -2118148631
+      PropertyPath: m_Materials.Array.data[2]
+      Mode: 0
+    - Object: {fileID: 13701404}
+      ObjeckLink: -2118148631
+      PropertyPath: m_Materials.Array.data[3]
+      Mode: 0
     - Object: {fileID: 465054}
       ObjeckLink: -765337030
       PropertyPath: m_RootOrder
@@ -664,10 +680,10 @@ SkinnedMeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: 64cb0737e67b45341918eaf0ac4a4b5b, type: 2}
-  - {fileID: 2100000, guid: 64cb0737e67b45341918eaf0ac4a4b5b, type: 2}
-  - {fileID: 2100000, guid: 64cb0737e67b45341918eaf0ac4a4b5b, type: 2}
-  - {fileID: 2100000, guid: 64cb0737e67b45341918eaf0ac4a4b5b, type: 2}
+  - {fileID: 2100000, guid: 0adfb71d4a0eca741864d7a991b2197d, type: 2}
+  - {fileID: 2100000, guid: b18727b513a0d3b43a5469fd2a5df398, type: 2}
+  - {fileID: 2100000, guid: 55a0a99d13aecbf46a5fc2411c522493, type: 2}
+  - {fileID: 2100000, guid: 99a389f8cbed18843acf401e0eb7cb1c, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
