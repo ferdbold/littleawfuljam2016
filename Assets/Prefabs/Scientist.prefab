@@ -2767,8 +2767,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 117658}
-  m_LocalRotation: {x: 0, y: -0.70710534, z: 0, w: 0.70710826}
-  m_LocalPosition: {x: -58.204, y: -587.705, z: -5.968}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071067}
+  m_LocalPosition: {x: -5.748, y: -0.827, z: 2.127}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 428384}
@@ -4421,7 +4421,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxPitchDifference: 0.2
-  targetHealth: 4
+  targetHealth: 1
   rightArm: {fileID: 162010}
   leftArm: {fileID: 103298}
   canPlantRightArm: 0
@@ -5368,11 +5368,15 @@ MonoBehaviour:
     Modificated:
     - Object: {fileID: 451426}
       ObjeckLink: 792988521
-      PropertyPath: m_RootOrder
+      PropertyPath: m_LocalRotation
       Mode: 0
-    - Object: {fileID: 22313442}
-      ObjeckLink: 1526781079
-      PropertyPath: m_Camera
+    - Object: {fileID: 451426}
+      ObjeckLink: 792988521
+      PropertyPath: m_LocalPosition
+      Mode: 0
+    - Object: {fileID: 451426}
+      ObjeckLink: 792988521
+      PropertyPath: m_RootOrder
       Mode: 0
     - Object: {fileID: 22411546}
       ObjeckLink: 181201795

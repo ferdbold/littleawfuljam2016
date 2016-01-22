@@ -44,6 +44,8 @@ public class MiniGameController : MonoBehaviour {
     public float minArmY;
 
 
+
+
     //Valeur min en z
     private float _minArmZ;
 
@@ -367,6 +369,10 @@ public class MiniGameController : MonoBehaviour {
                 {
                     _rightArmDamageDone = true;
                     _slothHits++;
+                    if (_slothHits > targetHealth)
+                    {
+                        _miniGameOver = true;
+                    }
                 }
 
                 //On griffe et ca fait saigner le bras gauche!
@@ -391,8 +397,7 @@ public class MiniGameController : MonoBehaviour {
             if (leftArm.transform.localPosition.z == maxArmZ)
             {
                 if ((leftArm.GetComponent<ClawCut>().GetClawPosition() == (ClawCut.ClawStatus.LowerUpRight)
-                    || leftArm.GetComponent<ClawCut>().GetClawPosition() == ClawCut.ClawStatus.UpperUpRight)
-                    && _slothHits > targetHealth)
+                    || leftArm.GetComponent<ClawCut>().GetClawPosition() == ClawCut.ClawStatus.UpperUpRight))                     //&& _slothHits > targetHealth)
                 {
                     _miniGameOver = true;
                 }
