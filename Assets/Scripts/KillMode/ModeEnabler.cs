@@ -19,10 +19,12 @@ public class ModeEnabler : MonoBehaviour {
     private IKSlothController _ikSlothController;
 
 
+
     //Cameras
     private Camera _camera;
     private TopDownCamera _topDownCamera;
     private LookAtCamera _lookAtCamera;
+    public float planeDistance;
 
     void Awake() {
         _camera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
@@ -31,7 +33,7 @@ public class ModeEnabler : MonoBehaviour {
         _slothAnimator = GameObject.FindGameObjectWithTag("SlothNinja").GetComponentInChildren<Animator>();
         _ikSlothController = _slothAnimator.GetComponent<IKSlothController>();
         killCamCanvas.worldCamera = _camera;
-        killCamCanvas.planeDistance = 0.35f;
+        killCamCanvas.planeDistance = planeDistance;
     }
 
 	void Start () {

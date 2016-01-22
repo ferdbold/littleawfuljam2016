@@ -1525,6 +1525,7 @@ GameObject:
   - 114: {fileID: 11414884}
   - 114: {fileID: 11416792}
   - 114: {fileID: 11439546}
+  - 222: {fileID: 22249270}
   m_Layer: 5
   m_Name: KillCamCanvas
   m_TagString: Untagged
@@ -2766,8 +2767,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 117658}
-  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071067}
-  m_LocalPosition: {x: -5.748, y: -0.827, z: 2.127}
+  m_LocalRotation: {x: 0, y: -0.70710534, z: 0, w: 0.70710826}
+  m_LocalPosition: {x: -58.204, y: -587.705, z: -5.968}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 428384}
@@ -4549,6 +4550,7 @@ MonoBehaviour:
   LeftHandAnchor: {fileID: 482080}
   RightHandAnchor: {fileID: 402640}
   ClimbAnimClip: {fileID: 7400000, guid: fc561a5a05de4434d96b216b273d621b, type: 2}
+  planeDistance: 0.5
 --- !u!114 &11461490
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5360,19 +5362,17 @@ MonoBehaviour:
       InstanceTarget: {fileID: 11482180}
     - LIIF: 363575207
       InstanceTarget: {fileID: 11453230}
+    - LIIF: -954540915
+      InstanceTarget: {fileID: 22249270}
   Modifications:
     Modificated:
     - Object: {fileID: 451426}
       ObjeckLink: 792988521
-      PropertyPath: m_LocalRotation
-      Mode: 0
-    - Object: {fileID: 451426}
-      ObjeckLink: 792988521
-      PropertyPath: m_LocalPosition
-      Mode: 0
-    - Object: {fileID: 451426}
-      ObjeckLink: 792988521
       PropertyPath: m_RootOrder
+      Mode: 0
+    - Object: {fileID: 22313442}
+      ObjeckLink: 1526781079
+      PropertyPath: m_Camera
       Mode: 0
     - Object: {fileID: 22411546}
       ObjeckLink: 181201795
@@ -5483,12 +5483,8 @@ MonoBehaviour:
       PropertyPath: m_LocalPosition
       Mode: 0
     NonPrefabObjects: []
-    NonPrefabComponents:
-    - child: {fileID: 11482180}
-      parent: {fileID: 172506}
-    - child: {fileID: 11453230}
-      parent: {fileID: 137386}
-    RemovedObjects: cdbefbac6a045d8f
+    NonPrefabComponents: []
+    RemovedObjects: 
     TransformParentChanges: []
   ParentPrefabGUID: 
   PrefabGUID: b721da317768efb47ac58f38dc86aeea
@@ -14941,6 +14937,12 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 135492}
+--- !u!222 &22249270
+CanvasRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 175770}
 --- !u!222 &22251136
 CanvasRenderer:
   m_ObjectHideFlags: 1
@@ -15011,7 +15013,7 @@ Canvas:
   serializedVersion: 2
   m_RenderMode: 1
   m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
+  m_PlaneDistance: 0.5
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
